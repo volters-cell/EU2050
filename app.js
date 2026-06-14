@@ -4,15 +4,12 @@
   const data = window.EU2050_DATA;
 
   // ---------- Projection setup ----------
-  // Simple equirectangular-ish projection tuned to fit our viewBox (760x620)
-  // Europe roughly spans lon -25..50, lat 34..71
   const LON_MIN = -25, LON_MAX = 50;
   const LAT_MIN = 33, LAT_MAX = 71;
   const W = 760, H = 620;
 
   function project([lon, lat]){
     const x = (lon - LON_MIN) / (LON_MAX - LON_MIN) * W;
-    // simple latitude compression for a nicer aspect ratio
     const y = H - (lat - LAT_MIN) / (LAT_MAX - LAT_MIN) * H;
     return [x, y];
   }
@@ -35,44 +32,24 @@
   }
 
   // ---------- Color scales ----------
-function fragColor(score, isEU){
-    if(isEU) return '#c4453a';
-    return '#5a3a36';
+  function fragColor(score, isEU){
+    if(isEU) return '#c4453a';   // current EU members — solid red
+    return '#5a3a36';             // non-EU neighbours — faded/muted
   }
 
   function fedColor(score, isNew){
-    return '#7c5cd6';
+    return '#7c5cd6';              // federation members — single unified purple
   }
-  
-  function interpolateColor(value, stops){
-    if(value <= stops[0].s) return rgb(stops[0].c);
-    if(value >= stops[stops.length-1].s) return rgb(stops[stops.length-1].c);
-    for(let i=0; i<stops.length-1; i++){
-      const a = stops[i], b = stops[i+1];
-      if(value >= a.s && value <= b.s){
-        const t = (value - a.s) / (b.s - a.s);
-        const c = a.c.map((ch, idx) => Math.round(ch + (b.c[idx]-ch)*t));
-        return rgb(c);
-      }
-    }
-    return rgb(stops[stops.length-1].c);
-  }
-
-  function rgb(c){ return `rgb(${c[0]},${c[1]},${c[2]})`; }
 
   // ---------- Year interpolation ----------
-  // For non-2050 years, blend country score from a "2026 baseline" (assumed
-  // close to current real-world status) toward the 2050 scenario score.
   function blendScore(country, scenario, year){
     const target = scenario === 'frag' ? country.fragScore : country.fedScore;
     if(target === undefined) return undefined;
-    // baseline assumption: most countries start near a neutral-ish 0.5,
-    // candidate/new-accession countries start lower
     let baseline;
     if(country.fedNew){
       baseline = scenario === 'fed' ? 0.15 : (country.fragScore !== undefined ? country.fragScore * 0.8 : 0.2);
     } else {
-      baseline = scenario === 'fed' ? 0.55 : target; // frag scores assumed roughly stable already
+      baseline = scenario === 'fed' ? 0.55 : target;
     }
     const t = (year - 2026) / (2050 - 2026);
     return baseline + (target - baseline) * t;
@@ -83,7 +60,6 @@ function fragColor(score, isEU){
     svgEl.innerHTML = '';
     const ns = 'http://www.w3.org/2000/svg';
 
-    // background
     const bg = document.createElementNS(ns,'rect');
     bg.setAttribute('x',0); bg.setAttribute('y',0);
     bg.setAttribute('width',W); bg.setAttribute('height',H);
@@ -97,17 +73,13 @@ function fragColor(score, isEU){
       path.setAttribute('d', geometryToPath(f.geometry));
       path.setAttribute('class','country');
 
-      let fill = '#1a1e29'; // default for unmodeled
+      let fill = '#1a1e29';
       if(country){
         const score = blendScore(country, scenario, year);
         fill = scenario === 'frag'
           ? fragColor(score, country.eu)
-          : fedColor(score, false); // new accessions appear gradually
+          : fedColor(score, false);
       }
-      function fedColor(score, isNew){
-    if(score === undefined) return '#23262f';
-    return '#7c5cd6';
-  }
       path.setAttribute('fill', fill);
       svgEl.appendChild(path);
 
@@ -159,10 +131,9 @@ function fragColor(score, isEU){
 
   // ---------- Stats ----------
   function updateStats(year){
-    // Linear-ish interpolation of headline stats for flavor; 2050 = scenario stats.
     const t = (year - 2026) / (2050 - 2026);
 
-    const fragPopStart = 448, fragPopEnd = 418; // millions
+    const fragPopStart = 448, fragPopEnd = 418;
     const fedPopStart = 448, fedPopEnd = 503;
     const fragMembersStart = 27, fragMembersEnd = 29;
     const fedMembersStart = 27, fedMembersEnd = 33;
