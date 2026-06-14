@@ -35,11 +35,10 @@
   }
 
   // ---------- Color scales ----------
-  function fragColor(score, isEU){
-    if(score === undefined) return '#23262f';
-    if(isEU) return '#c4453a';      // current EU members — solid red
-    return '#5a3a36';                // non-EU neighbours — faded/muted
-  };
+function fragColor(score, isEU){
+    if(isEU) return '#c4453a';
+    return '#5a3a36';
+}
     return interpolateColor(score, stops);
   }
 
