@@ -39,8 +39,7 @@ function fragColor(score, isEU){
     if(isEU) return '#c4453a';
     return '#5a3a36';
 }
-    return interpolateColor(score, stops);
-  }
+    
 
   function fedColor(score, isNew){
     if(score === undefined) return '#23262f';
