@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU2050 — Two Futures, One Map</title>
+<style>
+  :root{
+    --bg: #0b0e14;
+    --panel: #11151f;
+    --panel-2: #171c29;
+    --line: #2a3142;
+    --ink: #e8ecf4;
+    --ink-dim: #8b94a8;
+    --eu-blue: #2f5fff;
+    --frag-amber: #e8a23c;
+    --frag-red: #c4453a;
+    --fed-teal: #2dd4bf;
+    --fed-gold: #ffcb47;
+    --mono: 'JetBrains Mono', 'Courier New', monospace;
+    --serif: 'Source Serif Pro', Georgia, serif;
+    --sans: 'Inter', -apple-system, sans-serif;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Header ---------- */
+  .masthead{
+    border-bottom:1px solid var(--line);
+    padding:18px 24px;
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .masthead-title{
+    font-family:var(--serif);
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:0.01em;
+  }
+  .masthead-title .accent{ color:var(--fed-teal); }
+  .masthead-sub{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  .live-tag{
+    font-family:var(--mono);
+    font-size:0.68rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--fed-teal);
+    border:1px solid var(--fed-teal);
+    padding:4px 8px;
+    border-radius:2px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .live-dot{
+    width:6px; height:6px; border-radius:50%;
+    background:var(--fed-teal);
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:1;}
+    50%{opacity:0.25;}
+  }
+
+  /* ---------- Year slider bar ---------- */
+  .timebar{
+    background:var(--panel);
+    border-bottom:1px solid var(--line);
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .timebar-label{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .timebar-year{
+    font-family:var(--serif);
+    font-size:1.4rem;
+    font-weight:700;
+    min-width:62px;
+  }
+  input[type=range]{
+    flex:1;
+    min-width:160px;
+    height:2px;
+    background:var(--line);
+    -webkit-appearance:none;
+    appearance:none;
+    border-radius:1px;
+    outline:none;
+  }
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--fed-teal);
+    cursor:pointer;
+    border:2px solid var(--bg);
+  }
+  input[type=range]::-moz-range-thumb{
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--fed-teal);
+    cursor:pointer;
+    border:2px solid var(--bg);
+  }
+
+  /* ---------- Layout ---------- */
+  .layout{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1px;
+    background:var(--line);
+  }
+  @media (max-width: 880px){
+    .layout{ grid-template-columns: 1fr; }
+  }
+
+  .scenario{
+    background:var(--bg);
+    padding:20px 24px 28px;
+  }
+
+  .scenario-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:4px;
+  }
+  .scenario-tag{
+    font-family:var(--mono);
+    font-size:0.66rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    padding:4px 8px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  .scenario.fragmented .scenario-tag{
+    background:rgba(196,69,58,0.12);
+    color:var(--frag-red);
+    border:1px solid rgba(196,69,58,0.35);
+  }
+  .scenario.federal .scenario-tag{
+    background:rgba(45,212,191,0.12);
+    color:var(--fed-teal);
+    border:1px solid rgba(45,212,191,0.35);
+  }
+  .scenario-title{
+    font-family:var(--serif);
+    font-size:1.45rem;
+    font-weight:700;
+    line-height:1.25;
+    margin:6px 0 4px;
+  }
+  .scenario-desc{
+    font-size:0.85rem;
+    color:var(--ink-dim);
+    line-height:1.55;
+    max-width:46ch;
+    margin-bottom:14px;
+  }
+
+  .map-wrap{
+    border:1px solid var(--line);
+    border-radius:4px;
+    background:var(--panel);
+    position:relative;
+    overflow:hidden;
+  }
+  .map-wrap svg{ display:block; width:100%; height:auto; }
+
+  .map-caption{
+    font-family:var(--mono);
+    font-size:0.66rem;
+    color:var(--ink-dim);
+    letter-spacing:0.06em;
+    padding:8px 4px 0;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+
+  /* Legend */
+  .legend{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:10px;
+    font-family:var(--mono);
+    font-size:0.66rem;
+    color:var(--ink-dim);
+    letter-spacing:0.04em;
+  }
+  .legend-item{ display:flex; align-items:center; gap:6px; }
+  .swatch{ width:11px; height:11px; border-radius:2px; flex-shrink:0; }
+
+  /* Country path */
+  .country{
+    stroke:var(--bg);
+    stroke-width:0.5;
+    transition:opacity 0.15s ease;
+    cursor:pointer;
+  }
+  .country:hover{ opacity:0.7; stroke-width:1.2; stroke:var(--ink); }
+
+  /* Stat strip */
+  .stat-strip{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:16px;
+  }
+  .stat{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:10px 12px;
+  }
+  .stat-label{
+    font-family:var(--mono);
+    font-size:0.6rem;
+    color:var(--ink-dim);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .stat-value{
+    font-family:var(--serif);
+    font-size:1.25rem;
+    font-weight:700;
+  }
+  .scenario.fragmented .stat-value{ color:var(--frag-amber); }
+  .scenario.federal .stat-value{ color:var(--fed-teal); }
+
+  /* ---------- Country detail panel ---------- */
+  .detail{
+    margin-top:14px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:14px 16px;
+    min-height:118px;
+  }
+  .detail-empty{
+    color:var(--ink-dim);
+    font-size:0.8rem;
+    font-style:italic;
+  }
+  .detail-country{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:1.05rem;
+    margin-bottom:6px;
+  }
+  .detail-row{
+    display:flex;
+    justify-content:space-between;
+    font-size:0.8rem;
+    padding:3px 0;
+    border-bottom:1px dashed var(--line);
+    color:var(--ink-dim);
+  }
+  .detail-row span:last-child{ color:var(--ink); font-family:var(--mono); }
+  .detail-note{
+    font-size:0.78rem;
+    color:var(--ink-dim);
+    line-height:1.5;
+    margin-top:8px;
+  }
+
+  /* ---------- News / signal feed ---------- */
+  .feed-section{
+    grid-column:1 / -1;
+    background:var(--panel);
+    border-top:1px solid var(--line);
+    padding:24px;
+  }
+  .feed-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:4px;
+  }
+  .feed-title{
+    font-family:var(--serif);
+    font-size:1.2rem;
+    font-weight:700;
+  }
+  .feed-sub{
+    font-family:var(--mono);
+    font-size:0.68rem;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  .feed-list{
+    margin-top:14px;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .feed-item{
+    display:grid;
+    grid-template-columns:96px 1fr auto;
+    gap:16px;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+    align-items:start;
+  }
+  @media (max-width:720px){
+    .feed-item{ grid-template-columns:1fr; gap:6px; }
+  }
+  .feed-date{
+    font-family:var(--mono);
+    font-size:0.68rem;
+    color:var(--ink-dim);
+    letter-spacing:0.04em;
+    padding-top:2px;
+  }
+  .feed-body .feed-headline{
+    font-size:0.92rem;
+    font-weight:600;
+    margin-bottom:3px;
+  }
+  .feed-body .feed-ai{
+    font-size:0.82rem;
+    color:var(--ink-dim);
+    line-height:1.5;
+  }
+  .feed-body .feed-ai .label{
+    font-family:var(--mono);
+    font-size:0.62rem;
+    color:var(--fed-teal);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin-right:6px;
+  }
+  .feed-impact{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    align-items:flex-end;
+    min-width:120px;
+  }
+  @media (max-width:720px){ .feed-impact{ align-items:flex-start; flex-direction:row; flex-wrap:wrap; } }
+  .impact-pill{
+    font-family:var(--mono);
+    font-size:0.64rem;
+    letter-spacing:0.05em;
+    padding:3px 8px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  .impact-pill.frag{
+    background:rgba(196,69,58,0.1);
+    color:var(--frag-amber);
+    border:1px solid rgba(232,162,60,0.3);
+  }
+  .impact-pill.fed{
+    background:rgba(45,212,191,0.1);
+    color:var(--fed-teal);
+    border:1px solid rgba(45,212,191,0.3);
+  }
+
+  /* ---------- Footer / methodology ---------- */
+  .footnote{
+    grid-column:1 / -1;
+    background:var(--bg);
+    border-top:1px solid var(--line);
+    padding:18px 24px 28px;
+    font-size:0.76rem;
+    color:var(--ink-dim);
+    line-height:1.6;
+    max-width:80ch;
+  }
+  .footnote b{ color:var(--ink); }
+  .footnote .pipeline{
+    font-family:var(--mono);
+    font-size:0.66rem;
+    letter-spacing:0.06em;
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 6px;
+    align-items:center;
+    max-width:100%;
+  }
+  .pipeline .step{
+    border:1px solid var(--line);
+    border-radius:2px;
+    padding:3px 8px;
+  }
+  .pipeline .arrow{ color:var(--ink-dim); }
+
+  /* tooltip */
+  .tooltip{
+    position:absolute;
+    pointer-events:none;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:5px 9px;
+    font-family:var(--mono);
+    font-size:0.68rem;
+    color:var(--ink);
+    white-space:nowrap;
+    transform:translate(-50%,-130%);
+    opacity:0;
+    transition:opacity 0.1s;
+    z-index:10;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div>
+    <div class="masthead-title">EU2050 <span class="accent">/ Two Futures</span></div>
+    <div class="masthead-sub">Daily AI-read signals → long-run sovereignty &amp; enlargement scenarios</div>
+  </div>
+  <div class="live-tag"><span class="live-dot"></span>Updated today · sample data</div>
+</header>
+
+<div class="timebar">
+  <span class="timebar-label">Projection year</span>
+  <span class="timebar-year" id="yearLabel">2050</span>
+  <input type="range" id="yearSlider" min="2026" max="2050" step="1" value="2050">
+  <span class="timebar-label" id="yearHint">Drag to see how today's trajectory plays out between now and 2050</span>
+</div>
+
+<div class="layout">
+
+  <!-- FRAGMENTED SCENARIO -->
+  <section class="scenario fragmented">
+    <div class="scenario-head">
+      <div>
+        <span class="scenario-tag">Scenario A · Status quo</span>
+        <div class="scenario-title">A fragmented Union, 2050</div>
+      </div>
+    </div>
+    <div class="scenario-desc">
+      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly — leaving the EU a price-taker on the rules written by Washington and Beijing.
+    </div>
+
+    <div class="map-wrap">
+      <svg id="mapFrag" viewBox="0 0 760 620" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip" id="tooltipFrag"></div>
+    </div>
+    <div class="map-caption">
+      <span>Colour = sovereignty &amp; integration index (lower = more dependent)</span>
+      <span>Click a country for detail</span>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="swatch" style="background:#3a2a26"></span>Low integration / high dependency</div>
+      <div class="legend-item"><span class="swatch" style="background:#7a4630"></span>Mixed</div>
+      <div class="legend-item"><span class="swatch" style="background:#c4453a"></span>Core, still fragmented</div>
+      <div class="legend-item"><span class="swatch" style="background:#23262f"></span>Non-EU / not modelled</div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat">
+        <div class="stat-label">EU population</div>
+        <div class="stat-value" id="fragPop">418M</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Member states</div>
+        <div class="stat-value" id="fragMembers">29</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Global market share, key tech</div>
+        <div class="stat-value" id="fragTech">9%</div>
+      </div>
+    </div>
+
+    <div class="detail" id="detailFrag">
+      <div class="detail-empty">Click any country on the map above to see its 2050 outlook under this scenario.</div>
+    </div>
+  </section>
+
+  <!-- FEDERAL SCENARIO -->
+  <section class="scenario federal">
+    <div class="scenario-head">
+      <div>
+        <span class="scenario-tag">Scenario B · Federal leap</span>
+        <div class="scenario-title">A sovereign federation, 2050</div>
+      </div>
+    </div>
+    <div class="scenario-desc">
+      A genuine capital markets and single market union funds its own chip, cloud and energy champions. Enlargement completes for the Western Balkans, Ukraine and Moldova. The EU sets standards alongside the US and China, and backs human rights and development abroad with real weight.
+    </div>
+
+    <div class="map-wrap">
+      <svg id="mapFed" viewBox="0 0 760 620" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip" id="tooltipFed"></div>
+    </div>
+    <div class="map-caption">
+      <span>Colour = federal integration / accession status</span>
+      <span>Click a country for detail</span>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="swatch" style="background:#0f4a44"></span>Founding federal core</div>
+      <div class="legend-item"><span class="swatch" style="background:#1f8f80"></span>Joined federation</div>
+      <div class="legend-item"><span class="swatch" style="background:#2dd4bf"></span>New member (post-2026 accession)</div>
+      <div class="legend-item"><span class="swatch" style="background:#23262f"></span>Non-EU / not modelled</div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat">
+        <div class="stat-label">Federation population</div>
+        <div class="stat-value" id="fedPop">503M</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Member states</div>
+        <div class="stat-value" id="fedMembers">33</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Global market share, key tech</div>
+        <div class="stat-value" id="fedTech">22%</div>
+      </div>
+    </div>
+
+    <div class="detail" id="detailFed">
+      <div class="detail-empty">Click any country on the map above to see its 2050 outlook under this scenario.</div>
+    </div>
+  </section>
+
+  <!-- NEWS / AI SIGNAL FEED -->
+  <section class="feed-section">
+    <div class="feed-head">
+      <div class="feed-title">Today's signals</div>
+      <div class="feed-sub">AI reads EU news &amp; policy papers · tags which 2050 path each story nudges</div>
+    </div>
+    <div class="feed-list" id="feedList"></div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="footnote">
+    <p><b>What this is.</b> EU2050 reads EU policy documents and news every day, and uses that to adjust two long-run 2050 scenarios for Europe: one where integration stalls (<b>Scenario A</b>), and one where the EU becomes a genuine federation with a completed single market, capital markets union, digital sovereignty and an enlarged membership including the Western Balkans, Ukraine and Moldova (<b>Scenario B</b>).</p>
+    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
+    <div class="pipeline">
+      <span class="step">Eurostat population data</span>
+      <span class="arrow">→</span>
+      <span class="step">EU news &amp; Council/Commission documents</span>
+      <span class="arrow">→</span>
+      <span class="step">AI extraction (Claude)</span>
+      <span class="arrow">→</span>
+      <span class="step">Scenario scores updated</span>
+      <span class="arrow">→</span>
+      <span class="step">Maps &amp; feed refreshed</span>
+    </div>
+  </section>
+
+</div>
+
+<script src="geodata.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
