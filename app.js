@@ -49,16 +49,15 @@
 
   function fedColor(score, isNew){
     if(score === undefined) return '#23262f';
-    if(isNew) return '#2dd4bf'; // bright teal for new accessions
+    if(isNew) return '#a78bfa'; // bright lavender for new accessions
     const stops = [
-      {s:0.4, c:[124,58,237]},
-      {s:0.6, c:[124,58,237]},   // deep teal
-      {s:0.8, c:[124,58,237]},
-      {s:0.95, c:[124,58,237]} // brighter teal core
+      {s:0.4, c:[35,30,46]},
+      {s:0.6, c:[60,40,90]},
+      {s:0.8, c:[94,58,140]},
+      {s:0.95, c:[139,92,210]}
     ];
     return interpolateColor(score, stops);
   }
-
   function interpolateColor(value, stops){
     if(value <= stops[0].s) return rgb(stops[0].c);
     if(value >= stops[stops.length-1].s) return rgb(stops[stops.length-1].c);
