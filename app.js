@@ -53,7 +53,7 @@
     const stops = [
       {s:0.4, c:[28,38,46]},
       {s:0.6, c:[20,70,66]},   // deep teal
-      {s:0.8, c:[26,110,100]},
+      {s:0.8, c:[124,58,237]},
       {s:0.95, c:[124,58,237]} // brighter teal core
     ];
     return interpolateColor(score, stops);
