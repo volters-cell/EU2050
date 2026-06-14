@@ -37,13 +37,9 @@
   // ---------- Color scales ----------
   function fragColor(score, isEU){
     if(score === undefined) return '#23262f';
-    // dependency gradient: dark brown (low integration / high dependency) -> red (core, but still fragmented)
-    const stops = [
-      {s:0.2, c:[51,38,36]},   // dark brown — low integration
-      {s:0.35, c:[107,58,42]}, // mid brown
-      {s:0.45, c:[156,64,45]}, // brown-red
-      {s:0.6, c:[196,69,58]}   // red — core, still fragmented
-    ];
+    if(isEU) return '#c4453a';      // current EU members — solid red
+    return '#5a3a36';                // non-EU neighbours — faded/muted
+  };
     return interpolateColor(score, stops);
   }
 
