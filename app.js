@@ -118,6 +118,10 @@
           ? fragColor(score, country.eu)
           : fedColor(score, false); // new accessions appear gradually
       }
+      function fedColor(score, isNew){
+    if(score === undefined) return '#23262f';
+    return '#7c5cd6';
+  }
       path.setAttribute('fill', fill);
       svgEl.appendChild(path);
 
