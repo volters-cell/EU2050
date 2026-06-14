@@ -116,7 +116,7 @@
         const score = blendScore(country, scenario, year);
         fill = scenario === 'frag'
           ? fragColor(score, country.eu)
-          : fedColor(score, country.fedNew && year >= 2034); // new accessions appear gradually
+          : fedColor(score, false); // new accessions appear gradually
       }
       path.setAttribute('fill', fill);
       svgEl.appendChild(path);
