@@ -149,10 +149,20 @@
   }
 
   // ---------- News feed ----------
+  let feedData = data.feed || [];
+  let feedUpdated = data.feedUpdated || '';
+
+  function updateFeedMeta(){
+    const updatedEl = document.getElementById('feedUpdated');
+    if(updatedEl){
+      updatedEl.textContent = feedUpdated || 'Unknown';
+    }
+  }
+
   function buildFeed(){
     const list = document.getElementById('feedList');
     list.innerHTML = '';
-    data.feed.forEach(item => {
+    feedData.forEach(item => {
       const row = document.createElement('div');
       row.className = 'feed-item';
       row.innerHTML = `
@@ -170,6 +180,26 @@
     });
   }
 
+  async function loadFeedData(){
+    try {
+      const resp = await fetch('feed.json?t=' + Date.now());
+      if(resp.ok){
+        const json = await resp.json();
+        if(Array.isArray(json.feed)) feedData = json.feed;
+        if(json.feedUpdated) feedUpdated = json.feedUpdated;
+      }
+    } catch (err) {
+      console.warn('Unable to fetch feed.json, using embedded feed data.', err);
+    }
+    buildFeed();
+    updateFeedMeta();
+  }
+
+  function scheduleFeedRefresh(){
+    const oneDay = 24 * 60 * 60 * 1000;
+    setInterval(loadFeedData, oneDay);
+  }
+
   // ---------- Init ----------
   function render(year){
     buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
@@ -184,7 +214,8 @@
   const slider = document.getElementById('yearSlider');
   slider.addEventListener('input', () => render(parseInt(slider.value, 10)));
 
-  buildFeed();
+  loadFeedData();
+  scheduleFeedRefresh();
   render(2050);
 
 })();

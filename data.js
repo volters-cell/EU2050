@@ -186,6 +186,21 @@ window.EU2050_DATA = {
       fragNote:"Small economy, vulnerable to external pressure while accession talks proceed slowly.",
       fedNote:"One of the fastest accessions, fully integrated into the federal single market and energy grid.",
       popFrag:"2.4M", popFed:"2.5M" },
+    "GEO": { name:"Georgia", eu:false,
+      fragScore:0.25, fedScore:0.78, fedNew:true,
+      fragNote:"EU accession is slowed by geopolitical tensions and domestic reform challenges.",
+      fedNote:"Joins the federation as a new eastern member, deepening EU energy and transport links with the South Caucasus.",
+      popFrag:"3.7M", popFed:"3.9M" },
+    "ARM": { name:"Armenia", eu:false,
+      fragScore:0.28, fedScore:0.78, fedNew:true,
+      fragNote:"Continues building ties with the EU while balancing relations with Russia and regional security partners.",
+      fedNote:"Becomes a federation partner, strengthening EU access to South Caucasus transport and digital corridors.",
+      popFrag:"3.0M", popFed:"3.1M" },
+    "AZE": { name:"Azerbaijan", eu:false,
+      fragScore:0.3, fedScore:0.78, fedNew:true,
+      fragNote:"Energy and geopolitical tensions leave its EU path uncertain despite economic interest in closer ties.",
+      fedNote:"Enters the federation with strategic energy and transport links to the Caspian and Black Sea regions.",
+      popFrag:"10.3M", popFed:"10.7M" },
 
     // --- Non-EU neighbours / not modelled as part of either scenario's core ---
     "GBR": { name:"United Kingdom", eu:false,
@@ -220,11 +235,40 @@ window.EU2050_DATA = {
     frag: { pop:"418M", members:"29", tech:"9%" },
     fed:  { pop:"503M", members:"33", tech:"22%" }
   },
+  feedUpdated: "18 Jun 2026",
 
   // ---- Sample AI-generated daily signal feed ----
   // In production this is regenerated daily by an automated pipeline that
   // reads EU news/policy documents and tags each story's likely pull on each scenario.
   feed: [
+    {
+      date:"18 Jun 2026",
+      headline:"EU agrees landmark AI governance roadmap, but implementation timeline remains contested",
+      ai:"Commission and member states outline common AI liability and certification rules while national regulators still negotiate enforcement powers.",
+      frag:"Highlights ongoing fragmentation in digital regulation",
+      fed:"Moves the federation closer to a single EU tech governance framework"
+    },
+    {
+      date:"17 Jun 2026",
+      headline:"European Parliament backs strengthened carbon border levy for imported steel and chemicals",
+      ai:"A new CBAM proposal seeks tighter enforcement on high-carbon imports, raising pressure on industry and trading partners.",
+      frag:"Increases trade tensions under a fractured climate policy regime",
+      fed:"Supports the federal green-industrial transition by aligning external carbon pricing"
+    },
+    {
+      date:"16 Jun 2026",
+      headline:"EU foreign ministers approve a joint connectivity package for the Western Balkans",
+      ai:"Funding and regulatory alignment for cross-border energy and data corridors are agreed, signalling deeper integration with candidate neighbours.",
+      frag:"Limited by separate national implementation plans",
+      fed:"Accelerates the federation’s eastern enlargement and infrastructure integration"
+    },
+    {
+      date:"15 Jun 2026",
+      headline:"Council debates migration and energy solidarity rules ahead of summer peak",
+      ai:"Member states are split over mandatory burden-sharing and fast-track renewable power sharing, exposing persistent EU coordination gaps.",
+      frag:"Highlights the limits of national-only crisis response",
+      fed:"Reinforces the need for a federal emergency energy and asylum framework"
+    },
     {
       date:"14 Jun 2026",
       headline:"Council fails to agree on unified chip-export control list",

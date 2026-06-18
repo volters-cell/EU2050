@@ -218,6 +218,21 @@
     letter-spacing:0.04em;
   }
   .legend-item{ display:flex; align-items:center; gap:6px; }
+
+  .feed-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+  }
+  .feed-meta{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+  }
   .swatch{ width:11px; height:11px; border-radius:2px; flex-shrink:0; }
 
   /* Country path */
@@ -551,8 +566,11 @@
   <!-- NEWS / AI SIGNAL FEED -->
   <section class="feed-section">
     <div class="feed-head">
-      <div class="feed-title">Today's signals</div>
-      <div class="feed-sub">AI reads EU news &amp; policy papers · tags which 2050 path each story nudges</div>
+      <div>
+        <div class="feed-title">Today's signals</div>
+        <div class="feed-sub">AI reads EU news &amp; policy papers · tags which 2050 path each story nudges</div>
+      </div>
+      <div class="feed-meta">Updated: <span id="feedUpdated">18 Jun 2026</span> · Auto-refreshes daily</div>
     </div>
     <div class="feed-list" id="feedList"></div>
   </section>

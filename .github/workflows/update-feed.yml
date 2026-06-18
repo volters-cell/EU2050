@@ -1,0 +1,33 @@
+name: Update EU2050 feed
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: |
+          npm init -y
+      - name: Run feed updater
+        run: |
+          node update-feed.js
+      - name: Commit updated feed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add feed.json data.js
+          git diff --quiet --cached || git commit -m 'Automated daily news/feed update'
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: 
+            ${{ secrets.GITHUB_TOKEN }}
