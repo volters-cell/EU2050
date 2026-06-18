@@ -130,22 +130,50 @@
   }
 
   // ---------- Stats ----------
+  function parsePopulation(value){
+    if(!value || typeof value !== 'string') return 0;
+    const match = value.match(/([0-9]+(?:\.[0-9]+)?)M/);
+    return match ? parseFloat(match[1]) : 0;
+  }
+
+  function countCountries(){
+    const countries = Object.values(data.countries || {});
+    const euMembers = countries.filter(c => c.eu);
+    const fedMembers = countries.filter(c => c.eu || c.fedNew);
+    const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
+    const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
+    return {
+      euCount: euMembers.length,
+      fedCount: fedMembers.length,
+      fragPop,
+      fedPop
+    };
+  }
+
   function updateStats(year){
     const t = (year - 2026) / (2050 - 2026);
+    const counts = countCountries();
 
-    const fragPopStart = 448, fragPopEnd = 418;
-    const fedPopStart = 448, fedPopEnd = 503;
-    const fragMembersStart = 27, fragMembersEnd = 29;
-    const fedMembersStart = 27, fedMembersEnd = 33;
     const fragTechStart = 11, fragTechEnd = 9;
     const fedTechStart = 11, fedTechEnd = 22;
 
-    document.getElementById('fragPop').textContent = Math.round(fragPopStart + (fragPopEnd-fragPopStart)*t) + 'M';
-    document.getElementById('fedPop').textContent = Math.round(fedPopStart + (fedPopEnd-fedPopStart)*t) + 'M';
-    document.getElementById('fragMembers').textContent = Math.round(fragMembersStart + (fragMembersEnd-fragMembersStart)*t);
-    document.getElementById('fedMembers').textContent = Math.round(fedMembersStart + (fedMembersEnd-fedMembersStart)*t);
+    document.getElementById('fragPop').textContent = Math.round(counts.fragPop) + 'M';
+    document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
+    document.getElementById('fragMembers').textContent = counts.euCount;
+    document.getElementById('fedMembers').textContent = counts.fedCount;
     document.getElementById('fragTech').textContent = Math.round(fragTechStart + (fragTechEnd-fragTechStart)*t) + '%';
     document.getElementById('fedTech').textContent = Math.round(fedTechStart + (fedTechEnd-fedTechStart)*t) + '%';
+  }
+
+  function setupStatInfoButtons(){
+    document.querySelectorAll('.stat-info').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = document.getElementById(button.dataset.target);
+        if(target){
+          target.classList.toggle('visible');
+        }
+      });
+    });
   }
 
   // ---------- News feed ----------
@@ -180,16 +208,74 @@
     });
   }
 
+  function classifyNewsHeadline(title){
+    const lower = title.toLowerCase();
+    if(/veto|block|stall|stalls|split|dispute|tension|crisis|slow|delay|uncertain|uneven|fragment/.test(lower)){
+      return {
+        frag:'Reinforces fragmentation',
+        fed:'Delays federal progress'
+      };
+    }
+    if(/agreement|joint|integrat|union|accession|deal|package|package|connected|shared|framework|strategy/.test(lower)){
+      return {
+        frag:'Highlights the limits of national coordination',
+        fed:'Positive — supports federal integration'
+      };
+    }
+    return {
+      frag:'Mixed signal for fragmentation',
+      fed:'Mixed signal for federation'
+    };
+  }
+
+  function parseNewsRss(xmlText){
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xmlText, 'application/xml');
+    const items = Array.from(doc.querySelectorAll('item')).slice(0, 6);
+    return items.map(item => {
+      const title = item.querySelector('title')?.textContent?.trim() || 'Untitled story';
+      const desc = item.querySelector('description')?.textContent?.trim() || '';
+      const pubDate = item.querySelector('pubDate')?.textContent?.trim() || '';
+      const signal = classifyNewsHeadline(title);
+      return {
+        date: pubDate.replace(/GMT$/,'').trim(),
+        headline: title,
+        ai: desc,
+        frag: signal.frag,
+        fed: signal.fed
+      };
+    });
+  }
+
+  async function fetchRemoteFeed(){
+    const rssUrl = 'https://www.euronews.com/rss?level=theme&name=news';
+    const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(rssUrl);
+    const resp = await fetch(proxyUrl);
+    if(!resp.ok) throw new Error('Remote feed request failed');
+    const text = await resp.text();
+    return parseNewsRss(text);
+  }
+
   async function loadFeedData(){
     try {
-      const resp = await fetch('feed.json?t=' + Date.now());
-      if(resp.ok){
-        const json = await resp.json();
-        if(Array.isArray(json.feed)) feedData = json.feed;
-        if(json.feedUpdated) feedUpdated = json.feedUpdated;
+      const remote = await fetchRemoteFeed();
+      if(Array.isArray(remote) && remote.length){
+        feedData = remote;
+        const today = new Date();
+        feedUpdated = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
       }
-    } catch (err) {
-      console.warn('Unable to fetch feed.json, using embedded feed data.', err);
+    } catch (primaryErr) {
+      console.warn('Unable to fetch external news feed, falling back to local data.', primaryErr);
+      try {
+        const resp = await fetch('feed.json?t=' + Date.now());
+        if(resp.ok){
+          const json = await resp.json();
+          if(Array.isArray(json.feed)) feedData = json.feed;
+          if(json.feedUpdated) feedUpdated = json.feedUpdated;
+        }
+      } catch (fallbackErr) {
+        console.warn('Unable to load local feed.json, using embedded feed data.', fallbackErr);
+      }
     }
     buildFeed();
     updateFeedMeta();
@@ -214,6 +300,7 @@
   const slider = document.getElementById('yearSlider');
   slider.addEventListener('input', () => render(parseInt(slider.value, 10)));
 
+  setupStatInfoButtons();
   loadFeedData();
   scheduleFeedRefresh();
   render(2050);

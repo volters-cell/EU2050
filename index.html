@@ -219,6 +219,30 @@
   }
   .legend-item{ display:flex; align-items:center; gap:6px; }
 
+  .stat-info{
+    background:transparent;
+    border:1px solid var(--ink-dim);
+    border-radius:50%;
+    width:18px;
+    height:18px;
+    color:var(--ink-dim);
+    font-size:0.78rem;
+    line-height:18px;
+    text-align:center;
+    margin-left:8px;
+    cursor:pointer;
+  }
+  .stat-note{
+    display:none;
+    margin-top:8px;
+    font-size:0.72rem;
+    color:var(--ink-dim);
+    line-height:1.4;
+  }
+  .stat-note.visible{
+    display:block;
+  }
+
   .feed-head{
     display:flex;
     align-items:center;
@@ -497,8 +521,9 @@
 
     <div class="stat-strip">
       <div class="stat">
-        <div class="stat-label">EU population</div>
+        <div class="stat-label">EU population <button class="stat-info" data-target="fragPopNote" aria-label="EU population source">?</button></div>
         <div class="stat-value" id="fragPop">418M</div>
+        <div class="stat-note" id="fragPopNote">Source: Eurostat baseline projections and scenario modelling for current EU membership. 2050 population is estimated from member state projections plus modelled demographic trends.</div>
       </div>
       <div class="stat">
         <div class="stat-label">Member states</div>
@@ -519,8 +544,8 @@
   <section class="scenario federal">
     <div class="scenario-head">
       <div>
-        <span class="scenario-tag">Scenario B · Federal leap</span>
-        <div class="scenario-title">A sovereign federation, 2050</div>
+        <span class="scenario-tag">Scenario B · United States of Europe</span>
+        <div class="scenario-title">United States of Europe, 2050</div>
       </div>
     </div>
     <div class="scenario-desc">
@@ -537,16 +562,14 @@
     </div>
 
     <div class="legend">
-      <div class="legend-item"><span class="swatch" style="background:#0f4a44"></span>Founding federal core</div>
-      <div class="legend-item"><span class="swatch" style="background:#1f8f80"></span>Joined federation</div>
-      <div class="legend-item"><span class="swatch" style="background:#2dd4bf"></span>New member (post-2026 accession)</div>
       <div class="legend-item"><span class="swatch" style="background:#23262f"></span>Non-EU / not modelled</div>
     </div>
 
     <div class="stat-strip">
       <div class="stat">
-        <div class="stat-label">Federation population</div>
+        <div class="stat-label">Federation population <button class="stat-info" data-target="fedPopNote" aria-label="Federation population source">?</button></div>
         <div class="stat-value" id="fedPop">503M</div>
+        <div class="stat-note" id="fedPopNote">Source: Eurostat projections for EU members plus candidate accession population assumptions. 2050 federation totals include modelled enlargement and demographic growth.</div>
       </div>
       <div class="stat">
         <div class="stat-label">Member states</div>
@@ -568,7 +591,7 @@
     <div class="feed-head">
       <div>
         <div class="feed-title">Today's signals</div>
-        <div class="feed-sub">AI reads EU news &amp; policy papers · tags which 2050 path each story nudges</div>
+        <div class="feed-sub">AI reads EU news &amp; policy papers from Euronews RSS · tags which 2050 path each story nudges</div>
       </div>
       <div class="feed-meta">Updated: <span id="feedUpdated">18 Jun 2026</span> · Auto-refreshes daily</div>
     </div>
