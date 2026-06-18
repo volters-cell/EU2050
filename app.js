@@ -66,6 +66,9 @@
     bg.setAttribute('fill','#0d1118');
     svgEl.appendChild(bg);
 
+    // countries that must never be coloured as federation members
+    const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
+
     geo.features.forEach(f => {
       const iso = f.properties.ISO3;
       const country = data.countries[iso];
@@ -73,14 +76,22 @@
       path.setAttribute('d', geometryToPath(f.geometry));
       path.setAttribute('class','country');
 
-      let fill = '#1a1e29';
+      // default non-member fill (matches legend non-EU swatch)
+      let fill = '#23262f';
+
+      // determine whether this ISO should be treated as a federation member
+      const isFedMember = country && (country.eu || country.fedNew) && !FED_EXCLUDE_ISOS.has(iso);
+
       if(country){
         const score = blendScore(country, scenario, year);
-        fill = scenario === 'frag'
-          ? fragColor(score, country.eu)
-          : '#7c5cd6';
-      } else if(scenario === 'fed') {
-        fill = '#7c5cd6';
+        if(scenario === 'frag'){
+          fill = fragColor(score, country.eu);
+        } else {
+          fill = isFedMember ? '#7c5cd6' : '#23262f';
+        }
+      } else {
+        // no explicit country data: keep non-member styling (do not auto-colour unknown features purple)
+        fill = '#23262f';
       }
       path.setAttribute('fill', fill);
       svgEl.appendChild(path);
@@ -139,14 +150,15 @@
   }
 
   function countCountries(){
-    const countries = Object.values(data.countries || {});
-    const euMembers = countries.filter(c => c.eu);
-    const fedMembers = countries.filter(c => c.eu || c.fedNew);
+    const entries = Object.entries(data.countries || {});
+    const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
+    const euMembers = entries.filter(([iso, c]) => c.eu).map(([iso,c]) => c);
+    const fedMembers = entries.filter(([iso, c]) => (c.eu || c.fedNew) && !FED_EXCLUDE_ISOS.has(iso)).map(([iso,c]) => c);
     const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
     const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
     return {
-      euCount: 27,
-      fedCount: 43,
+      euCount: euMembers.length,
+      fedCount: 42,
       fragPop,
       fedPop
     };
