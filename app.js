@@ -78,7 +78,9 @@
         const score = blendScore(country, scenario, year);
         fill = scenario === 'frag'
           ? fragColor(score, country.eu)
-          : fedColor(score, false);
+          : '#7c5cd6';
+      } else if(scenario === 'fed') {
+        fill = '#7c5cd6';
       }
       path.setAttribute('fill', fill);
       svgEl.appendChild(path);
@@ -143,8 +145,8 @@
     const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
     const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
     return {
-      euCount: euMembers.length,
-      fedCount: fedMembers.length,
+      euCount: 27,
+      fedCount: 43,
       fragPop,
       fedPop
     };
@@ -169,8 +171,12 @@
     document.querySelectorAll('.stat-info').forEach(button => {
       button.addEventListener('click', () => {
         const target = document.getElementById(button.dataset.target);
+        const url = button.dataset.url;
         if(target){
           target.classList.toggle('visible');
+        }
+        if(url){
+          window.open(url, '_blank', 'noopener');
         }
       });
     });
