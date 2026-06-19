@@ -159,7 +159,7 @@ window.EU2050_DATA = {
       fragNote:"Furthest along in accession talks but full membership remains pending.",
       fedNote:"One of the earliest Balkan accessions, fully part of the federal single market by the 2030s.",
       popFrag:"0.6M", popFed:"0.62M" },
-    "MKD": { name:"The former Yugoslav Republic of Macedonia", eu:false,
+    "MKD": { name:"North Macedonia", eu:false,
       fragScore:0.3, fedScore:0.76, fedNew:true,
       fragNote:"Name and constitutional disputes have repeatedly slowed its EU path.",
       fedNote:"Joins the federation, contributing to a fully connected Balkan energy and transport corridor.",

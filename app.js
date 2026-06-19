@@ -102,12 +102,24 @@
       // Apply persistent highlight state if the SVG requests it (keeps highlights across re-renders)
       try {
         if(scenario === 'frag' && svgEl.getAttribute('data-eu-highlight') === '1'){
-          if(country && country.eu){ path.setAttribute('stroke','#ffcb47'); path.setAttribute('stroke-width','1.6'); }
-          else { path.setAttribute('stroke','#0b0e14'); path.setAttribute('stroke-width','0.5'); }
+          if(country && country.eu){
+            path.setAttribute('stroke','#ffcb47');
+            path.setAttribute('stroke-width','1.6');
+            path.setAttribute('fill','#ff7d72');
+          } else {
+            path.setAttribute('stroke','#0b0e14');
+            path.setAttribute('stroke-width','0.5');
+          }
         }
         if(scenario === 'fed' && svgEl.getAttribute('data-fed-highlight') === '1'){
-          if(country && (country.eu || country.fedNew)){ path.setAttribute('stroke','#7c5cd6'); path.setAttribute('stroke-width','1.6'); }
-          else { path.setAttribute('stroke','#0b0e14'); path.setAttribute('stroke-width','0.5'); }
+          if(country && (country.eu || country.fedNew)){
+            path.setAttribute('stroke','#7c5cd6');
+            path.setAttribute('stroke-width','1.6');
+            path.setAttribute('fill','#9b7bff');
+          } else {
+            path.setAttribute('stroke','#0b0e14');
+            path.setAttribute('stroke-width','0.5');
+          }
         }
       } catch(e) {}
 
@@ -209,11 +221,16 @@
     tooltipEl.style.opacity = '0';
   }
 
-  function formatCountryGDP(country){
+  function formatCountryGDP(country, scenario){
     if(country.gdp2050) return country.gdp2050;
     const pop = parsePopulation(country.popFed || country.popFrag || '0M');
     if(!pop) return '—';
-    const multiplier = country.eu ? 0.07 : 0.04;
+    const baseMultiplier = country.eu ? 0.07 : 0.04;
+    let multiplier = baseMultiplier;
+    if(scenario === 'fed'){
+      const boost = country.eu ? 0.02 : (country.fedNew ? 0.03 : 0.015);
+      multiplier += boost;
+    }
     return `${(pop * multiplier).toFixed(1)}T USD`;
   }
 
@@ -228,7 +245,7 @@
   function showDetail(detailEl, country, scenario, year, iso){
     const note = scenario === 'frag' ? country.fragNote : country.fedNote;
     const pop = scenario === 'frag' ? country.popFrag : country.popFed;
-    const gdp = formatCountryGDP(country);
+    const gdp = formatCountryGDP(country, scenario);
     const hdi = formatCountryHDI(country);
     const statusLine = country.fedNew
       ? (scenario === 'fed'
@@ -236,11 +253,15 @@
           : 'EU candidate / accession in progress')
       : (country.eu ? 'EU member state' : 'Non-EU country');
     const unText = 'United Nations member state';
+    const scenarioImpact = scenario === 'fed'
+      ? 'Unified exchange and capital market boost fuels job creation, startup funding and unicorn growth.'
+      : 'Fragmented national markets limit cross-border capital, slowing startup scaling and unicorn creation.';
 
     detailEl.innerHTML = `
       <div class="detail-country">${country.name} — ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
       <div class="detail-row"><span>Projected GDP (2050)</span><span>${gdp}</span></div>
+      <div class="detail-row"><span>GDP outlook impact</span><span>${scenarioImpact}</span></div>
       <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
       <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
       <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '—'}</span></div>
