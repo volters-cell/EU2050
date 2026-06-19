@@ -95,6 +95,17 @@
         fill = '#23262f';
       }
       path.setAttribute('fill', fill);
+
+      // Apply persistent highlight state if the SVG requests it (keeps highlights across re-renders)
+      try {
+        if(scenario === 'frag' && svgEl.getAttribute('data-eu-highlight') === '1'){
+          if(country && country.eu){ path.setAttribute('opacity','1'); } else { path.setAttribute('opacity','0.25'); }
+        }
+        if(scenario === 'fed' && svgEl.getAttribute('data-fed-highlight') === '1'){
+          if(country && (country.eu || country.fedNew)){ path.setAttribute('opacity','1'); } else { path.setAttribute('opacity','0.25'); }
+        }
+      } catch(e) {}
+
       svgEl.appendChild(path);
 
       if(country){
@@ -111,15 +122,15 @@
     const svg = document.getElementById('mapFrag');
     const active = svg.getAttribute('data-eu-highlight') === '1';
     if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('opacity','1'); });
       svg.setAttribute('data-eu-highlight','0');
       return;
     }
     svg.querySelectorAll('path.country').forEach(p => {
       const iso = p.getAttribute('data-iso');
       const c = data.countries[iso];
-      if(c && c.eu){ p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6'); }
-      else { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); }
+      if(c && c.eu){ p.setAttribute('opacity','1'); }
+      else { p.setAttribute('opacity','0.25'); }
     });
     svg.setAttribute('data-eu-highlight','1');
   }
@@ -129,7 +140,7 @@
     const svg = document.getElementById('mapFed');
     const active = svg.getAttribute('data-fed-highlight') === '1';
     if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('opacity','1'); });
       svg.setAttribute('data-fed-highlight','0');
       return;
     }
@@ -137,11 +148,9 @@
       const iso = p.getAttribute('data-iso');
       const c = data.countries[iso];
       if(c && (c.eu || c.fedNew)){
-        // federation members: subtle purple outline
-        p.setAttribute('stroke','#7c5cd6'); p.setAttribute('stroke-width','1.6');
+        p.setAttribute('opacity','1');
       } else {
-        // non-members: dim border
-        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
+        p.setAttribute('opacity','0.25');
       }
     });
     svg.setAttribute('data-fed-highlight','1');
