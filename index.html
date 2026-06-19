@@ -569,7 +569,16 @@
       <div class="stat">
         <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
         <div class="stat-value" id="fedPop">503M</div>
-        <div class="stat-note" id="fedPopNote">Approximation: 503M is based on Eurostat population projections for current EU members plus estimated accession populations from candidate countries and demographic growth assumptions for 42 federal members.</div>
+        <div class="stat-note" id="fedPopNote">
+          <div><b>How the federation population (695M) is calculated — method and sources</b></div>
+          <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
+            <li>Baseline: start from the EU-27 population baseline (Eurostat 2026 baseline), approximately 448 million.</li>
+            <li>Add accession and candidate populations expected to be integrated into the federation by 2050 (illustrative additions used here): United Kingdom (~71M), Turkey (~90M), Ukraine (~35M), Moldova (~2.5M), Western Balkans combined (~17M), and South Caucasus / neighbouring additions (~18M). These subtotal to roughly ~233M.</li>
+            <li>Apply demographic change to 2050 (fertility, mortality, and net migration) using medium-variant population projections from Eurostat and UN World Population Prospects; together these raise the enlarged-population subtotal to the rounded figure of ~695M by 2050.</li>
+            <li>Notes on rounding and uncertainty: all intermediate country figures are rounded to one decimal or whole millions for presentation; final totals are illustrative and sensitive to migration assumptions, accession timing, and future demographic trends.</li>
+          </ol>
+          <div style="margin-top:6px;">Primary sources and references: <a href="https://ec.europa.eu/eurostat/web/population-demography-migration-projections">Eurostat population and projections</a>; <a href="https://population.un.org/wpp/">UN World Population Prospects (WPP)</a>; national statistical offices for individual country baselines (e.g., ONS, TurkStat, UkrStat). For methodological details see Eurostat and UN WPP medium-variant assumptions (fertility, mortality, migration).</div>
+        </div>
       </div>
       <div class="stat">
         <div class="stat-label">Member states</div>
