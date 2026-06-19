@@ -75,6 +75,7 @@
       const path = document.createElementNS(ns,'path');
       path.setAttribute('d', geometryToPath(f.geometry));
       path.setAttribute('class','country');
+      path.setAttribute('data-iso', iso);
 
       // default non-member fill (matches legend non-EU swatch)
       let fill = '#23262f';
@@ -102,6 +103,71 @@
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
         path.addEventListener('click', () => showDetail(detailEl, country, scenario, year));
       }
+    });
+  }
+
+  // Toggle highlighting of EU member internal borders on the fragmented map
+  function toggleEUBordersFragMap(){
+    const svg = document.getElementById('mapFrag');
+    const active = svg.getAttribute('data-eu-highlight') === '1';
+    if(active){
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
+      svg.setAttribute('data-eu-highlight','0');
+      return;
+    }
+    svg.querySelectorAll('path.country').forEach(p => {
+      const iso = p.getAttribute('data-iso');
+      const c = data.countries[iso];
+      if(c && c.eu){ p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6'); }
+      else { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); }
+    });
+    svg.setAttribute('data-eu-highlight','1');
+  }
+
+  // Toggle highlighting of federation external borders on the federal map
+  function toggleFedBordersFedMap(){
+    const svg = document.getElementById('mapFed');
+    const active = svg.getAttribute('data-fed-highlight') === '1';
+    if(active){
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
+      svg.setAttribute('data-fed-highlight','0');
+      return;
+    }
+    svg.querySelectorAll('path.country').forEach(p => {
+      const iso = p.getAttribute('data-iso');
+      const c = data.countries[iso];
+      if(c && (c.eu || c.fedNew)){
+        // federation members: subtle purple outline
+        p.setAttribute('stroke','#7c5cd6'); p.setAttribute('stroke-width','1.6');
+      } else {
+        // non-members: dim border
+        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
+      }
+    });
+    svg.setAttribute('data-fed-highlight','1');
+  }
+
+  function setupStatValueButtons(){
+    const mapToggle = {
+      'fragMembers': toggleEUBordersFragMap,
+      'fedMembers': toggleFedBordersFedMap
+    };
+
+    Object.keys(mapToggle).forEach(id => {
+      const el = document.getElementById(id);
+      if(el){ el.style.cursor = 'pointer'; el.addEventListener('click', mapToggle[id]); }
+    });
+
+    const noteMap = {
+      'fragPop':'fragPopNote',
+      'fedPop':'fedPopNote',
+      'fragTech':'fragTechNote',
+      'fedTech':'fedTechNote'
+    };
+    Object.keys(noteMap).forEach(id => {
+      const el = document.getElementById(id);
+      const note = document.getElementById(noteMap[id]);
+      if(el && note){ el.style.cursor = 'pointer'; el.addEventListener('click', () => note.classList.toggle('visible')); }
     });
   }
 
@@ -328,6 +394,7 @@
   slider.addEventListener('input', () => render(parseInt(slider.value, 10)));
 
   setupStatInfoButtons();
+  setupStatValueButtons();
   loadFeedData();
   scheduleFeedRefresh();
   render(2050);
