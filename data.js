@@ -203,28 +203,28 @@ window.EU2050_DATA = {
       popFrag:"10.3M", popFed:"10.7M" },
 
     // --- Non-EU neighbours / not modelled as part of either scenario's core ---
-    "GBR": { name:"United Kingdom", eu:false,
+    "GBR": { name:"United Kingdom", eu:false, fedNew:true,
       fragScore:0.5, fedScore:0.4,
       fragNote:"Remains outside the EU; closer alignment on some standards but no formal reintegration.",
       fedNote:"Stays outside the federation; maintains a close but separate trade and security relationship.",
       popFrag:"70M", popFed:"71M" },
     "CHE": { name:"Switzerland", eu:false,
-      fragScore:0.5, fedScore:0.45,
+      fragScore:0.5, fedScore:0.45, fedNew:true,
       fragNote:"Maintains bilateral arrangements rather than full integration.",
       fedNote:"Remains formally outside the federation but deeply linked via bilateral treaties.",
       popFrag:"9.5M", popFed:"9.6M" },
     "NOR": { name:"Norway", eu:false,
-      fragScore:0.5, fedScore:0.45,
+      fragScore:0.5, fedScore:0.45, fedNew:true,
       fragNote:"EEA member but outside core EU decision-making on digital and capital markets policy.",
       fedNote:"Energy ties deepen with the federation's grid, though Norway stays outside formal membership.",
       popFrag:"5.7M", popFed:"5.8M" },
     "ISL": { name:"Iceland", eu:false,
-      fragScore:0.5, fedScore:0.45,
+      fragScore:0.5, fedScore:0.45, fedNew:true,
       fragNote:"Limited engagement with EU-level integration debates.",
       fedNote:"Remains outside the federation, EEA-linked.",
       popFrag:"0.42M", popFed:"0.43M" },
     "TUR": { name:"Turkey", eu:false,
-      fragScore:0.35, fedScore:0.3,
+      fragScore:0.35, fedScore:0.3, fedNew:true,
       fragNote:"Long-frozen accession process; relationship managed through customs union and migration deals.",
       fedNote:"Accession remains off the table; relationship continues via separate strategic partnership.",
       popFrag:"88M", popFed:"90M" }
@@ -235,7 +235,7 @@ window.EU2050_DATA = {
     frag: { pop:"418M", members:"29", tech:"9%" },
     fed:  { pop:"503M", members:"33", tech:"22%" }
   },
-  feedUpdated: "18 Jun 2026",
+  feedUpdated: "19 Jun 2026",
 
   // ---- Sample AI-generated daily signal feed ----
   // In production this is regenerated daily by an automated pipeline that

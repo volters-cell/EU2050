@@ -301,7 +301,16 @@
 
   function scheduleFeedRefresh(){
     const oneDay = 24 * 60 * 60 * 1000;
-    setInterval(loadFeedData, oneDay);
+    // Schedule first refresh at next 08:00 local time, then every 24h
+    const now = new Date();
+    const next = new Date(now);
+    next.setHours(8,0,0,0);
+    if(next <= now) next.setDate(next.getDate() + 1);
+    const initialDelay = next - now;
+    setTimeout(() => {
+      loadFeedData();
+      setInterval(loadFeedData, oneDay);
+    }, initialDelay);
   }
 
   // ---------- Init ----------
