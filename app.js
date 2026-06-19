@@ -95,14 +95,19 @@
         fill = '#23262f';
       }
       path.setAttribute('fill', fill);
+      path.setAttribute('stroke','#0b0e14');
+      path.setAttribute('stroke-width','0.5');
+      path.setAttribute('stroke-linejoin','round');
 
       // Apply persistent highlight state if the SVG requests it (keeps highlights across re-renders)
       try {
         if(scenario === 'frag' && svgEl.getAttribute('data-eu-highlight') === '1'){
-          if(country && country.eu){ path.setAttribute('opacity','1'); } else { path.setAttribute('opacity','0.25'); }
+          if(country && country.eu){ path.setAttribute('stroke','#ffcb47'); path.setAttribute('stroke-width','1.6'); }
+          else { path.setAttribute('stroke','#0b0e14'); path.setAttribute('stroke-width','0.5'); }
         }
         if(scenario === 'fed' && svgEl.getAttribute('data-fed-highlight') === '1'){
-          if(country && (country.eu || country.fedNew)){ path.setAttribute('opacity','1'); } else { path.setAttribute('opacity','0.25'); }
+          if(country && (country.eu || country.fedNew)){ path.setAttribute('stroke','#7c5cd6'); path.setAttribute('stroke-width','1.6'); }
+          else { path.setAttribute('stroke','#0b0e14'); path.setAttribute('stroke-width','0.5'); }
         }
       } catch(e) {}
 
@@ -112,7 +117,7 @@
         path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl));
         path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
-        path.addEventListener('click', () => showDetail(detailEl, country, scenario, year));
+        path.addEventListener('click', () => showDetail(detailEl, country, scenario, year, iso));
       }
     });
   }
@@ -122,15 +127,15 @@
     const svg = document.getElementById('mapFrag');
     const active = svg.getAttribute('data-eu-highlight') === '1';
     if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('opacity','1'); });
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
       svg.setAttribute('data-eu-highlight','0');
       return;
     }
     svg.querySelectorAll('path.country').forEach(p => {
       const iso = p.getAttribute('data-iso');
       const c = data.countries[iso];
-      if(c && c.eu){ p.setAttribute('opacity','1'); }
-      else { p.setAttribute('opacity','0.25'); }
+      if(c && c.eu){ p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6'); }
+      else { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); }
     });
     svg.setAttribute('data-eu-highlight','1');
   }
@@ -140,7 +145,7 @@
     const svg = document.getElementById('mapFed');
     const active = svg.getAttribute('data-fed-highlight') === '1';
     if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('opacity','1'); });
+      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
       svg.setAttribute('data-fed-highlight','0');
       return;
     }
@@ -148,9 +153,9 @@
       const iso = p.getAttribute('data-iso');
       const c = data.countries[iso];
       if(c && (c.eu || c.fedNew)){
-        p.setAttribute('opacity','1');
+        p.setAttribute('stroke','#7c5cd6'); p.setAttribute('stroke-width','1.6');
       } else {
-        p.setAttribute('opacity','0.25');
+        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
       }
     });
     svg.setAttribute('data-fed-highlight','1');
@@ -164,7 +169,15 @@
 
     Object.keys(mapToggle).forEach(id => {
       const el = document.getElementById(id);
-      if(el){ el.style.cursor = 'pointer'; el.addEventListener('click', mapToggle[id]); }
+      if(el){
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', mapToggle[id]);
+        const parent = el.closest('.stat');
+        if(parent){
+          parent.style.cursor = 'pointer';
+          parent.addEventListener('click', mapToggle[id]);
+        }
+      }
     });
 
     const noteMap = {
@@ -196,22 +209,40 @@
     tooltipEl.style.opacity = '0';
   }
 
-  function showDetail(detailEl, country, scenario, year){
+  function formatCountryGDP(country){
+    if(country.gdp2050) return country.gdp2050;
+    const pop = parsePopulation(country.popFed || country.popFrag || '0M');
+    if(!pop) return '—';
+    const multiplier = country.eu ? 0.07 : 0.04;
+    return `${(pop * multiplier).toFixed(1)}T USD`;
+  }
+
+  function formatCountryHDI(country){
+    if(country.hdi2050) return country.hdi2050;
+    const base = country.eu ? 0.89 : 0.76;
+    const score = country.fragScore !== undefined ? country.fragScore : 0.45;
+    const hdi = Math.min(0.96, base + (score - 0.4) * 0.2);
+    return hdi.toFixed(2);
+  }
+
+  function showDetail(detailEl, country, scenario, year, iso){
     const note = scenario === 'frag' ? country.fragNote : country.fedNote;
     const pop = scenario === 'frag' ? country.popFrag : country.popFed;
-    const score = blendScore(country, scenario, year);
-    const pct = score !== undefined ? Math.round(score * 100) + '%' : '—';
-    const label = scenario === 'frag' ? 'Sovereignty &amp; integration index' : 'Federal integration index';
+    const gdp = formatCountryGDP(country);
+    const hdi = formatCountryHDI(country);
     const statusLine = country.fedNew
       ? (scenario === 'fed'
           ? (year >= 2034 ? 'Federal member state (new accession)' : 'Pre-accession, integrating')
           : 'EU candidate / accession in progress')
       : (country.eu ? 'EU member state' : 'Non-EU country');
+    const unText = 'United Nations member state';
 
     detailEl.innerHTML = `
       <div class="detail-country">${country.name} — ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
-      <div class="detail-row"><span>${label}</span><span>${pct}</span></div>
+      <div class="detail-row"><span>Projected GDP (2050)</span><span>${gdp}</span></div>
+      <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
+      <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
       <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '—'}</span></div>
       <div class="detail-note">${note || ''}</div>
     `;
