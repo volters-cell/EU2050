@@ -110,6 +110,10 @@
     'GEO': 2036, // Georgia
     'ARM': 2038, // Armenia
     'AZE': 2040, // Azerbaijan
+    // EEA/EFTA countries
+    'NOR': 2038, // Norway
+    'ISL': 2038, // Iceland
+    'CHE': 2042, // Switzerland
     // Others
     'GBR': 2040, // United Kingdom (rejoining)
     'TUR': 2045  // Turkey
