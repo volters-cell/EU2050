@@ -33,12 +33,51 @@
 
   // ---------- Color scales ----------
   function fragColor(score, isEU){
-    if(isEU) return '#c4453a';   // current EU members — solid red
-    return '#5a3a36';             // non-EU neighbours — faded/muted
+    if(isEU) return '#c4453a';   // current EU members  solid red
+    return '#5a3a36';             // non-EU neighbours  faded/muted
   }
 
   function fedColor(score, isNew){
-    return '#7c5cd6';              // federation members — single unified purple
+    return '#7c5cd6';              // federation members  single unified purple
+  }
+
+  // ---------- Theme switching ----------
+  function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'night' : 'light';
+    html.setAttribute('data-theme', newTheme);
+    
+    // Update button text and icon
+    const themeText = document.getElementById('themeText');
+    const themeIcon = document.getElementById('themeIcon');
+    
+    if (newTheme === 'light') {
+      themeText.textContent = 'Night';
+      themeIcon.textContent = '\u263E'; // Moon icon
+    } else {
+      themeText.textContent = 'Light';
+      themeIcon.textContent = '\u2600'; // Sun icon
+    }
+    
+    // Save preference to localStorage
+    localStorage.setItem('theme', newTheme);
+    
+    // Update maps and UI
+    render(currentYear);
+  }
+
+  // Load saved theme
+  function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'night';
+    if (savedTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.getElementById('themeText').textContent = 'Night';
+      document.getElementById('themeIcon').textContent = '\u263E';
+    } else {
+      document.getElementById('themeText').textContent = 'Light';
+      document.getElementById('themeIcon').textContent = '\u2600';
+    }
   }
 
   // ---------- Year interpolation ----------
@@ -55,6 +94,95 @@
     return baseline + (target - baseline) * t;
   }
 
+  // ---------- Accession timeline data ----------
+  // Define when countries join in Scenario B
+  const accessionTimeline = {
+    // Western Balkans
+    'SRB': 2030, // Serbia
+    'MNE': 2028, // Montenegro
+    'ALB': 2030, // Albania
+    'MKD': 2032, // North Macedonia
+    'BIH': 2034, // Bosnia and Herzegovina
+    'XKX': 2036, // Kosovo
+    // Eastern Europe
+    'UKR': 2035, // Ukraine
+    'MDA': 2030, // Moldova
+    'GEO': 2036, // Georgia
+    'ARM': 2038, // Armenia
+    'AZE': 2040, // Azerbaijan
+    // Others
+    'GBR': 2040, // United Kingdom (rejoining)
+    'TUR': 2045  // Turkey
+  };
+
+  // Get countries that have joined by a given year in Scenario B
+  function getJoinedCountries(year) {
+    const joined = new Set();
+    // All current EU members are always in
+    Object.entries(data.countries || {}).forEach(([iso, c]) => {
+      if (c.eu) joined.add(iso);
+    });
+    
+    // Add countries that join by this year
+    Object.entries(accessionTimeline).forEach(([iso, joinYear]) => {
+      if (joinYear <= year) joined.add(iso);
+    });
+    
+    return joined;
+  }
+
+  // Get accession list for display
+  function getAccessionList(year, scenario) {
+    if (scenario === 'frag') {
+      // Scenario A: slower accession
+      const list = [];
+      if (year >= 2030) list.push('Western Balkans (partial) - 2030+');
+      if (year >= 2035) list.push('Ukraine - 2035+');
+      if (year >= 2036) list.push('Moldova - 2036+');
+      return list;
+    } else {
+      // Scenario B: full accession timeline
+      const list = [];
+      const sortedAccessions = Object.entries(accessionTimeline)
+        .filter(([iso, joinYear]) => joinYear <= year)
+        .sort((a, b) => a[1] - b[1]);
+      
+      sortedAccessions.forEach(([iso, joinYear]) => {
+        const country = data.countries[iso];
+        if (country) {
+          list.push(`${country.name} - ${joinYear}`);
+        }
+      });
+      
+      return list;
+    }
+  }
+
+  // Update accession timelines
+  function updateAccessionTimelines(year) {
+    const fragList = document.getElementById('fragAccessionList');
+    const fedList = document.getElementById('fedAccessionList');
+    const fedYearDisplay = document.getElementById('fedYearDisplay');
+    
+    if (fragList) {
+      const fragAccessions = getAccessionList(year, 'frag');
+      fragList.innerHTML = fragAccessions.length > 0 
+        ? fragAccessions.map(item => `<li>${item}</li>`).join('')
+        : '<li>No new accessions yet</li>';
+    }
+    
+    if (fedList) {
+      const fedAccessions = getAccessionList(year, 'fed');
+      fedList.innerHTML = fedAccessions.length > 0
+        ? fedAccessions.map(item => `<li><span class="year-marker">${item.split(' - ')[1]}</span>: ${item.split(' - ')[0]}</li>`).join('')
+        : '<li>Starting with EU-27</li>';
+    }
+    
+    if (fedYearDisplay) {
+      fedYearDisplay.textContent = year;
+    }
+  }
+
   // ---------- Build SVG for one map ----------
   function buildMap(svgEl, scenario, tooltipEl, detailEl, year){
     svgEl.innerHTML = '';
@@ -69,6 +197,9 @@
     // countries that must never be coloured as federation members
     const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
 
+    // Get joined countries for this year (Scenario B only)
+    const joinedCountries = scenario === 'fed' ? getJoinedCountries(year) : new Set();
+
     geo.features.forEach(f => {
       const iso = f.properties.ISO3;
       const country = data.countries[iso];
@@ -81,7 +212,7 @@
       let fill = '#23262f';
 
       // determine whether this ISO should be treated as a federation member
-      const isFedMember = country && (country.eu || country.fedNew) && !FED_EXCLUDE_ISOS.has(iso);
+      const isFedMember = country && (country.eu || (country.fedNew && joinedCountries.has(iso))) && !FED_EXCLUDE_ISOS.has(iso);
 
       if(country){
         const score = blendScore(country, scenario, year);
@@ -112,7 +243,7 @@
           }
         }
         if(scenario === 'fed' && svgEl.getAttribute('data-fed-highlight') === '1'){
-          if(country && (country.eu || country.fedNew)){
+          if(country && (country.eu || (country.fedNew && joinedCountries.has(iso)))){
             path.setAttribute('stroke','#7c5cd6');
             path.setAttribute('stroke-width','1.6');
             path.setAttribute('fill','#9b7bff');
@@ -156,6 +287,9 @@
   function toggleFedBordersFedMap(){
     const svg = document.getElementById('mapFed');
     const active = svg.getAttribute('data-fed-highlight') === '1';
+    const year = parseInt(document.getElementById('yearSlider').value, 10);
+    const joinedCountries = getJoinedCountries(year);
+    
     if(active){
       svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
       svg.setAttribute('data-fed-highlight','0');
@@ -164,7 +298,7 @@
     svg.querySelectorAll('path.country').forEach(p => {
       const iso = p.getAttribute('data-iso');
       const c = data.countries[iso];
-      if(c && (c.eu || c.fedNew)){
+      if(c && (c.eu || (c.fedNew && joinedCountries.has(iso)))){
         p.setAttribute('stroke','#7c5cd6'); p.setAttribute('stroke-width','1.6');
       } else {
         p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
@@ -224,7 +358,7 @@
   function formatCountryGDP(country, scenario){
     if(country.gdp2050) return country.gdp2050;
     const pop = parsePopulation(country.popFed || country.popFrag || '0M');
-    if(!pop) return '—';
+    if(!pop) return '\u2014';
     const baseMultiplier = country.eu ? 0.07 : 0.04;
     let multiplier = baseMultiplier;
     if(scenario === 'fed'){
@@ -247,24 +381,37 @@
     const pop = scenario === 'frag' ? country.popFrag : country.popFed;
     const gdp = formatCountryGDP(country, scenario);
     const hdi = formatCountryHDI(country);
-    const statusLine = country.fedNew
-      ? (scenario === 'fed'
-          ? (year >= 2034 ? 'Federal member state (new accession)' : 'Pre-accession, integrating')
-          : 'EU candidate / accession in progress')
-      : (country.eu ? 'EU member state' : 'Non-EU country');
+    
+    // Determine status based on year and scenario
+    let statusLine;
+    if (scenario === 'fed') {
+      const joinedCountries = getJoinedCountries(year);
+      if (country.fedNew && joinedCountries.has(iso)) {
+        statusLine = 'Federal member state (joined ' + (accessionTimeline[iso] || year) + ')';
+      } else if (country.fedNew) {
+        statusLine = 'Pre-accession, integrating';
+      } else if (country.eu) {
+        statusLine = 'EU member state';
+      } else {
+        statusLine = 'Non-EU country';
+      }
+    } else {
+      statusLine = country.eu ? 'EU member state' : (country.fedNew ? 'EU candidate / accession in progress' : 'Non-EU country');
+    }
+    
     const unText = 'United Nations member state';
     const scenarioImpact = scenario === 'fed'
       ? 'Unified exchange and capital market boost fuels job creation, startup funding and unicorn growth.'
       : 'Fragmented national markets limit cross-border capital, slowing startup scaling and unicorn creation.';
 
     detailEl.innerHTML = `
-      <div class="detail-country">${country.name} — ${year}</div>
+      <div class="detail-country">${country.name} \u2014 ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
       <div class="detail-row"><span>Projected GDP (2050)</span><span>${gdp}</span></div>
       <div class="detail-row"><span>GDP outlook impact</span><span>${scenarioImpact}</span></div>
       <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
       <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
-      <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '—'}</span></div>
+      <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '\u2014'}</span></div>
       <div class="detail-note">${note || ''}</div>
     `;
   }
@@ -276,31 +423,48 @@
     return match ? parseFloat(match[1]) : 0;
   }
 
-  function countCountries(){
+  function countCountries(year, scenario){
     const entries = Object.entries(data.countries || {});
     const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
     const euMembers = entries.filter(([iso, c]) => c.eu).map(([iso,c]) => c);
-    const fedMembers = entries.filter(([iso, c]) => (c.eu || c.fedNew) && !FED_EXCLUDE_ISOS.has(iso)).map(([iso,c]) => c);
-    const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
-    const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
-    return {
-      euCount: euMembers.length,
-      fedCount: 42,
-      fragPop,
-      fedPop
-    };
+    
+    if (scenario === 'fed') {
+      // For federal scenario, count EU members + joined countries
+      const joinedCountries = getJoinedCountries(year);
+      const fedMembers = entries.filter(([iso, c]) => (c.eu || (c.fedNew && joinedCountries.has(iso))) && !FED_EXCLUDE_ISOS.has(iso)).map(([iso,c]) => c);
+      
+      const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
+      const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
+      return {
+        euCount: euMembers.length,
+        fedCount: fedMembers.length,
+        fragPop,
+        fedPop
+      };
+    } else {
+      // For fragmented scenario, use original logic
+      const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
+      const fedPop = entries.filter(([iso, c]) => (c.eu || c.fedNew) && !FED_EXCLUDE_ISOS.has(iso)).reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
+      return {
+        euCount: euMembers.length,
+        fedCount: 42,
+        fragPop,
+        fedPop
+      };
+    }
   }
 
   function updateStats(year){
     const t = (year - 2026) / (2050 - 2026);
-    const counts = countCountries();
+    const counts = countCountries(year, 'fed');
+    const countsFrag = countCountries(year, 'frag');
 
     const fragTechStart = 11, fragTechEnd = 9;
     const fedTechStart = 11, fedTechEnd = 22;
 
-    document.getElementById('fragPop').textContent = Math.round(counts.fragPop) + 'M';
+    document.getElementById('fragPop').textContent = Math.round(countsFrag.fragPop) + 'M';
     document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
-    document.getElementById('fragMembers').textContent = counts.euCount;
+    document.getElementById('fragMembers').textContent = countsFrag.euCount;
     document.getElementById('fedMembers').textContent = counts.fedCount;
     document.getElementById('fragTech').textContent = Math.round(fragTechStart + (fragTechEnd-fragTechStart)*t) + '%';
     document.getElementById('fedTech').textContent = Math.round(fedTechStart + (fedTechEnd-fedTechStart)*t) + '%';
@@ -367,7 +531,7 @@
     if(/agreement|joint|integrat|union|accession|deal|package|package|connected|shared|framework|strategy/.test(lower)){
       return {
         frag:'Highlights the limits of national coordination',
-        fed:'Positive — supports federal integration'
+        fed:'Positive \u2014 supports federal integration'
       };
     }
     return {
@@ -444,10 +608,14 @@
   }
 
   // ---------- Init ----------
+  let currentYear = 2050;
+
   function render(year){
+    currentYear = year;
     buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
     buildMap(document.getElementById('mapFed'), 'fed', document.getElementById('tooltipFed'), document.getElementById('detailFed'), year);
     updateStats(year);
+    updateAccessionTimelines(year);
     document.getElementById('yearLabel').textContent = year;
     document.getElementById('yearHint').textContent = year === 2050
       ? 'Showing the full 2050 scenario outcomes'
@@ -461,6 +629,10 @@
   setupStatValueButtons();
   loadFeedData();
   scheduleFeedRefresh();
+  loadTheme();
   render(2050);
+
+  // Make theme toggle available globally
+  window.toggleTheme = toggleTheme;
 
 })();

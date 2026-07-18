@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EU2050 — Two Futures, One Map</title>
+<title>EU2050  Two Futures, One Map</title>
 <style>
   :root{
+    /* Dark theme (default) */
     --bg: #0b0e14;
     --panel: #11151f;
     --panel-2: #171c29;
@@ -22,6 +23,18 @@
     --sans: 'Inter', -apple-system, sans-serif;
   }
 
+  /* Light theme variables */
+  [data-theme="light"]{
+    --bg: #f8f9fc;
+    --panel: #ffffff;
+    --panel-2: #f0f2f5;
+    --line: #e0e4ea;
+    --ink: #1a1d26;
+    --ink-dim: #5a6478;
+    --frag-red: #b53a2f;
+    --fed-teal: #5d2aa8;
+  }
+
   *{box-sizing:border-box; margin:0; padding:0;}
 
   body{
@@ -29,6 +42,35 @@
     color:var(--ink);
     font-family:var(--sans);
     -webkit-font-smoothing:antialiased;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  /* Theme toggle button */
+  .theme-toggle{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:6px 12px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink-dim);
+    letter-spacing:0.06em;
+    transition: all 0.2s ease;
+  }
+  .theme-toggle:hover{
+    color:var(--ink);
+    border-color:var(--ink-dim);
+  }
+  .theme-toggle .icon{
+    width:16px;
+    height:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   /* ---------- Header ---------- */
@@ -153,22 +195,23 @@
   }
   .scenario-tag{
     font-family:var(--mono);
-    font-size:0.66rem;
+    font-size:0.72rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    padding:4px 8px;
-    border-radius:2px;
+    padding:6px 12px;
+    border-radius:4px;
     white-space:nowrap;
+    font-weight:600;
   }
   .scenario.fragmented .scenario-tag{
-    background:rgba(196,69,58,0.12);
+    background:rgba(196,69,58,0.15);
     color:var(--frag-red);
-    border:1px solid rgba(196,69,58,0.35);
+    border:1px solid var(--frag-red);
   }
   .scenario.federal .scenario-tag{
-    background:rgba(45,212,191,0.12);
+    background:rgba(124,58,237,0.15);
     color:var(--fed-teal);
-    border:1px solid rgba(45,212,191,0.35);
+    border:1px solid var(--fed-teal);
   }
   .scenario-title{
     font-family:var(--serif);
@@ -299,38 +342,42 @@
 
   /* ---------- Country detail panel ---------- */
   .detail{
-    margin-top:14px;
-    background:var(--panel-2);
+    margin-top:16px;
+    background:var(--panel);
     border:1px solid var(--line);
     border-radius:4px;
     padding:14px 16px;
-    min-height:118px;
-  }
-  .detail-empty{
-    color:var(--ink-dim);
-    font-size:0.8rem;
-    font-style:italic;
+    font-size:0.82rem;
+    line-height:1.55;
+    color:var(--ink);
   }
   .detail-country{
     font-family:var(--serif);
+    font-size:1.1rem;
     font-weight:700;
-    font-size:1.05rem;
-    margin-bottom:6px;
+    margin-bottom:8px;
+    color:var(--ink);
   }
   .detail-row{
     display:flex;
     justify-content:space-between;
-    font-size:0.8rem;
-    padding:3px 0;
-    border-bottom:1px dashed var(--line);
-    color:var(--ink-dim);
+    padding:4px 0;
+    border-bottom:1px solid var(--line);
   }
-  .detail-row span:last-child{ color:var(--ink); font-family:var(--mono); }
+  .detail-row:last-child{ border-bottom:none; }
+  .detail-row span:first-child{ color:var(--ink-dim); }
+  .detail-row span:last-child{ font-weight:600; }
   .detail-note{
+    margin-top:8px;
+    padding-top:8px;
+    border-top:1px solid var(--line);
     font-size:0.78rem;
     color:var(--ink-dim);
     line-height:1.5;
-    margin-top:8px;
+  }
+  .detail-empty{
+    color:var(--ink-dim);
+    font-style:italic;
   }
 
   /* ---------- News / signal feed ---------- */
@@ -390,17 +437,22 @@
     margin-bottom:3px;
   }
   .feed-body .feed-ai{
-    font-size:0.82rem;
-    color:var(--ink-dim);
+    font-size:0.85rem;
+    color:var(--ink);
     line-height:1.5;
+    background:var(--panel-2);
+    padding:8px;
+    border-radius:4px;
+    margin-top:4px;
   }
   .feed-body .feed-ai .label{
     font-family:var(--mono);
-    font-size:0.62rem;
+    font-size:0.68rem;
     color:var(--fed-teal);
     letter-spacing:0.1em;
     text-transform:uppercase;
     margin-right:6px;
+    font-weight:600;
   }
   .feed-impact{
     display:flex;
@@ -412,21 +464,22 @@
   @media (max-width:720px){ .feed-impact{ align-items:flex-start; flex-direction:row; flex-wrap:wrap; } }
   .impact-pill{
     font-family:var(--mono);
-    font-size:0.64rem;
+    font-size:0.68rem;
     letter-spacing:0.05em;
-    padding:3px 8px;
-    border-radius:2px;
+    padding:4px 10px;
+    border-radius:4px;
     white-space:nowrap;
+    font-weight:500;
   }
   .impact-pill.frag{
-    background:rgba(196,69,58,0.1);
+    background:rgba(196,69,58,0.12);
     color:var(--frag-amber);
-    border:1px solid rgba(232,162,60,0.3);
+    border:1px solid var(--frag-red);
   }
   .impact-pill.fed{
-    background:rgba(45,212,191,0.1);
+    background:rgba(124,58,237,0.12);
     color:var(--fed-teal);
-    border:1px solid rgba(45,212,191,0.3);
+    border:1px solid var(--fed-teal);
   }
 
   /* ---------- Footer / methodology ---------- */
@@ -448,44 +501,70 @@
     margin-top:10px;
     display:flex;
     flex-wrap:wrap;
-    gap:8px 6px;
-    align-items:center;
-    max-width:100%;
-  }
-  .pipeline .step{
-    border:1px solid var(--line);
-    border-radius:2px;
-    padding:3px 8px;
+    gap:6px;
   }
   .pipeline .arrow{ color:var(--ink-dim); }
-
-  /* tooltip */
-  .tooltip{
-    position:absolute;
-    pointer-events:none;
-    background:var(--panel-2);
+  .pipeline .step{
+    background:var(--panel);
     border:1px solid var(--line);
-    border-radius:3px;
-    padding:5px 9px;
-    font-family:var(--mono);
-    font-size:0.68rem;
+    padding:2px 6px;
+    border-radius:2px;
+  }
+
+  /* Year indicator styling */
+  .year-indicator{
+    display:inline-block;
+    font-family:var(--serif);
+    font-size:0.9rem;
+    font-weight:600;
+    color:var(--fed-teal);
+    margin-left:8px;
+  }
+
+  /* Accession timeline styling */
+  .accession-timeline{
+    margin-top:12px;
+    padding:12px;
+    background:var(--panel-2);
+    border-radius:4px;
+    border:1px solid var(--line);
+  }
+  .accession-timeline h4{
+    font-family:var(--serif);
+    font-size:0.85rem;
+    font-weight:600;
+    margin-bottom:8px;
     color:var(--ink);
-    white-space:nowrap;
-    transform:translate(-50%,-130%);
-    opacity:0;
-    transition:opacity 0.1s;
-    z-index:10;
+  }
+  .accession-timeline ul{
+    font-size:0.78rem;
+    line-height:1.6;
+    color:var(--ink-dim);
+  }
+  .accession-timeline li{
+    margin-bottom:4px;
+  }
+  .accession-timeline .year-marker{
+    color:var(--fed-teal);
+    font-weight:600;
   }
 </style>
 </head>
+
 <body>
 
 <header class="masthead">
   <div>
     <div class="masthead-title">EU2050 <span class="accent">/ Two Futures</span></div>
-    <div class="masthead-sub">Daily AI-read signals → long-run sovereignty &amp; enlargement scenarios</div>
+    <div class="masthead-sub">Daily AI-read signals  long-run sovereignty &amp; enlargement scenarios</div>
   </div>
-  <div class="live-tag"><span class="live-dot"></span>Updated today · sample data</div>
+  <div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span class="icon" id="themeIcon"></span>
+      <span id="themeText">Night</span>
+    </button>
+    <div class="live-tag" style="margin-left:12px;"><span class="live-dot"></span>Updated <span id="feedUpdated">Today</span>  Auto-refreshes daily</div>
+  </div>
 </header>
 
 <div class="timebar">
@@ -501,12 +580,12 @@
   <section class="scenario fragmented">
     <div class="scenario-head">
       <div>
-        <span class="scenario-tag">Scenario A · Status quo</span>
+        <span class="scenario-tag">SCENARIO A  Status quo</span>
         <div class="scenario-title">A fragmented Union, 2050</div>
       </div>
     </div>
     <div class="scenario-desc">
-      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly — leaving the EU a price-taker on the rules written by Washington and Beijing.
+      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly  leaving the EU a price-taker on the rules written by Washington and Beijing.
     </div>
 
     <div class="map-wrap">
@@ -532,12 +611,18 @@
       <div class="stat">
         <div class="stat-label">Global market share, key tech</div>
         <div class="stat-value" id="fragTech">9%</div>
-        <div class="stat-note" id="fragTechNote">Approximate comparative market shares (illustrative): EU: 9% · US: ~45% · China: ~35%. These figures are high-level estimates to visualise scale; sources include industry market reports and trade statistics (example: OECD, Eurostat, national trade agencies).</div>
+        <div class="stat-note" id="fragTechNote">Approximate comparative market shares (illustrative): EU: 9%  US: ~45%  China: ~35%. These figures are high-level estimates to visualise scale; sources include industry market reports and trade statistics (example: OECD, Eurostat, national trade agencies).</div>
       </div>
     </div>
 
     <div class="detail" id="detailFrag">
       <div class="detail-empty">Click any country on the map above to see its 2050 outlook under this scenario.</div>
+    </div>
+    
+    <!-- Accession timeline for Scenario A -->
+    <div class="accession-timeline" id="fragTimeline">
+      <h4>Accession Progress (Scenario A)</h4>
+      <ul id="fragAccessionList"></ul>
     </div>
   </section>
 
@@ -545,8 +630,8 @@
   <section class="scenario federal">
     <div class="scenario-head">
       <div>
-        <span class="scenario-tag">Scenario B · United States of Europe</span>
-        <div class="scenario-title">United States of Europe, 2050</div>
+        <span class="scenario-tag">SCENARIO B  United States of Europe</span>
+        <div class="scenario-title">United States of Europe, <span id="fedYearDisplay">2050</span></div>
       </div>
     </div>
     <div class="scenario-desc">
@@ -571,7 +656,7 @@
         <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
         <div class="stat-value" id="fedPop">503M</div>
         <div class="stat-note" id="fedPopNote">
-          <div><b>How the federation population (695M) is calculated — method and sources</b></div>
+          <div><b>How the federation population (695M) is calculated  method and sources</b></div>
           <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
             <li>Baseline: start from the EU-27 population baseline (Eurostat 2026 baseline), approximately 448 million.</li>
             <li>Add accession and candidate populations expected to be integrated into the federation by 2050 (illustrative additions used here): United Kingdom (~71M), Turkey (~90M), Ukraine (~35M), Moldova (~2.5M), Western Balkans combined (~17M), and South Caucasus / neighbouring additions (~18M). These subtotal to roughly ~233M.</li>
@@ -588,12 +673,18 @@
       <div class="stat">
         <div class="stat-label">Global market share, key tech</div>
         <div class="stat-value" id="fedTech">22%</div>
-        <div class="stat-note" id="fedTechNote">Approximate comparative market shares (illustrative): EU federation: 22% · US: ~40% · China: ~30%. These are illustrative aggregated estimates to show relative scale; see OECD and industry sources for detailed market-share work.</div>
+        <div class="stat-note" id="fedTechNote">Approximate comparative market shares (illustrative): EU federation: 22%  US: ~40%  China: ~30%. These are illustrative aggregated estimates to show relative scale; see OECD and industry sources for detailed market-share work.</div>
       </div>
     </div>
 
     <div class="detail" id="detailFed">
       <div class="detail-empty">Click any country on the map above to see its 2050 outlook under this scenario.</div>
+    </div>
+    
+    <!-- Accession timeline for Scenario B -->
+    <div class="accession-timeline" id="fedTimeline">
+      <h4>Accession Timeline (Scenario B)</h4>
+      <ul id="fedAccessionList"></ul>
     </div>
   </section>
 
@@ -602,9 +693,8 @@
     <div class="feed-head">
       <div>
         <div class="feed-title">Today's signals</div>
-        <div class="feed-sub">AI reads EU news &amp; policy papers from Euronews RSS · tags which 2050 path each story nudges</div>
+        <div class="feed-sub">AI reads EU news &amp; policy papers from Euronews RSS  tags which 2050 path each story nudges</div>
       </div>
-      <div class="feed-meta">Updated: <span id="feedUpdated">18 Jun 2026</span> · Auto-refreshes daily</div>
     </div>
     <div class="feed-list" id="feedList"></div>
   </section>
@@ -612,16 +702,16 @@
   <!-- METHODOLOGY -->
   <section class="footnote">
     <p><b>What this is.</b> EU2050 reads EU policy documents and news every day, and uses that to adjust two long-run 2050 scenarios for Europe: one where integration stalls (<b>Scenario A</b>), and one where the EU becomes a genuine federation with a completed single market, capital markets union, digital sovereignty and an enlarged membership including the Western Balkans, Ukraine and Moldova (<b>Scenario B</b>).</p>
-    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
+    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 20262050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
     <div class="pipeline">
       <span class="step">Eurostat population data</span>
-      <span class="arrow">→</span>
+      <span class="arrow"></span>
       <span class="step">EU news &amp; Council/Commission documents</span>
-      <span class="arrow">→</span>
+      <span class="arrow"></span>
       <span class="step">AI extraction (Claude)</span>
-      <span class="arrow">→</span>
+      <span class="arrow"></span>
       <span class="step">Scenario scores updated</span>
-      <span class="arrow">→</span>
+      <span class="arrow"></span>
       <span class="step">Maps &amp; feed refreshed</span>
     </div>
   </section>
@@ -630,6 +720,6 @@
 
 <script src="geodata.js"></script>
 <script src="data.js"></script>
-<script src="app.js?v=5"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
