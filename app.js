@@ -451,7 +451,7 @@
       const fedPop = entries.filter(([iso, c]) => (c.eu || c.fedNew) && !FED_EXCLUDE_ISOS.has(iso)).reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
       return {
         euCount: euMembers.length,
-        fedCount: 42,
+        fedCount: 43,
         fragPop,
         fedPop
       };
