@@ -235,81 +235,81 @@ window.EU2050_DATA = {
     frag: { pop:"418M", members:"29", tech:"9%" },
     fed:  { pop:"503M", members:"33", tech:"22%" }
   },
-  feedUpdated: "19 Jun 2026",
 
   // ---- Sample AI-generated daily signal feed ----
   // In production this is regenerated daily by an automated pipeline that
   // reads EU news/policy documents and tags each story's likely pull on each scenario.
+  feedUpdated: "18 Jul 2026",
   feed: [
-    {
-      date:"18 Jun 2026",
-      headline:"EU agrees landmark AI governance roadmap, but implementation timeline remains contested",
-      ai:"Commission and member states outline common AI liability and certification rules while national regulators still negotiate enforcement powers.",
-      frag:"Highlights ongoing fragmentation in digital regulation",
-      fed:"Moves the federation closer to a single EU tech governance framework"
-    },
-    {
-      date:"17 Jun 2026",
-      headline:"European Parliament backs strengthened carbon border levy for imported steel and chemicals",
-      ai:"A new CBAM proposal seeks tighter enforcement on high-carbon imports, raising pressure on industry and trading partners.",
-      frag:"Increases trade tensions under a fractured climate policy regime",
-      fed:"Supports the federal green-industrial transition by aligning external carbon pricing"
-    },
-    {
-      date:"16 Jun 2026",
-      headline:"EU foreign ministers approve a joint connectivity package for the Western Balkans",
-      ai:"Funding and regulatory alignment for cross-border energy and data corridors are agreed, signalling deeper integration with candidate neighbours.",
-      frag:"Limited by separate national implementation plans",
-      fed:"Accelerates the federation’s eastern enlargement and infrastructure integration"
-    },
-    {
-      date:"15 Jun 2026",
-      headline:"Council debates migration and energy solidarity rules ahead of summer peak",
-      ai:"Member states are split over mandatory burden-sharing and fast-track renewable power sharing, exposing persistent EU coordination gaps.",
-      frag:"Highlights the limits of national-only crisis response",
-      fed:"Reinforces the need for a federal emergency energy and asylum framework"
-    },
-    {
-      date:"14 Jun 2026",
-      headline:"Council fails to agree on unified chip-export control list",
-      ai:"Member states retain national veto over semiconductor export rules, delaying a common EU position on technology controls.",
-      frag:"Reinforces fragmentation",
-      fed:"Sets back digital sovereignty timeline"
-    },
-    {
-      date:"13 Jun 2026",
-      headline:"European Commission publishes new Capital Markets Union roadmap",
-      ai:"A fresh roadmap proposes common rules for cross-border securities settlement, aiming to unlock pooled investment for green and tech industry by 2030.",
-      frag:"Limited near-term effect if national implementation stalls",
-      fed:"Modest positive — concrete step toward a unified capital market"
-    },
-    {
-      date:"12 Jun 2026",
-      headline:"Western Balkans summit reaffirms 2030 accession ambition",
-      ai:"Leaders restate a target of opening final accession chapters with Montenegro and Albania, while flagging rule-of-law conditions still unmet by several candidates.",
-      frag:"Enlargement remains uneven and slow",
-      fed:"Positive — keeps the Balkans accession track alive"
-    },
-    {
-      date:"11 Jun 2026",
-      headline:"EU and US extend tech standards dialogue, no binding agreement",
-      ai:"Talks on AI and data governance continue without a binding transatlantic framework, leaving the EU reliant on US cloud and AI infrastructure for now.",
-      frag:"Confirms continued dependency on foreign technology",
-      fed:"No immediate change — sovereignty push continues domestically"
-    },
-    {
-      date:"10 Jun 2026",
-      headline:"Ukraine accession talks: energy chapter provisionally closed",
-      ai:"Negotiators provisionally close the energy chapter of Ukraine's accession talks, citing progress on grid synchronisation with the EU network.",
-      frag:"Accession progress remains partial and dependent on external funding",
-      fed:"Positive — concrete progress toward 2050 enlargement"
-    },
-    {
-      date:"9 Jun 2026",
-      headline:"Hungary blocks joint statement on foreign policy coordination",
-      ai:"A member state veto again prevents a unified EU position, illustrating the limits of unanimity-based foreign policy decision-making.",
-      frag:"Reinforces decision-making paralysis",
-      fed:"Strengthens case for qualified-majority reform"
-    }
-  ]
+      {
+        "date": "18 Jul 2026",
+        "headline": "EU agrees landmark AI governance roadmap, but implementation timeline remains contested",
+        "ai": "Commission and member states outline common AI liability and certification rules while national regulators still negotiate enforcement powers.",
+        "frag": "Highlights ongoing fragmentation in digital regulation",
+        "fed": "Moves the federation closer to a single EU tech governance framework"
+      },
+      {
+        "date": "17 Jul 2026",
+        "headline": "European Parliament backs strengthened carbon border levy for imported steel and chemicals",
+        "ai": "A new CBAM proposal seeks tighter enforcement on high-carbon imports, raising pressure on industry and trading partners.",
+        "frag": "Increases trade tensions under a fractured climate policy regime",
+        "fed": "Supports the federal green-industrial transition by aligning external carbon pricing"
+      },
+      {
+        "date": "16 Jul 2026",
+        "headline": "EU foreign ministers approve a joint connectivity package for the Western Balkans",
+        "ai": "Funding and regulatory alignment for cross-border energy and data corridors are agreed, signalling deeper integration with candidate neighbours.",
+        "frag": "Limited by separate national implementation plans",
+        "fed": "Accelerates the federation’s eastern enlargement and infrastructure integration"
+      },
+      {
+        "date": "15 Jul 2026",
+        "headline": "Council debates migration and energy solidarity rules ahead of summer peak",
+        "ai": "Member states are split over mandatory burden-sharing and fast-track renewable power sharing, exposing persistent EU coordination gaps.",
+        "frag": "Highlights the limits of national-only crisis response",
+        "fed": "Reinforces the need for a federal emergency energy and asylum framework"
+      },
+      {
+        "date": "14 Jul 2026",
+        "headline": "Council fails to agree on unified chip-export control list",
+        "ai": "Member states retain national veto over semiconductor export rules, delaying a common EU position on technology controls.",
+        "frag": "Reinforces fragmentation",
+        "fed": "Sets back digital sovereignty timeline"
+      },
+      {
+        "date": "13 Jul 2026",
+        "headline": "European Commission publishes new Capital Markets Union roadmap",
+        "ai": "A fresh roadmap proposes common rules for cross-border securities settlement, aiming to unlock pooled investment for green and tech industry by 2030.",
+        "frag": "Limited near-term effect if national implementation stalls",
+        "fed": "Modest positive — concrete step toward a unified capital market"
+      },
+      {
+        "date": "12 Jul 2026",
+        "headline": "Western Balkans summit reaffirms 2030 accession ambition",
+        "ai": "Leaders restate a target of opening final accession chapters with Montenegro and Albania, while flagging rule-of-law conditions still unmet by several candidates.",
+        "frag": "Enlargement remains uneven and slow",
+        "fed": "Positive — keeps the Balkans accession track alive"
+      },
+      {
+        "date": "11 Jul 2026",
+        "headline": "EU and US extend tech standards dialogue, no binding agreement",
+        "ai": "Talks on AI and data governance continue without a binding transatlantic framework, leaving the EU reliant on US cloud and AI infrastructure for now.",
+        "frag": "Confirms continued dependency on foreign technology",
+        "fed": "No immediate change — sovereignty push continues domestically"
+      },
+      {
+        "date": "10 Jul 2026",
+        "headline": "Ukraine accession talks: energy chapter provisionally closed",
+        "ai": "Negotiators provisionally close the energy chapter of Ukraine's accession talks, citing progress on grid synchronisation with the EU network.",
+        "frag": "Accession progress remains partial and dependent on external funding",
+        "fed": "Positive — concrete progress toward 2050 enlargement"
+      },
+      {
+        "date": "9 Jul 2026",
+        "headline": "Hungary blocks joint statement on foreign policy coordination",
+        "ai": "A member state veto again prevents a unified EU position, illustrating the limits of unanimity-based foreign policy decision-making.",
+        "frag": "Reinforces decision-making paralysis",
+        "fed": "Strengthens case for qualified-majority reform"
+      }
+    ]
 };

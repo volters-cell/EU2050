@@ -328,6 +328,9 @@
   function updateFeedMeta(){
     const updatedEl = document.getElementById('feedUpdated');
     if(updatedEl){
+      const today = new Date();
+      const todayStr = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+      if(feedUpdated === todayStr) feedUpdated = 'Today';
       updatedEl.textContent = feedUpdated || 'Unknown';
     }
   }
@@ -406,8 +409,6 @@
       const remote = await fetchRemoteFeed();
       if(Array.isArray(remote) && remote.length){
         feedData = remote;
-        const today = new Date();
-        feedUpdated = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
       }
     } catch (primaryErr) {
       console.warn('Unable to fetch external news feed, falling back to local data.', primaryErr);
@@ -416,12 +417,14 @@
         if(resp.ok){
           const json = await resp.json();
           if(Array.isArray(json.feed)) feedData = json.feed;
-          if(json.feedUpdated) feedUpdated = json.feedUpdated;
         }
       } catch (fallbackErr) {
         console.warn('Unable to load local feed.json, using embedded feed data.', fallbackErr);
       }
     }
+    // Always set feedUpdated to today so it auto-updates
+    const today = new Date();
+    feedUpdated = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
     buildFeed();
     updateFeedMeta();
   }
