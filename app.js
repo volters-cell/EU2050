@@ -264,7 +264,13 @@
         path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl));
         path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
-        path.addEventListener('click', () => showDetail(detailEl, country, scenario, year, iso));
+        path.addEventListener('click', () => {
+          showDetail(detailEl, country, scenario, year, iso);
+          // For fragmented map, also toggle EU internal borders on any country click
+          if (scenario === 'frag') {
+            toggleEUBordersFragMap();
+          }
+        });
       }
     });
   }
