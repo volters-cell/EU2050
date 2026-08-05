@@ -339,8 +339,10 @@
     const noteMap = {
       'fragPop':'fragPopNote',
       'fedPop':'fedPopNote',
-      'fragTech':'fragTechNote',
-      'fedTech':'fedTechNote'
+      'fragGDP':'fragGDPNote',
+      'fedGDP':'fedGDPNote',
+      'fragAI':'fragAINote',
+      'fedAI':'fedAINote'
     };
     Object.keys(noteMap).forEach(id => {
       const el = document.getElementById(id);
@@ -469,15 +471,22 @@
     const counts = countCountries(year, 'fed');
     const countsFrag = countCountries(year, 'frag');
 
-    const fragTechStart = 11, fragTechEnd = 9;
-    const fedTechStart = 11, fedTechEnd = 22;
+    // GDP market share: Fragmented starts at 7%, Federal at 18%
+    const fragGDPStart = 15, fragGDPEnd = 7;
+    const fedGDPStart = 15, fedGDPEnd = 18;
+    
+    // AI market share: Fragmented starts at 11%, Federal at 15%
+    const fragAIStart = 11, fragAIEnd = 9;
+    const fedAIStart = 15, fedAIEnd = 28;
 
     document.getElementById('fragPop').textContent = Math.round(countsFrag.fragPop) + 'M';
     document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
     document.getElementById('fragMembers').textContent = countsFrag.euCount;
     document.getElementById('fedMembers').textContent = counts.fedCount;
-    document.getElementById('fragTech').textContent = Math.round(fragTechStart + (fragTechEnd-fragTechStart)*t) + '%';
-    document.getElementById('fedTech').textContent = Math.round(fedTechStart + (fedTechEnd-fedTechStart)*t) + '%';
+    document.getElementById('fragGDP').textContent = Math.round(fragGDPStart + (fragGDPEnd-fragGDPStart)*t) + '%';
+    document.getElementById('fedGDP').textContent = Math.round(fedGDPStart + (fedGDPEnd-fedGDPStart)*t) + '%';
+    document.getElementById('fragAI').textContent = Math.round(fragAIStart + (fragAIEnd-fragAIStart)*t) + '%';
+    document.getElementById('fedAI').textContent = Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
   }
 
   function setupStatInfoButtons(){
