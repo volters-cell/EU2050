@@ -416,6 +416,76 @@
       ? 'Unified exchange and capital market boost fuels job creation, startup funding and unicorn growth.'
       : 'Fragmented national markets limit cross-border capital, slowing startup scaling and unicorn creation.';
 
+    // Membership data lookup (hardcoded for reliability)
+    const membershipData = {
+      DEU: {s:true, e:true, n:true}, FRA: {s:true, e:true, n:true}, ITA: {s:true, e:true, n:true},
+      ESP: {s:true, e:true, n:true}, POL: {s:true, e:false, n:true}, NLD: {s:true, e:true, n:true},
+      BEL: {s:true, e:true, n:true}, AUT: {s:true, e:true, n:false}, SWE: {s:true, e:false, n:true},
+      FIN: {s:true, e:true, n:true}, DNK: {s:true, e:false, n:true}, IRL: {s:false, e:true, n:false},
+      PRT: {s:true, e:true, n:true}, GRC: {s:true, e:true, n:true}, CZE: {s:true, e:false, n:true},
+      SVK: {s:true, e:true, n:true}, HUN: {s:true, e:false, n:true}, ROU: {s:true, e:false, n:true},
+      BGR: {s:true, e:false, n:true}, HRV: {s:true, e:false, n:true}, SVN: {s:true, e:true, n:true},
+      LTU: {s:true, e:true, n:true}, LVA: {s:true, e:true, n:true}, EST: {s:true, e:true, n:true},
+      LUX: {s:true, e:true, n:true}, MLT: {s:true, e:true, n:false}, CYP: {s:false, e:true, n:false},
+      SRB: {s:false, e:false, n:false}, ALB: {s:false, e:false, n:true}, MNE: {s:false, e:false, n:true},
+      MKD: {s:false, e:false, n:true}, BIH: {s:false, e:false, n:false}, XKX: {s:false, e:false, n:false},
+      UKR: {s:false, e:false, n:false}, MDA: {s:false, e:false, n:false}, GEO: {s:false, e:false, n:false},
+      ARM: {s:false, e:false, n:false}, AZE: {s:false, e:false, n:false},
+      GBR: {s:false, e:false, n:true}, CHE: {s:true, e:false, n:false}, NOR: {s:true, e:false, n:true},
+      ISL: {s:true, e:false, n:true}, TUR: {s:false, e:false, n:true}
+    };
+
+    // Get membership status
+    let schengenStatus, eurozoneStatus, natoStatus;
+    if (scenario === 'fed') {
+      const joinedCountries = getJoinedCountries(year);
+      const isMember = country.eu || (country.fedNew && joinedCountries.has(iso));
+      schengenStatus = isMember ? 'Yes' : 'No';
+      eurozoneStatus = isMember ? 'Yes' : 'No';
+      natoStatus = isMember ? 'Yes' : 'No';
+    } else {
+      // For Fragmented scenario, use hardcoded membership data
+      const m = membershipData[iso] || {s:false, e:false, n:false};
+      schengenStatus = m.s ? 'Yes' : 'No';
+      eurozoneStatus = m.e ? 'Yes' : 'No';
+      natoStatus = m.n ? 'Yes' : 'No';
+    }
+
+    // Membership data lookup (hardcoded for reliability)
+    const membershipData = {
+      DEU:{s:true,e:true,n:true},FRA:{s:true,e:true,n:true},ITA:{s:true,e:true,n:true},
+      ESP:{s:true,e:true,n:true},POL:{s:true,e:false,n:true},NLD:{s:true,e:true,n:true},
+      BEL:{s:true,e:true,n:true},AUT:{s:true,e:true,n:false},SWE:{s:true,e:false,n:true},
+      FIN:{s:true,e:true,n:true},DNK:{s:true,e:false,n:true},IRL:{s:false,e:true,n:false},
+      PRT:{s:true,e:true,n:true},GRC:{s:true,e:true,n:true},CZE:{s:true,e:false,n:true},
+      SVK:{s:true,e:true,n:true},HUN:{s:true,e:false,n:true},ROU:{s:true,e:false,n:true},
+      BGR:{s:true,e:false,n:true},HRV:{s:true,e:false,n:true},SVN:{s:true,e:true,n:true},
+      LTU:{s:true,e:true,n:true},LVA:{s:true,e:true,n:true},EST:{s:true,e:true,n:true},
+      LUX:{s:true,e:true,n:true},MLT:{s:true,e:true,n:false},CYP:{s:false,e:true,n:false},
+      SRB:{s:false,e:false,n:false},ALB:{s:false,e:false,n:true},MNE:{s:false,e:false,n:true},
+      MKD:{s:false,e:false,n:true},BIH:{s:false,e:false,n:false},XKX:{s:false,e:false,n:false},
+      UKR:{s:false,e:false,n:false},MDA:{s:false,e:false,n:false},GEO:{s:false,e:false,n:false},
+      ARM:{s:false,e:false,n:false},AZE:{s:false,e:false,n:false},
+      GBR:{s:false,e:false,n:true},CHE:{s:true,e:false,n:false},NOR:{s:true,e:false,n:true},
+      ISL:{s:true,e:false,n:true},TUR:{s:false,e:false,n:true}
+    };
+
+    // Get membership status
+    let schengenStatus, eurozoneStatus, natoStatus;
+    if (scenario === 'fed') {
+      const joinedCountries = getJoinedCountries(year);
+      const isMember = country.eu || (country.fedNew && joinedCountries.has(iso));
+      schengenStatus = isMember ? 'Yes' : 'No';
+      eurozoneStatus = isMember ? 'Yes' : 'No';
+      natoStatus = isMember ? 'Yes' : 'No';
+    } else {
+      // For Fragmented scenario, use hardcoded membership data
+      const m = membershipData[iso] || {s:false,e:false,n:false};
+      schengenStatus = m.s ? 'Yes' : 'No';
+      eurozoneStatus = m.e ? 'Yes' : 'No';
+      natoStatus = m.n ? 'Yes' : 'No';
+    }
+
     detailEl.innerHTML = `
       <div class="detail-country">${country.name} \u2014 ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
@@ -424,6 +494,9 @@
       <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
       <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
       <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '\u2014'}</span></div>
+      <div class="detail-row"><span>Schengen Zone</span><span>${schengenStatus}</span></div>
+      <div class="detail-row"><span>Eurozone</span><span>${eurozoneStatus}</span></div>
+      <div class="detail-row"><span>NATO member</span><span>${natoStatus}</span></div>
       <div class="detail-note">${note || ''}</div>
     `;
   }
