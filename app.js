@@ -347,7 +347,9 @@
       'fragGDP':'fragGDPNote',
       'fedGDP':'fedGDPNote',
       'fragAI':'fragAINote',
-      'fedAI':'fedAINote'
+      'fedAI':'fedAINote',
+      'fragHDI':'fragHDINote',
+      'fedHDI':'fedHDINote'
     };
     Object.keys(noteMap).forEach(id => {
       const el = document.getElementById(id);
@@ -576,6 +578,12 @@
     const fragAIStart = 11, fragAIEnd = 9;
     const fedAIStart = 15, fedAIEnd = 28;
 
+    // Median HDI: both start from the current EU-27 baseline (0.900); fragmented
+    // markets barely move it, while federal convergence funding pulls it well
+    // ahead of the fragmented path (and past the US) by 2050
+    const fragHDIStart = 0.900, fragHDIEnd = 0.910;
+    const fedHDIStart = 0.900, fedHDIEnd = 0.945;
+
     document.getElementById('fragPop').textContent = Math.round(countsFrag.fragPop) + 'M';
     document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
     document.getElementById('fragMembers').textContent = countsFrag.euCount;
@@ -584,6 +592,8 @@
     document.getElementById('fedGDP').textContent = Math.round(fedGDPStart + (fedGDPEnd-fedGDPStart)*t) + '%';
     document.getElementById('fragAI').textContent = Math.round(fragAIStart + (fragAIEnd-fragAIStart)*t) + '%';
     document.getElementById('fedAI').textContent = Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
+    document.getElementById('fragHDI').textContent = (fragHDIStart + (fragHDIEnd-fragHDIStart)*t).toFixed(3);
+    document.getElementById('fedHDI').textContent = (fedHDIStart + (fedHDIEnd-fedHDIStart)*t).toFixed(3);
   }
 
   function setupStatInfoButtons(){
