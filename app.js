@@ -145,20 +145,25 @@
       if (year >= 2036) list.push('Moldova - 2036+');
       return list;
     } else {
-      // Scenario B: full accession timeline
-      const list = [];
+      // Scenario B: full accession timeline, grouped by year so a year that
+      // multiple countries join in (e.g. Iceland + Montenegro) is listed once
       const sortedAccessions = Object.entries(accessionTimeline)
         .filter(([iso, joinYear]) => joinYear <= year)
         .sort((a, b) => a[1] - b[1]);
-      
+
+      const grouped = [];
       sortedAccessions.forEach(([iso, joinYear]) => {
         const country = data.countries[iso];
-        if (country) {
-          list.push(`${country.name} - ${joinYear}`);
+        if (!country) return;
+        const last = grouped[grouped.length - 1];
+        if (last && last.year === joinYear) {
+          last.names.push(country.name);
+        } else {
+          grouped.push({ year: joinYear, names: [country.name] });
         }
       });
-      
-      return list;
+
+      return grouped;
     }
   }
 
@@ -178,7 +183,7 @@
     if (fedList) {
       const fedAccessions = getAccessionList(year, 'fed');
       fedList.innerHTML = fedAccessions.length > 0
-        ? fedAccessions.map(item => `<li><span class="year-marker">${item.split(' - ')[1]}</span>: ${item.split(' - ')[0]}</li>`).join('')
+        ? fedAccessions.map(g => `<li><span class="year-marker">${g.year}</span>: ${g.names.join(', ')}</li>`).join('')
         : '<li>Starting with EU-27</li>';
     }
     
