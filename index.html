@@ -490,6 +490,30 @@
     border:1px solid var(--fed-teal);
   }
 
+  /* Older news items are collapsed behind "See more" until the list is expanded */
+  .feed-older{ display:none; }
+  .feed-list.feed-expanded .feed-older{ display:grid; }
+
+  .feed-see-more{
+    display:block;
+    margin:16px auto 0;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:8px 20px;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--fed-teal);
+    cursor:pointer;
+    transition: all 0.2s ease;
+  }
+  .feed-see-more:hover{
+    background:var(--panel);
+    border-color:var(--fed-teal);
+  }
+
   /* ---------- Footer / methodology ---------- */
   .footnote{
     grid-column:1 / -1;
@@ -745,6 +769,7 @@
       </div>
     </div>
     <div class="feed-list" id="feedList"></div>
+    <button type="button" class="feed-see-more" id="feedSeeMore" aria-expanded="false">See more</button>
   </section>
 
   <!-- METHODOLOGY -->
@@ -768,6 +793,6 @@
 
 <script src="geodata.js"></script>
 <script src="data.js"></script>
-<script src="app.js?v=10"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
