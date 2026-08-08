@@ -33,12 +33,12 @@
 
   // ---------- Color scales ----------
   function fragColor(score, isEU){
-    if(isEU) return '#c4453a';   // current EU members \u0014 solid red
-    return '#5a3a36';             // non-EU neighbours \u0014 faded/muted
+    if(isEU) return '#c4453a';   // current EU members  solid red
+    return '#5a3a36';             // non-EU neighbours  faded/muted
   }
 
   function fedColor(score, isNew){
-    return '#7c5cd6';              // federation members \u0014 single unified purple
+    return '#7c5cd6';              // federation members  single unified purple
   }
 
   // ---------- Theme switching ----------
@@ -54,10 +54,10 @@
     
     if (newTheme === 'light') {
       themeText.textContent = 'Night';
-      themeIcon.textContent = '\u263E'; // Moon icon
+      themeIcon.textContent = '☾'; // Moon icon
     } else {
       themeText.textContent = 'Light';
-      themeIcon.textContent = '\u2600'; // Sun icon
+      themeIcon.textContent = '☀'; // Sun icon
     }
     
     // Save preference to localStorage
@@ -73,10 +73,10 @@
     if (savedTheme === 'light') {
       document.documentElement.setAttribute('data-theme', 'light');
       document.getElementById('themeText').textContent = 'Night';
-      document.getElementById('themeIcon').textContent = '\u263E';
+      document.getElementById('themeIcon').textContent = '☾';
     } else {
       document.getElementById('themeText').textContent = 'Light';
-      document.getElementById('themeIcon').textContent = '\u2600';
+      document.getElementById('themeIcon').textContent = '☀';
     }
   }
 
@@ -370,7 +370,7 @@
   function formatCountryGDP(country, scenario){
     if(country.gdp2050) return country.gdp2050;
     const pop = parsePopulation(country.popFed || country.popFrag || '0M');
-    if(!pop) return '\u2014';
+    if(!pop) return '—';
     const baseMultiplier = country.eu ? 0.07 : 0.04;
     let multiplier = baseMultiplier;
     if(scenario === 'fed'){
@@ -451,49 +451,14 @@
       natoStatus = m.n ? 'Yes' : 'No';
     }
 
-    // Membership data lookup (hardcoded for reliability)
-    const membershipData = {
-      DEU:{s:true,e:true,n:true},FRA:{s:true,e:true,n:true},ITA:{s:true,e:true,n:true},
-      ESP:{s:true,e:true,n:true},POL:{s:true,e:false,n:true},NLD:{s:true,e:true,n:true},
-      BEL:{s:true,e:true,n:true},AUT:{s:true,e:true,n:false},SWE:{s:true,e:false,n:true},
-      FIN:{s:true,e:true,n:true},DNK:{s:true,e:false,n:true},IRL:{s:false,e:true,n:false},
-      PRT:{s:true,e:true,n:true},GRC:{s:true,e:true,n:true},CZE:{s:true,e:false,n:true},
-      SVK:{s:true,e:true,n:true},HUN:{s:true,e:false,n:true},ROU:{s:true,e:false,n:true},
-      BGR:{s:true,e:false,n:true},HRV:{s:true,e:false,n:true},SVN:{s:true,e:true,n:true},
-      LTU:{s:true,e:true,n:true},LVA:{s:true,e:true,n:true},EST:{s:true,e:true,n:true},
-      LUX:{s:true,e:true,n:true},MLT:{s:true,e:true,n:false},CYP:{s:false,e:true,n:false},
-      SRB:{s:false,e:false,n:false},ALB:{s:false,e:false,n:true},MNE:{s:false,e:false,n:true},
-      MKD:{s:false,e:false,n:true},BIH:{s:false,e:false,n:false},XKX:{s:false,e:false,n:false},
-      UKR:{s:false,e:false,n:false},MDA:{s:false,e:false,n:false},GEO:{s:false,e:false,n:false},
-      ARM:{s:false,e:false,n:false},AZE:{s:false,e:false,n:false},
-      GBR:{s:false,e:false,n:true},CHE:{s:true,e:false,n:false},NOR:{s:true,e:false,n:true},
-      ISL:{s:true,e:false,n:true},TUR:{s:false,e:false,n:true}
-    };
-
-    // Get membership status
-    let schengenStatus, eurozoneStatus, natoStatus;
-    if (scenario === 'fed') {
-      const joinedCountries = getJoinedCountries(year);
-      const isMember = country.eu || (country.fedNew && joinedCountries.has(iso));
-      schengenStatus = isMember ? 'Yes' : 'No';
-      eurozoneStatus = isMember ? 'Yes' : 'No';
-      natoStatus = isMember ? 'Yes' : 'No';
-    } else {
-      // For Fragmented scenario, use hardcoded membership data
-      const m = membershipData[iso] || {s:false,e:false,n:false};
-      schengenStatus = m.s ? 'Yes' : 'No';
-      eurozoneStatus = m.e ? 'Yes' : 'No';
-      natoStatus = m.n ? 'Yes' : 'No';
-    }
-
     detailEl.innerHTML = `
-      <div class="detail-country">${country.name} \u2014 ${year}</div>
+      <div class="detail-country">${country.name} — ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
       <div class="detail-row"><span>Projected GDP (2050)</span><span>${gdp}</span></div>
       <div class="detail-row"><span>GDP outlook impact</span><span>${scenarioImpact}</span></div>
       <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
       <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
-      <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '\u2014'}</span></div>
+      <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '—'}</span></div>
       <div class="detail-row"><span>Schengen Zone</span><span>${schengenStatus}</span></div>
       <div class="detail-row"><span>Eurozone</span><span>${eurozoneStatus}</span></div>
       <div class="detail-row"><span>NATO member</span><span>${natoStatus}</span></div>
@@ -623,7 +588,7 @@
     if(/agreement|joint|integrat|union|accession|deal|package|package|connected|shared|framework|strategy/.test(lower)){
       return {
         frag:'Highlights the limits of national coordination',
-        fed:'Positive \u2014 supports federal integration'
+        fed:'Positive — supports federal integration'
       };
     }
     return {
