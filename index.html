@@ -222,12 +222,25 @@
     margin:6px 0 4px;
   }
   .scenario-desc{
+    list-style:none;
     font-size:0.85rem;
     color:var(--ink-dim);
-    line-height:1.55;
-    max-width:46ch;
+    line-height:1.6;
+    max-width:52ch;
     margin-bottom:14px;
   }
+  .scenario-desc li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:5px;
+  }
+  .scenario-desc li::before{
+    content:'—';
+    position:absolute;
+    left:0;
+  }
+  .scenario.fragmented .scenario-desc li::before{ color:var(--frag-red); }
+  .scenario.federal .scenario-desc li::before{ color:var(--fed-teal); }
 
   .map-wrap{
     border:1px solid var(--line);
@@ -620,9 +633,11 @@
         <div class="scenario-title">A fragmented Union, 2050</div>
       </div>
     </div>
-    <div class="scenario-desc">
-      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly — leaving the EU a price-taker on the rules written by Washington and Beijing.
-    </div>
+    <ul class="scenario-desc">
+      <li>Unanimity rules stall the single market.</li>
+      <li>Capital markets stay split along national lines, and digital infrastructure depends on US and Chinese platforms.</li>
+      <li>Enlargement happens unevenly, leaving the EU a price-taker on rules written by Washington and Beijing.</li>
+    </ul>
 
     <div class="map-wrap">
       <svg id="mapFrag" viewBox="0 0 760 620" preserveAspectRatio="xMidYMid meet"></svg>
@@ -690,9 +705,11 @@
         <div class="scenario-title">United States of Europe, <span id="fedYearDisplay">2050</span></div>
       </div>
     </div>
-    <div class="scenario-desc">
-      A genuine capital markets and single market union funds its own chip, cloud and energy champions. Enlargement completes for the Western Balkans, Ukraine and Moldova. The EU sets standards alongside the US and China, and backs human rights and development abroad with real weight.
-    </div>
+    <ul class="scenario-desc">
+      <li>A genuine capital markets and single market union funds its own chip, cloud and energy champions.</li>
+      <li>Enlargement completes for the Western Balkans, Ukraine and Moldova.</li>
+      <li>The EU sets standards alongside the US and China, and backs human rights and development abroad with real weight.</li>
+    </ul>
 
     <div class="map-wrap">
       <svg id="mapFed" viewBox="0 0 760 620" preserveAspectRatio="xMidYMid meet"></svg>
