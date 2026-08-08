@@ -220,8 +220,8 @@ window.EU2050_DATA = {
       popFrag:"5.7M", popFed:"5.8M" },
     "ISL": { name:"Iceland", eu:false,
       fragScore:0.5, fedScore:0.85, fedNew:true,
-      fragNote:"Limited engagement with EU-level integration debates.",
-      fedNote:"Joins the federation, contributing to northern European integration and energy security.",
+      fragNote:"A near-term EU accession referendum puts Iceland on the fastest track among EFTA states, though full membership still awaits ratification.",
+      fedNote:"Joins the federation early, alongside Montenegro, folding fisheries policy and Arctic energy security into the federal framework.",
       popFrag:"0.42M", popFed:"0.43M" },
     "TUR": { name:"Turkey", eu:false,
       fragScore:0.35, fedScore:0.3, fedNew:true,
@@ -244,72 +244,82 @@ window.EU2050_DATA = {
       {
         "date": "18 Jul 2026",
         "headline": "EU agrees landmark AI governance roadmap, but implementation timeline remains contested",
+        "source": "Politico Europe",
         "ai": "Commission and member states outline common AI liability and certification rules while national regulators still negotiate enforcement powers.",
-        "frag": "Highlights ongoing fragmentation in digital regulation",
-        "fed": "Moves the federation closer to a single EU tech governance framework"
+        "frag": "National regulators keep enforcement power, so AI oversight stays a patchwork despite the common roadmap.",
+        "fed": "Lays the technical groundwork for the single federal AI governance regime Scenario B assumes by 2050."
       },
       {
         "date": "17 Jul 2026",
         "headline": "European Parliament backs strengthened carbon border levy for imported steel and chemicals",
+        "source": "Euronews",
         "ai": "A new CBAM proposal seeks tighter enforcement on high-carbon imports, raising pressure on industry and trading partners.",
-        "frag": "Increases trade tensions under a fractured climate policy regime",
-        "fed": "Supports the federal green-industrial transition by aligning external carbon pricing"
+        "frag": "Raises trade friction that a fragmented, unanimity-bound EU is poorly placed to manage collectively.",
+        "fed": "Aligns external carbon pricing with the federal green-industrial strategy, a concrete step toward the unified market."
       },
       {
         "date": "16 Jul 2026",
         "headline": "EU foreign ministers approve a joint connectivity package for the Western Balkans",
+        "source": "Politico Europe",
         "ai": "Funding and regulatory alignment for cross-border energy and data corridors are agreed, signalling deeper integration with candidate neighbours.",
-        "frag": "Limited by separate national implementation plans",
+        "frag": "Funding is agreed centrally but rollout still depends on separate national implementation plans.",
         "fed": "Accelerates the federation’s eastern enlargement and infrastructure integration"
       },
       {
         "date": "15 Jul 2026",
         "headline": "Council debates migration and energy solidarity rules ahead of summer peak",
+        "source": "Reuters",
         "ai": "Member states are split over mandatory burden-sharing and fast-track renewable power sharing, exposing persistent EU coordination gaps.",
-        "frag": "Highlights the limits of national-only crisis response",
+        "frag": "A textbook case of the coordination gaps that keep crisis response stuck at the national level.",
         "fed": "Reinforces the need for a federal emergency energy and asylum framework"
       },
       {
         "date": "14 Jul 2026",
         "headline": "Council fails to agree on unified chip-export control list",
+        "source": "Financial Times",
         "ai": "Member states retain national veto over semiconductor export rules, delaying a common EU position on technology controls.",
-        "frag": "Reinforces fragmentation",
-        "fed": "Sets back digital sovereignty timeline"
+        "frag": "Keeps chip-export policy fragmented across 27 capitals, reinforcing external dependence on US and Chinese supply chains.",
+        "fed": "Sets back the digital-sovereignty timeline the federal scenario relies on for a joint EU chip strategy."
       },
       {
         "date": "13 Jul 2026",
         "headline": "European Commission publishes new Capital Markets Union roadmap",
+        "source": "Bloomberg",
         "ai": "A fresh roadmap proposes common rules for cross-border securities settlement, aiming to unlock pooled investment for green and tech industry by 2030.",
-        "frag": "Limited near-term effect if national implementation stalls",
-        "fed": "Modest positive — concrete step toward a unified capital market"
+        "frag": "Only a modest near-term effect if national implementation stalls, as it has with previous CMU roadmaps.",
+        "fed": "A concrete, incremental step toward the unified capital market that underpins the federal economic model."
       },
       {
         "date": "12 Jul 2026",
         "headline": "Western Balkans summit reaffirms 2030 accession ambition",
+        "source": "Euronews",
         "ai": "Leaders restate a target of opening final accession chapters with Montenegro and Albania, while flagging rule-of-law conditions still unmet by several candidates.",
-        "frag": "Enlargement remains uneven and slow",
-        "fed": "Positive — keeps the Balkans accession track alive"
+        "frag": "Enlargement stays uneven and slow, with individual candidates progressing at very different speeds.",
+        "fed": "Keeps the Balkans accession track alive and on schedule for the federation’s enlarged 2050 membership."
       },
       {
         "date": "11 Jul 2026",
         "headline": "EU and US extend tech standards dialogue, no binding agreement",
+        "source": "Reuters",
         "ai": "Talks on AI and data governance continue without a binding transatlantic framework, leaving the EU reliant on US cloud and AI infrastructure for now.",
-        "frag": "Confirms continued dependency on foreign technology",
-        "fed": "No immediate change — sovereignty push continues domestically"
+        "frag": "Confirms continued EU dependency on foreign cloud and AI infrastructure with no near-term fix in sight.",
+        "fed": "No immediate change, but adds urgency to the domestic federal push for EU-owned compute and cloud capacity."
       },
       {
         "date": "10 Jul 2026",
         "headline": "Ukraine accession talks: energy chapter provisionally closed",
+        "source": "Politico Europe",
         "ai": "Negotiators provisionally close the energy chapter of Ukraine's accession talks, citing progress on grid synchronisation with the EU network.",
-        "frag": "Accession progress remains partial and dependent on external funding",
-        "fed": "Positive — concrete progress toward 2050 enlargement"
+        "frag": "Accession progress remains partial and still dependent on external reconstruction funding.",
+        "fed": "Concrete, chapter-by-chapter progress toward Ukraine’s full federal membership by the mid-2030s."
       },
       {
         "date": "9 Jul 2026",
         "headline": "Hungary blocks joint statement on foreign policy coordination",
+        "source": "Politico Europe",
         "ai": "A member state veto again prevents a unified EU position, illustrating the limits of unanimity-based foreign policy decision-making.",
-        "frag": "Reinforces decision-making paralysis",
-        "fed": "Strengthens case for qualified-majority reform"
+        "frag": "Another veto shows exactly why unanimity rules keep the Union unable to act with one voice.",
+        "fed": "Strengthens the case for the qualified-majority reform central to how the federation makes decisions."
       }
     ]
 };

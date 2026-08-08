@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EU2050 \u0014 Two Futures, One Map</title>
+<title>EU2050 — Two Futures, One Map</title>
 <style>
   :root{
     /* Dark theme (default) */
@@ -436,6 +436,14 @@
     font-weight:600;
     margin-bottom:3px;
   }
+  .feed-body .feed-source{
+    font-family:var(--mono);
+    font-size:0.66rem;
+    color:var(--fed-teal);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
   .feed-body .feed-ai{
     font-size:0.85rem;
     color:var(--ink);
@@ -556,14 +564,14 @@
 <header class="masthead">
   <div>
     <div class="masthead-title">EU2050 <span class="accent">/ Two Futures</span></div>
-    <div class="masthead-sub">Daily AI-read signals \u0012 long-run sovereignty &amp; enlargement scenarios</div>
+    <div class="masthead-sub">Daily AI-read signals — long-run sovereignty &amp; enlargement scenarios</div>
   </div>
   <div>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-      <span class="icon" id="themeIcon">\u0012</span>
+      <span class="icon" id="themeIcon">☀</span>
       <span id="themeText">Night</span>
     </button>
-    <div class="live-tag" style="margin-left:12px;"><span class="live-dot"></span>Updated <span id="feedUpdated">Today</span> \u0012 Auto-refreshes daily</div>
+    <div class="live-tag" style="margin-left:12px;"><span class="live-dot"></span>Updated <span id="feedUpdated">Today</span> — Auto-refreshes daily</div>
   </div>
 </header>
 
@@ -580,12 +588,12 @@
   <section class="scenario fragmented">
     <div class="scenario-head">
       <div>
-        <span class="scenario-tag">SCENARIO A \u0012 Status quo</span>
+        <span class="scenario-tag">SCENARIO A — Status quo</span>
         <div class="scenario-title">A fragmented Union, 2050</div>
       </div>
     </div>
     <div class="scenario-desc">
-      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly \u0014 leaving the EU a price-taker on the rules written by Washington and Beijing.
+      Unanimity rules stall the single market. Capital markets stay split along national lines, digital infrastructure depends on US and Chinese platforms, and enlargement happens unevenly — leaving the EU a price-taker on the rules written by Washington and Beijing.
     </div>
 
     <div class="map-wrap">
@@ -611,12 +619,12 @@
       <div class="stat">
         <div class="stat-label">Global GDP market share</div>
         <div class="stat-value" id="fragGDP">7%</div>
-        <div class="stat-note" id="fragGDPNote">Approximate comparative GDP market shares (illustrative): EU: 7% \u0012 US: ~25% \u0012 China: ~18%. Fragmented EU loses economic weight relative to US and China. Sources: IMF, World Bank projections.</div>
+        <div class="stat-note" id="fragGDPNote">Approximate comparative GDP market shares (illustrative): EU: 7%, US: ~25%, China: ~18%. Fragmented EU loses economic weight relative to US and China. Sources: IMF, World Bank projections.</div>
       </div>
       <div class="stat">
         <div class="stat-label">AI market share</div>
         <div class="stat-value" id="fragAI">9%</div>
-        <div class="stat-note" id="fragAINote">Approximate comparative AI market shares (illustrative): EU: 9% \u0012 US: ~45% \u0012 China: ~35%. Fragmented regulation and investment slow EU AI development. Sources: OECD, industry reports.</div>
+        <div class="stat-note" id="fragAINote">Approximate comparative AI market shares (illustrative): EU: 9%, US: ~45%, China: ~35%. Fragmented regulation and investment slow EU AI development. Sources: OECD, industry reports.</div>
       </div>
     </div>
 
@@ -635,7 +643,7 @@
   <section class="scenario federal">
     <div class="scenario-head">
       <div>
-        <span class="scenario-tag">SCENARIO B \u0012 United States of Europe</span>
+        <span class="scenario-tag">SCENARIO B — United States of Europe</span>
         <div class="scenario-title">United States of Europe, <span id="fedYearDisplay">2050</span></div>
       </div>
     </div>
@@ -661,7 +669,7 @@
         <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
         <div class="stat-value" id="fedPop">503M</div>
         <div class="stat-note" id="fedPopNote">
-          <div><b>How the federation population (695M) is calculated \u0012 method and sources</b></div>
+          <div><b>How the federation population (695M) is calculated — method and sources</b></div>
           <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
             <li>Baseline: start from the EU-27 population baseline (Eurostat 2026 baseline), approximately 448 million.</li>
             <li>Add accession and candidate populations expected to be integrated into the federation by 2050 (illustrative additions used here): United Kingdom (~71M), Turkey (~90M), Ukraine (~35M), Moldova (~2.5M), Western Balkans combined (~17M), and South Caucasus / neighbouring additions (~18M). These subtotal to roughly ~233M.</li>
@@ -678,12 +686,12 @@
       <div class="stat">
         <div class="stat-label">Global GDP market share</div>
         <div class="stat-value" id="fedGDP">18%</div>
-        <div class="stat-note" id="fedGDPNote">Approximate comparative GDP market shares (illustrative): EU Federation: 18% \u0012 US: ~22% \u0012 China: ~15%. United federation gains economic weight through integration and enlargement. Sources: IMF, World Bank projections.</div>
+        <div class="stat-note" id="fedGDPNote">Approximate comparative GDP market shares (illustrative): EU Federation: 18%, US: ~22%, China: ~15%. United federation gains economic weight through integration and enlargement. Sources: IMF, World Bank projections.</div>
       </div>
       <div class="stat">
         <div class="stat-label">AI market share</div>
         <div class="stat-value" id="fedAI">28%</div>
-        <div class="stat-note" id="fedAINote">Approximate comparative AI market shares (illustrative): EU Federation: 28% \u0012 US: ~38% \u0012 China: ~25%. Stronger federal coordination and investment boost EU AI competitiveness. Sources: OECD, industry reports.</div>
+        <div class="stat-note" id="fedAINote">Approximate comparative AI market shares (illustrative): EU Federation: 28%, US: ~38%, China: ~25%. Stronger federal coordination and investment boost EU AI competitiveness. Sources: OECD, industry reports.</div>
       </div>
     </div>
 
@@ -703,7 +711,7 @@
     <div class="feed-head">
       <div>
         <div class="feed-title">Today's signals</div>
-        <div class="feed-sub">AI reads EU news &amp; policy papers from Euronews RSS \u0012 tags which 2050 path each story nudges</div>
+        <div class="feed-sub">AI reads EU policy news from credible outlets — Politico Europe, Euronews, Bloomberg, Le Monde, Reuters &amp; others — and tags which 2050 path each story nudges</div>
       </div>
     </div>
     <div class="feed-list" id="feedList"></div>
@@ -712,16 +720,16 @@
   <!-- METHODOLOGY -->
   <section class="footnote">
     <p><b>What this is.</b> EU2050 reads EU policy documents and news every day, and uses that to adjust two long-run 2050 scenarios for Europe: one where integration stalls (<b>Scenario A</b>), and one where the EU becomes a genuine federation with a completed single market, capital markets union, digital sovereignty and an enlarged membership including the Western Balkans, Ukraine and Moldova (<b>Scenario B</b>).</p>
-    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026\u00122050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
+    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
     <div class="pipeline">
       <span class="step">Eurostat population data</span>
-      <span class="arrow">\u0012</span>
+      <span class="arrow">→</span>
       <span class="step">EU news &amp; Council/Commission documents</span>
-      <span class="arrow">\u0012</span>
+      <span class="arrow">→</span>
       <span class="step">AI extraction (Claude)</span>
-      <span class="arrow">\u0012</span>
+      <span class="arrow">→</span>
       <span class="step">Scenario scores updated</span>
-      <span class="arrow">\u0012</span>
+      <span class="arrow">→</span>
       <span class="step">Maps &amp; feed refreshed</span>
     </div>
   </section>
