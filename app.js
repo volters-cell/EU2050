@@ -670,6 +670,49 @@
     });
   }
 
+  function showShareToast(message){
+    let toast = document.getElementById('shareToast');
+    if(!toast){
+      toast = document.createElement('div');
+      toast.id = 'shareToast';
+      toast.className = 'share-toast';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('visible');
+    clearTimeout(toast._hideTimer);
+    toast._hideTimer = setTimeout(() => toast.classList.remove('visible'), 2400);
+  }
+
+  function setupSocialShare(){
+    const buttons = document.querySelectorAll('.social-icon[data-share]');
+    if(!buttons.length) return;
+    const shareText = "EU2050 — two AI-tracked futures for Europe's 2050. See how policy news pushes each scenario.";
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const type = btn.dataset.share;
+        const pageUrl = window.location.href;
+        const url = encodeURIComponent(pageUrl);
+        const text = encodeURIComponent(shareText);
+        if(type === 'x'){
+          window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'noopener');
+        } else if(type === 'linkedin'){
+          window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank', 'noopener');
+        } else if(type === 'bluesky'){
+          window.open(`https://bsky.app/intent/compose?text=${text}%20${url}`, '_blank', 'noopener');
+        } else if(type === 'instagram'){
+          navigator.clipboard?.writeText(pageUrl).then(() => {
+            showShareToast('Link copied — paste it into Instagram');
+          });
+        } else if(type === 'copy'){
+          navigator.clipboard?.writeText(pageUrl).then(() => {
+            showShareToast('Link copied to clipboard');
+          });
+        }
+      });
+    });
+  }
+
   // Topic-aware classifier used only for headlines pulled from a live RSS feed
   // (the curated NEWS_POOL below covers the far more common generated-feed path
   // with hand-written, story-specific interpretations instead of this fallback).
@@ -1067,6 +1110,7 @@
   setupStatInfoButtons();
   setupStatValueButtons();
   setupFeedSeeMore();
+  setupSocialShare();
   loadFeedData();
   scheduleFeedRefresh();
   loadTheme();
