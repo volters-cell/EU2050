@@ -514,6 +514,21 @@
     border-color:var(--fed-teal);
   }
 
+  /* ---------- Intro ---------- */
+  .intro{
+    background:var(--panel);
+    border-bottom:1px solid var(--line);
+    padding:20px 24px;
+  }
+  .intro p{
+    font-family:var(--serif);
+    font-size:1.05rem;
+    line-height:1.6;
+    color:var(--ink);
+    max-width:90ch;
+  }
+  .intro b{ color:var(--fed-teal); }
+
   /* ---------- Footer / methodology ---------- */
   .footnote{
     grid-column:1 / -1;
@@ -526,22 +541,6 @@
     max-width:80ch;
   }
   .footnote b{ color:var(--ink); }
-  .footnote .pipeline{
-    font-family:var(--mono);
-    font-size:0.66rem;
-    letter-spacing:0.06em;
-    margin-top:10px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-  }
-  .pipeline .arrow{ color:var(--ink-dim); }
-  .pipeline .step{
-    background:var(--panel);
-    border:1px solid var(--line);
-    padding:2px 6px;
-    border-radius:2px;
-  }
 
   /* Year indicator styling */
   .year-indicator{
@@ -605,6 +604,10 @@
   <input type="range" id="yearSlider" min="2026" max="2050" step="1" value="2050">
   <span class="timebar-label" id="yearHint">Drag to see how today's trajectory plays out between now and 2050</span>
 </div>
+
+<section class="intro">
+  <p>EU2050 reads EU policy and news every day to track two competing long-run futures for Europe. <b>Scenario A</b> is a Union where integration stalls under national vetoes. <b>Scenario B</b> is a genuine federation — one single market, one capital market, digital sovereignty, and a completed enlargement to the Western Balkans, Ukraine and Moldova.</p>
+</section>
 
 <div class="layout">
 
@@ -774,19 +777,7 @@
 
   <!-- METHODOLOGY -->
   <section class="footnote">
-    <p><b>What this is.</b> EU2050 reads EU policy documents and news every day, and uses that to adjust two long-run 2050 scenarios for Europe: one where integration stalls (<b>Scenario A</b>), and one where the EU becomes a genuine federation with a completed single market, capital markets union, digital sovereignty and an enlarged membership including the Western Balkans, Ukraine and Moldova (<b>Scenario B</b>).</p>
-    <p style="margin-top:8px;">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
-    <div class="pipeline">
-      <span class="step">Eurostat population data</span>
-      <span class="arrow">→</span>
-      <span class="step">EU news &amp; Council/Commission documents</span>
-      <span class="arrow">→</span>
-      <span class="step">AI extraction (Claude)</span>
-      <span class="arrow">→</span>
-      <span class="step">Scenario scores updated</span>
-      <span class="arrow">→</span>
-      <span class="step">Maps &amp; feed refreshed</span>
-    </div>
+    <p>These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
   </section>
 
 </div>
