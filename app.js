@@ -704,10 +704,14 @@
           navigator.clipboard?.writeText(pageUrl).then(() => {
             showShareToast('Link copied — paste it into Instagram');
           });
-        } else if(type === 'copy'){
-          navigator.clipboard?.writeText(pageUrl).then(() => {
-            showShareToast('Link copied to clipboard');
-          });
+        } else if(type === 'native'){
+          if(navigator.share){
+            navigator.share({ title: document.title, text: shareText, url: pageUrl }).catch(() => {});
+          } else {
+            navigator.clipboard?.writeText(pageUrl).then(() => {
+              showShareToast('Link copied to clipboard');
+            });
+          }
         }
       });
     });
