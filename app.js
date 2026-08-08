@@ -625,12 +625,17 @@
     }
   }
 
+  // News items are sorted most-recent-first, so the first FEED_VISIBLE_COUNT
+  // correspond to the last few days; the rest stay collapsed behind "See more".
+  const FEED_VISIBLE_COUNT = 3;
+
   function buildFeed(){
     const list = document.getElementById('feedList');
     list.innerHTML = '';
-    feedData.forEach(item => {
+    list.classList.remove('feed-expanded');
+    feedData.forEach((item, i) => {
       const row = document.createElement('div');
-      row.className = 'feed-item';
+      row.className = 'feed-item' + (i >= FEED_VISIBLE_COUNT ? ' feed-older' : '');
       row.innerHTML = `
         <div class="feed-date">${item.date}</div>
         <div class="feed-body">
@@ -644,6 +649,24 @@
         </div>
       `;
       list.appendChild(row);
+    });
+
+    const seeMoreBtn = document.getElementById('feedSeeMore');
+    if(seeMoreBtn){
+      seeMoreBtn.style.display = feedData.length > FEED_VISIBLE_COUNT ? '' : 'none';
+      seeMoreBtn.textContent = 'See more';
+      seeMoreBtn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function setupFeedSeeMore(){
+    const btn = document.getElementById('feedSeeMore');
+    const list = document.getElementById('feedList');
+    if(!btn || !list) return;
+    btn.addEventListener('click', () => {
+      const expanded = list.classList.toggle('feed-expanded');
+      btn.textContent = expanded ? 'See less' : 'See more';
+      btn.setAttribute('aria-expanded', String(expanded));
     });
   }
 
@@ -1043,6 +1066,7 @@
 
   setupStatInfoButtons();
   setupStatValueButtons();
+  setupFeedSeeMore();
   loadFeedData();
   scheduleFeedRefresh();
   loadTheme();
