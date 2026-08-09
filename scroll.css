@@ -40,18 +40,34 @@ html.motion .reveal.is-done{ will-change: auto; }
    timeline scroll past it. Desktop only: on mobile the columns
    stack and sticky would trap the map above the content.
    880px matches the existing .layout breakpoint exactly.
+
+   No z-index here on purpose. The map is first in the DOM, so
+   default paint order already puts the caption/legend/stat-strip/
+   detail/accession content that scrolls up past it ON TOP of the
+   parked map. An earlier z-index:2 on the map inverted that: the
+   map painted over its own trailing content instead, and because
+   Scenario B's column is wider (intentionally, so it reads as the
+   bigger outcome) its fixed-aspect-ratio map is taller too — so B
+   covered far more of its own text for far longer than A did.
+
+   The previous .map-caption sticky rule is also gone: its
+   `top: calc(var(--stick-top) + 100%)` resolved the 100% against
+   the scrollport height, i.e. viewport-height + 24px — always
+   taller than the viewport itself, so it could never actually
+   engage. Letting the caption sit in normal flow right after the
+   map is what was already happening in practice.
    ------------------------------------------------------------ */
 @media (min-width: 881px){
   html.motion .scenario .map-wrap{
     position: sticky;
     top: var(--stick-top);
-    z-index: 2;
   }
-  /* The caption travels with the map rather than sliding under it. */
-  html.motion .scenario .map-caption{
-    position: sticky;
-    top: calc(var(--stick-top) + 100%);
-    z-index: 2;
+  /* Opaque background so the caption/legend read cleanly on the
+     rare frame where they're still sliding past the parked map
+     rather than showing map colour bleeding through behind them. */
+  html.motion .scenario .map-caption,
+  html.motion .scenario .legend{
+    background: var(--bg);
   }
 }
 
@@ -92,10 +108,10 @@ html.lenis, html.lenis body{ height: auto; }
    ------------------------------------------------------------ */
 @media (prefers-reduced-motion: reduce){
   html.motion .reveal{ opacity: 1 !important; transform: none !important; }
-  html.motion .scenario .map-wrap,
-  html.motion .scenario .map-caption{ position: static; }
+  html.motion .scenario .map-wrap{ position: static; }
   html.motion .map-wrap svg path.country{ opacity: 1 !important; }
   html.motion .stat{ transition: none; }
+  html.motion .scenario.federal{ opacity: 1; }
 }
 
 /* ------------------------------------------------------------
@@ -111,4 +127,16 @@ html.lenis, html.lenis body{ height: auto; }
   position: absolute;
   pointer-events: none;
   z-index: 5;
+}
+
+/* ------------------------------------------------------------
+   8. Intro focus — lead with Scenario A
+   On load, Scenario B starts dimmed so the eye reads Scenario A
+   (today's fragmented status quo) first. scroll.js brings B up to
+   full strength a beat later. Scenario A is never touched, so
+   both maps stay on screen together once B arrives, for
+   comparison rather than replacement.
+   ------------------------------------------------------------ */
+html.motion .scenario.federal{
+  opacity: 0.32;
 }
