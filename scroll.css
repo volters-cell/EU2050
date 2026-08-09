@@ -1,0 +1,99 @@
+/* ============================================================
+   EU2050 — scroll motion layer
+   Additive only. Does not modify existing layout or colours.
+   Every rule degrades to the current design if scroll.js fails.
+   ============================================================ */
+
+:root{
+  /* Distance from top of viewport at which the map parks itself. */
+  --stick-top: 24px;
+  /* Height of one scroll "beat". Used by pinned scenes. */
+  --scene-height: 260vh;
+}
+
+/* ------------------------------------------------------------
+   1. Reveal primitives
+   scroll.js adds .is-in when the element enters the viewport.
+   The pre-state is applied ONLY when JS is alive (html.motion),
+   so a JS failure never leaves content invisible.
+   ------------------------------------------------------------ */
+html.motion .reveal{
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  will-change: opacity, transform;
+}
+html.motion .reveal.is-in{
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Cleared after the transition finishes so hover/tooltip
+   compositing in app.js is never fighting a stale layer. */
+html.motion .reveal.is-done{ will-change: auto; }
+
+/* ------------------------------------------------------------
+   2. Sticky map — the scrollytelling move
+   The map parks while the stat strip, detail panel and accession
+   timeline scroll past it. Desktop only: on mobile the columns
+   stack and sticky would trap the map above the content.
+   880px matches the existing .layout breakpoint exactly.
+   ------------------------------------------------------------ */
+@media (min-width: 881px){
+  html.motion .scenario .map-wrap{
+    position: sticky;
+    top: var(--stick-top);
+    z-index: 2;
+  }
+  /* The caption travels with the map rather than sliding under it. */
+  html.motion .scenario .map-caption{
+    position: sticky;
+    top: calc(var(--stick-top) + 100%);
+    z-index: 2;
+  }
+}
+
+/* ------------------------------------------------------------
+   3. Country materialise
+   Paths start hidden; scroll.js fades them in with a stagger.
+   Scoped to [data-map-state="armed"] so that slider-driven
+   rebuilds (which run buildMap again) render instantly instead
+   of replaying the entrance every time the year changes.
+   ------------------------------------------------------------ */
+html.motion .map-wrap svg[data-map-state="armed"] path.country{
+  opacity: 0;
+}
+
+/* ------------------------------------------------------------
+   4. Micro-interaction on stats
+   Existing .stat cards get a quiet lift on hover. No colour
+   change — the palette already carries the meaning.
+   ------------------------------------------------------------ */
+html.motion .stat{
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.motion .stat:hover{
+  transform: translate3d(0, -2px, 0);
+}
+
+/* ------------------------------------------------------------
+   5. Lenis requirements
+   ------------------------------------------------------------ */
+html.lenis, html.lenis body{ height: auto; }
+.lenis.lenis-smooth{ scroll-behavior: auto !important; }
+.lenis.lenis-stopped{ overflow: hidden; }
+
+/* ------------------------------------------------------------
+   6. Reduced motion — full opt-out
+   scroll.js also bails at runtime; this is the belt-and-braces
+   half so nothing is left mid-transition.
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce){
+  html.motion .reveal{ opacity: 1 !important; transform: none !important; }
+  html.motion .scenario .map-wrap,
+  html.motion .scenario .map-caption{ position: static; }
+  html.motion .map-wrap svg path.country{ opacity: 1 !important; }
+  html.motion .stat{ transition: none; }
+}
