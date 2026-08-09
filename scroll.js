@@ -20,6 +20,18 @@
   gsap.registerPlugin(ScrollTrigger);
 
   /* ----------------------------------------------------------
+     0. Intro focus
+     Scenario B starts dimmed (see scroll.css) so the first
+     impression reads Scenario A first. Bring B up to full
+     strength a beat later — opacity only, so it never touches
+     the containing block .map-wrap's sticky positioning relies on.
+     ---------------------------------------------------------- */
+  var fedIntro = document.querySelector('.scenario.federal');
+  if (fedIntro) {
+    gsap.to(fedIntro, { opacity: 1, duration: 1.2, ease: 'power2.out', delay: 0.75 });
+  }
+
+  /* ----------------------------------------------------------
      1. Smooth scroll
      Lenis is optional. If the CDN is blocked the rest still runs
      on native scrolling.
