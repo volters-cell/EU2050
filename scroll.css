@@ -97,3 +97,18 @@ html.lenis, html.lenis body{ height: auto; }
   html.motion .map-wrap svg path.country{ opacity: 1 !important; }
   html.motion .stat{ transition: none; }
 }
+
+/* ------------------------------------------------------------
+   7. Tooltip positioning
+   The base stylesheet never gave .tooltip a `position`, so the
+   left/top app.js computes (relative to the map SVG) had no
+   containing block to anchor to. .map-wrap already establishes
+   one (position:relative in the base styles, sticky here), so
+   anchor the tooltip there. Unscoped from html.motion so it is
+   correct with or without the motion layer active.
+   ------------------------------------------------------------ */
+.map-wrap .tooltip{
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+}
