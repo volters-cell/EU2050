@@ -41,30 +41,43 @@ html.motion .reveal.is-done{ will-change: auto; }
    stack and sticky would trap the map above the content.
    880px matches the existing .layout breakpoint exactly.
 
-   No z-index here on purpose. The map is first in the DOM, so
-   default paint order already puts the caption/legend/stat-strip/
-   detail/accession content that scrolls up past it ON TOP of the
-   parked map. An earlier z-index:2 on the map inverted that: the
-   map painted over its own trailing content instead, and because
-   Scenario B's column is wider (intentionally, so it reads as the
-   bigger outcome) its fixed-aspect-ratio map is taller too — so B
-   covered far more of its own text for far longer than A did.
+   A sticky element paints above ordinary static content in the
+   same stacking context regardless of DOM order — that's just how
+   the CSS painting-order rules work (positioned descendants are a
+   later paint step than in-flow static ones). So it isn't enough
+   to just leave the map without a z-index: the caption/legend/
+   stat-strip/detail/accession content that scrolls up past it
+   needs to be explicitly promoted to its own stacking level ABOVE
+   the map's. Scenario B's column is wider (intentionally, so it
+   reads as the bigger outcome), and its fixed-aspect-ratio map is
+   taller as a result — so without this, B covered far more of its
+   own text for far longer than A did.
 
-   The previous .map-caption sticky rule is also gone: its
+   The previous .map-caption sticky rule is gone too: its
    `top: calc(var(--stick-top) + 100%)` resolved the 100% against
    the scrollport height, i.e. viewport-height + 24px — always
    taller than the viewport itself, so it could never actually
-   engage. Letting the caption sit in normal flow right after the
-   map is what was already happening in practice.
+   engage.
    ------------------------------------------------------------ */
 @media (min-width: 881px){
   html.motion .scenario .map-wrap{
     position: sticky;
     top: var(--stick-top);
   }
-  /* Opaque background so the caption/legend read cleanly on the
-     rare frame where they're still sliding past the parked map
-     rather than showing map colour bleeding through behind them. */
+  /* Everything that scrolls up past the parked map gets its own
+     stacking level, one above the map's (z-index:auto == 0), so
+     it always paints over the map instead of under it. */
+  html.motion .scenario .map-caption,
+  html.motion .scenario .legend,
+  html.motion .scenario .stat-strip,
+  html.motion .scenario .detail,
+  html.motion .scenario .accession-timeline{
+    position: relative;
+    z-index: 1;
+  }
+  /* Opaque background so the caption/legend read cleanly rather
+     than showing map colour bleeding through behind their text —
+     .stat/.detail/.accession-timeline already have their own. */
   html.motion .scenario .map-caption,
   html.motion .scenario .legend{
     background: var(--bg);
