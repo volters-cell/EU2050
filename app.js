@@ -1106,6 +1106,7 @@
     document.getElementById('yearHint').textContent = year === 2050
       ? 'Showing the full 2050 scenario outcomes'
       : `Interpolated path toward 2050, based on current trajectory`;
+    document.dispatchEvent(new CustomEvent('eu2050:rendered', { detail: { year } }));
   }
 
   const slider = document.getElementById('yearSlider');
