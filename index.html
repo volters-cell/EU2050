@@ -18,6 +18,8 @@
     --frag-red: #c4453a;
     --fed-teal: #7c3aed;
     --fed-gold: #ffcb47;
+    --co2-bad: #e5484d;
+    --co2-good: #2fbf71;
     --mono: 'JetBrains Mono', 'Courier New', monospace;
     --serif: 'Source Serif Pro', Georgia, serif;
     --sans: 'Inter', -apple-system, sans-serif;
@@ -33,6 +35,8 @@
     --ink-dim: #5a6478;
     --frag-red: #b53a2f;
     --fed-teal: #5d2aa8;
+    --co2-bad: #c23c3c;
+    --co2-good: #1f9d5c;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -409,6 +413,10 @@
   }
   .scenario.fragmented .stat-value{ color:var(--frag-amber); }
   .scenario.federal .stat-value{ color:var(--fed-teal); }
+  /* CO2 gets its own red/green regardless of column, for an at-a-glance
+     bad/good read distinct from the scenario's usual amber/teal branding. */
+  #fragCO2{ color:var(--co2-bad); }
+  #fedCO2{ color:var(--co2-good); }
 
   /* ---------- Country detail panel ---------- */
   .detail{
@@ -828,9 +836,9 @@
         <div class="stat-note" id="fragAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU: 6%, US: ~38%, China: ~32%. Fragmented national regulation and investment gaps allow US and China to dominate. Sources: OECD, industry reports.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
         <div class="stat-value" id="fragCO2">2,800 Mt</div>
-        <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's 2050 climate-neutrality law targets net zero, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA.</div>
+        <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's legally binding target of net-zero emissions by 2050 — the European Climate Law, Regulation (EU) 2021/1119 — commits the whole bloc to climate neutrality, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
       </div>
       <div class="stat">
         <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fragHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
@@ -916,9 +924,9 @@
         <div class="stat-note" id="fedAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU Federation: 18%, US: ~35%, China: ~30%. Unified regulation (DSA, AI Act) and coordinated R&D investment enable European AI to compete globally. Sources: OECD, industry reports.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
         <div class="stat-value" id="fedCO2">2,800 Mt</div>
-        <div class="stat-note" id="fedCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). A coordinated federal Green Deal hits net zero by 2050, meeting the EU's own climate-neutrality law. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA.</div>
+        <div class="stat-note" id="fedCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). A coordinated federal Green Deal hits net zero by 2050, meeting the EU's legally binding target — the European Climate Law, Regulation (EU) 2021/1119 — which commits the whole bloc to climate neutrality by 2050. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
       </div>
       <div class="stat">
         <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fedHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>

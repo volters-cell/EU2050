@@ -214,6 +214,44 @@
     }
   }
 
+  // Regenerates the "How the federation population is calculated" note with
+  // an exact, year-aware breakdown: every accession country that has
+  // actually joined by this year (same accessionTimeline/joinYear <= year
+  // filter as getAccessionList()), each with its precise interpolated
+  // population — instead of the old rounded, grouped-by-region prose.
+  function updateFedPopBreakdown(year){
+    const noteEl = document.getElementById('fedPopNote');
+    if(!noteEl) return;
+
+    const euCore = Object.values(data.countries)
+      .filter(c => c.eu)
+      .reduce((sum, c) => sum + interpolatePopulation(c, 'fed', year), 0);
+
+    const joined = Object.entries(accessionTimeline)
+      .filter(([iso, joinYear]) => joinYear <= year)
+      .sort((a, b) => a[1] - b[1])
+      .map(([iso, joinYear]) => {
+        const c = data.countries[iso];
+        return c ? { year: joinYear, name: c.name, pop: interpolatePopulation(c, 'fed', year) } : null;
+      })
+      .filter(Boolean);
+
+    const accessionTotal = joined.reduce((sum, j) => sum + j.pop, 0);
+    const total = euCore + accessionTotal;
+    const accessionCountryCount = Object.keys(accessionTimeline).length;
+
+    const rows = joined.length
+      ? joined.map(j => `<li><span class="year-marker">${j.year}</span> — ${j.name}: ${j.pop.toFixed(1)}M</li>`).join('')
+      : '<li>No accession countries have joined yet at this year.</li>';
+
+    noteEl.innerHTML = `
+      <div><b>How the federation population is calculated — method and sources</b></div>
+      <div style="margin-top:6px;">EU-27 core: ${euCore.toFixed(0)}M in ${year} (Eurostat baseline, interpolated to this year). ${joined.length} of the federation's ${accessionCountryCount} accession countries have joined as of ${year}, adding ${accessionTotal.toFixed(1)}M — combined total: ${total.toFixed(1)}M.</div>
+      <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">${rows}</ol>
+      <div style="margin-top:6px;">Primary sources: <a href="https://ec.europa.eu/eurostat/web/population-demography-migration-projections">Eurostat population and projections</a>; <a href="https://population.un.org/wpp/">UN World Population Prospects (WPP)</a>.</div>
+    `;
+  }
+
   // ---------- Build SVG for one map ----------
   function buildMap(svgEl, scenario, tooltipEl, detailEl, year){
     svgEl.innerHTML = '';
@@ -388,6 +426,19 @@
     });
   }
 
+  // Opens exactly one .stat-note at a time — any other open note closes
+  // first, so tapping a new info button/stat value never leaves two notes
+  // stacked open at once. Shared by setupStatInfoButtons() and the
+  // stat-value click handlers below.
+  function openStatNote(noteEl){
+    if(!noteEl) return;
+    const alreadyOpen = noteEl.classList.contains('visible');
+    document.querySelectorAll('.stat-note.visible').forEach(n => {
+      if(n !== noteEl) n.classList.remove('visible');
+    });
+    noteEl.classList.toggle('visible', !alreadyOpen);
+  }
+
   function setupStatValueButtons(){
     const mapToggle = {
       'fragMembers': toggleEUBordersFragMap,
@@ -420,7 +471,7 @@
     Object.keys(noteMap).forEach(id => {
       const el = document.getElementById(id);
       const note = document.getElementById(noteMap[id]);
-      if(el && note){ el.style.cursor = 'pointer'; el.addEventListener('click', () => note.classList.toggle('visible')); }
+      if(el && note){ el.style.cursor = 'pointer'; el.addEventListener('click', () => openStatNote(note)); }
     });
   }
 
@@ -671,7 +722,7 @@
         const target = document.getElementById(button.dataset.target);
         const url = button.dataset.url;
         if(target){
-          target.classList.toggle('visible');
+          openStatNote(target);
         }
         if(url){
           window.open(url, '_blank', 'noopener');
@@ -1202,6 +1253,7 @@
     buildMap(document.getElementById('mapFed'), 'fed', document.getElementById('tooltipFed'), document.getElementById('detailFed'), year);
     updateStats(year);
     updateAccessionTimelines(year);
+    updateFedPopBreakdown(year);
     document.getElementById('yearLabel').textContent = year;
     document.getElementById('yearHint').textContent = year === 2050
       ? 'Showing the full 2050 scenario outcomes'
