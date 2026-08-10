@@ -119,6 +119,28 @@
     'TUR': 2045  // Turkey
   };
 
+  // Schengen/Eurozone/NATO membership lookup for Scenario A (hardcoded for
+  // reliability). Scenario B collapses all three into a single isMember
+  // boolean once a country joins the federation, so this table only matters
+  // for the fragmented map.
+  const membershipData = {
+    DEU: {s:true, e:true, n:true}, FRA: {s:true, e:true, n:true}, ITA: {s:true, e:true, n:true},
+    ESP: {s:true, e:true, n:true}, POL: {s:true, e:false, n:true}, NLD: {s:true, e:true, n:true},
+    BEL: {s:true, e:true, n:true}, AUT: {s:true, e:true, n:false}, SWE: {s:true, e:false, n:true},
+    FIN: {s:true, e:true, n:true}, DNK: {s:true, e:false, n:true}, IRL: {s:false, e:true, n:false},
+    PRT: {s:true, e:true, n:true}, GRC: {s:true, e:true, n:true}, CZE: {s:true, e:false, n:true},
+    SVK: {s:true, e:true, n:true}, HUN: {s:true, e:false, n:true}, ROU: {s:true, e:false, n:true},
+    BGR: {s:true, e:false, n:true}, HRV: {s:true, e:false, n:true}, SVN: {s:true, e:true, n:true},
+    LTU: {s:true, e:true, n:true}, LVA: {s:true, e:true, n:true}, EST: {s:true, e:true, n:true},
+    LUX: {s:true, e:true, n:true}, MLT: {s:true, e:true, n:false}, CYP: {s:false, e:true, n:false},
+    SRB: {s:false, e:false, n:false}, ALB: {s:false, e:false, n:true}, MNE: {s:false, e:false, n:true},
+    MKD: {s:false, e:false, n:true}, BIH: {s:false, e:false, n:false}, XKX: {s:false, e:false, n:false},
+    UKR: {s:false, e:false, n:false}, MDA: {s:false, e:false, n:false}, GEO: {s:false, e:false, n:false},
+    ARM: {s:false, e:false, n:false}, AZE: {s:false, e:false, n:false},
+    GBR: {s:false, e:false, n:true}, CHE: {s:true, e:false, n:false}, NOR: {s:true, e:false, n:true},
+    ISL: {s:true, e:false, n:true}, TUR: {s:false, e:false, n:true}
+  };
+
   // Get countries that have joined by a given year in Scenario B
   function getJoinedCountries(year) {
     const joined = new Set();
@@ -261,16 +283,30 @@
             path.setAttribute('stroke-width','0.5');
           }
         }
+        // Membership highlight (Schengen/Eurozone/NATO) — Scenario A only,
+        // since federated members share a single isMember status once joined.
+        const membershipKind = scenario === 'frag' ? svgEl.getAttribute('data-membership-highlight') : null;
+        if(membershipKind){
+          const m = membershipData[iso];
+          if(m && m[membershipKind]){
+            path.setAttribute('stroke','#ffcb47');
+            path.setAttribute('stroke-width','1.6');
+          } else {
+            path.setAttribute('stroke','#0b0e14');
+            path.setAttribute('stroke-width','0.5');
+          }
+        }
       } catch(e) {}
 
       svgEl.appendChild(path);
 
       if(country){
-        path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl));
+        path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl, scenario, year));
         path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
         path.addEventListener('click', () => {
           showDetail(detailEl, country, scenario, year, iso);
+          updateShareURL(year, scenario, iso);
           // For fragmented map, also toggle EU internal borders on any country click
           if (scenario === 'frag') {
             toggleEUBordersFragMap();
@@ -322,6 +358,36 @@
     svg.setAttribute('data-fed-highlight','1');
   }
 
+  // Toggle Schengen/Eurozone/NATO border highlighting on the fragmented map.
+  // Single active toggle: clicking a different chip switches to it rather
+  // than stacking, so only one membership's borders are ever highlighted.
+  function toggleMembershipHighlight(kind){
+    const svg = document.getElementById('mapFrag');
+    const current = svg.getAttribute('data-membership-highlight');
+    const next = current === kind ? null : kind;
+    svg.querySelectorAll('path.country').forEach(p => {
+      const iso = p.getAttribute('data-iso');
+      const m = membershipData[iso];
+      if(next && m && m[next]){
+        p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6');
+      } else {
+        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
+      }
+    });
+    if(next) svg.setAttribute('data-membership-highlight', next);
+    else svg.removeAttribute('data-membership-highlight');
+
+    document.querySelectorAll('.chip[data-membership]').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.membership === next);
+    });
+  }
+
+  function setupMembershipToggles(){
+    document.querySelectorAll('.chip[data-membership]').forEach(btn => {
+      btn.addEventListener('click', () => toggleMembershipHighlight(btn.dataset.membership));
+    });
+  }
+
   function setupStatValueButtons(){
     const mapToggle = {
       'fragMembers': toggleEUBordersFragMap,
@@ -358,8 +424,12 @@
     });
   }
 
-  function showTooltip(tooltipEl, country, e, svgEl){
-    tooltipEl.textContent = country.name;
+  function showTooltip(tooltipEl, country, e, svgEl, scenario, year){
+    const score = blendScore(country, scenario, year);
+    const scoreLabel = scenario === 'frag' ? 'Sovereignty' : 'Integration';
+    tooltipEl.innerHTML = score !== undefined
+      ? `<b>${country.name}</b><br>${scoreLabel}: ${score.toFixed(2)}`
+      : country.name;
     tooltipEl.style.opacity = '1';
     moveTooltip(tooltipEl, e, svgEl);
   }
@@ -374,9 +444,28 @@
     tooltipEl.style.opacity = '0';
   }
 
-  function formatCountryGDP(country, scenario){
-    if(country.gdp2050) return country.gdp2050;
-    const pop = parsePopulation(country.popFed || country.popFrag || '0M');
+  // ---------- Population interpolation ----------
+  // pop2026 is the current, real population; popFrag/popFed are 2050
+  // endpoints under each scenario. Every year in between is a straight-line
+  // interpolation, so the slider always shows a real trajectory rather than
+  // a fixed "2050" figure regardless of which year is selected.
+  function parsePopulation(value){
+    if(!value || typeof value !== 'string') return 0;
+    const match = value.match(/([0-9]+(?:\.[0-9]+)?)M/);
+    return match ? parseFloat(match[1]) : 0;
+  }
+
+  function interpolatePopulation(country, scenario, year){
+    const t = Math.max(0, Math.min(1, (year - 2026) / (2050 - 2026)));
+    const start = parsePopulation(country.pop2026 || country.popFrag || country.popFed);
+    const endValue = scenario === 'frag' ? country.popFrag : country.popFed;
+    const end = parsePopulation(endValue || country.pop2026);
+    return start + (end - start) * t;
+  }
+
+  function formatCountryGDP(country, scenario, year){
+    if(country.gdp2050 && year === 2050) return country.gdp2050;
+    const pop = interpolatePopulation(country, scenario, year);
     if(!pop) return '—';
     const baseMultiplier = country.eu ? 0.07 : 0.04;
     let multiplier = baseMultiplier;
@@ -448,8 +537,8 @@
 
   function showDetail(detailEl, country, scenario, year, iso){
     const note = scenario === 'frag' ? country.fragNote : country.fedNote;
-    const pop = scenario === 'frag' ? country.popFrag : country.popFed;
-    const gdp = formatCountryGDP(country, scenario);
+    const pop = Math.round(interpolatePopulation(country, scenario, year) * 10) / 10 + 'M';
+    const gdp = formatCountryGDP(country, scenario, year);
     const hdi = formatCountryHDI(country);
     
     // Determine status based on year and scenario
@@ -477,25 +566,6 @@
           ? 'A unified capital market would let local startups raise growth funding and list in Europe instead of relying on outside capital.'
           : 'Fragmented national markets push local startups toward outside investors and foreign listings instead of EU exchanges.');
 
-    // Membership data lookup (hardcoded for reliability)
-    const membershipData = {
-      DEU: {s:true, e:true, n:true}, FRA: {s:true, e:true, n:true}, ITA: {s:true, e:true, n:true},
-      ESP: {s:true, e:true, n:true}, POL: {s:true, e:false, n:true}, NLD: {s:true, e:true, n:true},
-      BEL: {s:true, e:true, n:true}, AUT: {s:true, e:true, n:false}, SWE: {s:true, e:false, n:true},
-      FIN: {s:true, e:true, n:true}, DNK: {s:true, e:false, n:true}, IRL: {s:false, e:true, n:false},
-      PRT: {s:true, e:true, n:true}, GRC: {s:true, e:true, n:true}, CZE: {s:true, e:false, n:true},
-      SVK: {s:true, e:true, n:true}, HUN: {s:true, e:false, n:true}, ROU: {s:true, e:false, n:true},
-      BGR: {s:true, e:false, n:true}, HRV: {s:true, e:false, n:true}, SVN: {s:true, e:true, n:true},
-      LTU: {s:true, e:true, n:true}, LVA: {s:true, e:true, n:true}, EST: {s:true, e:true, n:true},
-      LUX: {s:true, e:true, n:true}, MLT: {s:true, e:true, n:false}, CYP: {s:false, e:true, n:false},
-      SRB: {s:false, e:false, n:false}, ALB: {s:false, e:false, n:true}, MNE: {s:false, e:false, n:true},
-      MKD: {s:false, e:false, n:true}, BIH: {s:false, e:false, n:false}, XKX: {s:false, e:false, n:false},
-      UKR: {s:false, e:false, n:false}, MDA: {s:false, e:false, n:false}, GEO: {s:false, e:false, n:false},
-      ARM: {s:false, e:false, n:false}, AZE: {s:false, e:false, n:false},
-      GBR: {s:false, e:false, n:true}, CHE: {s:true, e:false, n:false}, NOR: {s:true, e:false, n:true},
-      ISL: {s:true, e:false, n:true}, TUR: {s:false, e:false, n:true}
-    };
-
     // Get membership status
     let schengenStatus, eurozoneStatus, natoStatus;
     if (scenario === 'fed') {
@@ -515,11 +585,11 @@
     detailEl.innerHTML = `
       <div class="detail-country">${country.name} — ${year}</div>
       <div class="detail-row"><span>Status</span><span>${statusLine}</span></div>
-      <div class="detail-row"><span>Projected GDP (2050)</span><span>${gdp}</span></div>
+      <div class="detail-row"><span>Projected GDP (${year})</span><span>${gdp}</span></div>
       <div class="detail-row"><span>GDP outlook impact</span><span>${scenarioImpact}</span></div>
       <div class="detail-row"><span>Human Development Index (global)</span><span>${hdi}</span></div>
       <div class="detail-row"><span>UN membership</span><span>${unText}</span></div>
-      <div class="detail-row"><span>Population (2050 path)</span><span>${pop || '—'}</span></div>
+      <div class="detail-row"><span>Population (${year})</span><span>${pop || '—'}</span></div>
       <div class="detail-row"><span>Schengen Zone</span><span>${schengenStatus}</span></div>
       <div class="detail-row"><span>Eurozone</span><span>${eurozoneStatus}</span></div>
       <div class="detail-row"><span>NATO member</span><span>${natoStatus}</span></div>
@@ -528,55 +598,42 @@
   }
 
   // ---------- Stats ----------
-  function parsePopulation(value){
-    if(!value || typeof value !== 'string') return 0;
-    const match = value.match(/([0-9]+(?:\.[0-9]+)?)M/);
-    return match ? parseFloat(match[1]) : 0;
-  }
-
-  function countCountries(year, scenario){
+  function countCountries(year){
     const entries = Object.entries(data.countries || {});
     const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
     const euMembers = entries.filter(([iso, c]) => c.eu).map(([iso,c]) => c);
-    
-    if (scenario === 'fed') {
-      // For federal scenario, count EU members + joined countries
-      const joinedCountries = getJoinedCountries(year);
-      const fedMembers = entries.filter(([iso, c]) => (c.eu || (c.fedNew && joinedCountries.has(iso))) && !FED_EXCLUDE_ISOS.has(iso)).map(([iso,c]) => c);
-      
-      const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
-      const fedPop = fedMembers.reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
-      return {
-        euCount: euMembers.length,
-        fedCount: fedMembers.length,
-        fragPop,
-        fedPop
-      };
-    } else {
-      // For fragmented scenario, use original logic
-      const fragPop = euMembers.reduce((sum, c) => sum + parsePopulation(c.popFrag), 0);
-      const fedPop = entries.filter(([iso, c]) => (c.eu || c.fedNew) && !FED_EXCLUDE_ISOS.has(iso)).reduce((sum, c) => sum + parsePopulation(c.popFed), 0);
-      return {
-        euCount: euMembers.length,
-        fedCount: 43,
-        fragPop,
-        fedPop
-      };
-    }
+    const joinedCountries = getJoinedCountries(year);
+    const fedMembers = entries
+      .filter(([iso, c]) => (c.eu || (c.fedNew && joinedCountries.has(iso))) && !FED_EXCLUDE_ISOS.has(iso))
+      .map(([iso,c]) => c);
+
+    const fragPop = euMembers.reduce((sum, c) => sum + interpolatePopulation(c, 'frag', year), 0);
+    const fedPop = fedMembers.reduce((sum, c) => sum + interpolatePopulation(c, 'fed', year), 0);
+
+    return {
+      euCount: euMembers.length,
+      fedCount: fedMembers.length,
+      fragPop,
+      fedPop
+    };
   }
 
   function updateStats(year){
-    const t = (year - 2026) / (2050 - 2026);
-    const counts = countCountries(year, 'fed');
-    const countsFrag = countCountries(year, 'frag');
+    const t = Math.max(0, Math.min(1, (year - 2026) / (2050 - 2026)));
+    const counts = countCountries(year);
 
-    // GDP market share: Fragmented starts at 7%, Federal at 18%
-    const fragGDPStart = 15, fragGDPEnd = 7;
-    const fedGDPStart = 15, fedGDPEnd = 18;
-    
-    // AI market share: Fragmented starts at 11%, Federal at 15%
-    const fragAIStart = 11, fragAIEnd = 9;
-    const fedAIStart = 15, fedAIEnd = 28;
+    // GDP market share: 2026 baseline is 18% — the EU-27's actual current
+    // share of nominal world GDP (IMF/World Bank, ~$21T of ~$118T world GDP).
+    // Scenario A (fragmented): declines to 10% as EU loses competitive power
+    // Scenario B (federal): holds at 16% as an integrated bloc stays competitive
+    const fragGDPStart = 18, fragGDPEnd = 10;
+    const fedGDPStart = 18, fedGDPEnd = 16;
+
+    // AI market share: 2026 baseline ~10% (EU, fragmented by national regulation)
+    // Scenario A (fragmented): falls to 6% as US/China consolidate dominance
+    // Scenario B (federal): grows to 18% as unified regulation enables European scale
+    const fragAIStart = 10, fragAIEnd = 6;
+    const fedAIStart = 10, fedAIEnd = 18;
 
     // Median HDI: both start from the current EU-27 baseline (0.900); fragmented
     // markets barely move it, while federal convergence funding pulls it well
@@ -584,9 +641,17 @@
     const fragHDIStart = 0.900, fragHDIEnd = 0.910;
     const fedHDIStart = 0.900, fedHDIEnd = 0.945;
 
-    document.getElementById('fragPop').textContent = Math.round(countsFrag.fragPop) + 'M';
+    // CO2 emissions, Mt/year — 2026 baseline ~2,800 Mt (EEA net GHG estimate).
+    // Scenario A (fragmented): policy patchwork falls short of the EU's own
+    // climate-neutrality law, landing around 1,100 Mt (roughly -60%) by 2050.
+    // Scenario B (federal): coordinated Green Deal delivery hits net zero,
+    // matching the EU's legally binding 2050 climate-neutrality target.
+    const fragCO2Start = 2800, fragCO2End = 1100;
+    const fedCO2Start = 2800, fedCO2End = 0;
+
+    document.getElementById('fragPop').textContent = Math.round(counts.fragPop) + 'M';
     document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
-    document.getElementById('fragMembers').textContent = countsFrag.euCount;
+    document.getElementById('fragMembers').textContent = counts.euCount;
     document.getElementById('fedMembers').textContent = counts.fedCount;
     document.getElementById('fragGDP').textContent = Math.round(fragGDPStart + (fragGDPEnd-fragGDPStart)*t) + '%';
     document.getElementById('fedGDP').textContent = Math.round(fedGDPStart + (fedGDPEnd-fedGDPStart)*t) + '%';
@@ -594,6 +659,10 @@
     document.getElementById('fedAI').textContent = Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
     document.getElementById('fragHDI').textContent = (fragHDIStart + (fragHDIEnd-fragHDIStart)*t).toFixed(3);
     document.getElementById('fedHDI').textContent = (fedHDIStart + (fedHDIEnd-fedHDIStart)*t).toFixed(3);
+    const fragCO2El = document.getElementById('fragCO2');
+    const fedCO2El = document.getElementById('fedCO2');
+    if(fragCO2El) fragCO2El.textContent = Math.round(fragCO2Start + (fragCO2End-fragCO2Start)*t).toLocaleString() + ' Mt';
+    if(fedCO2El) fedCO2El.textContent = Math.round(fedCO2Start + (fedCO2End-fedCO2Start)*t).toLocaleString() + ' Mt';
   }
 
   function setupStatInfoButtons(){
@@ -1096,6 +1165,37 @@
   // ---------- Init ----------
   let currentYear = 2050;
 
+  // ---------- Shareable / deep-linked state ----------
+  // Keeps the URL's query string in sync with the current year and (if any)
+  // selected country, so the existing share buttons — which read
+  // window.location.href fresh at click time — share the exact view the
+  // sender had instead of always the bare homepage. replaceState (not
+  // pushState) is used deliberately: a slider drag firing dozens of history
+  // entries would break the back button.
+  function updateShareURL(year, scenario, iso){
+    const params = new URLSearchParams(window.location.search);
+    params.set('year', year);
+    if(scenario !== undefined && iso !== undefined){
+      params.set('scenario', scenario);
+      params.set('country', iso);
+    }
+    const newUrl = window.location.pathname + '?' + params.toString() + window.location.hash;
+    history.replaceState(null, '', newUrl);
+  }
+
+  function getInitialStateFromURL(){
+    const params = new URLSearchParams(window.location.search);
+    let year = parseInt(params.get('year'), 10);
+    if(!Number.isFinite(year) || year < 2026 || year > 2050) year = 2050;
+    const scenario = params.get('scenario');
+    const iso = params.get('country');
+    return {
+      year,
+      scenario: (scenario === 'frag' || scenario === 'fed') ? scenario : null,
+      iso: iso || null
+    };
+  }
+
   function render(year){
     currentYear = year;
     buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
@@ -1106,20 +1206,69 @@
     document.getElementById('yearHint').textContent = year === 2050
       ? 'Showing the full 2050 scenario outcomes'
       : `Interpolated path toward 2050, based on current trajectory`;
+    updateShareURL(year);
     document.dispatchEvent(new CustomEvent('eu2050:rendered', { detail: { year } }));
   }
 
   const slider = document.getElementById('yearSlider');
-  slider.addEventListener('input', () => render(parseInt(slider.value, 10)));
+
+  // ---------- Autoplay ----------
+  let autoplayTimer = null;
+  function toggleAutoplay(){
+    const btn = document.getElementById('autoplayBtn');
+    if(autoplayTimer){
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+      btn.textContent = '▶';
+      btn.setAttribute('aria-pressed', 'false');
+      btn.setAttribute('aria-label', 'Play years 2026 to 2050');
+      return;
+    }
+    btn.textContent = '⏸';
+    btn.setAttribute('aria-pressed', 'true');
+    btn.setAttribute('aria-label', 'Pause');
+    // Already at (or past) the end: restart from 2026 so play always has
+    // something to animate, instead of immediately hitting the end and
+    // stopping itself on the first tick.
+    if(parseInt(slider.value, 10) >= 2050){
+      slider.value = 2026;
+      render(2026);
+    }
+    autoplayTimer = setInterval(() => {
+      const next = parseInt(slider.value, 10) + 1;
+      if(next > 2050){
+        toggleAutoplay();
+        return;
+      }
+      slider.value = next;
+      render(next);
+    }, 350);
+  }
+
+  slider.addEventListener('input', () => {
+    if(autoplayTimer) toggleAutoplay();
+    render(parseInt(slider.value, 10));
+  });
+  const autoplayBtn = document.getElementById('autoplayBtn');
+  if(autoplayBtn) autoplayBtn.addEventListener('click', toggleAutoplay);
 
   setupStatInfoButtons();
   setupStatValueButtons();
+  setupMembershipToggles();
   setupFeedSeeMore();
   setupSocialShare();
   loadFeedData();
   scheduleFeedRefresh();
   loadTheme();
-  render(2050);
+
+  const initialState = getInitialStateFromURL();
+  slider.value = initialState.year;
+  render(initialState.year);
+  if(initialState.scenario && initialState.iso && data.countries[initialState.iso]){
+    const svgId = initialState.scenario === 'frag' ? 'mapFrag' : 'mapFed';
+    const path = document.querySelector(`#${svgId} path[data-iso="${initialState.iso}"]`);
+    if(path) path.dispatchEvent(new Event('click'));
+  }
 
   // Make theme toggle available globally
   window.toggleTheme = toggleTheme;

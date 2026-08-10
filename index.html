@@ -263,6 +263,62 @@
     gap:6px;
   }
 
+  /* Country hover tooltip — position/pointer-events/z-index come from
+     scroll.css; this is the visual chrome. */
+  .tooltip{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:6px 10px;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink);
+    line-height:1.5;
+    white-space:nowrap;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+    transform:translate(-50%, -110%);
+    transition:opacity 0.12s ease;
+  }
+  .tooltip b{ color:var(--ink); }
+
+  /* Membership highlight chips (Schengen / Eurozone / NATO) — Scenario A only */
+  .membership-toggles{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+  .chip{
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--ink-dim);
+    border-radius:4px;
+    padding:3px 9px;
+    font-family:var(--mono);
+    font-size:0.66rem;
+    letter-spacing:0.04em;
+    cursor:pointer;
+  }
+  .chip.active{
+    border-color:var(--fed-gold);
+    color:var(--ink);
+  }
+
+  /* Autoplay button — matches .theme-toggle sizing/tokens */
+  .autoplay-btn{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:6px 10px;
+    cursor:pointer;
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--ink-dim);
+    line-height:1;
+  }
+  .autoplay-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+  .autoplay-btn[aria-pressed="true"]{ color:var(--fed-teal); border-color:var(--fed-teal); }
+
   /* Legend */
   .legend{
     display:flex;
@@ -712,6 +768,7 @@
 <div class="timebar">
   <span class="timebar-label">Projection year</span>
   <span class="timebar-year" id="yearLabel">2050</span>
+  <button type="button" class="autoplay-btn" id="autoplayBtn" aria-label="Play years 2026 to 2050" aria-pressed="false">▶</button>
   <input type="range" id="yearSlider" min="2026" max="2050" step="1" value="2050">
   <span class="timebar-label" id="yearHint">Drag to see how today's trajectory plays out between now and 2050</span>
 </div>
@@ -744,27 +801,36 @@
       <span>Colour = sovereignty &amp; integration index (lower = more dependent)</span>
       <span>Click a country for detail</span>
     </div>
-
+    <div class="membership-toggles">
+      <button type="button" class="chip" data-membership="s">Schengen</button>
+      <button type="button" class="chip" data-membership="e">Eurozone</button>
+      <button type="button" class="chip" data-membership="n">NATO</button>
+    </div>
 
     <div class="stat-strip">
       <div class="stat">
         <div class="stat-label">EU population <button type="button" class="stat-info" data-target="fragPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="EU population source">?</button></div>
-        <div class="stat-value" id="fragPop">448M</div>
-        <div class="stat-note" id="fragPopNote">Source: Eurostat population statistics for the current 27-member EU. This value represents the current total population for the EU-27, not the 2050 projection.</div>
+        <div class="stat-value" id="fragPop">450M</div>
+        <div class="stat-note" id="fragPopNote">2026 baseline: 450M, the EU-27's actual current population (Eurostat, Jan 2025). Under this scenario, weak coordination on migration policy and continued ageing pull the total down to roughly 419M by 2050 — near Eurostat's own low-migration projection variant.</div>
       </div>
       <div class="stat">
         <div class="stat-label">Member states</div>
-        <div class="stat-value" id="fragMembers">29</div>
+        <div class="stat-value" id="fragMembers">27</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Global GDP market share</div>
-        <div class="stat-value" id="fragGDP">7%</div>
-        <div class="stat-note" id="fragGDPNote">Approximate comparative GDP market shares (illustrative): EU: 7%, US: ~25%, China: ~18%. Fragmented EU loses economic weight relative to US and China. Sources: IMF, World Bank projections.</div>
+        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fragGDPNote" aria-label="GDP market share source">?</button></div>
+        <div class="stat-value" id="fragGDP">18%</div>
+        <div class="stat-note" id="fragGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU: 10%, US: ~24%, China: ~18%. A fragmented EU loses economic traction as disunity reduces its global influence.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">AI market share</div>
-        <div class="stat-value" id="fragAI">9%</div>
-        <div class="stat-note" id="fragAINote">Approximate comparative AI market shares (illustrative): EU: 9%, US: ~45%, China: ~35%. Fragmented regulation and investment slow EU AI development. Sources: OECD, industry reports.</div>
+        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fragAINote" aria-label="AI market share source">?</button></div>
+        <div class="stat-value" id="fragAI">10%</div>
+        <div class="stat-note" id="fragAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU: 6%, US: ~38%, China: ~32%. Fragmented national regulation and investment gaps allow US and China to dominate. Sources: OECD, industry reports.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-value" id="fragCO2">2,800 Mt</div>
+        <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's 2050 climate-neutrality law targets net zero, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA.</div>
       </div>
       <div class="stat">
         <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fragHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
@@ -823,31 +889,36 @@
     <div class="stat-strip">
       <div class="stat">
         <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
-        <div class="stat-value" id="fedPop">503M</div>
+        <div class="stat-value" id="fedPop">450M</div>
         <div class="stat-note" id="fedPopNote">
-          <div><b>How the federation population (695M) is calculated — method and sources</b></div>
+          <div><b>How the federation population is calculated — method and sources</b></div>
           <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
-            <li>Baseline: start from the EU-27 population baseline (Eurostat 2026 baseline), approximately 448 million.</li>
-            <li>Add accession and candidate populations expected to be integrated into the federation by 2050 (illustrative additions used here): United Kingdom (~71M), Turkey (~90M), Ukraine (~35M), Moldova (~2.5M), Western Balkans combined (~17M), and South Caucasus / neighbouring additions (~18M). These subtotal to roughly ~233M.</li>
-            <li>Apply demographic change to 2050 (fertility, mortality, and net migration) using medium-variant population projections from Eurostat and UN World Population Prospects; together these raise the enlarged-population subtotal to the rounded figure of ~695M by 2050.</li>
-            <li>Notes on rounding and uncertainty: all intermediate country figures are rounded to one decimal or whole millions for presentation; final totals are illustrative and sensitive to migration assumptions, accession timing, and future demographic trends.</li>
+            <li>2026 baseline: the same EU-27 total as Scenario A, 450 million (Eurostat, Jan 2025) — the two scenarios only diverge going forward.</li>
+            <li>EU-27 members grow to roughly 465M by 2050 under this scenario's higher-migration, deeper-integration assumptions (vs. ~419M in the fragmented scenario).</li>
+            <li>Accession countries join progressively through the federation's 2028–2045 timeline (see the timeline below) and are added to the total only once joined: Western Balkans, Ukraine, Moldova, Georgia, Armenia, Azerbaijan, Norway, Iceland, Switzerland, the UK and Turkey. By 2050, once all have joined, this adds roughly 255M.</li>
+            <li>Combined 2050 total: approximately 720M. All figures are illustrative, sensitive to migration assumptions, accession timing and long-run fertility trends.</li>
           </ol>
-          <div style="margin-top:6px;">Primary sources and references: <a href="https://ec.europa.eu/eurostat/web/population-demography-migration-projections">Eurostat population and projections</a>; <a href="https://population.un.org/wpp/">UN World Population Prospects (WPP)</a>; national statistical offices for individual country baselines (e.g., ONS, TurkStat, UkrStat). For methodological details see Eurostat and UN WPP medium-variant assumptions (fertility, mortality, migration).</div>
+          <div style="margin-top:6px;">Primary sources and references: <a href="https://ec.europa.eu/eurostat/web/population-demography-migration-projections">Eurostat population and projections</a>; <a href="https://population.un.org/wpp/">UN World Population Prospects (WPP)</a>.</div>
         </div>
       </div>
       <div class="stat">
         <div class="stat-label">Member states</div>
-        <div class="stat-value" id="fedMembers">33</div>
+        <div class="stat-value" id="fedMembers">27</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Global GDP market share</div>
+        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fedGDPNote" aria-label="GDP market share source">?</button></div>
         <div class="stat-value" id="fedGDP">18%</div>
-        <div class="stat-note" id="fedGDPNote">Approximate comparative GDP market shares (illustrative): EU Federation: 18%, US: ~22%, China: ~15%. United federation gains economic weight through integration and enlargement. Sources: IMF, World Bank projections.</div>
+        <div class="stat-note" id="fedGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU Federation: 16%, US: ~23%, China: ~18%. A united federation maintains competitive global weight through integration and strategic enlargement.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">AI market share</div>
-        <div class="stat-value" id="fedAI">28%</div>
-        <div class="stat-note" id="fedAINote">Approximate comparative AI market shares (illustrative): EU Federation: 28%, US: ~38%, China: ~25%. Stronger federal coordination and investment boost EU AI competitiveness. Sources: OECD, industry reports.</div>
+        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fedAINote" aria-label="AI market share source">?</button></div>
+        <div class="stat-value" id="fedAI">10%</div>
+        <div class="stat-note" id="fedAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU Federation: 18%, US: ~35%, China: ~30%. Unified regulation (DSA, AI Act) and coordinated R&D investment enable European AI to compete globally. Sources: OECD, industry reports.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-value" id="fedCO2">2,800 Mt</div>
+        <div class="stat-note" id="fedCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). A coordinated federal Green Deal hits net zero by 2050, meeting the EU's own climate-neutrality law. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA.</div>
       </div>
       <div class="stat">
         <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fedHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
