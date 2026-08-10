@@ -18,8 +18,8 @@
     --frag-red: #c4453a;
     --fed-teal: #7c3aed;
     --fed-gold: #ffcb47;
-    --co2-bad: #e5484d;
-    --co2-good: #2fbf71;
+    --stat-bad: #e5484d;
+    --stat-good: #2fbf71;
     --mono: 'JetBrains Mono', 'Courier New', monospace;
     --serif: 'Source Serif Pro', Georgia, serif;
     --sans: 'Inter', -apple-system, sans-serif;
@@ -35,8 +35,8 @@
     --ink-dim: #5a6478;
     --frag-red: #b53a2f;
     --fed-teal: #5d2aa8;
-    --co2-bad: #c23c3c;
-    --co2-good: #1f9d5c;
+    --stat-bad: #c23c3c;
+    --stat-good: #1f9d5c;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -411,12 +411,11 @@
     font-size:1.25rem;
     font-weight:700;
   }
-  .scenario.fragmented .stat-value{ color:var(--frag-amber); }
-  .scenario.federal .stat-value{ color:var(--fed-teal); }
-  /* CO2 gets its own red/green regardless of column, for an at-a-glance
-     bad/good read distinct from the scenario's usual amber/teal branding. */
-  #fragCO2{ color:var(--co2-bad); }
-  #fedCO2{ color:var(--co2-good); }
+  /* All stat values read red for the fragmented outcome and green for the
+     federal one — a consistent bad/good signal across every indicator,
+     distinct from the site's amber/teal brand accents used elsewhere. */
+  .scenario.fragmented .stat-value{ color:var(--stat-bad); }
+  .scenario.federal .stat-value{ color:var(--stat-good); }
 
   /* ---------- Country detail panel ---------- */
   .detail{
@@ -838,7 +837,7 @@
       <div class="stat">
         <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
         <div class="stat-value" id="fragCO2">2,800 Mt</div>
-        <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's legally binding target of net-zero emissions by 2050 — the European Climate Law, Regulation (EU) 2021/1119 — commits the whole bloc to climate neutrality, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
+        <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's legally binding target of net-zero emissions by 2050 — the European Climate Law, Regulation (EU) 2021/1119 — commits the whole bloc to climate neutrality, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. Under this scenario the target isn't simply missed but progressively dismantled: without a unified industrial and carbon-border strategy, individual capitals win sector-by-sector exemptions under competitiveness pressure, the ETS2 rollout is repeatedly delayed, the 2040 interim target is renegotiated downward, and by the 2040s the European Climate Law's 2050 deadline is treated as aspirational rather than binding, with the original legal commitment eroded through amendment and non-enforcement rather than ever being formally repealed. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
       </div>
       <div class="stat">
         <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fragHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
@@ -916,12 +915,12 @@
       <div class="stat">
         <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fedGDPNote" aria-label="GDP market share source">?</button></div>
         <div class="stat-value" id="fedGDP">18%</div>
-        <div class="stat-note" id="fedGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU Federation: 16%, US: ~23%, China: ~18%. A united federation maintains competitive global weight through integration and strategic enlargement.</div>
+        <div class="stat-note" id="fedGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU Federation: 19%, US: ~23%, China: ~17%. Coordinated industrial policy (the EU Chips Act, Net-Zero Industry Act and Critical Raw Materials Act) lifts manufacturing's share of EU GDP from roughly 15% today to an estimated 21% by 2050, reshoring high-value production — semiconductors, batteries, clean-tech machinery — that today is largely imported. That reshoring, combined with enlargement's larger economic base, narrows the EU's goods trade deficit with China from roughly $1bn/day (€359.8bn in 2025, Eurostat) to an estimated $400-450m/day by 2050 — the EU produces more of what it currently buys, even as large-scale trade with China continues in categories where China retains a durable cost advantage. Sources: IMF, World Bank, Eurostat trade statistics.</div>
       </div>
       <div class="stat">
         <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fedAINote" aria-label="AI market share source">?</button></div>
         <div class="stat-value" id="fedAI">10%</div>
-        <div class="stat-note" id="fedAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU Federation: 18%, US: ~35%, China: ~30%. Unified regulation (DSA, AI Act) and coordinated R&D investment enable European AI to compete globally. Sources: OECD, industry reports.</div>
+        <div class="stat-note" id="fedAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU Federation: 22%, US: ~34%, China: ~28%. Unified regulation (DSA, AI Act), coordinated R&D investment and the same reshored semiconductor capacity behind the EU's manufacturing gains let European AI compete on hardware, not just software, at global scale. Sources: OECD, industry reports.</div>
       </div>
       <div class="stat">
         <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>

@@ -676,15 +676,20 @@
     // GDP market share: 2026 baseline is 18% — the EU-27's actual current
     // share of nominal world GDP (IMF/World Bank, ~$21T of ~$118T world GDP).
     // Scenario A (fragmented): declines to 10% as EU loses competitive power
-    // Scenario B (federal): holds at 16% as an integrated bloc stays competitive
+    // Scenario B (federal): grows to 19% — enlargement mechanically grows the
+    // economic base (population 450M->721M) and coordinated reindustrialization
+    // (Chips Act, Net-Zero Industry Act) lets the EU's share actually grow
+    // rather than just hold steady, still short of the US, not EU dominance
     const fragGDPStart = 18, fragGDPEnd = 10;
-    const fedGDPStart = 18, fedGDPEnd = 16;
+    const fedGDPStart = 18, fedGDPEnd = 19;
 
     // AI market share: 2026 baseline ~10% (EU, fragmented by national regulation)
     // Scenario A (fragmented): falls to 6% as US/China consolidate dominance
-    // Scenario B (federal): grows to 18% as unified regulation enables European scale
+    // Scenario B (federal): grows to 22% — unified regulation plus the same
+    // reshored semiconductor capacity behind the GDP gains let European AI
+    // compete on hardware, not just software, at global scale
     const fragAIStart = 10, fragAIEnd = 6;
-    const fedAIStart = 10, fedAIEnd = 18;
+    const fedAIStart = 10, fedAIEnd = 22;
 
     // Median HDI: both start from the current EU-27 baseline (0.900); fragmented
     // markets barely move it, while federal convergence funding pulls it well
