@@ -81,17 +81,20 @@
   }
 
   // ---------- Year interpolation ----------
+  // Both scenarios start from the SAME 2026 baseline — fragScore, i.e. today's
+  // status quo — and only diverge going forward, matching what the stat notes
+  // promise. Scenario A then erodes slightly as dependence deepens; Scenario B
+  // climbs toward fedScore. The previous version made frag's baseline equal its
+  // own target, which froze the score flat across all 25 years, and gave fed a
+  // hardcoded 0.55 baseline that disagreed with frag at 2026.
   function blendScore(country, scenario, year){
-    const target = scenario === 'frag' ? country.fragScore : country.fedScore;
-    if(target === undefined) return undefined;
-    let baseline;
-    if(country.fedNew){
-      baseline = scenario === 'fed' ? 0.15 : (country.fragScore !== undefined ? country.fragScore * 0.8 : 0.2);
-    } else {
-      baseline = scenario === 'fed' ? 0.55 : target;
-    }
-    const t = (year - 2026) / (2050 - 2026);
-    return baseline + (target - baseline) * t;
+    const base = country.fragScore;
+    if(base === undefined) return undefined;
+    const target = scenario === 'frag'
+      ? base * 0.9                                   // slow erosion under fragmentation
+      : (country.fedScore !== undefined ? country.fedScore : base);
+    const t = Math.max(0, Math.min(1, (year - 2026) / (2050 - 2026)));
+    return base + (target - base) * t;
   }
 
   // ---------- Accession timeline data ----------
@@ -130,7 +133,8 @@
     FIN: {s:true, e:true, n:true}, DNK: {s:true, e:false, n:true}, IRL: {s:false, e:true, n:false},
     PRT: {s:true, e:true, n:true}, GRC: {s:true, e:true, n:true}, CZE: {s:true, e:false, n:true},
     SVK: {s:true, e:true, n:true}, HUN: {s:true, e:false, n:true}, ROU: {s:true, e:false, n:true},
-    BGR: {s:true, e:false, n:true}, HRV: {s:true, e:false, n:true}, SVN: {s:true, e:true, n:true},
+    // Croatia adopted the euro in 2023; Bulgaria on 1 Jan 2026 (21st member).
+    BGR: {s:true, e:true, n:true}, HRV: {s:true, e:true, n:true}, SVN: {s:true, e:true, n:true},
     LTU: {s:true, e:true, n:true}, LVA: {s:true, e:true, n:true}, EST: {s:true, e:true, n:true},
     LUX: {s:true, e:true, n:true}, MLT: {s:true, e:true, n:false}, CYP: {s:false, e:true, n:false},
     SRB: {s:false, e:false, n:false}, ALB: {s:false, e:false, n:true}, MNE: {s:false, e:false, n:true},
@@ -160,11 +164,16 @@
   // Get accession list for display
   function getAccessionList(year, scenario) {
     if (scenario === 'frag') {
-      // Scenario A: slower accession
+      // Scenario A: candidates advance but no accession ever completes — that
+      // is the fragmentation thesis, and it is why the member-state tile
+      // correctly stays at 27 for all 25 years. Every milestone here lands
+      // later than the same country's actual accession in Scenario B, so
+      // "slower" is true rather than just asserted.
       const list = [];
-      if (year >= 2030) list.push('Western Balkans (partial) - 2030+');
-      if (year >= 2035) list.push('Ukraine - 2035+');
-      if (year >= 2036) list.push('Moldova - 2036+');
+      if (year >= 2032) list.push('Montenegro — final chapters open, entry date unset');
+      if (year >= 2036) list.push('Western Balkans — partial alignment, no entry date');
+      if (year >= 2040) list.push('Ukraine — talks stalled on reconstruction financing');
+      if (year >= 2044) list.push('Moldova — candidate status held, entry deferred indefinitely');
       return list;
     } else {
       // Scenario B: full accession timeline, grouped by year so a year that
@@ -211,6 +220,11 @@
     
     if (fedYearDisplay) {
       fedYearDisplay.textContent = year;
+    }
+    // Scenario A's title used to be hardcoded "2050" while its numbers moved.
+    const fragYearDisplay = document.getElementById('fragYearDisplay');
+    if (fragYearDisplay) {
+      fragYearDisplay.textContent = year;
     }
   }
 
@@ -299,42 +313,11 @@
       path.setAttribute('stroke-width','0.5');
       path.setAttribute('stroke-linejoin','round');
 
-      // Apply persistent highlight state if the SVG requests it (keeps highlights across re-renders)
-      try {
-        if(scenario === 'frag' && svgEl.getAttribute('data-eu-highlight') === '1'){
-          if(country && country.eu){
-            path.setAttribute('stroke','#ffcb47');
-            path.setAttribute('stroke-width','1.6');
-            path.setAttribute('fill','#ff7d72');
-          } else {
-            path.setAttribute('stroke','#0b0e14');
-            path.setAttribute('stroke-width','0.5');
-          }
-        }
-        if(scenario === 'fed' && svgEl.getAttribute('data-fed-highlight') === '1'){
-          if(country && (country.eu || (country.fedNew && joinedCountries.has(iso)))){
-            path.setAttribute('stroke','#7c5cd6');
-            path.setAttribute('stroke-width','1.6');
-            path.setAttribute('fill','#9b7bff');
-          } else {
-            path.setAttribute('stroke','#0b0e14');
-            path.setAttribute('stroke-width','0.5');
-          }
-        }
-        // Membership highlight (Schengen/Eurozone/NATO) — Scenario A only,
-        // since federated members share a single isMember status once joined.
-        const membershipKind = scenario === 'frag' ? svgEl.getAttribute('data-membership-highlight') : null;
-        if(membershipKind){
-          const m = membershipData[iso];
-          if(m && m[membershipKind]){
-            path.setAttribute('stroke','#ffcb47');
-            path.setAttribute('stroke-width','1.6');
-          } else {
-            path.setAttribute('stroke','#0b0e14');
-            path.setAttribute('stroke-width','0.5');
-          }
-        }
-      } catch(e) {}
+      // Re-apply whichever single overlay this map has active, so highlights
+      // survive the slider-driven rebuild. One attribute, one rule — the old
+      // version stacked three independent attributes that overwrote each
+      // other's strokes depending on which ran last.
+      applyOverlayToPath(path, svgEl.getAttribute('data-overlay'), scenario, iso, country, year);
 
       svgEl.appendChild(path);
 
@@ -342,87 +325,81 @@
         path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl, scenario, year));
         path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
-        path.addEventListener('click', () => {
-          showDetail(detailEl, country, scenario, year, iso);
-          updateShareURL(year, scenario, iso);
-          // For fragmented map, also toggle EU internal borders on any country click
-          if (scenario === 'frag') {
-            toggleEUBordersFragMap();
-          }
-        });
+        path.addEventListener('click', () => toggleCountrySelection(scenario, iso, detailEl));
       }
     });
   }
 
-  // Toggle highlighting of EU member internal borders on the fragmented map
-  function toggleEUBordersFragMap(){
-    const svg = document.getElementById('mapFrag');
-    const active = svg.getAttribute('data-eu-highlight') === '1';
-    if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
-      svg.setAttribute('data-eu-highlight','0');
-      return;
+  // ---------- Map overlays ----------
+  // Exactly ONE overlay can be active per map, stored in a single
+  // `data-overlay` attribute on the <svg>: null | 'members' | 's' | 'e' | 'n'.
+  // Previously three separate attributes (eu-highlight / fed-highlight /
+  // membership-highlight) each rewrote the same path strokes, so whichever
+  // ran last silently won and the visible highlight could disagree with which
+  // control looked active.
+
+  // Is this country "in" the given overlay, in this scenario, at this year?
+  function inOverlay(kind, scenario, iso, country, year){
+    if(!country) return false;
+    if(kind === 'members'){
+      return scenario === 'frag'
+        ? !!country.eu
+        : !!(country.eu || (country.fedNew && getJoinedCountries(year).has(iso)));
     }
-    svg.querySelectorAll('path.country').forEach(p => {
-      const iso = p.getAttribute('data-iso');
-      const c = data.countries[iso];
-      if(c && c.eu){ p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6'); }
-      else { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); }
-    });
-    svg.setAttribute('data-eu-highlight','1');
+    const m = membershipData[iso];
+    const baseline = !!(m && m[kind]);
+    if(scenario === 'frag') return baseline;
+    // Scenario B: acceding to the federation means joining Schengen, the
+    // euro and the common defence framework together — the same rule
+    // showDetail() applies to its Schengen/Eurozone/NATO rows. So the three
+    // blocs visibly expand with the federation and converge by 2050.
+    const isFedMember = !!(country.eu || (country.fedNew && getJoinedCountries(year).has(iso)));
+    return isFedMember || baseline;
   }
 
-  // Toggle highlighting of federation external borders on the federal map
-  function toggleFedBordersFedMap(){
-    const svg = document.getElementById('mapFed');
-    const active = svg.getAttribute('data-fed-highlight') === '1';
+  function applyOverlayToPath(path, kind, scenario, iso, country, year){
+    if(kind && inOverlay(kind, scenario, iso, country, year)){
+      path.setAttribute('stroke', scenario === 'fed' ? '#9b7bff' : '#ffcb47');
+      path.setAttribute('stroke-width', '1.6');
+    } else {
+      path.setAttribute('stroke', '#0b0e14');
+      path.setAttribute('stroke-width', '0.5');
+    }
+  }
+
+  // Toggle an overlay on one map. Re-selecting the active one clears it.
+  function setOverlay(scenario, kind){
+    const svg = document.getElementById(scenario === 'frag' ? 'mapFrag' : 'mapFed');
+    if(!svg) return;
+    const next = svg.getAttribute('data-overlay') === kind ? null : kind;
     const year = parseInt(document.getElementById('yearSlider').value, 10);
-    const joinedCountries = getJoinedCountries(year);
-    
-    if(active){
-      svg.querySelectorAll('path.country').forEach(p => { p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5'); });
-      svg.setAttribute('data-fed-highlight','0');
-      return;
-    }
+
     svg.querySelectorAll('path.country').forEach(p => {
       const iso = p.getAttribute('data-iso');
-      const c = data.countries[iso];
-      if(c && (c.eu || (c.fedNew && joinedCountries.has(iso)))){
-        p.setAttribute('stroke','#7c5cd6'); p.setAttribute('stroke-width','1.6');
-      } else {
-        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
-      }
+      applyOverlayToPath(p, next, scenario, iso, data.countries[iso], year);
     });
-    svg.setAttribute('data-fed-highlight','1');
+
+    if(next) svg.setAttribute('data-overlay', next);
+    else svg.removeAttribute('data-overlay');
+
+    syncOverlayControls(scenario, next);
   }
 
-  // Toggle Schengen/Eurozone/NATO border highlighting on the fragmented map.
-  // Single active toggle: clicking a different chip switches to it rather
-  // than stacking, so only one membership's borders are ever highlighted.
-  function toggleMembershipHighlight(kind){
-    const svg = document.getElementById('mapFrag');
-    const current = svg.getAttribute('data-membership-highlight');
-    const next = current === kind ? null : kind;
-    svg.querySelectorAll('path.country').forEach(p => {
-      const iso = p.getAttribute('data-iso');
-      const m = membershipData[iso];
-      if(next && m && m[next]){
-        p.setAttribute('stroke','#ffcb47'); p.setAttribute('stroke-width','1.6');
-      } else {
-        p.setAttribute('stroke','#0b0e14'); p.setAttribute('stroke-width','0.5');
-      }
-    });
-    if(next) svg.setAttribute('data-membership-highlight', next);
-    else svg.removeAttribute('data-membership-highlight');
-
-    document.querySelectorAll('.chip[data-membership]').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.membership === next);
+  // Reflect the active overlay on that scenario's own chips only — the chip
+  // sets are duplicated per column, so an unscoped query would cross-talk.
+  function syncOverlayControls(scenario, kind){
+    const section = document.querySelector(scenario === 'frag' ? '.scenario.fragmented' : '.scenario.federal');
+    if(!section) return;
+    section.querySelectorAll('.chip[data-membership]').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.membership === kind);
     });
   }
 
   function setupMembershipToggles(){
     document.querySelectorAll('.chip[data-membership]').forEach(btn => {
-      btn.addEventListener('click', () => toggleMembershipHighlight(btn.dataset.membership));
+      const section = btn.closest('.scenario');
+      const scenario = section && section.classList.contains('federal') ? 'fed' : 'frag';
+      btn.addEventListener('click', () => setOverlay(scenario, btn.dataset.membership));
     });
   }
 
@@ -441,21 +418,19 @@
 
   function setupStatValueButtons(){
     const mapToggle = {
-      'fragMembers': toggleEUBordersFragMap,
-      'fedMembers': toggleFedBordersFedMap
+      'fragMembers': () => setOverlay('frag', 'members'),
+      'fedMembers': () => setOverlay('fed', 'members')
     };
 
+    // Bind to the card only, never to the value as well: the value sits inside
+    // the card, so binding both made a click on the number fire the handler
+    // twice — toggling on then straight back off, i.e. doing nothing.
     Object.keys(mapToggle).forEach(id => {
       const el = document.getElementById(id);
-      if(el){
-        el.style.cursor = 'pointer';
-        el.addEventListener('click', mapToggle[id]);
-        const parent = el.closest('.stat');
-        if(parent){
-          parent.style.cursor = 'pointer';
-          parent.addEventListener('click', mapToggle[id]);
-        }
-      }
+      if(!el) return;
+      const card = el.closest('.stat') || el;
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', mapToggle[id]);
     });
 
     const noteMap = {
@@ -466,7 +441,9 @@
       'fragAI':'fragAINote',
       'fedAI':'fedAINote',
       'fragHDI':'fragHDINote',
-      'fedHDI':'fedHDINote'
+      'fedHDI':'fedHDINote',
+      'fragCO2':'fragCO2Note',
+      'fedCO2':'fedCO2Note'
     };
     Object.keys(noteMap).forEach(id => {
       const el = document.getElementById(id);
@@ -514,25 +491,53 @@
     return start + (end - start) * t;
   }
 
+  // GDP-per-capita multipliers (trillions USD per million people), calibrated
+  // so the 27 EU members sum to ~$21T at 2026 — the same figure the GDP stat
+  // notes cite. The old 0.07 implied $31.5T, 50% above the cited baseline.
+  const GDP_MULT_EU = 0.0467;
+  const GDP_MULT_NONEU = 0.0267;   // keeps the original 0.04/0.07 ratio
+
   function formatCountryGDP(country, scenario, year){
-    if(country.gdp2050 && year === 2050) return country.gdp2050;
+    const t = Math.max(0, Math.min(1, (year - 2026) / (2050 - 2026)));
     const pop = interpolatePopulation(country, scenario, year);
     if(!pop) return '—';
-    const baseMultiplier = country.eu ? 0.07 : 0.04;
-    let multiplier = baseMultiplier;
+    let multiplier = country.eu ? GDP_MULT_EU : GDP_MULT_NONEU;
     if(scenario === 'fed'){
-      const boost = country.eu ? 0.02 : (country.fedNew ? 0.03 : 0.015);
-      multiplier += boost;
+      // Scaled by t so both scenarios agree at 2026 and only diverge going
+      // forward — the federal boost used to apply flat, so Germany read 5.9T
+      // on one map and 7.6T on the other in a year where every headline tile
+      // is identical.
+      const boost = country.eu ? 0.0133 : (country.fedNew ? 0.0200 : 0.0100);
+      multiplier += boost * t;
     }
     return `${(pop * multiplier).toFixed(1)}T USD`;
   }
 
-  function formatCountryHDI(country){
-    if(country.hdi2050) return country.hdi2050;
+  // Per-country HDI, scenario- and year-aware. 2026 is a shared baseline; under
+  // fragmentation it barely moves, while federal cohesion funding lifts the
+  // lowest-scoring new members hardest (convergence). The HDI stat tiles are
+  // computed as the median over each scenario's member set from THIS function,
+  // so the headline number and the country cards can never disagree.
+  function countryHDI(country, scenario, year){
+    const t = Math.max(0, Math.min(1, (year - 2026) / (2050 - 2026)));
     const base = country.eu ? 0.89 : 0.76;
     const score = country.fragScore !== undefined ? country.fragScore : 0.45;
-    const hdi = Math.min(0.96, base + (score - 0.4) * 0.2);
-    return hdi.toFixed(2);
+    const hdi2026 = Math.min(0.96, base + (score - 0.4) * 0.2);
+    const target = scenario === 'fed'
+      ? hdi2026 + (0.96 - hdi2026) * 0.75   // convergence lifts laggards most
+      : hdi2026 + 0.010;                    // near-stagnation
+    return hdi2026 + (target - hdi2026) * t;
+  }
+
+  function formatCountryHDI(country, scenario, year){
+    return countryHDI(country, scenario, year).toFixed(3);
+  }
+
+  function median(nums){
+    if(!nums.length) return 0;
+    const s = [...nums].sort((a, b) => a - b);
+    const mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
   }
 
   // Country-specific GDP/startup-ecosystem narratives, each grounded in a real
@@ -579,18 +584,51 @@
     GEO: { frag: 'Georgia’s TBC Bank, one of the region’s most advanced fintech players, chose to list in London rather than any EU market, since geopolitical tension keeps EU capital markets at a distance.', fed: 'Federal membership gives a champion like TBC Bank a genuine EU-based alternative to a London listing.' },
     ARM: { frag: 'Armenian-founded PicsArt is headquartered in the US and backed mostly by American investors, since Armenia’s market alone can’t fund a champion at that scale.', fed: 'Federal membership connects Armenian ventures like PicsArt to EU-wide capital instead of relying almost entirely on US investors.' },
     AZE: { frag: 'Azerbaijan’s energy-dominated economy has little diversified tech capital, leaving its small startup scene dependent on foreign investors far beyond the region.', fed: 'Federal membership connects Azerbaijan’s emerging tech ventures to EU-wide capital beyond its energy-dominated economy.' },
-    GBR: { frag: 'Britain’s Deliveroo lists in London either way, but a fragmented EU next door offers it little extra reason to reconsider.', fed: 'Even as neighbouring EU markets consolidate into a single deep pool of capital, UK-based champions like Deliveroo remain outside it, watching from London.' },
+    GBR: { frag: 'Britain’s Deliveroo lists in London either way, but a fragmented EU next door offers it little extra reason to reconsider.', fed: 'Re-accession in 2040 folds the City back into the federal capital market, so UK champions like Deliveroo list into the deepest pool of capital in Europe rather than a detached London market.' },
     CHE: { frag: 'Swiss running-shoe unicorn On listed on the New York Stock Exchange rather than any European market, since Switzerland sits outside the EU’s capital pool either way.', fed: 'Joining the federation would give a Swiss champion like On a deep EU capital market as a real alternative to a Wall Street listing.' },
     NOR: { frag: 'Norway’s Kahoot! listed on the Oslo exchange but was ultimately taken private by a Goldman Sachs-led consortium, since neither Norway nor a fragmented EU offered a deeper alternative.', fed: 'Joining the federation connects a Norwegian champion like Kahoot! to a deep pan-European capital market instead of a small domestic exchange.' },
     ISL: { frag: 'Iceland’s CCP Games, creator of EVE Online, sold a majority stake to South Korea’s Pearl Abyss, since Iceland’s tiny market can’t fund a global gaming champion alone.', fed: 'Joining the federation alongside Montenegro connects Icelandic ventures like CCP Games to a capital market deep enough to fund global ambitions without selling control abroad.' },
-    TUR: { frag: 'Turkey’s e-commerce giant Trendyol is majority-owned by China’s Alibaba, since frozen EU accession talks leave its market cut off from deeper EU capital.', fed: 'Even under a deepening federation, Turkey’s accession stays off the table, so a champion like Trendyol remains reliant on capital from outside the EU.' }
+    TUR: { frag: 'Turkey’s e-commerce giant Trendyol is majority-owned by China’s Alibaba, since frozen EU accession talks leave its market cut off from deeper EU capital.', fed: 'Accession in 2045 opens the federal capital market to Turkish firms, giving a champion like Trendyol a European alternative to Alibaba’s ownership stake.' }
   };
+
+  // ---------- Country selection ----------
+  // One selected country per scenario. Clicking the selected country again
+  // clears it, so a tap opens the panel and a second tap closes it.
+  const selectedIso = { frag: null, fed: null };
+
+  const DETAIL_PLACEHOLDER =
+    '<div class="detail-empty">Click any country on the map above to see its outlook under this scenario. Click it again to close.</div>';
+
+  function toggleCountrySelection(scenario, iso, detailEl){
+    const year = parseInt(document.getElementById('yearSlider').value, 10);
+    if(selectedIso[scenario] === iso){
+      selectedIso[scenario] = null;
+      detailEl.innerHTML = DETAIL_PLACEHOLDER;
+      updateShareURL(year, null, null);
+      return;
+    }
+    selectedIso[scenario] = iso;
+    showDetail(detailEl, data.countries[iso], scenario, year, iso);
+    updateShareURL(year, scenario, iso);
+  }
+
+  // Re-render whichever country is open so the panel tracks the year slider
+  // instead of freezing at the year it was clicked in.
+  function refreshDetails(year){
+    [['frag', 'detailFrag'], ['fed', 'detailFed']].forEach(([scenario, elId]) => {
+      const iso = selectedIso[scenario];
+      if(!iso) return;
+      const el = document.getElementById(elId);
+      const country = data.countries[iso];
+      if(el && country) showDetail(el, country, scenario, year, iso);
+    });
+  }
 
   function showDetail(detailEl, country, scenario, year, iso){
     const note = scenario === 'frag' ? country.fragNote : country.fedNote;
     const pop = Math.round(interpolatePopulation(country, scenario, year) * 10) / 10 + 'M';
     const gdp = formatCountryGDP(country, scenario, year);
-    const hdi = formatCountryHDI(country);
+    const hdi = formatCountryHDI(country, scenario, year);
     
     // Determine status based on year and scenario
     let statusLine;
@@ -665,7 +703,12 @@
       euCount: euMembers.length,
       fedCount: fedMembers.length,
       fragPop,
-      fedPop
+      fedPop,
+      // Medians over each scenario's own member set, from the same
+      // countryHDI() the detail cards use — so the tile can never contradict
+      // the countries it is a median of.
+      fragHDI: median(euMembers.map(c => countryHDI(c, 'frag', year))),
+      fedHDI: median(fedMembers.map(c => countryHDI(c, 'fed', year)))
     };
   }
 
@@ -691,11 +734,9 @@
     const fragAIStart = 10, fragAIEnd = 6;
     const fedAIStart = 10, fedAIEnd = 22;
 
-    // Median HDI: both start from the current EU-27 baseline (0.900); fragmented
-    // markets barely move it, while federal convergence funding pulls it well
-    // ahead of the fragmented path (and past the US) by 2050
-    const fragHDIStart = 0.900, fragHDIEnd = 0.910;
-    const fedHDIStart = 0.900, fedHDIEnd = 0.945;
+    // Median HDI is no longer a hardcoded pair of endpoints — it is computed
+    // in countCountries() as the median of countryHDI() over each scenario's
+    // actual member set, so the tile and the country cards share one source.
 
     // CO2 emissions, Mt/year — 2026 baseline ~2,800 Mt (EEA net GHG estimate).
     // Scenario A (fragmented): policy patchwork falls short of the EU's own
@@ -709,12 +750,15 @@
     document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
     document.getElementById('fragMembers').textContent = counts.euCount;
     document.getElementById('fedMembers').textContent = counts.fedCount;
-    document.getElementById('fragGDP').textContent = Math.round(fragGDPStart + (fragGDPEnd-fragGDPStart)*t) + '%';
-    document.getElementById('fedGDP').textContent = Math.round(fedGDPStart + (fedGDPEnd-fedGDPStart)*t) + '%';
+    // GDP is shown to one decimal: the federal path only spans 18->19, so
+    // whole-number rounding made it sit on 18% for twelve years and then jump
+    // once, which reads like a broken control next to the other tiles.
+    document.getElementById('fragGDP').textContent = (fragGDPStart + (fragGDPEnd-fragGDPStart)*t).toFixed(1) + '%';
+    document.getElementById('fedGDP').textContent = (fedGDPStart + (fedGDPEnd-fedGDPStart)*t).toFixed(1) + '%';
     document.getElementById('fragAI').textContent = Math.round(fragAIStart + (fragAIEnd-fragAIStart)*t) + '%';
     document.getElementById('fedAI').textContent = Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
-    document.getElementById('fragHDI').textContent = (fragHDIStart + (fragHDIEnd-fragHDIStart)*t).toFixed(3);
-    document.getElementById('fedHDI').textContent = (fedHDIStart + (fedHDIEnd-fedHDIStart)*t).toFixed(3);
+    document.getElementById('fragHDI').textContent = counts.fragHDI.toFixed(3);
+    document.getElementById('fedHDI').textContent = counts.fedHDI.toFixed(3);
     const fragCO2El = document.getElementById('fragCO2');
     const fedCO2El = document.getElementById('fedCO2');
     if(fragCO2El) fragCO2El.textContent = Math.round(fragCO2Start + (fragCO2End-fragCO2Start)*t).toLocaleString() + ' Mt';
@@ -1231,9 +1275,14 @@
   function updateShareURL(year, scenario, iso){
     const params = new URLSearchParams(window.location.search);
     params.set('year', year);
-    if(scenario !== undefined && iso !== undefined){
+    if(scenario && iso){
       params.set('scenario', scenario);
       params.set('country', iso);
+    } else if(scenario === null && iso === null){
+      // Explicit deselect — drop the country from the deep link so a shared
+      // URL reproduces the cleared panel rather than reopening the old one.
+      params.delete('scenario');
+      params.delete('country');
     }
     const newUrl = window.location.pathname + '?' + params.toString() + window.location.hash;
     history.replaceState(null, '', newUrl);
@@ -1259,6 +1308,7 @@
     updateStats(year);
     updateAccessionTimelines(year);
     updateFedPopBreakdown(year);
+    refreshDetails(year);
     document.getElementById('yearLabel').textContent = year;
     document.getElementById('yearHint').textContent = year === 2050
       ? 'Showing the full 2050 scenario outcomes'
@@ -1321,10 +1371,12 @@
   const initialState = getInitialStateFromURL();
   slider.value = initialState.year;
   render(initialState.year);
+  // Restore a deep-linked country selection directly rather than by faking a
+  // click — Kosovo has a data record but no geometry, so its path may not
+  // exist to click even though the ISO is valid.
   if(initialState.scenario && initialState.iso && data.countries[initialState.iso]){
-    const svgId = initialState.scenario === 'frag' ? 'mapFrag' : 'mapFed';
-    const path = document.querySelector(`#${svgId} path[data-iso="${initialState.iso}"]`);
-    if(path) path.dispatchEvent(new Event('click'));
+    const detailEl = document.getElementById(initialState.scenario === 'frag' ? 'detailFrag' : 'detailFed');
+    if(detailEl) toggleCountrySelection(initialState.scenario, initialState.iso, detailEl);
   }
 
   // Make theme toggle available globally

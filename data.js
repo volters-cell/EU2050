@@ -153,7 +153,7 @@ window.EU2050_DATA = {
     "SRB": { name:"Serbia", eu:false,
       fragScore:0.3, fedScore:0.78, fedNew:true,
       fragNote:"Accession talks remain stalled by rule-of-law concerns and balancing act between EU and other powers.",
-      fedNote:"Joins the federation by the early 2040s, integrating its energy grid and labour market with the EU.",
+      fedNote:"Joins the federation in 2030 alongside Albania and Moldova, integrating its energy grid and labour market with the EU.",
       pop2026:"6.6M", popFrag:"5.6M", popFed:"6.3M" },
     "ALB": { name:"Albania", eu:false,
       fragScore:0.32, fedScore:0.76, fedNew:true,
@@ -210,9 +210,9 @@ window.EU2050_DATA = {
 
     // --- Non-EU neighbours / not modelled as part of either scenario's core ---
     "GBR": { name:"United Kingdom", eu:false, fedNew:true,
-      fragScore:0.5, fedScore:0.4,
+      fragScore:0.5, fedScore:0.82,
       fragNote:"Remains outside the EU; closer alignment on some standards but no formal reintegration.",
-      fedNote:"Stays outside the federation; maintains a close but separate trade and security relationship.",
+      fedNote:"Rejoins in 2040 after a generation outside: a successful federation with a single capital market makes re-accession the pragmatic choice, and the City reintegrates as a federal financial centre.",
       pop2026:"69.5M", popFrag:"72M", popFed:"73M" },
     "CHE": { name:"Switzerland", eu:false,
       fragScore:0.5, fedScore:0.85, fedNew:true,
@@ -230,9 +230,9 @@ window.EU2050_DATA = {
       fedNote:"Joins the federation early, alongside Montenegro, folding fisheries policy and Arctic energy security into the federal framework.",
       pop2026:"0.40M", popFrag:"0.42M", popFed:"0.43M" },
     "TUR": { name:"Turkey", eu:false,
-      fragScore:0.35, fedScore:0.3, fedNew:true,
+      fragScore:0.35, fedScore:0.68, fedNew:true,
       fragNote:"Long-frozen accession process; relationship managed through customs union and migration deals.",
-      fedNote:"Accession remains off the table; relationship continues via separate strategic partnership.",
+      fedNote:"Accedes last, in 2045, after a long convergence on rule-of-law and democratic standards; brings the federation's largest young workforce and an anchor on its southeastern flank.",
       pop2026:"86.1M", popFrag:"89.5M", popFed:"90.5M" }
   },
 
@@ -242,7 +242,7 @@ window.EU2050_DATA = {
   // 2026 baseline and 2050 endpoints.
   stats: {
     frag: { pop2026:"450M", pop2050:"419M", members:"27", gdp2026:"18%", gdp2050:"10%" },
-    fed:  { pop2026:"450M", pop2050:"721M", members:"43", gdp2026:"18%", gdp2050:"16%" }
+    fed:  { pop2026:"450M", pop2050:"721M", members:"43", gdp2026:"18%", gdp2050:"19%" }
   },
 
   // ---- Sample AI-generated daily signal feed ----
