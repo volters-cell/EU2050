@@ -452,12 +452,10 @@
     });
   }
 
+  // Name only — the sovereignty/integration score is no longer surfaced here.
+  // blendScore() still drives the map's fill colour, which the caption explains.
   function showTooltip(tooltipEl, country, e, svgEl, scenario, year){
-    const score = blendScore(country, scenario, year);
-    const scoreLabel = scenario === 'frag' ? 'Sovereignty' : 'Integration';
-    tooltipEl.innerHTML = score !== undefined
-      ? `<b>${country.name}</b><br>${scoreLabel}: ${score.toFixed(2)}`
-      : country.name;
+    tooltipEl.textContent = country.name;
     tooltipEl.style.opacity = '1';
     moveTooltip(tooltipEl, e, svgEl);
   }
