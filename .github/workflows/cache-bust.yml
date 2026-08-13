@@ -1,0 +1,58 @@
+name: Cache-bust static assets
+
+# Rewrites the ?v= query on local <script>/<link> tags to the commit SHA on
+# every push, so a change can never ship behind a stale cache key again.
+# This previously had to be bumped by hand and was forgotten for dozens of
+# commits, which meant fixes were live in the repo but invisible in the page.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.js'
+      - 'data.js'
+      - 'geodata.js'
+      - 'scroll.js'
+      - 'scroll.css'
+      - 'index.html'
+
+permissions:
+  contents: write
+
+jobs:
+  bust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Stamp asset URLs with the commit SHA
+        run: |
+          SHA="${GITHUB_SHA::8}"
+          python3 - "$SHA" <<'PY'
+          import re, sys, pathlib
+          sha = sys.argv[1]
+          p = pathlib.Path('index.html')
+          html = p.read_text()
+          # Local assets only — never touch CDN URLs.
+          pattern = re.compile(r'(?P<attr>(?:src|href)=")(?P<file>(?!https?://)[\w./-]+\.(?:js|css))(?:\?v=[^"]*)?(?P<end>")')
+          new = pattern.sub(lambda m: f'{m.group("attr")}{m.group("file")}?v={sha}{m.group("end")}', html)
+          if new != html:
+              p.write_text(new)
+              print(f'stamped assets with v={sha}')
+          else:
+              print('no change')
+          PY
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain index.html)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add index.html
+            git commit -m "chore: stamp asset cache-busters with ${GITHUB_SHA::8} [skip ci]"
+            git push
+          else
+            echo "index.html already up to date"
+          fi

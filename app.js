@@ -290,6 +290,16 @@
       path.setAttribute('d', geometryToPath(f.geometry));
       path.setAttribute('class','country');
       path.setAttribute('data-iso', iso);
+      // Keyboard + screen-reader access: SVG paths are not focusable or
+      // announced by default, so a mouse was previously the only way to reach
+      // any country on either map.
+      if(country){
+        path.setAttribute('tabindex', '0');
+        path.setAttribute('role', 'button');
+        path.setAttribute('aria-label', country.name);
+      } else {
+        path.setAttribute('aria-hidden', 'true');
+      }
 
       // default non-member fill (matches legend non-EU swatch)
       let fill = '#23262f';
@@ -326,6 +336,15 @@
         path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
         path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
         path.addEventListener('click', () => toggleCountrySelection(scenario, iso, detailEl));
+        // Focus/blur mirror hover so keyboard users get the same tooltip.
+        path.addEventListener('focus', (e) => showTooltip(tooltipEl, country, e, svgEl, scenario, year));
+        path.addEventListener('blur', () => hideTooltip(tooltipEl));
+        path.addEventListener('keydown', (e) => {
+          if(e.key === 'Enter' || e.key === ' '){
+            e.preventDefault();
+            toggleCountrySelection(scenario, iso, detailEl);
+          }
+        });
       }
     });
   }
@@ -391,7 +410,9 @@
     const section = document.querySelector(scenario === 'frag' ? '.scenario.fragmented' : '.scenario.federal');
     if(!section) return;
     section.querySelectorAll('.chip[data-membership]').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.membership === kind);
+      const on = btn.dataset.membership === kind;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
   }
 
@@ -414,6 +435,10 @@
       if(n !== noteEl) n.classList.remove('visible');
     });
     noteEl.classList.toggle('visible', !alreadyOpen);
+    document.querySelectorAll('[aria-controls]').forEach(btn => {
+      const target = document.getElementById(btn.getAttribute('aria-controls'));
+      if(target) btn.setAttribute('aria-expanded', target.classList.contains('visible') ? 'true' : 'false');
+    });
   }
 
   function setupStatValueButtons(){
@@ -431,6 +456,13 @@
       const card = el.closest('.stat') || el;
       card.style.cursor = 'pointer';
       card.addEventListener('click', mapToggle[id]);
+      // Clickable divs are invisible to keyboard and screen-reader users
+      // without an explicit role, a tab stop and key handling.
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); mapToggle[id](); }
+      });
     });
 
     const noteMap = {
@@ -448,7 +480,16 @@
     Object.keys(noteMap).forEach(id => {
       const el = document.getElementById(id);
       const note = document.getElementById(noteMap[id]);
-      if(el && note){ el.style.cursor = 'pointer'; el.addEventListener('click', () => openStatNote(note)); }
+      if(el && note){
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', () => openStatNote(note));
+        el.setAttribute('role', 'button');
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('aria-controls', noteMap[id]);
+        el.addEventListener('keydown', (e) => {
+          if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openStatNote(note); }
+        });
+      }
     });
   }
 
@@ -461,10 +502,18 @@
   }
   function moveTooltip(tooltipEl, e, svgEl){
     const rect = svgEl.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    tooltipEl.style.left = x + 'px';
-    tooltipEl.style.top = y + 'px';
+    // Focus events carry no pointer coordinates, so fall back to the centre of
+    // the focused country — otherwise keyboard users get a tooltip at NaN,NaN.
+    let clientX = e.clientX, clientY = e.clientY;
+    if(clientX === undefined || clientY === undefined){
+      const target = e.target && e.target.getBoundingClientRect
+        ? e.target.getBoundingClientRect() : null;
+      if(!target) return;
+      clientX = target.left + target.width / 2;
+      clientY = target.top + target.height / 2;
+    }
+    tooltipEl.style.left = (clientX - rect.left) + 'px';
+    tooltipEl.style.top = (clientY - rect.top) + 'px';
   }
   function hideTooltip(tooltipEl){
     tooltipEl.style.opacity = '0';
@@ -528,7 +577,8 @@
   }
 
   function formatCountryHDI(country, scenario, year){
-    return countryHDI(country, scenario, year).toFixed(3);
+    // 2dp to match the tiles — this is model output, not a measured index.
+    return countryHDI(country, scenario, year).toFixed(2);
   }
 
   function median(nums){
@@ -681,7 +731,53 @@
       <div class="detail-row"><span>Eurozone</span><span>${eurozoneStatus}</span></div>
       <div class="detail-row"><span>NATO member</span><span>${natoStatus}</span></div>
       <div class="detail-note">${note || ''}</div>
+      <button type="button" class="compare-btn" data-compare-iso="${iso}" data-compare-scenario="${scenario}" aria-expanded="false">
+        Compare with the other scenario
+      </button>
+      <div class="detail-compare" id="compare-${scenario}-${iso}" hidden></div>
     `;
+
+    const btn = detailEl.querySelector('.compare-btn');
+    if(btn) btn.addEventListener('click', () => toggleCompare(detailEl, country, scenario, year, iso));
+  }
+
+  // Both scenarios' narratives for a country already exist in the data; until
+  // now only the one for the map you clicked was ever shown.
+  function toggleCompare(detailEl, country, scenario, year, iso){
+    const box = detailEl.querySelector('.detail-compare');
+    const btn = detailEl.querySelector('.compare-btn');
+    if(!box || !btn) return;
+    if(!box.hidden){
+      box.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.textContent = 'Compare with the other scenario';
+      return;
+    }
+    const other = scenario === 'frag' ? 'fed' : 'frag';
+    const economy = COUNTRY_ECONOMY[iso];
+    const row = (label, a, b) => `
+      <div class="compare-row">
+        <div class="compare-label">${label}</div>
+        <div class="compare-cells">
+          <div class="compare-cell frag"><span class="compare-tag">A</span>${a}</div>
+          <div class="compare-cell fed"><span class="compare-tag">B</span>${b}</div>
+        </div>
+      </div>`;
+    const val = (sc) => ({
+      pop: Math.round(interpolatePopulation(country, sc, year) * 10) / 10 + 'M',
+      gdp: formatCountryGDP(country, sc, year),
+      hdi: formatCountryHDI(country, sc, year),
+      story: economy ? economy[sc] : (country[sc === 'fed' ? 'fedNote' : 'fragNote'] || '—')
+    });
+    const A = val('frag'), B = val('fed');
+    box.innerHTML =
+      row(`Population (${year})`, A.pop, B.pop) +
+      row(`Projected GDP (${year})`, A.gdp, B.gdp) +
+      row('Human Development Index', A.hdi, B.hdi) +
+      row('Economic outlook', A.story, B.story);
+    box.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+    btn.textContent = 'Hide comparison';
   }
 
   // ---------- Stats ----------
@@ -744,23 +840,28 @@
     const fragCO2Start = 2800, fragCO2End = 1100;
     const fedCO2Start = 2800, fedCO2End = 0;
 
-    document.getElementById('fragPop').textContent = Math.round(counts.fragPop) + 'M';
-    document.getElementById('fedPop').textContent = Math.round(counts.fedPop) + 'M';
+    // Model output, not measurement: round to a precision the assumptions can
+    // actually support. Population to the nearest 5M, HDI to 2dp — showing
+    // "721M" and "0.945" implied a confidence this model does not have.
+    const round5 = n => Math.round(n / 5) * 5;
+    document.getElementById('fragPop').textContent = '~' + round5(counts.fragPop) + 'M';
+    document.getElementById('fedPop').textContent = '~' + round5(counts.fedPop) + 'M';
     document.getElementById('fragMembers').textContent = counts.euCount;
     document.getElementById('fedMembers').textContent = counts.fedCount;
     // GDP is shown to one decimal: the federal path only spans 18->19, so
     // whole-number rounding made it sit on 18% for twelve years and then jump
     // once, which reads like a broken control next to the other tiles.
-    document.getElementById('fragGDP').textContent = (fragGDPStart + (fragGDPEnd-fragGDPStart)*t).toFixed(1) + '%';
-    document.getElementById('fedGDP').textContent = (fedGDPStart + (fedGDPEnd-fedGDPStart)*t).toFixed(1) + '%';
-    document.getElementById('fragAI').textContent = Math.round(fragAIStart + (fragAIEnd-fragAIStart)*t) + '%';
-    document.getElementById('fedAI').textContent = Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
-    document.getElementById('fragHDI').textContent = counts.fragHDI.toFixed(3);
-    document.getElementById('fedHDI').textContent = counts.fedHDI.toFixed(3);
+    document.getElementById('fragGDP').textContent = '~' + (fragGDPStart + (fragGDPEnd-fragGDPStart)*t).toFixed(1) + '%';
+    document.getElementById('fedGDP').textContent = '~' + (fedGDPStart + (fedGDPEnd-fedGDPStart)*t).toFixed(1) + '%';
+    document.getElementById('fragAI').textContent = '~' + Math.round(fragAIStart + (fragAIEnd-fragAIStart)*t) + '%';
+    document.getElementById('fedAI').textContent = '~' + Math.round(fedAIStart + (fedAIEnd-fedAIStart)*t) + '%';
+    document.getElementById('fragHDI').textContent = counts.fragHDI.toFixed(2);
+    document.getElementById('fedHDI').textContent = counts.fedHDI.toFixed(2);
     const fragCO2El = document.getElementById('fragCO2');
     const fedCO2El = document.getElementById('fedCO2');
-    if(fragCO2El) fragCO2El.textContent = Math.round(fragCO2Start + (fragCO2End-fragCO2Start)*t).toLocaleString() + ' Mt';
-    if(fedCO2El) fedCO2El.textContent = Math.round(fedCO2Start + (fedCO2End-fedCO2Start)*t).toLocaleString() + ' Mt';
+    const co2 = (v) => (v === 0 ? '0' : '~' + (Math.round(v / 50) * 50).toLocaleString());
+    if(fragCO2El) fragCO2El.textContent = co2(fragCO2Start + (fragCO2End-fragCO2Start)*t) + ' Mt';
+    if(fedCO2El) fedCO2El.textContent = co2(fedCO2Start + (fedCO2End-fedCO2Start)*t) + ' Mt';
   }
 
   function setupStatInfoButtons(){
@@ -780,17 +881,6 @@
 
   // ---------- News feed ----------
   let feedData = data.feed || [];
-  let feedUpdated = data.feedUpdated || '';
-
-  function updateFeedMeta(){
-    const updatedEl = document.getElementById('feedUpdated');
-    if(updatedEl){
-      const today = new Date();
-      const todayStr = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
-      if(feedUpdated === todayStr) feedUpdated = 'Today';
-      updatedEl.textContent = feedUpdated || 'Unknown';
-    }
-  }
 
   // News items are sorted most-recent-first, so the first FEED_VISIBLE_COUNT
   // correspond to the last few days; the rest stay collapsed behind "See more".
@@ -804,11 +894,10 @@
       const row = document.createElement('div');
       row.className = 'feed-item' + (i >= FEED_VISIBLE_COUNT ? ' feed-older' : '');
       row.innerHTML = `
-        <div class="feed-date">${item.date}</div>
+        <div class="feed-date">Example ${i + 1}</div>
         <div class="feed-body">
           <div class="feed-headline">${item.headline}</div>
-          <div class="feed-source">${item.source || 'EU policy wire'}</div>
-          <div class="feed-ai"><span class="label">AI read</span>${item.ai}</div>
+          <div class="feed-ai"><span class="label">What it would mean</span>${item.ai}</div>
         </div>
         <div class="feed-impact">
           <span class="impact-pill frag">A: ${item.frag}</span>
@@ -887,292 +976,147 @@
   // Topic-aware classifier used only for headlines pulled from a live RSS feed
   // (the curated NEWS_POOL below covers the far more common generated-feed path
   // with hand-written, story-specific interpretations instead of this fallback).
-  function classifyNewsHeadline(title){
-    const lower = title.toLowerCase();
-    const topics = [
-      { test: /\bai\b|artificial intelligence|algorithm|chip|semiconductor/, frag:'Fragmented national AI/chip rules keep the EU reliant on US and Chinese platforms.', fed:'Feeds a common EU AI and semiconductor policy, a pillar of the federal tech-sovereignty push.' },
-      { test: /defen[cs]e|military|nato|army|troops/, frag:'National defence budgets and procurement stay separate, limiting EU-wide capability.', fed:'Strengthens the case for pooled federal defence spending and joint procurement.' },
-      { test: /migra|asylum|border/, frag:'Migration policy remains a national flashpoint, exposing the limits of voluntary coordination.', fed:'Builds pressure for a binding federal asylum and border framework.' },
-      { test: /energy|grid|gas|renewable|nuclear/, frag:'Energy policy stays largely national, slowing cross-border grid integration.', fed:'Advances the unified federal energy grid and joint procurement that Scenario B depends on.' },
-      { test: /enlarg|accession|candidate|balkan|ukraine|moldova|montenegro|iceland|referendum/, frag:'Enlargement inches forward unevenly, with individual states setting their own pace.', fed:'Marks concrete progress on the federation’s enlargement track.' },
-      { test: /veto|unanimity|block|stall|dispute|tension|crisis|delay|divid/, frag:'A national veto or standoff again illustrates why unanimity rules keep the Union fragmented.', fed:'Strengthens the case for qualified-majority reform central to the federal model.' },
-      { test: /capital market|banking union|bond|securities|investment fund/, frag:'Capital markets stay split along national lines, limiting cross-border investment.', fed:'A direct step toward the unified capital markets union that underpins Scenario B.' },
-      { test: /trade|tariff|export|import|customs/, frag:'Trade policy responses remain reactive and nationally fragmented.', fed:'Supports a more unified EU trade posture toward the US and China.' },
-      { test: /climate|carbon|emissions|green transition/, frag:'Climate ambition outpaces the fragmented national implementation needed to deliver it.', fed:'Aligns with the federal green-industrial strategy that ties climate and competitiveness together.' },
-      { test: /agreement|joint|integrat|union|deal|framework|strategy|package|connected|shared/, frag:'A negotiated compromise, but implementation still depends on 27 separate national follow-throughs.', fed:'Concrete, incremental progress toward the single federal framework Scenario B assumes.' }
-    ];
-    for(const t of topics){
-      if(t.test.test(lower)) return { frag: t.frag, fed: t.fed };
-    }
-    return {
-      frag:'A minor policy development with no clear effect on the fragmentation trajectory.',
-      fed:'A minor policy development with no direct bearing on federal integration progress.'
-    };
-  }
-
-  const RSS_SOURCE_NAMES = {
-    'politico.eu': 'Politico Europe',
-    'euronews.com': 'Euronews',
-    'lemonde.fr': 'Le Monde',
-    'bbci.co.uk': 'BBC News',
-    'nytimes.com': 'The New York Times',
-    'reuters.com': 'Reuters',
-    'ft.com': 'Financial Times',
-    'dw.com': 'Deutsche Welle'
-  };
-
-  function sourceNameFromUrl(url){
-    try {
-      const host = new URL(url).hostname.replace(/^www\./, '');
-      for(const key of Object.keys(RSS_SOURCE_NAMES)){
-        if(host.endsWith(key)) return RSS_SOURCE_NAMES[key];
-      }
-      return host;
-    } catch(e) {
-      return 'EU policy wire';
-    }
-  }
-
-  function parseNewsRss(xmlText, sourceName){
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(xmlText, 'application/xml');
-    const items = Array.from(doc.querySelectorAll('item')).slice(0, 6);
-    return items.map(item => {
-      const title = item.querySelector('title')?.textContent?.trim() || 'Untitled story';
-      const desc = item.querySelector('description')?.textContent?.trim() || '';
-      const pubDate = item.querySelector('pubDate')?.textContent?.trim() || '';
-      const signal = classifyNewsHeadline(title);
-      return {
-        date: pubDate.replace(/GMT$/, '').trim(),
-        headline: title,
-        source: sourceName,
-        ai: desc,
-        frag: signal.frag,
-        fed: signal.fed
-      };
-    });
-  }
-
-  async function fetchRemoteFeed(){
-    // Credible EU-focused outlets, tried in order of reliability/CORS-friendliness
-    const feedSources = [
-      { url: 'https://www.politico.eu/feed/', name: 'Politico Europe' },
-      { url: 'https://www.euronews.com/rss?level=theme&name=news', name: 'Euronews' },
-      { url: 'https://feeds.bbci.co.uk/news/world/europe/rss.xml', name: 'BBC News' },
-      { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml', name: 'The New York Times' }
-    ];
-
-    for (const source of feedSources) {
-      try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 5000);
-
-        const resp = await fetch(source.url, {
-          mode: 'cors',
-          signal: controller.signal,
-          headers: { 'Accept': 'application/xml' }
-        });
-        clearTimeout(timeoutId);
-
-        if(resp.ok) {
-          const text = await resp.text();
-          const items = parseNewsRss(text, source.name);
-          if(items.length > 0) return items;
-        }
-      } catch(e) {
-        console.warn('Failed to fetch from', source.url, e.message);
-        continue;
-      }
-    }
-
-    // If all direct fetches fail, try with a proxy as last resort
-    try {
-      const proxied = { url: 'https://feeds.bbci.co.uk/news/world/europe/rss.xml', name: 'BBC News' };
-      const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(proxied.url);
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
-      const resp = await fetch(proxyUrl, { signal: controller.signal });
-      clearTimeout(timeoutId);
-      if(resp.ok) {
-        const text = await resp.text();
-        return parseNewsRss(text, proxied.name);
-      }
-    } catch(e) {
-      console.warn('Proxy fetch also failed:', e.message);
-    }
-
-    throw new Error('All remote feed sources failed');
-  }
-
-  // Curated pool of illustrative EU-policy stories, each attributed to a credible
-  // outlet and given a specific, story-grounded read on both 2050 scenarios —
-  // deliberately not a generic "mixed signal" placeholder. Ten of these are
-  // rotated into the feed each day (see generateFreshFeed below).
   const NEWS_POOL = [
     {
       headline: 'EU Commission unveils AI liability and certification roadmap',
-      source: 'Politico Europe',
       ai: 'The Commission sets common rules for AI liability and certification, but enforcement powers stay with national regulators for now.',
       frag: 'National regulators keep enforcement power, so AI oversight stays a patchwork despite the common roadmap.',
       fed: 'Lays the technical groundwork for the single federal AI governance regime Scenario B assumes by 2050.'
     },
     {
       headline: 'European Parliament backs stronger carbon border levy on steel and chemicals',
-      source: 'Euronews',
       ai: 'MEPs vote to tighten the carbon border adjustment mechanism, raising costs for high-carbon imports and trading partners alike.',
       frag: 'Raises trade friction that a fragmented, unanimity-bound EU is poorly placed to manage collectively.',
       fed: 'Aligns external carbon pricing with the federal green-industrial strategy, a concrete step toward the unified market.'
     },
     {
       headline: 'EU foreign ministers approve joint connectivity package for the Western Balkans',
-      source: 'Politico Europe',
       ai: 'Ministers agree funding and regulatory alignment for cross-border energy and data corridors with candidate states.',
       frag: 'Funding is agreed centrally but rollout still depends on separate national implementation plans.',
       fed: 'Accelerates the federation’s eastern enlargement and infrastructure integration track.'
     },
     {
       headline: 'Council split over migration and energy solidarity ahead of summer peak',
-      source: 'Reuters',
       ai: 'Member states remain divided over mandatory burden-sharing on migration and fast-track renewable power sharing.',
       frag: 'A textbook case of the coordination gaps that keep crisis response stuck at the national level.',
       fed: 'Strengthens the argument for a binding federal emergency energy and asylum framework.'
     },
     {
       headline: 'Council fails to agree a unified chip-export control list',
-      source: 'Financial Times',
       ai: 'Member states retain national vetoes over semiconductor export rules, blocking a common EU position on technology controls.',
       frag: 'Keeps chip-export policy fragmented across 27 capitals, reinforcing external dependence on US and Chinese supply chains.',
       fed: 'Sets back the digital-sovereignty timeline the federal scenario relies on for a joint EU chip strategy.'
     },
     {
       headline: 'European Commission publishes new Capital Markets Union roadmap',
-      source: 'Bloomberg',
       ai: 'A fresh roadmap proposes common rules for cross-border securities settlement to unlock pooled investment for green and tech industry by 2030.',
       frag: 'Only a modest near-term effect if national implementation stalls, as it has with previous CMU roadmaps.',
       fed: 'A concrete, incremental step toward the unified capital market that underpins the federal economic model.'
     },
     {
       headline: 'Western Balkans summit reaffirms 2030 accession ambition',
-      source: 'Euronews',
       ai: 'Leaders restate a target of opening final accession chapters with Montenegro and Albania, flagging rule-of-law gaps still unresolved elsewhere.',
       frag: 'Enlargement stays uneven and slow, with individual candidates progressing at very different speeds.',
       fed: 'Keeps the Balkans accession track alive and on schedule for the federation’s enlarged 2050 membership.'
     },
     {
       headline: 'EU and US extend tech standards dialogue without a binding agreement',
-      source: 'Reuters',
       ai: 'Talks on AI and data governance continue without a binding transatlantic framework, leaving the EU reliant on US cloud and AI infrastructure for now.',
       frag: 'Confirms continued EU dependency on foreign cloud and AI infrastructure with no near-term fix in sight.',
       fed: 'No immediate change, but adds urgency to the domestic federal push for EU-owned compute and cloud capacity.'
     },
     {
       headline: 'Ukraine accession talks: energy chapter provisionally closed',
-      source: 'Politico Europe',
       ai: 'Negotiators provisionally close the energy chapter of Ukraine’s accession talks, citing progress on grid synchronisation with the EU network.',
       frag: 'Accession progress remains partial and still dependent on external reconstruction funding.',
       fed: 'Concrete, chapter-by-chapter progress toward Ukraine’s full federal membership by the mid-2030s.'
     },
     {
       headline: 'Hungary blocks joint EU statement on foreign policy coordination',
-      source: 'Politico Europe',
       ai: 'A single member state veto again prevents a unified EU position, underlining the limits of unanimity-based foreign policy.',
       frag: 'Another veto shows exactly why unanimity rules keep the Union unable to act with one voice.',
       fed: 'Strengthens the case for the qualified-majority reform central to how the federation makes decisions.'
     },
     {
       headline: 'Iceland sets date for EU accession referendum as Montenegro nears final chapters',
-      source: 'Le Monde',
       ai: 'Reykjavik confirms a referendum timeline on EU membership, while Montenegro closes its remaining accession chapters in parallel.',
       frag: 'Two fast-moving candidates still accede on separate national timetables rather than as a coordinated bloc.',
       fed: 'Puts Iceland on track to join the federation alongside Montenegro as one of its earliest new members.'
     },
     {
       headline: 'European Central Bank warns on fragmented national banking supervision',
-      source: 'Financial Times',
       ai: 'The ECB flags gaps in cross-border bank resolution powers that leave the eurozone exposed in a future banking crisis.',
       frag: 'Confirms the banking union remains incomplete, leaving systemic risk managed unevenly across member states.',
       fed: 'Adds pressure for the full federal banking union — common deposit insurance included — that Scenario B assumes.'
     },
     {
       headline: 'Germany and France clash over joint EU defence procurement fund',
-      source: 'Politico Europe',
       ai: 'Berlin and Paris disagree over how much of a proposed defence fund must be spent on EU-made equipment.',
       frag: 'A Franco-German rift on defence spending rules illustrates how far EU defence integration still has to go.',
       fed: 'The dispute itself signals how central pooled defence procurement has become to the federal integration agenda.'
     },
     {
       headline: 'EU agrees interim rules on Ukrainian grain imports after farmer protests',
-      source: 'Reuters',
       ai: 'Brussels brokers a temporary compromise on grain import quotas after protests from farmers in frontline member states.',
       frag: 'A patchwork compromise papers over a dispute that national agriculture ministries will keep relitigating.',
       fed: 'Highlights exactly the kind of national friction a common federal agricultural and trade policy is designed to remove.'
     },
     {
       headline: 'Commission proposes joint EU cloud and AI compute initiative',
-      source: 'Bloomberg',
       ai: 'A new proposal would pool public investment to build EU-owned cloud and AI compute capacity, reducing reliance on US hyperscalers.',
       frag: 'Ambitious on paper, but funding and implementation still depend on the same 27 national budget processes.',
       fed: 'A direct building block for the federal AI and cloud sovereignty programme central to Scenario B.'
     },
     {
       headline: 'Poland and Baltic states push for faster EU air-defence integration',
-      source: 'Deutsche Welle',
       ai: 'Frontline states call for a joint EU air-defence shield, citing the pace of threats outstripping national procurement.',
       frag: 'Underlines how national procurement timelines are lagging behind the security picture frontline states describe.',
       fed: 'Builds momentum for the pooled EU air-defence capability envisioned under federal defence integration.'
     },
     {
       headline: 'European Parliament calls for faster Schengen expansion to remaining candidates',
-      source: 'Euronews',
       ai: 'MEPs vote to press the Council to fast-track Schengen membership for Bulgaria, Romania and Balkan candidates.',
       frag: 'A parliamentary vote with no binding force on the Council, which still moves at its own uneven pace.',
       fed: 'Consistent with the fuller, faster free-movement area the federal scenario assumes by 2050.'
     },
     {
       headline: 'Spain and Portugal push stalled Iberian energy interconnection back onto EU agenda',
-      source: 'Le Monde',
       ai: 'Madrid and Lisbon renew calls for EU funding to finish cross-border grid links that have stalled for over a decade.',
       frag: 'A decade of delay on a single interconnector shows how slowly national infrastructure gaps get closed.',
       fed: 'Exactly the kind of cross-border energy link the unified federal grid is built to deliver at speed.'
     },
     {
       headline: 'EU rule-of-law report flags continued judicial independence concerns',
-      source: 'Politico Europe',
       ai: 'The Commission’s annual report cites persisting judicial independence concerns in several member states, with limited enforcement traction.',
       frag: 'Enforcement remains toothless without unanimity, letting rule-of-law backsliding continue largely unchecked.',
       fed: 'Adds to the case for binding federal rule-of-law enforcement with real financial and political consequences.'
     },
     {
       headline: 'Commission unveils single EU digital identity wallet rollout timeline',
-      source: 'Euronews',
       ai: 'Brussels sets a phased timeline for member states to issue interoperable digital ID wallets to citizens.',
       frag: 'National rollout speeds already vary widely, risking a fragmented digital ID landscape in practice.',
       fed: 'A working example of the shared digital infrastructure that federal integration is meant to scale EU-wide.'
     },
     {
       headline: 'Moldova closes another accession chapter ahead of schedule',
-      source: 'Reuters',
       ai: 'Chisinau provisionally closes another EU accession chapter, citing reform momentum since candidate status was granted.',
       frag: 'Fast for Moldova alone, but its path still runs independently of the EU’s broader, uneven accession pace.',
       fed: 'One of the federation’s fastest-moving accessions, on track for full membership well before 2050.'
     },
     {
       headline: 'Italy and Greece press for joint EU Mediterranean energy grid',
-      source: 'Bloomberg',
       ai: 'Rome and Athens propose a shared subsea grid project to move North African renewables into the EU market.',
       frag: 'Depends on bilateral coordination between just two states rather than a bloc-wide grid strategy.',
       fed: 'The kind of cross-border energy project that scales naturally once the federal grid and market are unified.'
     },
     {
       headline: 'European defence ministers agree common munitions stockpile target',
-      source: 'Financial Times',
       ai: 'Ministers set a shared minimum munitions stockpile target, though procurement remains a national responsibility.',
       frag: 'A shared target with national procurement behind it — coordination in name more than in practice.',
       fed: 'Sets the numeric benchmark a pooled federal defence-procurement system would be built to meet.'
     },
     {
       headline: 'EU and Western Balkans sign youth mobility and Erasmus+ expansion deal',
-      source: 'Euronews',
       ai: 'The agreement widens Erasmus+ access for students in Albania, Serbia and North Macedonia ahead of eventual accession.',
       frag: 'A goodwill measure that eases ties with candidates without changing the underlying pace of accession.',
       fed: 'Builds the people-to-people integration that typically precedes and reinforces full federal membership.'
@@ -1183,13 +1127,6 @@
   // headlines change day to day without resorting to randomly mashed-up templates.
   function generateFreshFeed() {
     const today = new Date();
-    const dates = [];
-    for (let i = 0; i < 10; i++) {
-      const d = new Date(today);
-      d.setDate(d.getDate() - i);
-      dates.push(d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' }));
-    }
-
     const startOfYear = new Date(today.getFullYear(), 0, 0);
     const dayOfYear = Math.floor((today - startOfYear) / 86400000);
     const start = dayOfYear % NEWS_POOL.length;
@@ -1198,9 +1135,7 @@
     for (let i = 0; i < 10; i++) {
       const item = NEWS_POOL[(start + i) % NEWS_POOL.length];
       feedItems.push({
-        date: dates[i],
         headline: item.headline,
-        source: item.source,
         ai: item.ai,
         frag: item.frag,
         fed: item.fed
@@ -1210,54 +1145,14 @@
     return feedItems;
   }
 
-  async function loadFeedData(){
-    let freshFeed = [];
-    
-    // On GitHub Pages, CORS prevents external fetch, so we prioritize generated content
-    // But try remote fetch first as it's more authentic when it works
-    try {
-      // Only try remote fetch if we're not on GitHub Pages (or if CORS might work)
-      // GitHub Pages blocks CORS to most external domains
-      if (!window.location.hostname.includes('github.io')) {
-        const remote = await fetchRemoteFeed();
-        if(Array.isArray(remote) && remote.length){
-          freshFeed = remote;
-          console.log('Successfully loaded remote feed with', remote.length, 'items');
-        }
-      }
-    } catch (primaryErr) {
-      console.warn('Unable to fetch external news feed (expected on GitHub Pages):', primaryErr.message);
-    }
-
-    // If we got nothing from remote (or on GitHub Pages), use generated feed
-    if(!freshFeed.length) {
-      freshFeed = generateFreshFeed();
-      console.log('Generated fresh feed with', freshFeed.length, 'items');
-    }
-
-    // Use the fresh feed
-    feedData = freshFeed;
-    
-    // Always set feedUpdated to today so it shows as current
-    const today = new Date();
-    feedUpdated = today.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
-    
+  // The example signals are written, not fetched. The remote-RSS path that used
+  // to sit here never ran on the published site (it was skipped on github.io),
+  // so every visitor saw generated items stamped with today's date and a real
+  // outlet's name — invented headlines presented as reporting by those
+  // newsrooms. There is now no remote source and nothing to "refresh".
+  function loadFeedData(){
+    feedData = generateFreshFeed();
     buildFeed();
-    updateFeedMeta();
-  }
-
-  function scheduleFeedRefresh(){
-    const oneDay = 24 * 60 * 60 * 1000;
-    // Schedule first refresh at next 08:00 local time, then every 24h
-    const now = new Date();
-    const next = new Date(now);
-    next.setHours(8, 0, 0, 0);
-    if(next <= now) next.setDate(next.getDate() + 1);
-    const initialDelay = next - now;
-    setTimeout(() => {
-      loadFeedData();
-      setInterval(loadFeedData, oneDay);
-    }, initialDelay);
   }
 
   // ---------- Init ----------
@@ -1363,7 +1258,6 @@
   setupFeedSeeMore();
   setupSocialShare();
   loadFeedData();
-  scheduleFeedRefresh();
   loadTheme();
 
   const initialState = getInitialStateFromURL();

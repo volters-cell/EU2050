@@ -41,6 +41,21 @@
 
   *{box-sizing:border-box; margin:0; padding:0;}
 
+  .skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:100;
+    background:var(--panel);
+    color:var(--ink);
+    padding:10px 14px;
+    border:1px solid var(--fed-gold);
+    border-radius:4px;
+    font-family:var(--mono);
+    font-size:0.75rem;
+  }
+  .skip-link:focus{ left:8px; top:8px; }
+
   body{
     background:var(--bg);
     color:var(--ink);
@@ -175,10 +190,12 @@
   }
 
   /* ---------- Layout ---------- */
-  /* Scenario B's column runs wider than Scenario A's, so its map reads as the bigger, headline outcome */
+  /* Equal columns: the whole point of the page is a like-for-like comparison,
+     and unequal widths rendered the two maps at different scales, which made
+     them genuinely harder to compare. */
   .layout{
     display:grid;
-    grid-template-columns: 0.82fr 1.18fr;
+    grid-template-columns: 1fr 1fr;
     gap:1px;
     background:var(--line);
   }
@@ -217,6 +234,18 @@
     background:rgba(124,58,237,0.15);
     color:var(--fed-teal);
     border:1px solid var(--fed-teal);
+  }
+  .modelled-badge{
+    display:inline-block;
+    margin-top:8px;
+    font-family:var(--mono);
+    font-size:0.6rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    border:1px dashed var(--line);
+    border-radius:3px;
+    padding:2px 7px;
   }
   .scenario-title{
     font-family:var(--serif);
@@ -304,6 +333,17 @@
     font-size:0.66rem;
     letter-spacing:0.04em;
     cursor:pointer;
+  }
+  /* Visible keyboard focus — nothing in the page indicated focus before, so
+     tabbing through was invisible. :focus-visible keeps mouse clicks clean. */
+  :focus-visible{
+    outline:2px solid var(--fed-gold);
+    outline-offset:2px;
+  }
+  .country:focus-visible{
+    outline:none;
+    stroke:var(--fed-gold);
+    stroke-width:2;
   }
   .chip.active{
     border-color:var(--fed-gold);
@@ -454,6 +494,54 @@
     color:var(--ink-dim);
     line-height:1.5;
   }
+  .compare-btn{
+    margin-top:10px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--ink-dim);
+    border-radius:4px;
+    padding:5px 10px;
+    font-family:var(--mono);
+    font-size:0.66rem;
+    letter-spacing:0.04em;
+    cursor:pointer;
+  }
+  .compare-btn:hover{ color:var(--ink); border-color:var(--ink-dim); }
+
+  .detail-compare{ margin-top:10px; }
+  .compare-row{ margin-bottom:10px; }
+  .compare-label{
+    font-family:var(--mono);
+    font-size:0.6rem;
+    color:var(--ink-dim);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .compare-cells{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  @media (max-width:520px){ .compare-cells{ grid-template-columns:1fr; } }
+  .compare-cell{
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-left-width:3px;
+    border-radius:4px;
+    padding:7px 9px;
+    font-size:0.78rem;
+    line-height:1.45;
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+  .compare-cell.frag{ border-left-color:var(--stat-bad); }
+  .compare-cell.fed{ border-left-color:var(--stat-good); }
+  .compare-tag{
+    font-family:var(--mono);
+    font-size:0.6rem;
+    font-weight:700;
+    margin-right:6px;
+  }
+  .compare-cell.frag .compare-tag{ color:var(--stat-bad); }
+  .compare-cell.fed .compare-tag{ color:var(--stat-good); }
+
   .detail-empty{
     color:var(--ink-dim);
     font-style:italic;
@@ -514,14 +602,6 @@
     font-size:0.92rem;
     font-weight:600;
     margin-bottom:3px;
-  }
-  .feed-body .feed-source{
-    font-family:var(--mono);
-    font-size:0.66rem;
-    color:var(--fed-teal);
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    margin-bottom:6px;
   }
   .feed-body .feed-ai{
     font-size:0.85rem;
@@ -755,22 +835,23 @@
     font-weight:600;
   }
 </style>
-<link rel="stylesheet" href="scroll.css?v=3">
+<link rel="stylesheet" href="scroll.css?v=4">
 </head>
 
 <body>
+<a class="skip-link" href="#mapFrag">Skip to the scenario maps</a>
 
 <header class="masthead">
   <div>
     <div class="masthead-title">EU2050 <span class="accent">/ Two Futures</span></div>
-    <div class="masthead-sub">Daily AI-read signals — long-run sovereignty &amp; enlargement scenarios</div>
+    <div class="masthead-sub">Illustrative scenario model — long-run sovereignty &amp; enlargement futures</div>
   </div>
   <div>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
       <span class="icon" id="themeIcon">☀</span>
       <span id="themeText">Night</span>
     </button>
-    <div class="live-tag" style="margin-left:12px;"><span class="live-dot"></span>Updated <span id="feedUpdated">Today</span> — Auto-refreshes daily</div>
+    <div class="live-tag" style="margin-left:12px;">Illustrative model — not a live data feed</div>
   </div>
 </header>
 
@@ -783,7 +864,7 @@
 </div>
 
 <section class="intro">
-  <p>EU2050 reads EU policy and news every day to track two futures for Europe. <b>Scenario A</b> is a Union where integration is conditioned under national vetoes. <b>Scenario B</b> is a genuine federation — one Single Market, one European Capital Market, European Digital Sovereignty, and a completed enlargement.</p>
+  <p>EU2050 models two futures for Europe. <b>Scenario A</b> is a Union where integration is conditioned under national vetoes. <b>Scenario B</b> is a genuine federation — one Single Market, one European Capital Market, European Digital Sovereignty, and a completed enlargement.</p>
 </section>
 
 <div class="layout">
@@ -794,6 +875,7 @@
       <div>
         <span class="scenario-tag">SCENARIO A — Status quo</span>
         <div class="scenario-title">A fragmented Union, <span id="fragYearDisplay">2050</span></div>
+        <div class="modelled-badge" title="2026 figures are real; later years are modelled assumptions">Modelled projection — 2026 baseline is real</div>
       </div>
     </div>
     <ul class="scenario-desc">
@@ -811,15 +893,15 @@
       <span>Click a country for detail</span>
     </div>
     <div class="membership-toggles">
-      <button type="button" class="chip" data-membership="s">Schengen</button>
-      <button type="button" class="chip" data-membership="e">Eurozone</button>
-      <button type="button" class="chip" data-membership="n">NATO</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="s">Schengen</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="e">Eurozone</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="n">NATO</button>
     </div>
 
     <div class="stat-strip">
       <div class="stat">
-        <div class="stat-label">EU population <button type="button" class="stat-info" data-target="fragPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="EU population source">?</button></div>
-        <div class="stat-value" id="fragPop">419M</div>
+        <div class="stat-label">EU population <button type="button" class="stat-info" data-target="fragPopNote" aria-controls="fragPopNote" aria-expanded="false" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="EU population source">?</button></div>
+        <div class="stat-value" id="fragPop">~420M</div>
         <div class="stat-note" id="fragPopNote">2026 baseline: 450M, the EU-27's actual current population (Eurostat, Jan 2025). Under this scenario, weak coordination on migration policy and continued ageing pull the total down to roughly 419M by 2050 — near Eurostat's own low-migration projection variant.</div>
       </div>
       <div class="stat">
@@ -827,27 +909,27 @@
         <div class="stat-value" id="fragMembers">27</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fragGDPNote" aria-label="GDP market share source">?</button></div>
-        <div class="stat-value" id="fragGDP">10.0%</div>
+        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fragGDPNote" aria-controls="fragGDPNote" aria-expanded="false" aria-label="GDP market share source">?</button></div>
+        <div class="stat-value" id="fragGDP">~10.0%</div>
         <div class="stat-note" id="fragGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU: 10%, US: ~24%, China: ~18%. A fragmented EU loses economic traction as disunity reduces its global influence.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fragAINote" aria-label="AI market share source">?</button></div>
-        <div class="stat-value" id="fragAI">6%</div>
+        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fragAINote" aria-controls="fragAINote" aria-expanded="false" aria-label="AI market share source">?</button></div>
+        <div class="stat-value" id="fragAI">~6%</div>
         <div class="stat-note" id="fragAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU: 6%, US: ~38%, China: ~32%. Fragmented national regulation and investment gaps allow US and China to dominate. Sources: OECD, industry reports.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
-        <div class="stat-value" id="fragCO2">1,100 Mt</div>
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fragCO2Note" aria-controls="fragCO2Note" aria-expanded="false" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-value" id="fragCO2">~1,100 Mt</div>
         <div class="stat-note" id="fragCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). The EU's legally binding target of net-zero emissions by 2050 — the European Climate Law, Regulation (EU) 2021/1119 — commits the whole bloc to climate neutrality, but under this scenario policy fragmentation falls short — landing around 1,100 Mt by 2050, well short of the target. Under this scenario the target isn't simply missed but progressively dismantled: without a unified industrial and carbon-border strategy, individual capitals win sector-by-sector exemptions under competitiveness pressure, the ETS2 rollout is repeatedly delayed, the 2040 interim target is renegotiated downward, and by the 2040s the European Climate Law's 2050 deadline is treated as aspirational rather than binding, with the original legal commitment eroded through amendment and non-enforcement rather than ever being formally repealed. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fragHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
-        <div class="stat-value" id="fragHDI">0.920</div>
+        <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fragHDINote" aria-controls="fragHDINote" aria-expanded="false" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
+        <div class="stat-value" id="fragHDI">0.92</div>
         <div class="stat-note" id="fragHDINote">
           <div><b>How EU human development compares — Scenario A, 2050 (illustrative)</b></div>
           <ul style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
-            <li>Median HDI (0–1 scale): EU 0.920 — US 0.935 — China 0.850</li>
+            <li>Median HDI (0–1 scale): EU ~0.92 — US ~0.94 — China ~0.85</li>
             <li>Life expectancy at birth: EU 82.5 yrs — US 79.8 yrs — China 80.1 yrs</li>
             <li>Expected years of schooling: EU 17.2 — US 16.5 — China 15.0</li>
             <li>GNI per capita (PPP, illustrative): EU $52,000 — US $78,000 — China $28,000</li>
@@ -874,6 +956,7 @@
       <div>
         <span class="scenario-tag">SCENARIO B — Federation of Europe</span>
         <div class="scenario-title">Federation of Europe, <span id="fedYearDisplay">2050</span></div>
+        <div class="modelled-badge" title="2026 figures are real; later years are modelled assumptions">Modelled projection — 2026 baseline is real</div>
       </div>
     </div>
     <ul class="scenario-desc">
@@ -895,15 +978,15 @@
       <div class="legend-item"><span class="swatch" style="background:#23262f"></span>Non-EU / not modelled</div>
     </div>
     <div class="membership-toggles">
-      <button type="button" class="chip" data-membership="s">Schengen</button>
-      <button type="button" class="chip" data-membership="e">Eurozone</button>
-      <button type="button" class="chip" data-membership="n">NATO</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="s">Schengen</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="e">Eurozone</button>
+      <button type="button" class="chip" aria-pressed="false" data-membership="n">NATO</button>
     </div>
 
     <div class="stat-strip">
       <div class="stat">
-        <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
-        <div class="stat-value" id="fedPop">721M</div>
+        <div class="stat-label">Federation population <button type="button" class="stat-info" data-target="fedPopNote" aria-controls="fedPopNote" aria-expanded="false" data-url="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_and_population_change_statistics" aria-label="Federation population source">?</button></div>
+        <div class="stat-value" id="fedPop">~720M</div>
         <div class="stat-note" id="fedPopNote">
           <div><b>How the federation population is calculated — method and sources</b></div>
           <ol style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
@@ -920,32 +1003,32 @@
         <div class="stat-value" id="fedMembers">43</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fedGDPNote" aria-label="GDP market share source">?</button></div>
-        <div class="stat-value" id="fedGDP">19.0%</div>
+        <div class="stat-label">Global GDP market share <button type="button" class="stat-info" data-target="fedGDPNote" aria-controls="fedGDPNote" aria-expanded="false" aria-label="GDP market share source">?</button></div>
+        <div class="stat-value" id="fedGDP">~19.0%</div>
         <div class="stat-note" id="fedGDPNote">2026 baseline: EU 18% of world GDP (IMF/World Bank; ~$21T of ~$118T nominal). By 2050 (illustrative): EU Federation: 19%, US: ~23%, China: ~17%. Coordinated industrial policy (the EU Chips Act, Net-Zero Industry Act and Critical Raw Materials Act) lifts manufacturing's share of EU GDP from roughly 15% today to an estimated 21% by 2050, reshoring high-value production — semiconductors, batteries, clean-tech machinery — that today is largely imported. That reshoring, combined with enlargement's larger economic base, narrows the EU's goods trade deficit with China from roughly $1bn/day (€359.8bn in 2025, Eurostat) to an estimated $400-450m/day by 2050 — the EU produces more of what it currently buys, even as large-scale trade with China continues in categories where China retains a durable cost advantage. Sources: IMF, World Bank, Eurostat trade statistics.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fedAINote" aria-label="AI market share source">?</button></div>
-        <div class="stat-value" id="fedAI">22%</div>
+        <div class="stat-label">AI market share <button type="button" class="stat-info" data-target="fedAINote" aria-controls="fedAINote" aria-expanded="false" aria-label="AI market share source">?</button></div>
+        <div class="stat-value" id="fedAI">~22%</div>
         <div class="stat-note" id="fedAINote">2026 baseline: EU ~10% of the AI market. By 2050 (illustrative): EU Federation: 22%, US: ~34%, China: ~28%. Unified regulation (DSA, AI Act), coordinated R&D investment and the same reshored semiconductor capacity behind the EU's manufacturing gains let European AI compete on hardware, not just software, at global scale. Sources: OECD, industry reports.</div>
       </div>
       <div class="stat">
-        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
+        <div class="stat-label">CO2 emissions <button type="button" class="stat-info" data-target="fedCO2Note" aria-controls="fedCO2Note" aria-expanded="false" data-url="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2050-long-term-strategy_en" aria-label="CO2 emissions source">?</button></div>
         <div class="stat-value" id="fedCO2">0 Mt</div>
         <div class="stat-note" id="fedCO2Note">2026 baseline: ~2,800 Mt CO2e/year (EEA). A coordinated federal Green Deal hits net zero by 2050, meeting the EU's legally binding target — the European Climate Law, Regulation (EU) 2021/1119 — which commits the whole bloc to climate neutrality by 2050. For comparison, 2026 baselines: US ~4,900 Mt (targeting net zero by 2050, contested), China ~12,300 Mt (targeting peak before 2030, neutrality by 2060 — not 2050). Sources: EEA, Global Carbon Project, IEA, European Climate Law (Regulation (EU) 2021/1119).</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fedHDINote" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
-        <div class="stat-value" id="fedHDI">0.945</div>
+        <div class="stat-label">Median Human Development Index <button type="button" class="stat-info" data-target="fedHDINote" aria-controls="fedHDINote" aria-expanded="false" data-url="https://hdr.undp.org/data-center/human-development-index" aria-label="Human Development Index source">?</button></div>
+        <div class="stat-value" id="fedHDI">0.94</div>
         <div class="stat-note" id="fedHDINote">
           <div><b>How the federation's human development compares — Scenario B, 2050 (illustrative)</b></div>
           <ul style="margin-top:6px; margin-bottom:6px; padding-left:18px;">
-            <li>Median HDI (0–1 scale): EU Federation 0.945 — US 0.935 — China 0.850</li>
+            <li>Median HDI (0–1 scale): EU Federation ~0.94 — US ~0.94 — China ~0.85</li>
             <li>Life expectancy at birth: EU Federation 83.6 yrs — US 79.8 yrs — China 80.1 yrs</li>
             <li>Expected years of schooling: EU Federation 18.0 — US 16.5 — China 15.0</li>
             <li>GNI per capita (PPP, illustrative): EU Federation $68,000 — US $78,000 — China $28,000</li>
           </ul>
-          <div style="margin-top:6px;">A unified capital market and cohesion funding lift income and education convergence enough for the federation to edge ahead of the US on overall human development, even as new lower-income members join. Sources: UNDP Human Development Report, World Bank, OECD.</div>
+          <div style="margin-top:6px;">A unified capital market and cohesion funding lift income and education convergence enough for the federation to draw roughly level with the US on overall human development, even as new lower-income members join — a notable result given the federation absorbs 16 lower-income states over the period. Sources: UNDP Human Development Report, World Bank, OECD.</div>
         </div>
       </div>
     </div>
@@ -965,8 +1048,8 @@
   <section class="feed-section">
     <div class="feed-head">
       <div>
-        <div class="feed-title">Today's signals</div>
-        <div class="feed-sub">AI reads EU policy news from credible outlets — Politico Europe, Euronews, Bloomberg, Le Monde, Reuters &amp; others — and tags which 2050 path each story nudges</div>
+        <div class="feed-title">Example signals</div>
+        <div class="feed-sub">Written examples of the kinds of policy developments that push each scenario. These are illustrative, not real news reports, and are not attributed to any publication.</div>
       </div>
     </div>
     <div class="feed-list" id="feedList"></div>
@@ -978,7 +1061,7 @@
     <div class="footer-row">
       <div class="footer-brand">
         <div class="footer-brand-name">EU2050</div>
-        <div class="footer-tagline">Two AI-tracked futures for the EU, updated daily</div>
+        <div class="footer-tagline">Two modelled futures for the EU — an illustrative scenario tool</div>
       </div>
       <div class="footer-social">
         <span class="footer-social-label">Share</span>
@@ -1002,7 +1085,7 @@
         </div>
       </div>
     </div>
-    <p class="footer-disclaimer">These are <b>illustrative scenarios synthesised by AI from current reporting, not statistical forecasts or predictions of fact</b>. Population figures for 2026–2050 are based on Eurostat baseline projections; integration, sovereignty and enlargement scores are an AI-assisted reading of policy momentum and are inherently uncertain and contestable.</p>
+    <p class="footer-disclaimer">These are <b>illustrative scenarios, not statistical forecasts or predictions of fact</b>. The 2026 baselines are real: population from Eurostat, GDP share from IMF/World Bank, emissions from the EEA, and Schengen/Eurozone/NATO membership as it stands today. Everything after 2026 is a <b>model</b> — the accession timeline, the integration scores and the 2050 endpoints are assumptions, chosen to illustrate two contrasting paths, and are uncertain and contestable. The <b>example signals are written illustrations, not real news reports</b>: they are not collected from any publication and are not attributed to one.</p>
   </section>
 
 </div>
@@ -1010,9 +1093,9 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-<script src="geodata.js"></script>
-<script src="data.js?v=2"></script>
-<script src="app.js?v=15"></script>
-<script src="scroll.js?v=2" defer></script>
+<script src="geodata.js?v=2"></script>
+<script src="data.js?v=3"></script>
+<script src="app.js?v=16"></script>
+<script src="scroll.js?v=3" defer></script>
 </body>
 </html>
