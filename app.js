@@ -97,6 +97,46 @@
     return base + (target - base) * t;
   }
 
+  // Countries that must never be coloured as federation members. Hoisted to
+  // module scope (it was being recreated on every render in buildMap and
+  // countCountries). RUS/BLR are intentionally excluded from the federation
+  // fill regardless of year.
+  const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
+
+  // Memo cache for the joined-countries Set, keyed by year. getJoinedCountries
+  // is called from buildMap, inOverlay, showDetail and countCountries during a
+  // single render(year); the result depends only on year, so computing it once
+  // per year avoids rebuilding the Set dozens of times per slider tick.
+  const joinedCache = new Map();
+  function getJoinedCountries(year) {
+    if (joinedCache.has(year)) return joinedCache.get(year);
+    const joined = new Set();
+    // All current EU members are always in
+    Object.entries(data.countries || {}).forEach(([iso, c]) => {
+      if (c.eu) joined.add(iso);
+    });
+
+    // Add countries that join by this year
+    Object.entries(accessionTimeline).forEach(([iso, joinYear]) => {
+      if (joinYear <= year) joined.add(iso);
+    });
+
+    joinedCache.set(year, joined);
+    return joined;
+  }
+
+  // Static per-feature SVG path strings, keyed by ISO3. Geometry never
+  // changes, so the expensive projection (ringToPath over every coordinate)
+  // runs once per feature at first render instead of on every slider tick.
+  const pathDCache = new Map();
+  function featurePathD(feature){
+    const iso = feature.properties.ISO3;
+    if (pathDCache.has(iso)) return pathDCache.get(iso);
+    const d = geometryToPath(feature.geometry);
+    pathDCache.set(iso, d);
+    return d;
+  }
+
   // ---------- Accession timeline data ----------
   // Define when countries join in Scenario B
   const accessionTimeline = {
@@ -144,22 +184,6 @@
     GBR: {s:false, e:false, n:true}, CHE: {s:true, e:false, n:false}, NOR: {s:true, e:false, n:true},
     ISL: {s:true, e:false, n:true}, TUR: {s:false, e:false, n:true}
   };
-
-  // Get countries that have joined by a given year in Scenario B
-  function getJoinedCountries(year) {
-    const joined = new Set();
-    // All current EU members are always in
-    Object.entries(data.countries || {}).forEach(([iso, c]) => {
-      if (c.eu) joined.add(iso);
-    });
-    
-    // Add countries that join by this year
-    Object.entries(accessionTimeline).forEach(([iso, joinYear]) => {
-      if (joinYear <= year) joined.add(iso);
-    });
-    
-    return joined;
-  }
 
   // Get accession list for display
   function getAccessionList(year, scenario) {
@@ -268,28 +292,60 @@
 
   // ---------- Build SVG for one map ----------
   function buildMap(svgEl, scenario, tooltipEl, detailEl, year){
-    svgEl.innerHTML = '';
     const ns = 'http://www.w3.org/2000/svg';
 
-    const bg = document.createElementNS(ns,'rect');
-    bg.setAttribute('x',0); bg.setAttribute('y',0);
-    bg.setAttribute('width',W); bg.setAttribute('height',H);
-    bg.setAttribute('fill','#0d1118');
-    svgEl.appendChild(bg);
+    // Reuse existing path nodes across renders instead of tearing the whole
+    // SVG down on every slider tick. The geometry, stroke base, class and
+    // event handlers never change — only fill (Scenario B) and the overlay
+    // stroke depend on the year — so on re-render we touch attributes in
+    // place and skip createElementNS / setAttribute('d') / addEventListener
+    // for ~50 paths each frame. The frag map's fill is also year-independent,
+    // so render() skips it entirely on year-only changes (see render()).
+    //
+    // IMPORTANT: the reuse check must run BEFORE any innerHTML clear, otherwise
+    // the existing path.country nodes are wiped and reuse can never be true.
+    const existing = svgEl.querySelectorAll('path.country');
+    const reuse = existing.length === geo.features.length;
 
-    // countries that must never be coloured as federation members
-    const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
+    if(reuse){
+      // Keep the background rect already in the SVG; only paths need updating.
+    } else {
+      svgEl.innerHTML = '';
+      const bg = document.createElementNS(ns,'rect');
+      bg.setAttribute('x',0); bg.setAttribute('y',0);
+      bg.setAttribute('width',W); bg.setAttribute('height',H);
+      bg.setAttribute('fill','#0d1118');
+      svgEl.appendChild(bg);
+    }
 
-    // Get joined countries for this year (Scenario B only)
     const joinedCountries = scenario === 'fed' ? getJoinedCountries(year) : new Set();
 
-    geo.features.forEach(f => {
+    geo.features.forEach((f, idx) => {
       const iso = f.properties.ISO3;
       const country = data.countries[iso];
-      const path = document.createElementNS(ns,'path');
-      path.setAttribute('d', geometryToPath(f.geometry));
-      path.setAttribute('class','country');
-      path.setAttribute('data-iso', iso);
+      let path;
+      if (reuse) {
+        path = existing[idx];
+      } else {
+        path = document.createElementNS(ns,'path');
+        path.setAttribute('d', featurePathD(f));
+        path.setAttribute('class','country');
+        path.setAttribute('data-iso', iso);
+        path.setAttribute('stroke','#0b0e14');
+        path.setAttribute('stroke-width','0.5');
+        path.setAttribute('stroke-linejoin','round');
+        svgEl.appendChild(path);
+
+        // Handlers read currentYear at event time instead of capturing the
+        // render's `year`, so a path bound on the first render keeps showing
+        // the live year as the slider moves — no re-binding needed.
+        if(country){
+          path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl, scenario, currentYear));
+          path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
+          path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
+          path.addEventListener('click', () => toggleCountrySelection(scenario, iso, detailEl));
+        }
+      }
 
       // default non-member fill (matches legend non-EU swatch)
       let fill = '#23262f';
@@ -309,24 +365,12 @@
         fill = '#23262f';
       }
       path.setAttribute('fill', fill);
-      path.setAttribute('stroke','#0b0e14');
-      path.setAttribute('stroke-width','0.5');
-      path.setAttribute('stroke-linejoin','round');
 
       // Re-apply whichever single overlay this map has active, so highlights
       // survive the slider-driven rebuild. One attribute, one rule — the old
       // version stacked three independent attributes that overwrote each
       // other's strokes depending on which ran last.
       applyOverlayToPath(path, svgEl.getAttribute('data-overlay'), scenario, iso, country, year);
-
-      svgEl.appendChild(path);
-
-      if(country){
-        path.addEventListener('mouseenter', (e) => showTooltip(tooltipEl, country, e, svgEl, scenario, year));
-        path.addEventListener('mousemove', (e) => moveTooltip(tooltipEl, e, svgEl));
-        path.addEventListener('mouseleave', () => hideTooltip(tooltipEl));
-        path.addEventListener('click', () => toggleCountrySelection(scenario, iso, detailEl));
-      }
     });
   }
 
@@ -687,7 +731,6 @@
   // ---------- Stats ----------
   function countCountries(year){
     const entries = Object.entries(data.countries || {});
-    const FED_EXCLUDE_ISOS = new Set(['RUS','BLR']);
     const euMembers = entries.filter(([iso, c]) => c.eu).map(([iso,c]) => c);
     const joinedCountries = getJoinedCountries(year);
     const fedMembers = entries
@@ -1212,30 +1255,47 @@
 
   async function loadFeedData(){
     let freshFeed = [];
-    
-    // On GitHub Pages, CORS prevents external fetch, so we prioritize generated content
-    // But try remote fetch first as it's more authentic when it works
+
+    // Prefer the CI-maintained feed.json: it is same-origin (no CORS, works on
+    // GitHub Pages), curated, and updated daily by .github/workflows/update-feed.yml.
+    // This is the fast, reliable path; the remote RSS fetch and generator below
+    // are fallbacks.
     try {
-      // Only try remote fetch if we're not on GitHub Pages (or if CORS might work)
-      // GitHub Pages blocks CORS to most external domains
-      if (!window.location.hostname.includes('github.io')) {
-        const remote = await fetchRemoteFeed();
-        if(Array.isArray(remote) && remote.length){
-          freshFeed = remote;
-          console.log('Successfully loaded remote feed with', remote.length, 'items');
+      const resp = await fetch('feed.json', { cache: 'no-cache' });
+      if (resp.ok) {
+        const json = await resp.json();
+        if (json && Array.isArray(json.feed) && json.feed.length) {
+          freshFeed = json.feed;
+          if (json.feedUpdated) feedUpdated = json.feedUpdated;
+          console.log('Loaded feed.json with', freshFeed.length, 'items');
         }
       }
-    } catch (primaryErr) {
-      console.warn('Unable to fetch external news feed (expected on GitHub Pages):', primaryErr.message);
+    } catch (localErr) {
+      console.warn('feed.json unavailable:', localErr.message);
     }
 
-    // If we got nothing from remote (or on GitHub Pages), use generated feed
-    if(!freshFeed.length) {
+    // Remote RSS is more authentic when CORS allows it (not on GitHub Pages).
+    if (!freshFeed.length) {
+      try {
+        if (!window.location.hostname.includes('github.io')) {
+          const remote = await fetchRemoteFeed();
+          if (Array.isArray(remote) && remote.length) {
+            freshFeed = remote;
+            console.log('Loaded remote feed with', remote.length, 'items');
+          }
+        }
+      } catch (primaryErr) {
+        console.warn('Unable to fetch external news feed (expected on GitHub Pages):', primaryErr.message);
+      }
+    }
+
+    // Last resort: generate a feed from the curated local pool so the panel is
+    // never empty even when both fetches fail.
+    if (!freshFeed.length) {
       freshFeed = generateFreshFeed();
       console.log('Generated fresh feed with', freshFeed.length, 'items');
     }
 
-    // Use the fresh feed
     feedData = freshFeed;
     
     // Always set feedUpdated to today so it shows as current
@@ -1262,6 +1322,20 @@
 
   // ---------- Init ----------
   let currentYear = 2050;
+
+  // Refresh only the overlay strokes on a map whose fills are unchanged
+  // (the frag map during a year-only render). Cheap: iterates existing path
+  // nodes and re-applies the active overlay, instead of a full rebuild.
+  function refreshMapOverlay(svgId, scenario, year){
+    const svg = document.getElementById(svgId);
+    if(!svg) return;
+    const overlay = svg.getAttribute('data-overlay');
+    if(!overlay) return;            // no overlay active — nothing to refresh
+    svg.querySelectorAll('path.country').forEach(p => {
+      const iso = p.getAttribute('data-iso');
+      applyOverlayToPath(p, overlay, scenario, iso, data.countries[iso], year);
+    });
+  }
 
   // ---------- Shareable / deep-linked state ----------
   // Keeps the URL's query string in sync with the current year and (if any)
@@ -1300,8 +1374,17 @@
   }
 
   function render(year){
+    const yearOnly = currentYear !== undefined && year !== currentYear;
     currentYear = year;
-    buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
+    // The fragmented map's fill is year-independent (fragColor ignores score
+    // and year), so on a pure year change we skip rebuilding it: only its
+    // overlay strokes need refreshing, which updateMapOverlays() does below.
+    // The first render and any non-year context still build it fully.
+    if (!yearOnly) {
+      buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
+    } else {
+      refreshMapOverlay('mapFrag', 'frag', year);
+    }
     buildMap(document.getElementById('mapFed'), 'fed', document.getElementById('tooltipFed'), document.getElementById('detailFed'), year);
     updateStats(year);
     updateAccessionTimelines(year);
@@ -1350,9 +1433,23 @@
     }, 350);
   }
 
+  // Coalesce rapid slider 'input' events into one render per animation frame
+  // so dragging across all 25 years no longer triggers 25 synchronous full
+  // renders. The pending flag guarantees at most one render() per frame and
+  // always reflects the latest slider value.
+  let renderPending = false;
+  function scheduleRender(){
+    if(renderPending) return;
+    renderPending = true;
+    requestAnimationFrame(() => {
+      renderPending = false;
+      render(parseInt(slider.value, 10));
+    });
+  }
+
   slider.addEventListener('input', () => {
     if(autoplayTimer) toggleAutoplay();
-    render(parseInt(slider.value, 10));
+    scheduleRender();
   });
   const autoplayBtn = document.getElementById('autoplayBtn');
   if(autoplayBtn) autoplayBtn.addEventListener('click', toggleAutoplay);
