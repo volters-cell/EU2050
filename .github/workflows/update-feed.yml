@@ -14,12 +14,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install dependencies
-        run: |
-          npm init -y
       - name: Run feed updater
-        run: |
-          node update-feed.js
+        run: npm run update-feed
       - name: Commit updated feed
         run: |
           git config user.name 'github-actions[bot]'

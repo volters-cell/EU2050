@@ -1,0 +1,9 @@
+{
+  "name": "eu2050",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EU2050 scenario explorer — daily feed pipeline",
+  "scripts": {
+    "update-feed": "node update-feed.js"
+  }
+}

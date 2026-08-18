@@ -139,6 +139,88 @@
     50%{opacity:0.25;}
   }
 
+  .masthead-right{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+  }
+  .masthead-top-row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .momentum-wrap{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--mono);
+    font-size:0.66rem;
+    color:var(--ink-dim);
+    letter-spacing:0.04em;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+  .momentum-bar{
+    display:flex;
+    width:160px;
+    height:8px;
+    border-radius:4px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    background:var(--panel-2);
+  }
+  .momentum-frag{ background:var(--frag-red); transition:width 0.6s ease; }
+  .momentum-fed{ background:var(--fed-teal); transition:width 0.6s ease; }
+  .momentum-labels{ display:flex; gap:10px; }
+  .momentum-labels span.frag{ color:var(--frag-amber); }
+  .momentum-labels span.fed{ color:var(--fed-teal); }
+
+  .country.selected{
+    stroke:var(--fed-gold) !important;
+    stroke-width:2 !important;
+    filter:drop-shadow(0 0 4px rgba(255,203,71,0.45));
+  }
+  .country.pulse{ animation:countryPulse 1.2s ease-out 2; }
+  @keyframes countryPulse{
+    0%,100%{ filter:brightness(1); }
+    50%{ filter:brightness(1.55); }
+  }
+
+  .toast-container{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    z-index:1000;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    max-width:340px;
+    pointer-events:none;
+  }
+  .event-toast{
+    background:var(--panel);
+    border:1px solid var(--fed-teal);
+    border-left:4px solid var(--fed-teal);
+    padding:12px 14px;
+    border-radius:4px;
+    font-size:0.82rem;
+    line-height:1.45;
+    box-shadow:0 8px 24px rgba(0,0,0,0.35);
+    animation:toastIn 0.35s ease;
+  }
+  @keyframes toastIn{
+    from{ opacity:0; transform:translateX(20px); }
+    to{ opacity:1; transform:translateX(0); }
+  }
+
+  .feed-item.feed-active{
+    background:rgba(124,58,237,0.08);
+    border-left:3px solid var(--fed-teal);
+    padding-left:13px;
+  }
+
   /* ---------- Year slider bar ---------- */
   .timebar{
     background:var(--panel);
@@ -846,12 +928,25 @@
     <div class="masthead-title">EU2050 <span class="accent">/ Two Futures</span></div>
     <div class="masthead-sub">Illustrative scenario model — long-run sovereignty &amp; enlargement futures</div>
   </div>
-  <div>
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-      <span class="icon" id="themeIcon">☀</span>
-      <span id="themeText">Night</span>
-    </button>
-    <div class="live-tag" style="margin-left:12px;">Illustrative model — not a live data feed</div>
+  <div class="masthead-right">
+    <div class="masthead-top-row">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span class="icon" id="themeIcon">☀</span>
+        <span id="themeText">Night</span>
+      </button>
+      <div class="live-tag"><span class="live-dot"></span>Updated <span id="feedUpdated">Today</span> · <span id="feedStoryCount">—</span> stories</div>
+    </div>
+    <div class="momentum-wrap">
+      <span>This week's trajectory</span>
+      <div class="momentum-bar" aria-label="Scenario momentum">
+        <div class="momentum-frag" id="momentumFrag" style="width:50%"></div>
+        <div class="momentum-fed" id="momentumFed" style="width:50%"></div>
+      </div>
+      <div class="momentum-labels">
+        <span class="frag">A <span id="momentumFragVal">0</span></span>
+        <span class="fed">B <span id="momentumFedVal">0</span></span>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -1048,8 +1143,8 @@
   <section class="feed-section">
     <div class="feed-head">
       <div>
-        <div class="feed-title">Example signals</div>
-        <div class="feed-sub">Written examples of the kinds of policy developments that push each scenario. These are illustrative, not real news reports, and are not attributed to any publication.</div>
+        <div class="feed-title">Today's signals</div>
+        <div class="feed-sub">Live EU news classified by scenario impact — click a story to highlight related countries on the map.</div>
       </div>
     </div>
     <div class="feed-list" id="feedList"></div>
@@ -1089,6 +1184,8 @@
   </section>
 
 </div>
+
+<div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>

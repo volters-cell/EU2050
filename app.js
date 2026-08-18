@@ -288,7 +288,7 @@
       const country = data.countries[iso];
       const path = document.createElementNS(ns,'path');
       path.setAttribute('d', geometryToPath(f.geometry));
-      path.setAttribute('class','country');
+      path.setAttribute('class','country' + ((selectedIso.frag === iso || selectedIso.fed === iso) ? ' selected' : ''));
       path.setAttribute('data-iso', iso);
       // Keyboard + screen-reader access: SVG paths are not focusable or
       // announced by default, so a mouse was previously the only way to reach
@@ -649,15 +649,56 @@
 
   function toggleCountrySelection(scenario, iso, detailEl){
     const year = parseInt(document.getElementById('yearSlider').value, 10);
-    if(selectedIso[scenario] === iso){
-      selectedIso[scenario] = null;
-      detailEl.innerHTML = DETAIL_PLACEHOLDER;
+    if(selectedIso.frag === iso && selectedIso.fed === iso){
+      selectedIso.frag = null;
+      selectedIso.fed = null;
+      document.getElementById('detailFrag').innerHTML = DETAIL_PLACEHOLDER;
+      document.getElementById('detailFed').innerHTML = DETAIL_PLACEHOLDER;
+      syncSelectedPaths();
       updateShareURL(year, null, null);
       return;
     }
-    selectedIso[scenario] = iso;
-    showDetail(detailEl, data.countries[iso], scenario, year, iso);
+    selectedIso.frag = iso;
+    selectedIso.fed = iso;
+    showDetail(document.getElementById('detailFrag'), data.countries[iso], 'frag', year, iso);
+    showDetail(document.getElementById('detailFed'), data.countries[iso], 'fed', year, iso);
+    syncSelectedPaths();
+    pulseCountry(iso);
     updateShareURL(year, scenario, iso);
+  }
+
+  function syncSelectedPaths(){
+    ['mapFrag','mapFed'].forEach(id => {
+      document.querySelectorAll(`#${id} path.country`).forEach(p => {
+        const iso = p.getAttribute('data-iso');
+        p.classList.toggle('selected', iso === selectedIso.frag || iso === selectedIso.fed);
+      });
+    });
+  }
+
+  function pulseCountry(iso){
+    ['mapFrag','mapFed'].forEach(id => {
+      const path = document.querySelector(`#${id} path[data-iso="${iso}"]`);
+      if(path){
+        path.classList.remove('pulse');
+        void path.offsetWidth;
+        path.classList.add('pulse');
+      }
+    });
+  }
+
+  function highlightCountriesFromFeed(countries){
+    if(!countries || !countries.length) return;
+    const iso = countries[0];
+    if(!data.countries[iso]) return;
+    selectedIso.frag = iso;
+    selectedIso.fed = iso;
+    const year = parseInt(document.getElementById('yearSlider').value, 10);
+    showDetail(document.getElementById('detailFrag'), data.countries[iso], 'frag', year, iso);
+    showDetail(document.getElementById('detailFed'), data.countries[iso], 'fed', year, iso);
+    syncSelectedPaths();
+    countries.forEach(c => pulseCountry(c));
+    document.querySelector('.layout')?.scrollIntoView({ behavior:'smooth', block:'start' });
   }
 
   // Re-render whichever country is open so the panel tracks the year slider
@@ -881,6 +922,9 @@
 
   // ---------- News feed ----------
   let feedData = data.feed || [];
+  let feedUpdated = data.feedUpdated || '';
+  let feedMomentum = null;
+  let activeFeedIndex = -1;
 
   // News items are sorted most-recent-first, so the first FEED_VISIBLE_COUNT
   // correspond to the last few days; the rest stay collapsed behind "See more".
@@ -892,9 +936,9 @@
     list.classList.remove('feed-expanded');
     feedData.forEach((item, i) => {
       const row = document.createElement('div');
-      row.className = 'feed-item' + (i >= FEED_VISIBLE_COUNT ? ' feed-older' : '');
+      row.className = 'feed-item' + (i >= FEED_VISIBLE_COUNT ? ' feed-older' : '') + (i === activeFeedIndex ? ' feed-active' : '');
       row.innerHTML = `
-        <div class="feed-date">Example ${i + 1}</div>
+        <div class="feed-date">${item.date || ('Signal ' + (i + 1))}</div>
         <div class="feed-body">
           <div class="feed-headline">${item.headline}</div>
           <div class="feed-ai"><span class="label">What it would mean</span>${item.ai}</div>
@@ -904,6 +948,12 @@
           <span class="impact-pill fed">B: ${item.fed}</span>
         </div>
       `;
+      row.style.cursor = 'pointer';
+      row.addEventListener('click', () => {
+        activeFeedIndex = i;
+        buildFeed();
+        if(item.countries && item.countries.length) highlightCountriesFromFeed(item.countries);
+      });
       list.appendChild(row);
     });
 
@@ -913,6 +963,46 @@
       seeMoreBtn.textContent = 'See more';
       seeMoreBtn.setAttribute('aria-expanded', 'false');
     }
+  }
+
+  function computeMomentumFromFeed(items){
+    const totals = items.reduce((acc, item) => {
+      acc.frag += item.fragWeight !== undefined ? item.fragWeight : 0;
+      acc.fed += item.fedWeight !== undefined ? item.fedWeight : 0;
+      return acc;
+    }, { frag: 0, fed: 0 });
+    const total = Math.max(1, Math.abs(totals.frag) + Math.abs(totals.fed));
+    return {
+      fragTotal: totals.frag,
+      fedTotal: totals.fed,
+      fragPct: Math.round((Math.max(0, totals.frag) / total) * 100),
+      fedPct: Math.round((Math.max(0, totals.fed) / total) * 100)
+    };
+  }
+
+  function updateMomentum(momentum){
+    const computed = momentum || computeMomentumFromFeed(feedData);
+    const fragEl = document.getElementById('momentumFrag');
+    const fedEl = document.getElementById('momentumFed');
+    const fragVal = document.getElementById('momentumFragVal');
+    const fedVal = document.getElementById('momentumFedVal');
+    const total = Math.max(1, (computed.fragPct || 0) + (computed.fedPct || 0));
+    const fragPct = computed.fragPct !== undefined ? computed.fragPct : 50;
+    const fedPct = computed.fedPct !== undefined ? computed.fedPct : 50;
+    if(fragEl) fragEl.style.width = Math.round((fragPct / total) * 100) + '%';
+    if(fedEl) fedEl.style.width = Math.round((fedPct / total) * 100) + '%';
+    if(fragVal) fragVal.textContent = (computed.fragTotal >= 0 ? '+' : '') + computed.fragTotal;
+    if(fedVal) fedVal.textContent = (computed.fedTotal >= 0 ? '+' : '') + computed.fedTotal;
+  }
+
+  function updateFeedMeta(){
+    const updatedEl = document.getElementById('feedUpdated');
+    const countEl = document.getElementById('feedStoryCount');
+    if(updatedEl){
+      const today = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+      updatedEl.textContent = feedUpdated === today ? 'Today' : (feedUpdated || 'Unknown');
+    }
+    if(countEl) countEl.textContent = feedData.length;
   }
 
   function setupFeedSeeMore(){
@@ -1145,18 +1235,64 @@
     return feedItems;
   }
 
-  // The example signals are written, not fetched. The remote-RSS path that used
-  // to sit here never ran on the published site (it was skipped on github.io),
-  // so every visitor saw generated items stamped with today's date and a real
-  // outlet's name — invented headlines presented as reporting by those
-  // newsrooms. There is now no remote source and nothing to "refresh".
-  function loadFeedData(){
+  function showEventToast(message){
+    const container = document.getElementById('toastContainer');
+    if(!container) return;
+    const toast = document.createElement('div');
+    toast.className = 'event-toast';
+    toast.textContent = message;
+    container.appendChild(toast);
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transition = 'opacity 0.3s ease';
+      setTimeout(() => toast.remove(), 300);
+    }, 4500);
+  }
+
+  function checkAccessionEvents(prevYear, newYear){
+    if(newYear <= prevYear) return;
+    Object.entries(accessionTimeline).forEach(([iso, joinYear]) => {
+      if(joinYear > prevYear && joinYear <= newYear){
+        const country = data.countries[iso];
+        if(country){
+          showEventToast(`${country.name} joins the federation (${joinYear})`);
+          pulseCountry(iso);
+        }
+      }
+    });
+  }
+
+  async function loadFeedData(){
+    try {
+      const resp = await fetch('feed.json?t=' + Date.now());
+      if(resp.ok){
+        const payload = await resp.json();
+        if(Array.isArray(payload.feed) && payload.feed.length){
+          feedData = payload.feed;
+          feedUpdated = payload.feedUpdated || feedUpdated;
+          feedMomentum = payload.momentum || null;
+          buildFeed();
+          updateFeedMeta();
+          updateMomentum(feedMomentum);
+          return;
+        }
+      }
+    } catch(e) {
+      console.warn('feed.json unavailable, using curated examples:', e.message);
+    }
     feedData = generateFreshFeed();
     buildFeed();
+    updateFeedMeta();
+    updateMomentum();
+  }
+
+  function scheduleFeedRefresh(){
+    setInterval(loadFeedData, 60 * 60 * 1000);
   }
 
   // ---------- Init ----------
   let currentYear = 2050;
+  let previousYear = 2050;
 
   // ---------- Shareable / deep-linked state ----------
   // Keeps the URL's query string in sync with the current year and (if any)
@@ -1195,6 +1331,8 @@
   }
 
   function render(year){
+    checkAccessionEvents(currentYear, year);
+    previousYear = year;
     currentYear = year;
     buildMap(document.getElementById('mapFrag'), 'frag', document.getElementById('tooltipFrag'), document.getElementById('detailFrag'), year);
     buildMap(document.getElementById('mapFed'), 'fed', document.getElementById('tooltipFed'), document.getElementById('detailFed'), year);
@@ -1258,6 +1396,7 @@
   setupFeedSeeMore();
   setupSocialShare();
   loadFeedData();
+  scheduleFeedRefresh();
   loadTheme();
 
   const initialState = getInitialStateFromURL();

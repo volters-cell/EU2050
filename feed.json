@@ -1,75 +1,111 @@
 {
-  "feedUpdated": "04 Aug 2026",
+  "feedUpdated": "18 Aug 2026",
+  "syncedAt": "2026-08-18T10:00:00.000Z",
+  "momentum": {
+    "fragTotal": 5,
+    "fedTotal": 9,
+    "storyCount": 10
+  },
   "feed": [
     {
-      "date": "04 Aug 2026",
+      "date": "18 Aug 2026",
       "headline": "EU Commission proposes new digital sovereignty framework to reduce cloud dependency",
       "ai": "The new framework aims to ensure that critical digital infrastructure and data storage for European institutions and companies meet strict sovereignty requirements, reducing reliance on non-EU cloud providers.",
       "frag": "Highlights the limits of national coordination",
-      "fed": "Positive \u2014 supports federal integration"
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": ["BEL"]
     },
     {
-      "date": "03 Aug 2026",
+      "date": "17 Aug 2026",
       "headline": "European Parliament approves expanded capital markets union rules",
       "ai": "The expanded rules would allow for greater cross-border investment flows and harmonized listing requirements, making it easier for companies to raise capital across the EU.",
       "frag": "Limited near-term effect if national implementation stalls",
-      "fed": "Modest positive \u2014 concrete step toward a unified capital market"
+      "fed": "Modest positive — concrete step toward a unified capital market",
+      "fragWeight": 0,
+      "fedWeight": 2,
+      "countries": ["BEL"]
     },
     {
-      "date": "02 Aug 2026",
+      "date": "16 Aug 2026",
       "headline": "Member states remain divided on migration burden-sharing mechanism",
       "ai": "Despite years of discussion, member states continue to disagree on how to fairly distribute asylum seekers, with frontline states calling for mandatory solidarity mechanisms.",
       "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress"
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": []
     },
     {
-      "date": "01 Aug 2026",
+      "date": "15 Aug 2026",
       "headline": "Western Balkans leaders meet in Brussels to discuss accession timeline acceleration",
       "ai": "The summit brought together leaders from Albania, North Macedonia, Montenegro, Serbia, Bosnia and Herzegovina, and Kosovo to discuss reforms needed to advance their EU membership bids.",
       "frag": "Enlargement remains uneven and slow",
-      "fed": "Positive \u2014 keeps the Balkans accession track alive"
+      "fed": "Positive — keeps the Balkans accession track alive",
+      "fragWeight": 0,
+      "fedWeight": 2,
+      "countries": ["SRB", "ALB", "MNE", "MKD", "BIH", "XKX", "BEL"]
     },
     {
-      "date": "31 Jul 2026",
+      "date": "14 Aug 2026",
       "headline": "Ukraine makes progress on EU membership criteria, energy chapter advanced",
       "ai": "Ukrainian officials have completed negotiations on the energy chapter, which covers alignment with EU energy market rules and grid synchronization standards.",
       "frag": "Accession progress remains partial and dependent on external funding",
-      "fed": "Positive \u2014 concrete progress toward 2050 enlargement"
+      "fed": "Positive — concrete progress toward 2050 enlargement",
+      "fragWeight": 0,
+      "fedWeight": 2,
+      "countries": ["UKR"]
     },
     {
-      "date": "30 Jul 2026",
+      "date": "13 Aug 2026",
       "headline": "France and Germany announce joint defense industry investment initiative",
       "ai": "The initiative will fund joint research and development in defense technologies, aiming to reduce dependence on non-European suppliers for critical military equipment.",
       "frag": "Highlights the limits of national coordination",
-      "fed": "Positive \u2014 supports federal integration"
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": ["FRA", "DEU"]
     },
     {
-      "date": "29 Jul 2026",
+      "date": "12 Aug 2026",
       "headline": "European Council fails to reach unanimity on new sanctions package",
       "ai": "Several member states expressed reservations about the proposed measures, with one country exercising its veto power to prevent adoption of the new sanctions.",
       "frag": "Reinforces decision-making paralysis",
-      "fed": "Strengthens case for qualified-majority reform"
+      "fed": "Strengthens case for qualified-majority reform",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": ["BEL"]
     },
     {
-      "date": "28 Jul 2026",
+      "date": "11 Aug 2026",
       "headline": "Commission presents roadmap for completing the single market by 2030",
       "ai": "The roadmap outlines specific legislative and regulatory changes needed to eliminate remaining barriers to the free movement of goods, services, capital, and people.",
       "frag": "Limited near-term effect if national implementation stalls",
-      "fed": "Modest positive \u2014 concrete step toward a unified capital market"
+      "fed": "Modest positive — concrete step toward a unified capital market",
+      "fragWeight": 0,
+      "fedWeight": 2,
+      "countries": ["BEL"]
     },
     {
-      "date": "27 Jul 2026",
+      "date": "10 Aug 2026",
       "headline": "Hungary blocks joint statement on rule of law mechanisms",
       "ai": "The blocking of the statement highlights ongoing concerns about the rule of law mechanisms and their potential impact on national sovereignty.",
       "frag": "Reinforces fragmentation",
-      "fed": "Strengthens case for qualified-majority reform"
+      "fed": "Strengthens case for qualified-majority reform",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": ["HUN"]
     },
     {
-      "date": "26 Jul 2026",
+      "date": "9 Aug 2026",
       "headline": "EU and US launch new technology standards cooperation dialogue",
       "ai": "The dialogue will focus on developing common standards for emerging technologies, including artificial intelligence, quantum computing, and semiconductor design.",
       "frag": "Confirms continued dependency on foreign technology",
-      "fed": "No immediate change \u2014 sovereignty push continues domestically"
+      "fed": "No immediate change — sovereignty push continues domestically",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": []
     }
   ]
 }
