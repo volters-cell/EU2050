@@ -77,19 +77,22 @@ const setYear = (p, y) => p.evaluate(yy => {
   url = await p.evaluate(() => location.search);
   ok(!/country=/.test(url), 'URL loses country param on deselect', url);
 
-  // ---- 8. selecting on A does not clear B; panels independent ----
+  // ---- 8. selection is linked across maps: one country, both scenarios ----
   await deu.click(); await p.waitForTimeout(120);
+  let dA = await p.evaluate(() => document.getElementById('detailFrag').textContent);
+  let dB = await p.evaluate(() => document.getElementById('detailFed').textContent);
+  ok(/Germany/.test(dA) && /Germany/.test(dB), 'clicking on A opens the same country on B');
   const fra = await p.$('#mapFed path[data-iso="FRA"]');
   await fra.click(); await p.waitForTimeout(150);
-  const dA = await p.evaluate(() => document.getElementById('detailFrag').textContent);
-  const dB = await p.evaluate(() => document.getElementById('detailFed').textContent);
-  ok(/Germany/.test(dA) && /France/.test(dB), 'both panels hold independent selections');
+  dA = await p.evaluate(() => document.getElementById('detailFrag').textContent);
+  dB = await p.evaluate(() => document.getElementById('detailFed').textContent);
+  ok(/France/.test(dA) && /France/.test(dB), 'clicking on B swaps both panels to that country');
 
   // ---- 9. detail follows the slider ----
   const before = await p.evaluate(() => document.getElementById('detailFrag').textContent);
   await setYear(p, 2050); await p.waitForTimeout(200);
   const after = await p.evaluate(() => document.getElementById('detailFrag').textContent);
-  ok(/Germany — 2050/.test(after), 'detail heading updates with slider', after.slice(0, 40).replace(/\s+/g, ' '));
+  ok(/France — 2050/.test(after), 'detail heading updates with slider', after.slice(0, 40).replace(/\s+/g, ' '));
   ok(before !== after, 'detail values changed with year');
 
   // ---- 10. chips on BOTH maps ----

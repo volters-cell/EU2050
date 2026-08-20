@@ -13,10 +13,12 @@ const { chromium } = require('playwright');
   ok(!/Politico|Euronews|Reuters|Bloomberg|Le Monde|Financial Times|BBC/.test(feed), 'no outlet bylines in feed');
   const body = await p.evaluate(() => document.body.innerText);
   ok(!/Auto-refreshes daily|Updated Today/i.test(body), 'no live/updated claim');
-  ok(/Illustrative model/i.test(body), 'page states it is illustrative');
-  ok(/not real news reports/i.test(body), 'disclaimer states signals are written');
+  ok(/Illustrative scenario model/i.test(body), 'page states it is illustrative');
+  ok(/illustrative scenarios, not statistical forecasts/i.test(body), 'disclaimer states scenarios are illustrative');
+  ok(/collects real headlines from public RSS feeds/i.test(body), 'disclaimer states where signals come from');
+  ok(/scenario readings attached to each signal are our own interpretation/i.test(body), 'disclaimer disowns the readings from publishers');
   const dates = await p.evaluate(() => [...document.querySelectorAll('.feed-date')].map(e=>e.textContent));
-  ok(dates.every(d=>/^Example \d+$/.test(d)), 'feed items labelled as examples', dates[0]);
+  ok(dates.length > 0 && dates.every(d => /\d/.test(d)), 'feed items carry a date', dates[0]);
 
   // --- a11y: country keyboard reachable ---
   const a11y = await p.evaluate(() => {
