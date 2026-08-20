@@ -182,9 +182,20 @@ const RELEVANT = /\beu\b|european union|brussels|european commission|european pa
 
 const IRRELEVANT = /football|soccer|premier league|champions league|bundesliga|la liga|serie a|world cup|euro 202|olympic|tennis|cycling|formula 1|\bf1\b|rugby|cricket|basketball|golf|boxing|athletics|transfer window|goalkeeper|striker|midfielder|manager sacked|celebrity|royal wedding|eurovision|film festival|box office|album|weather forecast|horoscope|recipe|obituary|zoo|panda/i;
 
+// A policy keyword alone is not enough: "Trump tries economic pressure on
+// Iran" matches on `sanction`/`president` without saying anything about
+// Europe's path. Require a European anchor as well — an EU institution, or
+// one of the countries the map already knows about.
+function hasEuropeanAnchor(text) {
+  const lower = text.toLowerCase();
+  if (/\beu\b|european union|european commission|european parliament|european council|eurozone|euro area|schengen|brussels|\beurope\b|european|balkans/.test(lower)) return true;
+  return Object.values(COUNTRY_KEYWORDS).some(keywords => keywords.some(kw => lower.includes(kw)));
+}
+
 function isRelevant(text) {
   if (IRRELEVANT.test(text)) return false;
-  return RELEVANT.test(text);
+  if (!RELEVANT.test(text)) return false;
+  return hasEuropeanAnchor(text);
 }
 
 function dedupeByHeadline(items) {
