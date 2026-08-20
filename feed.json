@@ -1,6 +1,6 @@
 {
   "feedUpdated": "20 Aug 2026",
-  "syncedAt": "2026-08-20T09:34:09.483Z",
+  "syncedAt": "2026-08-20T09:38:46.900Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 4,
@@ -17,7 +17,9 @@
       "fedWeight": 0,
       "countries": [
         "UKR"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
@@ -29,7 +31,9 @@
       "fedWeight": 0,
       "countries": [
         "UKR"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
@@ -42,7 +46,9 @@
       "countries": [
         "HRV",
         "UKR"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Aug 2026",
@@ -56,7 +62,9 @@
         "UKR",
         "GBR",
         "RUS"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "17 Aug 2026",
@@ -68,7 +76,9 @@
       "fedWeight": 0,
       "countries": [
         "FRA"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "2 Aug 2026",
@@ -80,7 +90,9 @@
       "fedWeight": -1,
       "countries": [
         "ESP"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
@@ -92,7 +104,9 @@
       "fedWeight": 0,
       "countries": [
         "UKR"
-      ]
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "20 Aug 2026",
@@ -105,7 +119,9 @@
       "countries": [
         "UKR",
         "RUS"
-      ]
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/20/world/europe/ukraine-kyiv-missiles-russia-war.html"
     },
     {
       "date": "19 Aug 2026",
@@ -118,7 +134,9 @@
       "countries": [
         "UKR",
         "RUS"
-      ]
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/19/world/europe/ukraine-fedorov-zelensky-elections.html"
     },
     {
       "date": "17 Aug 2026",
@@ -130,7 +148,9 @@
       "fedWeight": 0,
       "countries": [
         "RUS"
-      ]
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/17/world/europe/russia-yabloko-party-election.html"
     },
     {
       "date": "20 Aug 2026",
@@ -143,7 +163,9 @@
       "countries": [
         "UKR",
         "RUS"
-      ]
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/08/20/russia-runs-out-of-petrol-at-seven-in-10-stations-as-fuel-crisis-worsens"
     },
     {
       "date": "19 Aug 2026",
@@ -156,7 +178,9 @@
       "countries": [
         "UKR",
         "RUS"
-      ]
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/08/19/russians-pull-billions-from-banks-fearing-kremlin-will-seize-savings-for-war"
     }
   ]
 }
