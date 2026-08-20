@@ -944,6 +944,9 @@
         <div class="feed-date">${item.date || ('Signal ' + (i + 1))}</div>
         <div class="feed-body">
           <div class="feed-headline">${item.headline}</div>
+          ${item.source ? `<div class="feed-source">${item.url
+            ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}</a>`
+            : item.source}</div>` : ''}
           <div class="feed-ai"><span class="label">What it would mean</span>${item.ai}</div>
         </div>
         <div class="feed-impact">
@@ -952,6 +955,9 @@
         </div>
       `;
       row.style.cursor = 'pointer';
+      // The source credit is a real outbound link; clicking it should open the
+      // article, not also fire the row's country-highlight handler.
+      row.querySelector('.feed-source a')?.addEventListener('click', e => e.stopPropagation());
       row.addEventListener('click', () => {
         activeFeedIndex = i;
         buildFeed();

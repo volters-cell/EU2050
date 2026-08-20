@@ -9,13 +9,27 @@ const { chromium } = require('playwright');
   await p.waitForTimeout(1800);
 
   // --- feed integrity ---
-  const feed = await p.evaluate(() => document.getElementById('feedList').textContent);
-  ok(!/Politico|Euronews|Reuters|Bloomberg|Le Monde|Financial Times|BBC/.test(feed), 'no outlet bylines in feed');
+  // Every credited item must name one of the three feeds actually collected
+  // from, and link to the original — the failure this guards against is a
+  // fabricated byline attributing invented copy to a real newsroom.
+  const credits = await p.evaluate(() => [...document.querySelectorAll('.feed-item')].map(row => {
+    const src = row.querySelector('.feed-source');
+    const a = row.querySelector('.feed-source a');
+    return { name: src ? src.textContent.trim() : null, href: a ? a.getAttribute('href') : null };
+  }));
+  const KNOWN = ['BBC News', 'The New York Times', 'Euronews'];
+  ok(credits.length > 0, 'feed rendered some items', credits.length);
+  ok(credits.every(c => c.name === null || KNOWN.includes(c.name)),
+     'every credit names a feed actually collected from',
+     JSON.stringify([...new Set(credits.map(c => c.name))]));
+  ok(credits.every(c => c.name === null || (c.href && /^https?:\/\//.test(c.href))),
+     'every credited item links to the original');
   const body = await p.evaluate(() => document.body.innerText);
   ok(!/Auto-refreshes daily|Updated Today/i.test(body), 'no live/updated claim');
   ok(/Illustrative scenario model/i.test(body), 'page states it is illustrative');
   ok(/illustrative scenarios, not statistical forecasts/i.test(body), 'disclaimer states scenarios are illustrative');
-  ok(/collects real headlines from public RSS feeds/i.test(body), 'disclaimer states where signals come from');
+  ok(/collects real headlines from the public RSS feeds/i.test(body), 'disclaimer states where signals come from');
+  ok(/publisher's own wording, credited and linked/i.test(body), 'disclaimer states the copy is the publisher\'s');
   ok(/scenario readings attached to each signal are our own interpretation/i.test(body), 'disclaimer disowns the readings from publishers');
   const dates = await p.evaluate(() => [...document.querySelectorAll('.feed-date')].map(e=>e.textContent));
   ok(dates.length > 0 && dates.every(d => /\d/.test(d)), 'feed items carry a date', dates[0]);

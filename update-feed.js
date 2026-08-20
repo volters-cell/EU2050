@@ -4,10 +4,13 @@ const path = require('path');
 const feedPath = path.join(__dirname, 'feed.json');
 const dataPath = path.join(__dirname, 'data.js');
 
+// Each source carries the publisher's name so collected items can be
+// credited on the page. The headlines and summaries below are their words,
+// not ours — only the A/B scenario readings are ours.
 const RSS_SOURCES = [
-  'https://feeds.bbci.co.uk/news/world/europe/rss.xml',
-  'https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml',
-  'https://www.euronews.com/rss?level=theme&name=news'
+  { name: 'BBC News', url: 'https://feeds.bbci.co.uk/news/world/europe/rss.xml' },
+  { name: 'The New York Times', url: 'https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml' },
+  { name: 'Euronews', url: 'https://www.euronews.com/rss?level=theme&name=news' }
 ];
 
 const COUNTRY_KEYWORDS = {
@@ -135,7 +138,8 @@ function parseRssItems(xml) {
     const title = stripHtml((block.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1]);
     const description = stripHtml((block.match(/<description[^>]*>([\s\S]*?)<\/description>/i) || [])[1]);
     const pubDate = stripHtml((block.match(/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i) || [])[1]);
-    if (title) items.push({ title, description, pubDate });
+    const link = stripHtml((block.match(/<link[^>]*>([\s\S]*?)<\/link>/i) || [])[1]);
+    if (title) items.push({ title, description, pubDate, link });
   });
   return items;
 }
@@ -162,12 +166,12 @@ async function fetchRss(url) {
 
 async function fetchAllFeeds() {
   const items = [];
-  for (const url of RSS_SOURCES) {
+  for (const source of RSS_SOURCES) {
     try {
-      const parsed = await fetchRss(url);
-      parsed.slice(0, 25).forEach(item => items.push(item));
+      const parsed = await fetchRss(source.url);
+      parsed.slice(0, 25).forEach(item => items.push({ ...item, source: source.name }));
     } catch (err) {
-      console.warn('Failed to fetch', url, err.message);
+      console.warn('Failed to fetch', source.url, err.message);
     }
   }
   return items;
@@ -223,7 +227,9 @@ function buildFeedItems(rawItems) {
         fed: signal.fed,
         fragWeight: signal.fragWeight,
         fedWeight: signal.fedWeight,
-        countries: extractCountries(combined)
+        countries: extractCountries(combined),
+        source: item.source || '',
+        url: item.link || ''
       };
     });
 }
