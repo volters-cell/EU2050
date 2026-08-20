@@ -8,79 +8,6 @@
   },
   "feed": [
     {
-      "date": "20 Aug 2026",
-      "headline": "At least 13 killed in Kyiv as Ukraine grapples with air defence shortages",
-      "ai": "Apartment blocks and warehouses were targeted in the \"massive attack\" on Thursday, officials say.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Sacked Ukrainian defence minister calls for presidential election",
-      "ai": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Ukrainian man arrested in Croatia over Nord Stream pipeline blasts",
-      "ai": "The man is alleged to have been one of the scuba divers who planted explosives on the pipelines in 2022.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "HRV",
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Aug 2026",
-      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-      "ai": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "17 Aug 2026",
-      "headline": "French PM heckled over wildfire response as blazes continue across Europe",
-      "ai": "The prime minister announced on Monday €12m worth of aid to French regions that had been worst affected by the fires.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "2 Aug 2026",
       "headline": "How Spain's migrant crisis created a political storm - whipped up by social media",
       "ai": "The Ceuta crossings have shaken Europe politically, exposing divisions over the sensitive issue of migration, the BBC's Sarah Rainsford writes.",
@@ -93,64 +20,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Russian Missiles Kill at Least 13 in Kyiv as Air Defenses Falter",
-      "ai": "Moscow is taking advantage of Ukraine’s depleted stock of interceptors and is intensifying attacks, worsening the civilian death toll.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/20/world/europe/ukraine-kyiv-missiles-russia-war.html"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky",
-      "ai": "Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/19/world/europe/ukraine-fedorov-zelensky-elections.html"
-    },
-    {
-      "date": "17 Aug 2026",
-      "headline": "Barred From Ballot, a Party Becomes a Vessel for Russians’ Discontent",
-      "ai": "The spotlight on the country’s only antiwar party has brought a spark to what had looked like another dull, tightly controlled election campaign.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/17/world/europe/russia-yabloko-party-election.html"
     },
     {
       "date": "20 Aug 2026",
@@ -168,11 +37,142 @@
       "url": "http://www.euronews.com/2026/08/20/russia-runs-out-of-petrol-at-seven-in-10-stations-as-fuel-crisis-worsens"
     },
     {
+      "date": "20 Aug 2026",
+      "headline": "At least 13 killed in Kyiv as Ukraine grapples with air defence shortages",
+      "ai": "Apartment blocks and warehouses were targeted in the \"massive attack\" on Thursday, officials say.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Aug 2026",
+      "headline": "Sacked Ukrainian defence minister calls for presidential election",
+      "ai": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Aug 2026",
+      "headline": "Ukrainian man arrested in Croatia over Nord Stream pipeline blasts",
+      "ai": "The man is alleged to have been one of the scuba divers who planted explosives on the pipelines in 2022.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HRV",
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "18 Aug 2026",
+      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
+      "ai": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Aug 2026",
+      "headline": "French PM heckled over wildfire response as blazes continue across Europe",
+      "ai": "The prime minister announced on Monday €12m worth of aid to French regions that had been worst affected by the fires.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Aug 2026",
+      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
+      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Aug 2026",
+      "headline": "Russian Missiles Kill at Least 13 in Kyiv as Air Defenses Falter",
+      "ai": "Moscow is taking advantage of Ukraine’s depleted stock of interceptors and is intensifying attacks, worsening the civilian death toll.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/20/world/europe/ukraine-kyiv-missiles-russia-war.html"
+    },
+    {
+      "date": "19 Aug 2026",
+      "headline": "Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky",
+      "ai": "Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/19/world/europe/ukraine-fedorov-zelensky-elections.html"
+    },
+    {
+      "date": "17 Aug 2026",
+      "headline": "Barred From Ballot, a Party Becomes a Vessel for Russians’ Discontent",
+      "ai": "The spotlight on the country’s only antiwar party has brought a spark to what had looked like another dull, tightly controlled election campaign.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/17/world/europe/russia-yabloko-party-election.html"
+    },
+    {
       "date": "19 Aug 2026",
       "headline": "Russians pull billions from banks fearing Kremlin will seize savings for war",
       "ai": "Russia's central bank reported that billions of roubles have been withdrawn from banks each month, as Russians pull out cash amid fears of the Kremlin seizing their savings to fund the war in Ukraine amid a deteriorating economy.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
+      "frag": "",
+      "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [

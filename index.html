@@ -762,6 +762,14 @@
     color:var(--fed-teal);
     border:1px solid var(--fed-teal);
   }
+  /* Shown instead of two identical "mixed" pills when a story genuinely
+     points neither way — quieter than a scenario reading, because it is not
+     making one. */
+  .impact-pill.neutral{
+    background:transparent;
+    color:var(--ink-dim);
+    border:1px dashed var(--line);
+  }
 
   /* Older news items are collapsed behind "See more" until the list is expanded */
   .feed-older{ display:none; }
@@ -1261,7 +1269,7 @@
     <div class="feed-head">
       <div>
         <div class="feed-title">Latest signals</div>
-        <div class="feed-sub">Live EU news classified by scenario impact — click a story to highlight related countries on the map.</div>
+        <div class="feed-sub">European headlines collected daily and read against each scenario, where one of them clearly applies. Click a story to highlight the countries it involves.</div>
       </div>
     </div>
     <div class="feed-list" id="feedList"></div>

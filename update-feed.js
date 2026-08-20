@@ -71,7 +71,7 @@ function getCurrentDateString(date = new Date()) {
 
 function classifyNewsHeadline(title) {
   const lower = title.toLowerCase();
-  if (/veto|block|stall|stalls|split|dispute|tension|crisis|slow|delay|uncertain|uneven|fragment|fail|paralysis|divided/.test(lower)) {
+  if (/veto|block|stall|stalls|split|dispute|tension|crisis|slow|delay|uncertain|uneven|fragment|fail|paralysis|divided|deadlock|unilateral|opt-out|withdraw|quits|rejects|refuses|far-right|nationalist|populist|eurosceptic|border check|breakaway|walks out|no deal|collapse of talks/.test(lower)) {
     return {
       frag: 'Reinforces fragmentation',
       fed: 'Delays federal progress',
@@ -79,7 +79,7 @@ function classifyNewsHeadline(title) {
       fedWeight: -1
     };
   }
-  if (/agreement|joint|integrat|union|accession|deal|connected|shared|framework|strategy|approves|backs|advances|progress|roadmap|unveils/.test(lower)) {
+  if (/agreement|joint|integrat|union|accession|deal|connected|shared|framework|strategy|approves|backs|advances|progress|roadmap|unveils|ratif|harmonis|harmoniz|solidarity|common defence|common defense|defence union|coordinated|eu-wide|bloc-wide|cohesion fund|recovery fund|pact|accord|endorses|expands membership|opens talks/.test(lower)) {
     return {
       frag: 'Highlights the limits of national coordination',
       fed: 'Positive — supports federal integration',
@@ -87,9 +87,12 @@ function classifyNewsHeadline(title) {
       fedWeight: 2
     };
   }
+  // Plenty of real European news — a missile strike, an arrest, a domestic
+  // row — genuinely does not point either way. Say so once rather than
+  // manufacturing a reading for each scenario.
   return {
-    frag: 'Mixed signal for fragmentation',
-    fed: 'Mixed signal for federation',
+    frag: '',
+    fed: '',
     fragWeight: 0,
     fedWeight: 0
   };
@@ -285,6 +288,12 @@ function updateDataJs(payload) {
 
 const FEED_MAX = 12;
 
+function sortBySignalStrength(items) {
+  const scored = items.map((item, i) => ({ item, i, signal: item.frag && item.fed ? 0 : 1 }));
+  scored.sort((a, b) => a.signal - b.signal || a.i - b.i);
+  return scored.map(entry => entry.item);
+}
+
 function mergeWithExisting(fresh) {
   // Re-filter the carried-over items too, so anything that predates the
   // relevance gate drops out on the next run instead of lingering forever.
@@ -332,7 +341,11 @@ async function main() {
   // rather than replacing the feed wholesale. Filtering out sport and
   // celebrity news means a quiet day can yield only two or three items, and
   // a straight replacement would throw away the rest of the week with them.
-  const merged = mergeWithExisting(feed);
+  // Stories that actually carry a scenario reading lead the list; the ones
+  // that point neither way stay available behind "See more". Without this a
+  // quiet news day fills the visible rows with "no clear signal", which
+  // makes the section look broken rather than honest.
+  const merged = sortBySignalStrength(mergeWithExisting(feed));
 
   const payload = {
     feedUpdated: getCurrentDateString(),

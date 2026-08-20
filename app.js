@@ -950,8 +950,10 @@
           <div class="feed-ai"><span class="label">What it would mean</span>${item.ai}</div>
         </div>
         <div class="feed-impact">
-          <span class="impact-pill frag">A: ${item.frag}</span>
-          <span class="impact-pill fed">B: ${item.fed}</span>
+          ${(item.frag && item.fed)
+            ? `<span class="impact-pill frag">A: ${item.frag}</span>
+               <span class="impact-pill fed">B: ${item.fed}</span>`
+            : `<span class="impact-pill neutral">No clear signal either way</span>`}
         </div>
       `;
       row.style.cursor = 'pointer';
