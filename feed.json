@@ -1,6 +1,6 @@
 {
   "feedUpdated": "20 Aug 2026",
-  "syncedAt": "2026-08-20T09:33:01.342Z",
+  "syncedAt": "2026-08-20T09:34:09.483Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 4,
@@ -95,9 +95,9 @@
       ]
     },
     {
-      "date": "19 Aug 2026",
-      "headline": "Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky",
-      "ai": "Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.",
+      "date": "20 Aug 2026",
+      "headline": "Russian Missiles Kill at Least 13 in Kyiv as Air Defenses Falter",
+      "ai": "Moscow is taking advantage of Ukraine’s depleted stock of interceptors and is intensifying attacks, worsening the civilian death toll.",
       "frag": "Mixed signal for fragmentation",
       "fed": "Mixed signal for federation",
       "fragWeight": 0,
@@ -109,13 +109,16 @@
     },
     {
       "date": "19 Aug 2026",
-      "headline": "Trump, With Limited Options in Iran, Tries Economic Pressure — Again",
-      "ai": "Iran has survived decades of sanctions. Faced with more, it is likely to escalate rather than surrender, analysts said.",
+      "headline": "Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky",
+      "ai": "Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.",
       "frag": "Mixed signal for fragmentation",
       "fed": "Mixed signal for federation",
       "fragWeight": 0,
       "fedWeight": 0,
-      "countries": []
+      "countries": [
+        "UKR",
+        "RUS"
+      ]
     },
     {
       "date": "17 Aug 2026",
@@ -143,14 +146,17 @@
       ]
     },
     {
-      "date": "20 Aug 2026",
-      "headline": "Lebanon extradites al-Assad's general to Syria for war crimes trial",
-      "ai": "The move comes as the new Syrian government, led by interim President Ahmad al-Sharaa looks to hold senior members of al-Assad’s regime accountable for crimes committed during the country’s civil war, which resulted in the deaths of hundreds of thousands of people.",
+      "date": "19 Aug 2026",
+      "headline": "Russians pull billions from banks fearing Kremlin will seize savings for war",
+      "ai": "Russia's central bank reported that billions of roubles have been withdrawn from banks each month, as Russians pull out cash amid fears of the Kremlin seizing their savings to fund the war in Ukraine amid a deteriorating economy.",
       "frag": "Mixed signal for fragmentation",
       "fed": "Mixed signal for federation",
       "fragWeight": 0,
       "fedWeight": 0,
-      "countries": []
+      "countries": [
+        "UKR",
+        "RUS"
+      ]
     }
   ]
 }
