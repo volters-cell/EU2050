@@ -1,29 +1,46 @@
 name: Update EU2050 feed
 
+# Collects real headlines from public RSS feeds once a day and commits the
+# result back to main.
+#
+# This previously failed on every run: the push step targeted `master` (this
+# repo's default branch is `main`) and the job had no `contents: write`
+# permission, so GITHUB_TOKEN was read-only and the push 403'd. The feed
+# collection itself worked — only the commit-back was lost, which left the
+# page serving whatever feed.json was last committed by hand.
+
 on:
   schedule:
     - cron: '0 8 * * *'
   workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   update-feed:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+
       - name: Run feed updater
         run: npm run update-feed
-      - name: Commit updated feed
+
+      - name: Commit and push if the feed changed
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add feed.json data.js
-          git diff --quiet --cached || git commit -m 'Automated daily news/feed update'
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: 
-            ${{ secrets.GITHUB_TOKEN }}
+          if [ -n "$(git status --porcelain feed.json data.js)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add feed.json data.js
+            git commit -m 'chore: daily feed update'
+            git push origin HEAD:main
+          else
+            echo "feed already up to date"
+          fi

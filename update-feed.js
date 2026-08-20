@@ -146,7 +146,12 @@ async function fetchRss(url) {
   try {
     const resp = await fetch(url, {
       signal: controller.signal,
-      headers: { Accept: 'application/rss+xml, application/xml, text/xml' }
+      headers: {
+        Accept: 'application/rss+xml, application/xml, text/xml',
+        // BBC and NYT reject the default undici agent string with a 403, so
+        // identify the collector explicitly rather than fetching anonymously.
+        'User-Agent': 'EU2050-feed-collector/1.0 (+https://github.com/volters-cell/EU2050)'
+      }
     });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     return parseRssItems(await resp.text());
@@ -238,7 +243,9 @@ function updateDataJs(payload) {
   );
 
   if (updated === dataJs) {
-    console.warn('Could not sync feed into data.js — feed.json is still the source of truth.');
+    // data.js carries the hand-written fallback pool, which has no
+    // feedUpdated key to match; the page reads feed.json at runtime and only
+    // falls back to data.js when that fetch fails, so this is not an error.
     return;
   }
   fs.writeFileSync(dataPath, updated, 'utf8');
@@ -248,9 +255,11 @@ async function main() {
   let rawItems = await fetchAllFeeds();
 
   if (!rawItems.length) {
-    console.warn('No RSS items fetched — keeping existing feed entries.');
+    // Keep the previous feedUpdated date. Restamping it to today would make
+    // the page badge read "Today" over content that was not collected today —
+    // the page would claim a freshness it does not have.
+    console.warn('No RSS items fetched — keeping existing feed entries and their date.');
     const existing = loadExistingFeed();
-    existing.feedUpdated = getCurrentDateString();
     existing.momentum = computeMomentum(existing.feed || []);
     saveFeed(existing);
     updateDataJs(existing);
