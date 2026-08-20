@@ -37,14 +37,41 @@ const { chromium } = require('playwright');
   const clip = await p.evaluate(() => navigator.clipboard.readText());
   ok(clip === href, 'copy button copies the current deep link', clip.split('?')[1]);
   ok(/country=ESP/.test(clip) && /year=/.test(clip), 'copied link carries year + country');
-  const label = await p.evaluate(() => document.querySelector('.share-primary span').textContent);
-  const copied = await p.evaluate(() => document.querySelector('.share-primary').classList.contains('copied'));
-  ok(label === 'Copied' && copied, 'copy button confirms visually', `${label}/${copied}`);
+  const state = await p.evaluate(() => {
+    const b = document.querySelector('.share-primary');
+    const vis = el => el && getComputedStyle(el).display !== 'none';
+    return {
+      copied: b.classList.contains('copied'),
+      arrow: vis(b.querySelector('.share-arrow')),
+      check: vis(b.querySelector('.share-check'))
+    };
+  });
+  ok(state.copied && state.check && !state.arrow, 'arrow flips to a tick on copy', JSON.stringify(state));
   const toast = await p.evaluate(() => document.querySelector('.share-toast')?.textContent || '');
   ok(/Link copied/.test(toast), 'toast shown', toast);
   await p.waitForTimeout(2200);
-  const label2 = await p.evaluate(() => document.querySelector('.share-primary span').textContent);
-  ok(label2 === 'Copy link', 'copy button label resets', label2);
+  const reset = await p.evaluate(() => {
+    const b = document.querySelector('.share-primary');
+    const vis = el => el && getComputedStyle(el).display !== 'none';
+    return { copied: b.classList.contains('copied'), arrow: vis(b.querySelector('.share-arrow')) };
+  });
+  ok(!reset.copied && reset.arrow, 'arrow returns after the confirmation', JSON.stringify(reset));
+
+  // The arrow carries no text, so it must be labelled for screen readers and
+  // must be the last (rightmost) control in the row.
+  const arrowMeta = await p.evaluate(() => {
+    const actions = document.querySelector('.share-actions');
+    const b = document.querySelector('.share-primary');
+    return {
+      label: b.getAttribute('aria-label'),
+      title: b.getAttribute('title'),
+      isLast: actions.lastElementChild === b,
+      hasText: b.textContent.trim().length > 0
+    };
+  });
+  ok(!!arrowMeta.label && !!arrowMeta.title, 'arrow is labelled for assistive tech', arrowMeta.label);
+  ok(arrowMeta.isLast, 'arrow is the rightmost control in the row');
+  ok(!arrowMeta.hasText, 'arrow carries no text label');
 
   // share text is view-specific
   const txt = await p.evaluate(() => { let t=null; const o=window.open; window.open=(u)=>{t=u; return null;}; document.querySelector('[data-share="x"]').click(); window.open=o; return t; });

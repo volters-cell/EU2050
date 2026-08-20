@@ -1109,15 +1109,10 @@
     const done = () => {
       showShareToast('Link copied — it opens on this exact view');
       if(btn){
-        const label = btn.querySelector('span');
-        const original = label ? label.textContent : null;
+        // The arrow flips to a tick, since it carries no text label to swap.
         btn.classList.add('copied');
-        if(label) label.textContent = 'Copied';
         clearTimeout(btn._copyTimer);
-        btn._copyTimer = setTimeout(() => {
-          btn.classList.remove('copied');
-          if(label && original) label.textContent = original;
-        }, 2000);
+        btn._copyTimer = setTimeout(() => btn.classList.remove('copied'), 2000);
       }
     };
     if(navigator.clipboard && window.isSecureContext){
