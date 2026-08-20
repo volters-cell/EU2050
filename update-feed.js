@@ -165,12 +165,26 @@ async function fetchAllFeeds() {
   for (const url of RSS_SOURCES) {
     try {
       const parsed = await fetchRss(url);
-      parsed.slice(0, 8).forEach(item => items.push(item));
+      parsed.slice(0, 25).forEach(item => items.push(item));
     } catch (err) {
       console.warn('Failed to fetch', url, err.message);
     }
   }
   return items;
+}
+
+// The source feeds are general Europe desks, so they carry sport, crime and
+// celebrity stories alongside policy. Attaching a scenario reading to a
+// football injury makes the whole feed look unserious, so an item has to
+// touch EU policy, institutions, enlargement, economy or security to earn
+// one — everything else is dropped rather than labelled "mixed signal".
+const RELEVANT = /\beu\b|european union|brussels|european commission|european parliament|european council|eurozone|euro area|schengen|nato|accession|enlargement|candidate status|member state|single market|customs union|treaty|directive|regulation|sanction|tariff|trade deal|defence|defense|rearm|military aid|migration|asylum|border|energy|gas supply|pipeline|subsid|budget|fiscal|inflation|interest rate|central bank|summit|referendum|coalition|parliament approves|prime minister|chancellor|president|election|veto|rule of law|corruption probe|semiconductor|chips act|green deal|net zero|emissions|climate target|artificial intelligence|\bai act\b|digital services|data protection/i;
+
+const IRRELEVANT = /football|soccer|premier league|champions league|bundesliga|la liga|serie a|world cup|euro 202|olympic|tennis|cycling|formula 1|\bf1\b|rugby|cricket|basketball|golf|boxing|athletics|transfer window|goalkeeper|striker|midfielder|manager sacked|celebrity|royal wedding|eurovision|film festival|box office|album|weather forecast|horoscope|recipe|obituary|zoo|panda/i;
+
+function isRelevant(text) {
+  if (IRRELEVANT.test(text)) return false;
+  return RELEVANT.test(text);
 }
 
 function dedupeByHeadline(items) {
@@ -185,6 +199,7 @@ function dedupeByHeadline(items) {
 
 function buildFeedItems(rawItems) {
   return dedupeByHeadline(rawItems)
+    .filter(item => isRelevant(`${item.title} ${item.description}`))
     .slice(0, 12)
     .map(item => {
       const signal = classifyNewsHeadline(item.title);
@@ -251,6 +266,25 @@ function updateDataJs(payload) {
   fs.writeFileSync(dataPath, updated, 'utf8');
 }
 
+const FEED_MAX = 12;
+
+function mergeWithExisting(fresh) {
+  // Re-filter the carried-over items too, so anything that predates the
+  // relevance gate drops out on the next run instead of lingering forever.
+  const existing = (loadExistingFeed().feed || [])
+    .filter(item => isRelevant(`${item.headline || ''} ${item.ai || ''}`));
+  const seen = new Set();
+  const out = [];
+  for (const item of [...fresh, ...existing]) {
+    const key = (item.headline || '').toLowerCase().slice(0, 80);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    out.push(item);
+    if (out.length >= FEED_MAX) break;
+  }
+  return out;
+}
+
 async function main() {
   let rawItems = await fetchAllFeeds();
 
@@ -267,11 +301,27 @@ async function main() {
   }
 
   const feed = buildFeedItems(rawItems);
+
+  if (!feed.length) {
+    console.warn('Fetched items but none were EU-relevant — keeping the existing feed.');
+    const existing = loadExistingFeed();
+    existing.momentum = computeMomentum(existing.feed || []);
+    saveFeed(existing);
+    updateDataJs(existing);
+    return;
+  }
+
+  // Roll today's relevant stories in on top of the ones already published
+  // rather than replacing the feed wholesale. Filtering out sport and
+  // celebrity news means a quiet day can yield only two or three items, and
+  // a straight replacement would throw away the rest of the week with them.
+  const merged = mergeWithExisting(feed);
+
   const payload = {
     feedUpdated: getCurrentDateString(),
     syncedAt: new Date().toISOString(),
-    momentum: computeMomentum(feed),
-    feed
+    momentum: computeMomentum(merged),
+    feed: merged
   };
 
   saveFeed(payload);

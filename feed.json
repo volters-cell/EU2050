@@ -2,7 +2,7 @@
   "feedUpdated": "20 Aug 2026",
   "syncedAt": "2026-08-20T09:30:07.993Z",
   "momentum": {
-    "storyCount": 12,
+    "storyCount": 4,
     "fragTotal": 0,
     "fedTotal": 0
   },
@@ -18,41 +18,6 @@
       "countries": [
         "UKR"
       ]
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Captured Ukrainian-born soldiers tell BBC why they fought for Russia",
-      "ai": "Men born in Ukraine who fought for Russia are tried for treason, but at a prisoner of war camp in western Ukraine, many believe they were defending their homeland.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ]
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "81-year-old confesses to German cold case murder of US tourist in 1994",
-      "ai": "Amy Lopez from Texas was last seen alive in September 1994 while on a visit to a fortress in Koblenz.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ]
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Two collapses in four days - what's happening to Musiala?",
-      "ai": "Jamal Musiala is being treated for a \"neurological dysfunction\" after collapsing twice in four days during Bayern Munich's pre-season friendlies.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": []
     },
     {
       "date": "19 Aug 2026",
@@ -81,16 +46,6 @@
     },
     {
       "date": "18 Aug 2026",
-      "headline": "Musiala collapses during match for second time",
-      "ai": "Bayern Munich midfielder Jamal Musiala says he is being treated for a \"neurological dysfunction\" after collapsing during a match for the second time in a four-day period.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": []
-    },
-    {
-      "date": "18 Aug 2026",
       "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
       "ai": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
       "frag": "Mixed signal for fragmentation",
@@ -101,55 +56,6 @@
         "UKR",
         "GBR",
         "RUS"
-      ]
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Bare Grocery Shelves Are a New Wartime Hardship for Ukrainians",
-      "ai": "After years of pounding power plants and cities, Russia’s air war has taken aim at Ukraine’s supermarket warehouses.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ]
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Hating Matcha, Yet Loving Life, Made Him a TikTok Star at 89",
-      "ai": "Werner Kalecinski is a social media sensation among young Germans. How did he go from heartbroken widower to partying on a yacht?",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ]
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Harry and Meghan’s Break With Britain and Planned Return: a Timeline",
-      "ai": "The couple will remain non-working royals. It is unclear where they will live.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ]
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Prince Harry and Meghan Will Move Back to U.K. After 6 Years in U.S.",
-      "ai": "The prince and his wife, whose relations with King Charles and the rest of the royal family have long been strained, will remain non-working royals, according to a person familiar with the decision.",
-      "frag": "Mixed signal for fragmentation",
-      "fed": "Mixed signal for federation",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
       ]
     }
   ]
