@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EU2050">
+  <rect width="64" height="64" rx="12" fill="#0b0e14"/>
+  <!-- Two futures: the split that the whole site is about -->
+  <path d="M12 20h18v30a6 6 0 0 1-6 6H12z" fill="#e5484d" opacity="0.9"/>
+  <path d="M34 8h18v42a6 6 0 0 1-6 6H34z" fill="#2fbf71" opacity="0.9"/>
+  <circle cx="32" cy="12" r="3" fill="#ffcb47"/>
+</svg>

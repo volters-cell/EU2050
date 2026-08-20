@@ -656,6 +656,7 @@
       document.getElementById('detailFed').innerHTML = DETAIL_PLACEHOLDER;
       syncSelectedPaths();
       updateShareURL(year, null, null);
+      updateShareContext();
       return;
     }
     selectedIso.frag = iso;
@@ -665,6 +666,7 @@
     syncSelectedPaths();
     pulseCountry(iso);
     updateShareURL(year, scenario, iso);
+    updateShareContext();
   }
 
   function syncSelectedPaths(){
@@ -697,6 +699,7 @@
     showDetail(document.getElementById('detailFrag'), data.countries[iso], 'frag', year, iso);
     showDetail(document.getElementById('detailFed'), data.countries[iso], 'fed', year, iso);
     syncSelectedPaths();
+    updateShareContext();
     countries.forEach(c => pulseCountry(c));
     document.querySelector('.layout')?.scrollIntoView({ behavior:'smooth', block:'start' });
   }
@@ -1030,15 +1033,46 @@
     toast._hideTimer = setTimeout(() => toast.classList.remove('visible'), 2400);
   }
 
+  // The share text names what the reader is actually looking at — the year on
+  // the slider and any country they have opened — so a shared link arrives with
+  // a reason to click rather than a bare title.
+  function buildShareText(){
+    const slider = document.getElementById('yearSlider');
+    const year = slider ? parseInt(slider.value, 10) : 2050;
+    const iso = selectedIso.frag || selectedIso.fed;
+    const country = iso && data.countries[iso] ? data.countries[iso] : null;
+    if(country){
+      return `${country.name} in ${year}: two futures for Europe side by side — a fragmented Union against a federal one. EU2050`;
+    }
+    if(year === 2050){
+      return 'Europe in 2050, two ways: a fragmented Union of 27 against a federation of 43. Compare them side by side — EU2050';
+    }
+    return `Europe in ${year}: a fragmented Union against a federal one, compared side by side — EU2050`;
+  }
+
+  // Keep the share section describing the current view, so the invitation stays
+  // specific as the reader moves the slider or opens a country.
+  function updateShareContext(){
+    const el = document.getElementById('shareContext');
+    if(!el) return;
+    const slider = document.getElementById('yearSlider');
+    const year = slider ? parseInt(slider.value, 10) : 2050;
+    const iso = selectedIso.frag || selectedIso.fed;
+    const country = iso && data.countries[iso] ? data.countries[iso] : null;
+    el.textContent = country
+      ? `Your link carries ${year} on the slider with ${country.name} open, so whoever you send it to lands on exactly this comparison.`
+      : `Your link carries ${year} on the slider, so whoever you send it to lands on exactly this view. Open a country first and it travels with the link too.`;
+  }
+
   function setupSocialShare(){
-    const buttons = document.querySelectorAll('.social-icon[data-share]');
+    const buttons = document.querySelectorAll('[data-share]');
     if(!buttons.length) return;
-    const shareText = "EU2050 — two AI-tracked futures for Europe's 2050. See how policy news pushes each scenario.";
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
         const type = btn.dataset.share;
         const pageUrl = window.location.href;
         const url = encodeURIComponent(pageUrl);
+        const shareText = buildShareText();
         const text = encodeURIComponent(shareText);
         if(type === 'x'){
           window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'noopener');
@@ -1046,21 +1080,58 @@
           window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank', 'noopener');
         } else if(type === 'bluesky'){
           window.open(`https://bsky.app/intent/compose?text=${text}%20${url}`, '_blank', 'noopener');
-        } else if(type === 'instagram'){
-          navigator.clipboard?.writeText(pageUrl).then(() => {
-            showShareToast('Link copied — paste it into Instagram');
-          });
+        } else if(type === 'copy'){
+          copyLink(pageUrl, btn);
         } else if(type === 'native'){
           if(navigator.share){
             navigator.share({ title: document.title, text: shareText, url: pageUrl }).catch(() => {});
           } else {
-            navigator.clipboard?.writeText(pageUrl).then(() => {
-              showShareToast('Link copied to clipboard');
-            });
+            copyLink(pageUrl, null);
           }
         }
       });
     });
+    updateShareContext();
+  }
+
+  // clipboard.writeText is unavailable on insecure origins and in some
+  // in-app browsers, so fall back to a hidden textarea + execCommand rather
+  // than leaving the button silently dead.
+  function copyLink(pageUrl, btn){
+    const done = () => {
+      showShareToast('Link copied — it opens on this exact view');
+      if(btn){
+        const label = btn.querySelector('span');
+        const original = label ? label.textContent : null;
+        btn.classList.add('copied');
+        if(label) label.textContent = 'Copied';
+        clearTimeout(btn._copyTimer);
+        btn._copyTimer = setTimeout(() => {
+          btn.classList.remove('copied');
+          if(label && original) label.textContent = original;
+        }, 2000);
+      }
+    };
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(pageUrl).then(done).catch(() => legacyCopy(pageUrl, done));
+    } else {
+      legacyCopy(pageUrl, done);
+    }
+  }
+
+  function legacyCopy(textToCopy, done){
+    const ta = document.createElement('textarea');
+    ta.value = textToCopy;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
+    document.body.removeChild(ta);
+    if(ok) done();
+    else showShareToast('Copy the address bar to share this view');
   }
 
   // Topic-aware classifier used only for headlines pulled from a live RSS feed
@@ -1345,6 +1416,7 @@
       ? 'Showing the full 2050 scenario outcomes'
       : `Interpolated path toward 2050, based on current trajectory`;
     updateShareURL(year);
+    updateShareContext();
     document.dispatchEvent(new CustomEvent('eu2050:rendered', { detail: { year } }));
   }
 
