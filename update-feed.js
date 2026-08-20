@@ -205,14 +205,53 @@ function isRelevant(text) {
   return hasEuropeanAnchor(text);
 }
 
+// Three feeds covering the same continent report the same events, and a
+// wire story gets rewritten as its facts firm up. Comparing headline
+// prefixes only caught byte-identical repeats, so one missile strike landed
+// in the feed three times: the BBC's first version, its updated death toll,
+// and the NYT's wording of the same attack.
+const STOPWORDS = new Set(['the','a','an','and','or','but','of','in','on','at','to','for','with','as','by','from','is','are','was','were','be','been','it','its','that','this','after','over','into','out','up','down','his','her','their','they','he','she','who','why','how','what','when','not','no','new','say','says','said','amid','more','than','has','have','had']);
+
+// Light stemming: real headlines alternate killed/kill, election/elections
+// and defence/defense across outlets and revisions.
+function normaliseToken(word) {
+  let w = word.replace(/^ex-/, '').replace(/defens/, 'defenc');
+  w = w.replace(/(ies)$/, 'y').replace(/(ing|ed|es|s)$/, '');
+  return w;
+}
+
+function headlineTokens(title) {
+  return new Set(
+    title.toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, ' ')
+      .split(/\s+/)
+      .filter(w => w.length > 2 && !STOPWORDS.has(w) && !/^\d+$/.test(w))
+      .map(normaliseToken)
+  );
+}
+
+// Containment against the shorter headline, not Jaccard: the same story told
+// in eight words and in sixteen should still register as one story.
+function sameStory(a, b) {
+  let shared = 0;
+  for (const token of a) if (b.has(token)) shared++;
+  const smaller = Math.min(a.size, b.size);
+  if (!smaller) return false;
+  return shared >= 3 && shared / smaller >= 0.5;
+}
+
 function dedupeByHeadline(items) {
-  const seen = new Set();
-  return items.filter(item => {
-    const key = item.title.toLowerCase().slice(0, 80);
-    if (!key || seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  const kept = [];
+  const keptTokens = [];
+  for (const item of items) {
+    const title = item.title || item.headline || '';
+    if (!title) continue;
+    const tokens = headlineTokens(title);
+    if (keptTokens.some(seen => sameStory(tokens, seen))) continue;
+    kept.push(item);
+    keptTokens.push(tokens);
+  }
+  return kept;
 }
 
 function buildFeedItems(rawItems) {
@@ -299,16 +338,7 @@ function mergeWithExisting(fresh) {
   // relevance gate drops out on the next run instead of lingering forever.
   const existing = (loadExistingFeed().feed || [])
     .filter(item => isRelevant(`${item.headline || ''} ${item.ai || ''}`));
-  const seen = new Set();
-  const out = [];
-  for (const item of [...fresh, ...existing]) {
-    const key = (item.headline || '').toLowerCase().slice(0, 80);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    out.push(item);
-    if (out.length >= FEED_MAX) break;
-  }
-  return out;
+  return dedupeByHeadline([...fresh, ...existing]).slice(0, FEED_MAX);
 }
 
 async function main() {

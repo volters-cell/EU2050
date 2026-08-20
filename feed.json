@@ -2,7 +2,7 @@
   "feedUpdated": "20 Aug 2026",
   "syncedAt": "2026-08-20T14:34:54.655Z",
   "momentum": {
-    "storyCount": 12,
+    "storyCount": 8,
     "fragTotal": 4,
     "fedTotal": -2
   },
@@ -97,35 +97,6 @@
     },
     {
       "date": "19 Aug 2026",
-      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky",
-      "ai": "Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/19/world/europe/ukraine-fedorov-zelensky-elections.html"
-    },
-    {
-      "date": "19 Aug 2026",
       "headline": "Russians pull billions from banks fearing Kremlin will seize savings for war",
       "ai": "Russia's central bank reported that billions of roubles have been withdrawn from banks each month, as Russians pull out cash amid fears of the Kremlin seizing their savings to fund the war in Ukraine amid a deteriorating economy.",
       "frag": "",
@@ -140,20 +111,6 @@
       "url": "http://www.euronews.com/2026/08/19/russians-pull-billions-from-banks-fearing-kremlin-will-seize-savings-for-war"
     },
     {
-      "date": "20 Aug 2026",
-      "headline": "At least 13 killed in Kyiv as Ukraine grapples with air defence shortages",
-      "ai": "Apartment blocks and warehouses were targeted in the \"massive attack\" on Thursday, officials say.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "17 Aug 2026",
       "headline": "French PM heckled over wildfire response as blazes continue across Europe",
       "ai": "The prime minister announced on Monday €12m worth of aid to French regions that had been worst affected by the fires.",
@@ -166,21 +123,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Russian Missiles Kill at Least 13 in Kyiv as Air Defenses Falter",
-      "ai": "Moscow is taking advantage of Ukraine’s depleted stock of interceptors and is intensifying attacks, worsening the civilian death toll.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/20/world/europe/ukraine-kyiv-missiles-russia-war.html"
     }
   ]
 }
