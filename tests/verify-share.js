@@ -47,6 +47,8 @@ const { chromium } = require('playwright');
     };
   });
   ok(state.copied && state.check && !state.arrow, 'arrow flips to a tick on copy', JSON.stringify(state));
+  const copiedLabel = await p.evaluate(() => document.querySelector('.share-primary-label').textContent);
+  ok(copiedLabel === 'Copied', 'label reads Copied while confirming', copiedLabel);
   const toast = await p.evaluate(() => document.querySelector('.share-toast')?.textContent || '');
   ok(/Link copied/.test(toast), 'toast shown', toast);
   await p.waitForTimeout(2200);
@@ -55,7 +57,8 @@ const { chromium } = require('playwright');
     const vis = el => el && getComputedStyle(el).display !== 'none';
     return { copied: b.classList.contains('copied'), arrow: vis(b.querySelector('.share-arrow')) };
   });
-  ok(!reset.copied && reset.arrow, 'arrow returns after the confirmation', JSON.stringify(reset));
+  const resetLabel = await p.evaluate(() => document.querySelector('.share-primary-label').textContent);
+  ok(!reset.copied && reset.arrow && resetLabel === 'Share', 'arrow and label return after the confirmation', JSON.stringify({ ...reset, resetLabel }));
 
   // The arrow carries no text, so it must be labelled for screen readers and
   // must be the last (rightmost) control in the row.
@@ -66,12 +69,12 @@ const { chromium } = require('playwright');
       label: b.getAttribute('aria-label'),
       title: b.getAttribute('title'),
       isLast: actions.lastElementChild === b,
-      hasText: b.textContent.trim().length > 0
+      hasText: b.textContent.trim()
     };
   });
-  ok(!!arrowMeta.label && !!arrowMeta.title, 'arrow is labelled for assistive tech', arrowMeta.label);
-  ok(arrowMeta.isLast, 'arrow is the rightmost control in the row');
-  ok(!arrowMeta.hasText, 'arrow carries no text label');
+  ok(arrowMeta.hasText === 'Share', 'button reads Share', arrowMeta.hasText);
+  ok(!!arrowMeta.title, 'button has a title explaining what it does', arrowMeta.title);
+  ok(arrowMeta.isLast, 'button is the rightmost control in the row');
 
   // share text is view-specific
   const txt = await p.evaluate(() => { let t=null; const o=window.open; window.open=(u)=>{t=u; return null;}; document.querySelector('[data-share="x"]').click(); window.open=o; return t; });
