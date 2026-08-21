@@ -1,8 +1,8 @@
 {
-  "feedUpdated": "20 Aug 2026",
-  "syncedAt": "2026-08-20T14:37:24.887Z",
+  "feedUpdated": "21 Aug 2026",
+  "syncedAt": "2026-08-21T08:38:08.375Z",
   "momentum": {
-    "storyCount": 8,
+    "storyCount": 9,
     "fragTotal": 4,
     "fedTotal": -2
   },
@@ -35,20 +35,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "At least 15 killed in Kyiv as Ukraine grapples with air defence shortages",
-      "ai": "Blocks of flats and warehouses were targeted in the \"massive attack\" on Thursday, Ukrainian officials say.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
@@ -94,6 +80,34 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Aug 2026",
+      "headline": "Spain moves hundreds of migrants from Ceuta beach to temporary shelters",
+      "ai": "Spain began relocating migrants from a makeshift camp on Ceuta’s El Trampolín beach on Thursday, 20 August, nearly three weeks after a mass border surge left thousands living without adequate shelter in the North African enclave.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/21/spain-moves-hundreds-of-migrants-from-ceuta-beach-to-temporary-shelters"
+    },
+    {
+      "date": "20 Aug 2026",
+      "headline": "At least 15 killed in Kyiv as Ukraine grapples with air defence shortages",
+      "ai": "Blocks of flats and warehouses were targeted in the \"massive attack\" on Thursday, Ukrainian officials say.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
