@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "21 Aug 2026",
-  "syncedAt": "2026-08-21T08:38:08.375Z",
+  "feedUpdated": "22 Aug 2026",
+  "syncedAt": "2026-08-22T08:27:09.478Z",
   "momentum": {
-    "storyCount": 9,
-    "fragTotal": 4,
-    "fedTotal": -2
+    "storyCount": 11,
+    "fragTotal": 6,
+    "fedTotal": -3
   },
   "feed": [
+    {
+      "date": "21 Aug 2026",
+      "headline": "Mongolia hosts UN desertification summit as drought crisis deepens",
+      "ai": "Mongolia is hosting the UN Convention to Combat Desertification’s COP17 in Ulaanbaatar from 17 to 28 August, bringing together representatives from 196 countries and the European Union to tackle land degradation, drought and desertification.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/21/mongolia-hosts-un-desertification-summit-as-drought-crisis-deepens"
+    },
     {
       "date": "20 Aug 2026",
       "headline": "Russia runs out of petrol at seven in 10 stations as fuel crisis worsens",
@@ -38,8 +52,8 @@
     },
     {
       "date": "19 Aug 2026",
-      "headline": "Sacked Ukrainian defence minister calls for presidential election",
-      "ai": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
+      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
+      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -48,7 +62,35 @@
         "UKR"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Aug 2026",
+      "headline": "Giorgia Meloni Has a Lot to Say: The Takeaways",
+      "ai": "The Italian prime minister is leading what will soon be the longest-lasting government in the country’s postwar history. She shows herself by turns funny and fierce in a rare interview.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/21/world/europe/giorgia-meloni-rare-interview-takeaways.html"
+    },
+    {
+      "date": "21 Aug 2026",
+      "headline": "Spain moves hundreds of migrants from Ceuta beach to temporary shelters",
+      "ai": "Spain began relocating migrants from a makeshift camp on Ceuta’s El Trampolín beach on Thursday, 20 August, nearly three weeks after a mass border surge left thousands living without adequate shelter in the North African enclave.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/21/spain-moves-hundreds-of-migrants-from-ceuta-beach-to-temporary-shelters"
     },
     {
       "date": "19 Aug 2026",
@@ -80,20 +122,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Aug 2026",
-      "headline": "Spain moves hundreds of migrants from Ceuta beach to temporary shelters",
-      "ai": "Spain began relocating migrants from a makeshift camp on Ceuta’s El Trampolín beach on Thursday, 20 August, nearly three weeks after a mass border surge left thousands living without adequate shelter in the North African enclave.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/08/21/spain-moves-hundreds-of-migrants-from-ceuta-beach-to-temporary-shelters"
     },
     {
       "date": "20 Aug 2026",
