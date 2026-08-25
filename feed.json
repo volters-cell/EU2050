@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "24 Aug 2026",
-  "syncedAt": "2026-08-24T08:45:33.581Z",
+  "feedUpdated": "25 Aug 2026",
+  "syncedAt": "2026-08-25T08:39:25.456Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 6,
@@ -65,6 +65,21 @@
       "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "24 Aug 2026",
+      "headline": "UK missiles offer may help Ukraine - but they are not what Zelensky needs most",
+      "ai": "UK Prime Minister Andy Burnham is handing over blueprints so Kyiv can build its own long-range missiles.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cy8zxqn57z3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "19 Aug 2026",
       "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
       "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
@@ -77,6 +92,36 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "24 Aug 2026",
+      "headline": "UK Prime Minister Burnham Arrives in Ukraine as Russia Amps Up Warnings",
+      "ai": "In his first foreign trip since taking office, the British prime minister pledged to stand by Kyiv despite new warnings of potential consequences.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/24/world/europe/uk-andy-burnham-ukraine-russia.html"
+    },
+    {
+      "date": "24 Aug 2026",
+      "headline": "Greta Thunberg joins 10,000 climate marchers in Stockholm",
+      "ai": "Around 10,000 people marched through Stockholm on Sunday demanding stronger climate action, a month before Sweden's general election.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/24/greta-thunberg-joins-10000-climate-marchers-in-stockholm"
     },
     {
       "date": "21 Aug 2026",
@@ -122,22 +167,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "18 Aug 2026",
-      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-      "ai": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "20 Aug 2026",
       "headline": "At least 15 killed in Kyiv as Ukraine grapples with air defence shortages",
       "ai": "Blocks of flats and warehouses were targeted in the \"massive attack\" on Thursday, Ukrainian officials say.",
@@ -150,35 +179,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "19 Aug 2026",
-      "headline": "Russians pull billions from banks fearing Kremlin will seize savings for war",
-      "ai": "Russia's central bank reported that billions of roubles have been withdrawn from banks each month, as Russians pull out cash amid fears of the Kremlin seizing their savings to fund the war in Ukraine amid a deteriorating economy.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/19/russians-pull-billions-from-banks-fearing-kremlin-will-seize-savings-for-war"
-    },
-    {
-      "date": "17 Aug 2026",
-      "headline": "French PM heckled over wildfire response as blazes continue across Europe",
-      "ai": "The prime minister announced on Monday €12m worth of aid to French regions that had been worst affected by the fires.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
