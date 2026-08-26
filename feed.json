@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "25 Aug 2026",
-  "syncedAt": "2026-08-25T08:39:25.456Z",
+  "feedUpdated": "26 Aug 2026",
+  "syncedAt": "2026-08-26T08:40:35.626Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 6,
@@ -51,18 +51,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Aug 2026",
-      "headline": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
-      "ai": "Mykhailo Fedorov has also called for wartime elections to be held in Ukraine.",
+      "date": "25 Aug 2026",
+      "headline": "Germany's Merz warns attackers will 'pay price' after drone incident",
+      "ai": "A drone attack on Leipzig Airport highlights the \"very real threat\" faced by the country, the German chancellor says.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "DEU"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cddv71p4j2jo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "24 Aug 2026",
@@ -94,6 +94,21 @@
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "25 Aug 2026",
+      "headline": "‘I’m Fine With My Body’: Danish Leader Responds to Unsolicited Beauty Advice",
+      "ai": "Prime Minister Mette Frederiksen had just returned from Ukraine when she received a message from a plastic surgeon asking if she wanted to fix her nose.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DNK",
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/25/world/europe/denmark-frederiksen-nose-plastic-surgeon.html"
+    },
+    {
       "date": "24 Aug 2026",
       "headline": "UK Prime Minister Burnham Arrives in Ukraine as Russia Amps Up Warnings",
       "ai": "In his first foreign trip since taking office, the British prime minister pledged to stand by Kyiv despite new warnings of potential consequences.",
@@ -110,66 +125,54 @@
       "url": "https://www.nytimes.com/2026/08/24/world/europe/uk-andy-burnham-ukraine-russia.html"
     },
     {
-      "date": "24 Aug 2026",
-      "headline": "Greta Thunberg joins 10,000 climate marchers in Stockholm",
-      "ai": "Around 10,000 people marched through Stockholm on Sunday demanding stronger climate action, a month before Sweden's general election.",
+      "date": "25 Aug 2026",
+      "headline": "Armenia detains former President Kocharyan on corruption charges",
+      "ai": "Robert Kocharyan, who leads the Moscow-friendly opposition and maintains close ties with Putin, was detained alongside his son and four others in raids on family businesses. Analysts say the move sent \"a signal to the Kremlin\" about Pashinyan's intent to confront Russian-aligned political forces.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SWE"
+        "ARM",
+        "RUS"
       ],
       "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/08/24/greta-thunberg-joins-10000-climate-marchers-in-stockholm"
+      "url": "http://www.euronews.com/2026/08/25/armenia-detains-former-president-kocharyan-on-corruption-charges"
     },
     {
-      "date": "21 Aug 2026",
-      "headline": "Giorgia Meloni Has a Lot to Say: The Takeaways",
-      "ai": "The Italian prime minister is leading what will soon be the longest-lasting government in the country’s postwar history. She shows herself by turns funny and fierce in a rare interview.",
+      "date": "25 Aug 2026",
+      "headline": "Mobilisation fears grip Russians as Kremlin's forced recruitment spikes",
+      "ai": "Human rights groups said they recorded a surge in forced recruitment since mid-August, amid reports that Russia is preparing a new mobilisation wave after September's elections.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ITA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/21/world/europe/giorgia-meloni-rare-interview-takeaways.html"
-    },
-    {
-      "date": "21 Aug 2026",
-      "headline": "Spain moves hundreds of migrants from Ceuta beach to temporary shelters",
-      "ai": "Spain began relocating migrants from a makeshift camp on Ceuta’s El Trampolín beach on Thursday, 20 August, nearly three weeks after a mass border surge left thousands living without adequate shelter in the North African enclave.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
+        "RUS"
       ],
       "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/08/21/spain-moves-hundreds-of-migrants-from-ceuta-beach-to-temporary-shelters"
+      "url": "http://www.euronews.com/2026/08/25/mobilisation-fears-grip-russians-as-kremlins-forced-recruitment-spikes"
     },
     {
-      "date": "19 Aug 2026",
-      "headline": "Ukrainian man arrested in Croatia over Nord Stream pipeline blasts",
-      "ai": "The man is alleged to have been one of the scuba divers who planted explosives on the pipelines in 2022.",
+      "date": "25 Aug 2026",
+      "headline": "Armenia announces historic intention to apply for EU membership",
+      "ai": "Armenia’s Pashinyan laid out Yerevan's decision to formally apply for EU membership “in the near future” and to call for a national referendum, challenging Russia’s regional influence and setting the stage for a historic geopolitical shift.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "HRV",
-        "UKR"
+        "ARM",
+        "RUS",
+        "BEL"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/08/25/armenia-announces-historic-intention-to-apply-for-eu-membership"
     },
     {
-      "date": "20 Aug 2026",
-      "headline": "At least 15 killed in Kyiv as Ukraine grapples with air defence shortages",
-      "ai": "Blocks of flats and warehouses were targeted in the \"massive attack\" on Thursday, Ukrainian officials say.",
+      "date": "23 Aug 2026",
+      "headline": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
+      "ai": "Mykhailo Fedorov has also called for wartime elections to be held in Ukraine.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -178,7 +181,7 @@
         "UKR"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
