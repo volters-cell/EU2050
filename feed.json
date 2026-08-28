@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "27 Aug 2026",
-  "syncedAt": "2026-08-27T18:50:46.493Z",
+  "feedUpdated": "28 Aug 2026",
+  "syncedAt": "2026-08-28T19:53:55.304Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 6,
@@ -51,6 +51,20 @@
       "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "28 Aug 2026",
+      "headline": "Shootings surge as drug gangs torment Brussels",
+      "ai": "This year alone there have been more than 65 shootings in the Belgian capital, as drug crime soars.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "26 Aug 2026",
       "headline": "Iceland holds knife-edge referendum on EU - and it could be decided on fish",
       "ai": "On Saturday, Iceland will vote on EU membership talks, amid economic and geopolitical tensions.",
@@ -94,6 +108,50 @@
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "28 Aug 2026",
+      "headline": "‘The Sauna Is Hot and Uncomfortable’: Vote on E.U. Talks Makes Iceland Sweat",
+      "ai": "The usually genial country has been bitterly divided over a vote this weekend on whether to enter membership talks with the European Union.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ISL",
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/28/world/europe/iceland-european-union-vote.html"
+    },
+    {
+      "date": "28 Aug 2026",
+      "headline": "Israeli activists urge EU in Jerusalem protest: ‘silence is complicity’ on Gaza",
+      "ai": "Around a dozen Israeli activists gathered outside European Union representative offices in east Jerusalem on 28 August, calling on the bloc to take a stronger position on the war in Gaza.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/28/israeli-activists-urge-eu-in-jerusalem-protest-silence-is-complicity-on-gaza"
+    },
+    {
+      "date": "28 Aug 2026",
+      "headline": "Russia plans to mobilise 600,000 troops this year and next, Ukraine says",
+      "ai": "Ukrainian intelligence said Moscow has already decided to call up 300,000 this year and 300,000 in 2027, driven by massive losses and a collapse in voluntary recruitment. Kyiv expects the announcement to come after September's elections.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/08/28/russia-plans-to-mobilise-600000-troops-this-year-and-next-ukraine-says"
+    },
+    {
       "date": "27 Aug 2026",
       "headline": "C.I.A. Chief Delivered Bleak Assessment of Russia’s War in Secretive Moscow Visit",
       "ai": "C.I.A. analysts have questioned whether President Vladimir V. Putin’s advisers have given him honest assessments of the conflict.",
@@ -121,66 +179,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/08/25/world/europe/denmark-frederiksen-nose-plastic-surgeon.html"
-    },
-    {
-      "date": "25 Aug 2026",
-      "headline": "Germany's Merz warns attackers will 'pay price' after drone incident",
-      "ai": "A drone attack on Leipzig Airport highlights the \"very real threat\" faced by the country, the German chancellor says.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddv71p4j2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "24 Aug 2026",
-      "headline": "UK missiles offer may help Ukraine - but they are not what Zelensky needs most",
-      "ai": "UK Prime Minister Andy Burnham is handing over blueprints so Kyiv can build its own long-range missiles.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy8zxqn57z3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "24 Aug 2026",
-      "headline": "UK Prime Minister Burnham Arrives in Ukraine as Russia Amps Up Warnings",
-      "ai": "In his first foreign trip since taking office, the British prime minister pledged to stand by Kyiv despite new warnings of potential consequences.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/24/world/europe/uk-andy-burnham-ukraine-russia.html"
-    },
-    {
-      "date": "25 Aug 2026",
-      "headline": "Armenia detains former President Kocharyan on corruption charges",
-      "ai": "Robert Kocharyan, who leads the Moscow-friendly opposition and maintains close ties with Putin, was detained alongside his son and four others in raids on family businesses. Analysts say the move sent \"a signal to the Kremlin\" about Pashinyan's intent to confront Russian-aligned political forces.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ARM",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/25/armenia-detains-former-president-kocharyan-on-corruption-charges"
     }
   ]
 }
