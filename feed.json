@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "28 Aug 2026",
-  "syncedAt": "2026-08-28T19:53:55.304Z",
+  "feedUpdated": "29 Aug 2026",
+  "syncedAt": "2026-08-29T13:37:45.323Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 6,
-    "fedTotal": -3
+    "fragTotal": 4,
+    "fedTotal": -2
   },
   "feed": [
     {
@@ -35,20 +35,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/2026/08/20/russia-runs-out-of-petrol-at-seven-in-10-stations-as-fuel-crisis-worsens"
-    },
-    {
-      "date": "2 Aug 2026",
-      "headline": "How Spain's migrant crisis created a political storm - whipped up by social media",
-      "ai": "The Ceuta crossings have shaken Europe politically, exposing divisions over the sensitive issue of migration, the BBC's Sarah Rainsford writes.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "28 Aug 2026",
@@ -94,18 +80,49 @@
       "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Aug 2026",
-      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "date": "29 Aug 2026",
+      "headline": "37 Killed Near Kyiv as Russian Drone Blitz Exposes Air Defense Gap",
+      "ai": "The strike, on a warehouse near Ukraine’s capital, came after days of attacks that strained air defenses and struck fear in civilians.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "UKR",
+        "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/29/world/europe/russia-ukraine-strike-kyiv-drones.html"
+    },
+    {
+      "date": "29 Aug 2026",
+      "headline": "Icelanders Are Voting on E.U. Membership Talks. Here’s What to Know.",
+      "ai": "The Nordic nation is holding a referendum on Saturday on whether to start membership talks with the European Union. Voters are divided.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ISL",
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/29/world/europe/iceland-eu-referendum-what-to-know.html"
+    },
+    {
+      "date": "29 Aug 2026",
+      "headline": "Why Iceland and Others Might Want In, Not Out, of the E.U. Club",
+      "ai": "A few years ago, some feared the European Union was going out of style. Now Iceland is mulling membership alongside a long list of candidates.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ISL",
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/29/world/europe/iceland-eu-membership-europe.html"
     },
     {
       "date": "28 Aug 2026",
@@ -123,8 +140,22 @@
       "url": "https://www.nytimes.com/2026/08/28/world/europe/iceland-european-union-vote.html"
     },
     {
+      "date": "29 Aug 2026",
+      "headline": "Guinea-Bissau junta puts new constitution to referendum as opposition urges boycott",
+      "ai": "A commentator and a human rights activist, speaking to Euronews, stress that the law has already been published and call for stronger EU action.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/08/29/guinea-bissau-junta-puts-new-constitution-to-referendum-as-opposition-urges-boycott"
+    },
+    {
       "date": "28 Aug 2026",
-      "headline": "Israeli activists urge EU in Jerusalem protest: ‘silence is complicity’ on Gaza",
+      "headline": "Israeli activists protest outside EU offices in Jerusalem over Gaza war",
       "ai": "Around a dozen Israeli activists gathered outside European Union representative offices in east Jerusalem on 28 August, calling on the bloc to take a stronger position on the war in Gaza.",
       "frag": "",
       "fed": "",
@@ -150,35 +181,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/2026/08/28/russia-plans-to-mobilise-600000-troops-this-year-and-next-ukraine-says"
-    },
-    {
-      "date": "27 Aug 2026",
-      "headline": "C.I.A. Chief Delivered Bleak Assessment of Russia’s War in Secretive Moscow Visit",
-      "ai": "C.I.A. analysts have questioned whether President Vladimir V. Putin’s advisers have given him honest assessments of the conflict.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/27/us/politics/cia-director-russia-ukraine.html"
-    },
-    {
-      "date": "25 Aug 2026",
-      "headline": "‘I’m Fine With My Body’: Danish Leader Responds to Unsolicited Beauty Advice",
-      "ai": "Prime Minister Mette Frederiksen had just returned from Ukraine when she received a message from a plastic surgeon asking if she wanted to fix her nose.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DNK",
-        "UKR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/25/world/europe/denmark-frederiksen-nose-plastic-surgeon.html"
     }
   ]
 }
