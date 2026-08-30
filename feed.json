@@ -1,40 +1,26 @@
 {
-  "feedUpdated": "29 Aug 2026",
-  "syncedAt": "2026-08-29T13:37:45.323Z",
+  "feedUpdated": "30 Aug 2026",
+  "syncedAt": "2026-08-30T13:33:44.755Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 4,
-    "fedTotal": -2
+    "fragTotal": 0,
+    "fedTotal": 0
   },
   "feed": [
     {
-      "date": "21 Aug 2026",
-      "headline": "Mongolia hosts UN desertification summit as drought crisis deepens",
-      "ai": "Mongolia is hosting the UN Convention to Combat Desertification’s COP17 in Ulaanbaatar from 17 to 28 August, bringing together representatives from 196 countries and the European Union to tackle land degradation, drought and desertification.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "30 Aug 2026",
+      "headline": "Iceland votes against restarting talks on joining EU",
+      "ai": "Broadcaster RUV reports that 52.8% of voters rejected the government's proposal to resume talks.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
+        "ISL",
         "BEL"
       ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/08/21/mongolia-hosts-un-desertification-summit-as-drought-crisis-deepens"
-    },
-    {
-      "date": "20 Aug 2026",
-      "headline": "Russia runs out of petrol at seven in 10 stations as fuel crisis worsens",
-      "ai": "Ukrainian drone campaign on Russia's energy infrastructure has caused fuel shortages so severe that the Kremlin has admitted it. Queues in Moscow are forming for the first time, and Russia has brought back banned low-grade fuel to plug the gap, while detaining residents who complained publicly.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/20/russia-runs-out-of-petrol-at-seven-in-10-stations-as-fuel-crisis-worsens"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "28 Aug 2026",
@@ -80,9 +66,37 @@
       "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "30 Aug 2026",
+      "headline": "Far Right Is Poised to Win in a German State, but Fight Over Power Won’t End There",
+      "ai": "State and federal leaders are trying to avoid sharing sensitive intelligence with the Alternative for Germany should it take power in a state’s elections next week.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/30/world/europe/germany-afd-saxony-anhalt.html"
+    },
+    {
       "date": "29 Aug 2026",
-      "headline": "37 Killed Near Kyiv as Russian Drone Blitz Exposes Air Defense Gap",
-      "ai": "The strike, on a warehouse near Ukraine’s capital, came after days of attacks that strained air defenses and struck fear in civilians.",
+      "headline": "Milo Yiannopoulos, Right-Wing Agitator, Deported Home to U.K.",
+      "ai": "Mr. Yiannopoulos, an early supporter of President Trump and vocal supporter of mass deportations, was himself sent back to his home country, part of a long fall from right-wing grace.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/29/us/politics/milo-yiannopoulos-deported.html"
+    },
+    {
+      "date": "29 Aug 2026",
+      "headline": "37 Killed After Russian Strike on Weapons Depot as Ukraine Blames Negligence",
+      "ai": "The depot, which was in a civilian area near Kyiv, “definitely shouldn’t have been there,” President Volodymyr Zelensky said.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -140,6 +154,21 @@
       "url": "https://www.nytimes.com/2026/08/28/world/europe/iceland-european-union-vote.html"
     },
     {
+      "date": "30 Aug 2026",
+      "headline": "Icelanders react as the EU referendum results come in",
+      "ai": "Icelanders react as voters reject a proposal to restart European Union accession talks in a closely contested referendum.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ISL",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/08/30/icelanders-react-as-the-eu-referendum-results-come-in"
+    },
+    {
       "date": "29 Aug 2026",
       "headline": "Guinea-Bissau junta puts new constitution to referendum as opposition urges boycott",
       "ai": "A commentator and a human rights activist, speaking to Euronews, stress that the law has already been published and call for stronger EU action.",
@@ -152,35 +181,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/2026/08/29/guinea-bissau-junta-puts-new-constitution-to-referendum-as-opposition-urges-boycott"
-    },
-    {
-      "date": "28 Aug 2026",
-      "headline": "Israeli activists protest outside EU offices in Jerusalem over Gaza war",
-      "ai": "Around a dozen Israeli activists gathered outside European Union representative offices in east Jerusalem on 28 August, calling on the bloc to take a stronger position on the war in Gaza.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/08/28/israeli-activists-urge-eu-in-jerusalem-protest-silence-is-complicity-on-gaza"
-    },
-    {
-      "date": "28 Aug 2026",
-      "headline": "Russia plans to mobilise 600,000 troops this year and next, Ukraine says",
-      "ai": "Ukrainian intelligence said Moscow has already decided to call up 300,000 this year and 300,000 in 2027, driven by massive losses and a collapse in voluntary recruitment. Kyiv expects the announcement to come after September's elections.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/28/russia-plans-to-mobilise-600000-troops-this-year-and-next-ukraine-says"
     }
   ]
 }
