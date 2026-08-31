@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "30 Aug 2026",
-  "syncedAt": "2026-08-30T13:33:44.755Z",
+  "feedUpdated": "31 Aug 2026",
+  "syncedAt": "2026-08-31T15:51:19.053Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 0,
@@ -9,8 +9,8 @@
   "feed": [
     {
       "date": "30 Aug 2026",
-      "headline": "Iceland votes against restarting talks on joining EU",
-      "ai": "Broadcaster RUV reports that 52.8% of voters rejected the government's proposal to resume talks.",
+      "headline": "Iceland votes against restarting EU membership talks",
+      "ai": "Broadcaster RUV reports that 52.8% of voters rejected the government's proposal to resume accession talks.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -21,35 +21,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "28 Aug 2026",
-      "headline": "Shootings surge as drug gangs torment Brussels",
-      "ai": "This year alone there have been more than 65 shootings in the Belgian capital, as drug crime soars.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "26 Aug 2026",
-      "headline": "Iceland holds knife-edge referendum on EU - and it could be decided on fish",
-      "ai": "On Saturday, Iceland will vote on EU membership talks, amid economic and geopolitical tensions.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ISL",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c99dvmyr4glo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "27 Aug 2026",
@@ -64,6 +35,49 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Aug 2026",
+      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
+      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "31 Aug 2026",
+      "headline": "Ukrainian Drone Mastermind, Fired by Kyiv, Will Advise Italy’s Defense Chief",
+      "ai": "The appointment of Mykhailo Fedorov, a Ukrainian former defense minister, showed how other militaries are racing to adapt to battlefield changes accelerated by the war in Ukraine.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA",
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/31/world/europe/italy-ukraine-fedorov-adviser.html"
+    },
+    {
+      "date": "31 Aug 2026",
+      "headline": "Spanish Leader Says 5,000 Migrants Are Still in Ceuta, Weeks After Border Surge",
+      "ai": "Their continued presence has roiled the Spanish territory in Africa and heaped pressure on Prime Minister Pedro Sánchez.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/08/31/world/europe/ceuta-migrants-pedro-sanchez-north-africa.html"
     },
     {
       "date": "30 Aug 2026",
@@ -110,21 +124,6 @@
     },
     {
       "date": "29 Aug 2026",
-      "headline": "Icelanders Are Voting on E.U. Membership Talks. Here’s What to Know.",
-      "ai": "The Nordic nation is holding a referendum on Saturday on whether to start membership talks with the European Union. Voters are divided.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ISL",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/29/world/europe/iceland-eu-referendum-what-to-know.html"
-    },
-    {
-      "date": "29 Aug 2026",
       "headline": "Why Iceland and Others Might Want In, Not Out, of the E.U. Club",
       "ai": "A few years ago, some feared the European Union was going out of style. Now Iceland is mulling membership alongside a long list of candidates.",
       "frag": "",
@@ -137,21 +136,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/08/29/world/europe/iceland-eu-membership-europe.html"
-    },
-    {
-      "date": "28 Aug 2026",
-      "headline": "‘The Sauna Is Hot and Uncomfortable’: Vote on E.U. Talks Makes Iceland Sweat",
-      "ai": "The usually genial country has been bitterly divided over a vote this weekend on whether to enter membership talks with the European Union.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ISL",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/28/world/europe/iceland-european-union-vote.html"
     },
     {
       "date": "30 Aug 2026",
@@ -169,9 +153,9 @@
       "url": "http://www.euronews.com/video/2026/08/30/icelanders-react-as-the-eu-referendum-results-come-in"
     },
     {
-      "date": "29 Aug 2026",
-      "headline": "Guinea-Bissau junta puts new constitution to referendum as opposition urges boycott",
-      "ai": "A commentator and a human rights activist, speaking to Euronews, stress that the law has already been published and call for stronger EU action.",
+      "date": "28 Aug 2026",
+      "headline": "Shootings surge as drug gangs torment Brussels",
+      "ai": "This year alone there have been more than 65 shootings in the Belgian capital, as drug crime soars.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -179,8 +163,23 @@
       "countries": [
         "BEL"
       ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/29/guinea-bissau-junta-puts-new-constitution-to-referendum-as-opposition-urges-boycott"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "26 Aug 2026",
+      "headline": "Iceland holds knife-edge referendum on EU - and it could be decided on fish",
+      "ai": "On Saturday, Iceland will vote on EU membership talks, amid economic and geopolitical tensions.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ISL",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c99dvmyr4glo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
