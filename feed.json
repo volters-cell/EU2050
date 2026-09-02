@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "1 Sept 2026",
-  "syncedAt": "2026-09-01T13:06:42.492Z",
+  "feedUpdated": "2 Sept 2026",
+  "syncedAt": "2026-09-02T12:34:07.948Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -37,20 +37,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Aug 2026",
-      "headline": "Memory wars: Election clash over Germany's Nazi past as AfD eyes power in east",
-      "ai": "Remembering its role in the World Wars is a key aspect of modern Germany's identity but the AfD argues it is time to take a more positive view of the past.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "19 Aug 2026",
       "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
       "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
@@ -65,9 +51,36 @@
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "2 Sept 2026",
+      "headline": "Putin Pledges Increased Strikes in Ukraine and Support for Iran",
+      "ai": "The Russian president promised continued retaliation against the Ukrainians and “full solidarity” with Iran.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/01/world/europe/putin-ukraine-iran.html"
+    },
+    {
+      "date": "2 Sept 2026",
+      "headline": "At G20 Summit, Some U.S. Allies Push Back on Trump’s Economic Approach",
+      "ai": "At a summit meant to showcase President Trump’s economic policies as a model for the world, Europeans complained about tariffs and the war with Iran.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/01/world/europe/g20-bessent-trump-allies.html"
+    },
+    {
       "date": "1 Sept 2026",
       "headline": "Keir Starmer, Former UK Prime Minister, Says He Will Resign From Parliament",
-      "ai": "Keir Starmer, who was pushed out of Downing Street by his party, said he would quit his parliamentary seat to focus on international affairs and defense.",
+      "ai": "Keir Starmer, who left Downing Street in July after pressure from his own party, said he would quit his parliamentary seat to focus on a role in international affairs and defense.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -80,7 +93,7 @@
       "url": "https://www.nytimes.com/2026/09/01/world/europe/keir-starmer-uk-prime-minister-resigns-mp.html"
     },
     {
-      "date": "31 Aug 2026",
+      "date": "1 Sept 2026",
       "headline": "Édouard Balladur, Embattled French Prime Minister, Dies at 97",
       "ai": "His time in office coincided with France’s fraught role in the 1994 Rwandan genocide and the corruption scandal known as the Karachi affair.",
       "frag": "",
@@ -109,6 +122,34 @@
       "url": "https://www.nytimes.com/2026/08/31/world/europe/italy-ukraine-fedorov-adviser.html"
     },
     {
+      "date": "2 Sept 2026",
+      "headline": "Sharp rise in utility bills pushes Russia's inflation further off target",
+      "ai": "The October increase follows a January rise and is the first double tariff hike in four years. The central bank warned it would push annual inflation further above its 4% target in an economy already squeezed by the costs of its war, sanctions and a 21% key interest rate.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/09/02/sharp-rise-in-utility-bills-pushes-russias-inflation-further-off-target"
+    },
+    {
+      "date": "27 Aug 2026",
+      "headline": "Memory wars: Election clash over Germany's Nazi past as AfD eyes power in east",
+      "ai": "Remembering its role in the World Wars is a key aspect of modern Germany's identity but the AfD argues it is time to take a more positive view of the past.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "31 Aug 2026",
       "headline": "Spanish Leader Says 5,000 Migrants Are Still in Ceuta, Weeks After Border Surge",
       "ai": "Their continued presence has roiled the Spanish territory in Africa and heaped pressure on Prime Minister Pedro Sánchez.",
@@ -135,49 +176,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/08/30/world/europe/germany-afd-saxony-anhalt.html"
-    },
-    {
-      "date": "31 Aug 2026",
-      "headline": "Eurasian nations gather in Bishkek to forge stronger ties, new alliances",
-      "ai": "Heads of 21 global and rising powers gather in Bishkek for the SCO summit as wars strain the global order. China and Russia have previously used the SCO to project their influence and their stand against the West, but the middle powers are now there to seek new economic and political momentum.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/08/31/eurasian-nations-gather-in-bishkek-to-forge-stronger-ties-new-alliances"
-    },
-    {
-      "date": "29 Aug 2026",
-      "headline": "Milo Yiannopoulos, Right-Wing Agitator, Deported Home to U.K.",
-      "ai": "Mr. Yiannopoulos, an early supporter of President Trump and vocal supporter of mass deportations, was himself sent back to his home country, part of a long fall from right-wing grace.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/29/us/politics/milo-yiannopoulos-deported.html"
-    },
-    {
-      "date": "29 Aug 2026",
-      "headline": "37 Killed After Russian Strike on Weapons Depot as Ukraine Blames Negligence",
-      "ai": "The depot, which was in a civilian area near Kyiv, “definitely shouldn’t have been there,” President Volodymyr Zelensky said.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/29/world/europe/russia-ukraine-strike-kyiv-drones.html"
     }
   ]
 }
