@@ -1,12 +1,58 @@
 {
-  "feedUpdated": "2 Sept 2026",
-  "syncedAt": "2026-09-02T12:34:07.948Z",
+  "feedUpdated": "3 Sept 2026",
+  "syncedAt": "2026-09-03T12:36:41.128Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 2
+    "fragTotal": 5,
+    "fedTotal": -1
   },
   "feed": [
+    {
+      "date": "3 Sept 2026",
+      "headline": "Embattled Spanish PM insists no prior warnings before Ceuta crisis",
+      "ai": "Spain's prime minister tells parliament it is absurd to think the government knew and did nothing, after thousands join protests in Spanish cities.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "ESP",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c07lz7rn2mjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "2 Sept 2026",
+      "headline": "Netherlands moves billions in gold to London in 'crisis preparedness' move",
+      "ai": "The Dutch central bank removes some of its gold reserves from the US and Canada, saying it is because of \"increasing geopolitical unrest\".",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "NLD",
+        "GBR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvgy51xlz39o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "1 Sept 2026",
+      "headline": "Weeks After Failed Drone Attack, Germany Points Finger at Russia",
+      "ai": "The country said Moscow was behind an explosive-laden drone found near a Ukrainian plane at a German airport last month. President Vladimir Putin of Russia called the accusation “a grave mistake.”",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "DEU",
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/01/world/europe/germany-russia-drone-airport.html"
+    },
     {
       "date": "31 Aug 2026",
       "headline": "Israel and Greece Reach $3.5 Billion Defense Deal",
@@ -22,19 +68,35 @@
       "url": "https://www.nytimes.com/2026/08/31/world/middleeast/israel-greece-defense-deal.html"
     },
     {
-      "date": "30 Aug 2026",
-      "headline": "Iceland votes against restarting EU membership talks",
-      "ai": "Broadcaster RUV reports that 52.8% of voters rejected the government's proposal to resume accession talks.",
+      "date": "3 Sept 2026",
+      "headline": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+      "ai": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ISL",
+        "DEU",
+        "RUS",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "2 Sept 2026",
+      "headline": "Rosenberg: Putin's veiled threat to UK part of Russia's campaign against West",
+      "ai": "The Russian president wants to keep Britain guessing - and stressing - over Moscow's real intentions.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Aug 2026",
@@ -93,33 +155,18 @@
       "url": "https://www.nytimes.com/2026/09/01/world/europe/keir-starmer-uk-prime-minister-resigns-mp.html"
     },
     {
-      "date": "1 Sept 2026",
-      "headline": "Édouard Balladur, Embattled French Prime Minister, Dies at 97",
-      "ai": "His time in office coincided with France’s fraught role in the 1994 Rwandan genocide and the corruption scandal known as the Karachi affair.",
+      "date": "3 Sept 2026",
+      "headline": "AI-powered robots showcased at European Parliament in Brussels",
+      "ai": "AI-powered robots demonstrate delivery, factory and household tasks at a robotics showcase in Brussels, highlighting advances in artificial intelligence.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/31/world/europe/edouard-balladur-dead.html"
-    },
-    {
-      "date": "31 Aug 2026",
-      "headline": "Ukrainian Drone Mastermind, Fired by Kyiv, Will Advise Italy’s Defense Chief",
-      "ai": "The appointment of Mykhailo Fedorov, a Ukrainian former defense minister, showed how other militaries are racing to adapt to battlefield changes accelerated by the war in Ukraine.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA",
-        "UKR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/31/world/europe/italy-ukraine-fedorov-adviser.html"
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/09/03/ai-powered-robots-showcased-at-european-parliament-in-brussels"
     },
     {
       "date": "2 Sept 2026",
@@ -134,48 +181,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/2026/09/02/sharp-rise-in-utility-bills-pushes-russias-inflation-further-off-target"
-    },
-    {
-      "date": "27 Aug 2026",
-      "headline": "Memory wars: Election clash over Germany's Nazi past as AfD eyes power in east",
-      "ai": "Remembering its role in the World Wars is a key aspect of modern Germany's identity but the AfD argues it is time to take a more positive view of the past.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddv43d4jn2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "31 Aug 2026",
-      "headline": "Spanish Leader Says 5,000 Migrants Are Still in Ceuta, Weeks After Border Surge",
-      "ai": "Their continued presence has roiled the Spanish territory in Africa and heaped pressure on Prime Minister Pedro Sánchez.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/31/world/europe/ceuta-migrants-pedro-sanchez-north-africa.html"
-    },
-    {
-      "date": "30 Aug 2026",
-      "headline": "Far Right Is Poised to Win in a German State, but Fight Over Power Won’t End There",
-      "ai": "State and federal leaders are trying to avoid sharing sensitive intelligence with the Alternative for Germany should it take power in a state’s elections next week.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/30/world/europe/germany-afd-saxony-anhalt.html"
     }
   ]
 }
