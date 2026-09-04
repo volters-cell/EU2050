@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "3 Sept 2026",
-  "syncedAt": "2026-09-03T12:36:41.128Z",
+  "feedUpdated": "4 Sept 2026",
+  "syncedAt": "2026-09-04T12:30:49.616Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 5,
-    "fedTotal": -1
+    "fragTotal": 6,
+    "fedTotal": -3
   },
   "feed": [
     {
@@ -54,20 +54,6 @@
       "url": "https://www.nytimes.com/2026/09/01/world/europe/germany-russia-drone-airport.html"
     },
     {
-      "date": "31 Aug 2026",
-      "headline": "Israel and Greece Reach $3.5 Billion Defense Deal",
-      "ai": "Despite the growing diplomatic isolation of the government, the agreement makes clear that the Israeli defense industry is still finding considerable demand abroad.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "GRC"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/08/31/world/middleeast/israel-greece-defense-deal.html"
-    },
-    {
       "date": "3 Sept 2026",
       "headline": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
       "ai": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
@@ -113,46 +99,74 @@
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "2 Sept 2026",
-      "headline": "Putin Pledges Increased Strikes in Ukraine and Support for Iran",
-      "ai": "The Russian president promised continued retaliation against the Ukrainians and “full solidarity” with Iran.",
+      "date": "4 Sept 2026",
+      "headline": "Germany’s Far Right, Edging Close to Power, Remains Close to Extremists",
+      "ai": "The Alternative for Germany party has tried to soften its hard-line image but is still privately working with extremists. It could win a state election on Sunday.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "DEU"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/01/world/europe/putin-ukraine-iran.html"
+      "url": "https://www.nytimes.com/2026/09/04/world/europe/germany-afd-extremists.html"
     },
     {
-      "date": "2 Sept 2026",
-      "headline": "At G20 Summit, Some U.S. Allies Push Back on Trump’s Economic Approach",
-      "ai": "At a summit meant to showcase President Trump’s economic policies as a model for the world, Europeans complained about tariffs and the war with Iran.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/01/world/europe/g20-bessent-trump-allies.html"
-    },
-    {
-      "date": "1 Sept 2026",
-      "headline": "Keir Starmer, Former UK Prime Minister, Says He Will Resign From Parliament",
-      "ai": "Keir Starmer, who left Downing Street in July after pressure from his own party, said he would quit his parliamentary seat to focus on a role in international affairs and defense.",
+      "date": "4 Sept 2026",
+      "headline": "Argentina Is Ramping Up Its Claim to the Falklands. Here’s What to Know.",
+      "ai": "President Javier Milei has dialed up Argentina’s claim over the British territory, while President Trump has raised questions about longstanding U.S. neutrality on the dispute.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR",
-        "BEL"
+        "GBR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/01/world/europe/keir-starmer-uk-prime-minister-resigns-mp.html"
+      "url": "https://www.nytimes.com/article/falkland-islands-trump-uk-argentina-malvinas.html"
+    },
+    {
+      "date": "3 Sept 2026",
+      "headline": "Dutch Central Bank Cuts Gold Reserves in U.S., Citing ‘Geopolitical Unrest’",
+      "ai": "The Netherlands moved some 90 tons of gold out of the Federal Reserve Bank in New York, the second European nation this year to announce it had decreased or eliminated U.S. gold holdings.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "NLD"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/03/world/europe/netherlands-gold-reserves-us.html"
+    },
+    {
+      "date": "3 Sept 2026",
+      "headline": "Spain’s Leader Questions Morocco Border Control During Ceuta Migrant Surge",
+      "ai": "Prime Minister Pedro Sánchez of Spain said the role of Moroccan authorities at key moments needed to be “clarified.” But he rejected any suggestion they had planned the crisis.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/03/world/europe/spain-morocco-ceuta-sanchez.html"
+    },
+    {
+      "date": "3 Sept 2026",
+      "headline": "Rival Ukrainian Intelligence Units Open Fire Against Each Other in Kyiv",
+      "ai": "President Volodymyr Zelensky described the shootout on the streets of the Ukrainian capital as an “absolutely shameful event” and ordered an investigation.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/03/world/europe/rival-ukrainian-intelligence-units-open-fire-against-each-other-in-kyiv.html"
     },
     {
       "date": "3 Sept 2026",
@@ -167,20 +181,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/video/2026/09/03/ai-powered-robots-showcased-at-european-parliament-in-brussels"
-    },
-    {
-      "date": "2 Sept 2026",
-      "headline": "Sharp rise in utility bills pushes Russia's inflation further off target",
-      "ai": "The October increase follows a January rise and is the first double tariff hike in four years. The central bank warned it would push annual inflation further above its 4% target in an economy already squeezed by the costs of its war, sanctions and a 21% key interest rate.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/02/sharp-rise-in-utility-bills-pushes-russias-inflation-further-off-target"
     }
   ]
 }
