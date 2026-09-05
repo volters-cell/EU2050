@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "4 Sept 2026",
-  "syncedAt": "2026-09-04T12:30:49.616Z",
+  "feedUpdated": "5 Sept 2026",
+  "syncedAt": "2026-09-05T11:39:01.333Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 6,
-    "fedTotal": -3
+    "fragTotal": 4,
+    "fedTotal": -2
   },
   "feed": [
     {
@@ -36,22 +36,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvgy51xlz39o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "1 Sept 2026",
-      "headline": "Weeks After Failed Drone Attack, Germany Points Finger at Russia",
-      "ai": "The country said Moscow was behind an explosive-laden drone found near a Ukrainian plane at a German airport last month. President Vladimir Putin of Russia called the accusation “a grave mistake.”",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "DEU",
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/01/world/europe/germany-russia-drone-airport.html"
     },
     {
       "date": "3 Sept 2026",
@@ -97,6 +81,21 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "5 Sept 2026",
+      "headline": "Trump Envoys Arrive in Moscow for Talks on Ukraine War",
+      "ai": "Steve Witkoff, President Trump’s special envoy, and Jared Kushner, his son-in-law, plan to visit Kyiv next, in an effort to revive peace negotiations between Russia and Ukraine.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/05/world/europe/russia-ukraine-witkoff-kushner-moscow.html"
     },
     {
       "date": "4 Sept 2026",
@@ -169,18 +168,18 @@
       "url": "https://www.nytimes.com/2026/09/03/world/europe/rival-ukrainian-intelligence-units-open-fire-against-each-other-in-kyiv.html"
     },
     {
-      "date": "3 Sept 2026",
-      "headline": "AI-powered robots showcased at European Parliament in Brussels",
-      "ai": "AI-powered robots demonstrate delivery, factory and household tasks at a robotics showcase in Brussels, highlighting advances in artificial intelligence.",
+      "date": "4 Sept 2026",
+      "headline": "Meloni marks government longevity at Bari rally with 2027 vote in sight",
+      "ai": "The durability of Meloni’s coalition has been a rarity in postwar Italy, where governments have often fallen before the end of their mandates.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "BEL"
+        "ITA"
       ],
       "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/09/03/ai-powered-robots-showcased-at-european-parliament-in-brussels"
+      "url": "http://www.euronews.com/2026/09/04/meloni-marks-government-longevity-at-bari-rally-with-2027-vote-in-sight"
     }
   ]
 }
