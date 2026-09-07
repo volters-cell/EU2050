@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "6 Sept 2026",
-  "syncedAt": "2026-09-06T11:58:09.654Z",
+  "feedUpdated": "7 Sept 2026",
+  "syncedAt": "2026-09-07T13:58:49.130Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 6,
     "fedTotal": -3
   },
   "feed": [
+    {
+      "date": "7 Sept 2026",
+      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
+      "ai": "The far-right party is trying to form a government in the state after falling three seats short of a majority.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "DEU"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "3 Sept 2026",
       "headline": "Embattled Spanish PM insists no prior warnings before Ceuta crisis",
@@ -37,19 +51,19 @@
       "url": "https://www.nytimes.com/2026/09/06/world/europe/germany-election-afd-saxony-anhalt.html"
     },
     {
-      "date": "2 Sept 2026",
-      "headline": "Netherlands moves billions in gold to London in 'crisis preparedness' move",
-      "ai": "The Dutch central bank removes some of its gold reserves from the US and Canada, saying it is because of \"increasing geopolitical unrest\".",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "7 Sept 2026",
+      "headline": "How significant are AfD's historic gains for Germany and the rest of Europe?",
+      "ai": "The BBC's Europe editor Katya Adler sees the far-right win in Saxony-Anhalt state ringing alarm bells for the EU and traditional parties.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "NLD",
-        "GBR"
+        "DEU",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgy51xlz39o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "2 Sept 2026",
@@ -67,33 +81,46 @@
       "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Aug 2026",
-      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "date": "7 Sept 2026",
+      "headline": "Germany’s ‘Firewall’ Against the Far Right Is Being Tested as Never Before",
+      "ai": "A blowout win by the far-right Alternative for Germany party in a state election has revealed a split among voters about whether to uphold a decades-old strategy for sidelining extremists.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "DEU"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/07/world/europe/germany-afd-election-saxony-anhalt-election.html"
+    },
+    {
+      "date": "7 Sept 2026",
+      "headline": "AfD Victory in Saxony-Anhalt Sends a Signal to Europe",
+      "ai": "A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections across Europe next year, analysts said.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/06/world/europe/afd-germany-europe-far-right-saxony-anhalt.html"
     },
     {
       "date": "6 Sept 2026",
-      "headline": "Trump Envoys Make First Visit to Kyiv",
-      "ai": "Steve Witkoff and Jared Kushner met with President Vladimir V. Putin of Russia in Moscow on Saturday in an effort to revive peace talks.",
+      "headline": "Germany’s Far Right Just Misses Majority in Crucial State Election",
+      "ai": "The Alternative for Germany, or AfD, trounced its rivals but was left unsure if it will be able to govern in Saxony-Anhalt. The result shocked Germany.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "DEU"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/06/world/europe/ukraine-zelensky-witkoff-kushner-russia-putin.html"
+      "url": "https://www.nytimes.com/2026/09/06/world/europe/germany-afd-election-saxony-anhalt.html"
     },
     {
       "date": "6 Sept 2026",
@@ -125,9 +152,9 @@
       "url": "https://www.nytimes.com/2026/09/05/world/europe/russia-ukraine-witkoff-kushner-moscow.html"
     },
     {
-      "date": "4 Sept 2026",
-      "headline": "Germany’s Far Right, Edging Close to Power, Remains Close to Extremists",
-      "ai": "The Alternative for Germany party has tried to soften its hard-line image but is still privately working with extremists. It could win a state election on Sunday.",
+      "date": "6 Sept 2026",
+      "headline": "AfD’s Ulrich Siegmund casts vote in key German state election",
+      "ai": "AfD candidate Ulrich Siegmund casts his ballot in Saxony-Anhalt, where his party is seeking a historic breakthrough in the state election.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -135,22 +162,8 @@
       "countries": [
         "DEU"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/04/world/europe/germany-afd-extremists.html"
-    },
-    {
-      "date": "4 Sept 2026",
-      "headline": "Argentina Is Ramping Up Its Claim to the Falklands. Here’s What to Know.",
-      "ai": "President Javier Milei has dialed up Argentina’s claim over the British territory, while President Trump has raised questions about longstanding U.S. neutrality on the dispute.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/article/falkland-islands-trump-uk-argentina-malvinas.html"
+      "source": "Euronews",
+      "url": "http://www.euronews.com/video/2026/09/06/afds-ulrich-siegmund-casts-vote-in-key-german-state-election"
     },
     {
       "date": "5 Sept 2026",
@@ -167,20 +180,6 @@
       ],
       "source": "Euronews",
       "url": "http://www.euronews.com/2026/09/05/bosnian-serb-war-criminal-mladic-commemorated-in-belgrade-but-no-state-honours"
-    },
-    {
-      "date": "4 Sept 2026",
-      "headline": "Meloni marks government longevity at Bari rally with 2027 vote in sight",
-      "ai": "The durability of Meloni’s coalition has been a rarity in postwar Italy, where governments have often fallen before the end of their mandates.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/04/meloni-marks-government-longevity-at-bari-rally-with-2027-vote-in-sight"
     }
   ]
 }
