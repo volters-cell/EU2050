@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "7 Sept 2026",
-  "syncedAt": "2026-09-07T13:58:49.130Z",
+  "feedUpdated": "8 Sept 2026",
+  "syncedAt": "2026-09-08T12:37:51.234Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 6,
-    "fedTotal": -3
+    "fragTotal": 2,
+    "fedTotal": -1
   },
   "feed": [
     {
@@ -22,33 +22,20 @@
       "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "3 Sept 2026",
-      "headline": "Embattled Spanish PM insists no prior warnings before Ceuta crisis",
-      "ai": "Spain's prime minister tells parliament it is absurd to think the government knew and did nothing, after thousands join protests in Spanish cities.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "7 Sept 2026",
+      "headline": "Thousands turn out in Serbia for funeral of 'Butcher of Bosnia' Ratko Mladić",
+      "ai": "Mladić was jailed for genocide during the 1990s Bosnian war and the EU warned Serbia not to glorify the convicted war criminal.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "ESP",
+        "SRB",
+        "BIH",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c07lz7rn2mjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "6 Sept 2026",
-      "headline": "Elections in Germany Could Produce First Far-Right State Government Since Nazi Era: What to Know",
-      "ai": "Elections in Saxony-Anhalt, in the country’s east, could result in an outright majority for the Alternative for Germany party.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/06/world/europe/germany-election-afd-saxony-anhalt.html"
+      "url": "https://www.bbc.co.uk/news/articles/cn5dkk7yw74o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "7 Sept 2026",
@@ -81,6 +68,62 @@
       "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "19 Aug 2026",
+      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
+      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Sept 2026",
+      "headline": "UK Set to Impose Sanctions on Israeli Settlements in West Bank",
+      "ai": "A longtime ally of Israel, the U.K. has condemned plans to expand the settlements, which are widely considered illegal under international law.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/08/world/europe/uk-sanctions-israel-west-bank-settlements.html"
+    },
+    {
+      "date": "7 Sept 2026",
+      "headline": "Jean-François Leroy, Champion of Photography at Its Rawest, Dies at 69",
+      "ai": "His photojournalism festival, Visa Pour l’Image, brought to wide attention images of war and suffering. The French president called him “a great defender of reality.”",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/07/arts/design/jean-francois-leroy-dead.html"
+    },
+    {
+      "date": "7 Sept 2026",
+      "headline": "The Film Industry Is Worried About Survival. France Wants to Save the Day.",
+      "ai": "An A-list gathering in the French Riviera aimed to serve as a rallying cry for a sector threatened by YouTube, TikTok and artificial intelligence.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/07/movies/france-south-korea-film-industry-hollywood.html"
+    },
+    {
       "date": "7 Sept 2026",
       "headline": "Germany’s ‘Firewall’ Against the Far Right Is Being Tested as Never Before",
       "ai": "A blowout win by the far-right Alternative for Germany party in a state election has revealed a split among voters about whether to uphold a decades-old strategy for sidelining extremists.",
@@ -97,7 +140,7 @@
     {
       "date": "7 Sept 2026",
       "headline": "AfD Victory in Saxony-Anhalt Sends a Signal to Europe",
-      "ai": "A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections across Europe next year, analysts said.",
+      "ai": "A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections elsewhere on the continent next year, analysts said.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -123,63 +166,18 @@
       "url": "https://www.nytimes.com/2026/09/06/world/europe/germany-afd-election-saxony-anhalt.html"
     },
     {
-      "date": "6 Sept 2026",
-      "headline": "In Germany, Ulrich Siegmund Is Bringing the AfD to the Cusp of Power",
-      "ai": "Ulrich Siegmund, 35, once sold air fresheners. Now his far-right party is the favorite to win a state election in eastern Germany on Sunday.",
+      "date": "8 Sept 2026",
+      "headline": "Turkey's Kılıçdaroğlu opens door to İmamoğlu presidential bid in Euronews interview",
+      "ai": "In an exclusive interview with Euronews, Kılıçdaroğlu defended his court-ordered return to the CHP leadership, said İmamoğlu is not a political prisoner but should not have been detained, and left the door open to backing İmamoğlu in a presidential bid.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/06/world/europe/afd-germany-election-ulrich-siegmund.html"
-    },
-    {
-      "date": "6 Sept 2026",
-      "headline": "Putin Meets Witkoff and Kushner in Moscow to Discuss Ukraine War",
-      "ai": "President Vladimir V. Putin ordered a pause in strikes on Ukraine’s capital, Kyiv, ahead of the meeting with President Trump’s envoys: his son-in-law Jared Kushner and the businessman Steve Witkoff.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/05/world/europe/russia-ukraine-witkoff-kushner-moscow.html"
-    },
-    {
-      "date": "6 Sept 2026",
-      "headline": "AfD’s Ulrich Siegmund casts vote in key German state election",
-      "ai": "AfD candidate Ulrich Siegmund casts his ballot in Saxony-Anhalt, where his party is seeking a historic breakthrough in the state election.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
+        "TUR"
       ],
       "source": "Euronews",
-      "url": "http://www.euronews.com/video/2026/09/06/afds-ulrich-siegmund-casts-vote-in-key-german-state-election"
-    },
-    {
-      "date": "5 Sept 2026",
-      "headline": "Bosnian Serb war criminal Mladić commemorated in Belgrade, but no state honours",
-      "ai": "Thousands are expected at Mladić's burial in Belgrade on Monday, which will proceed without serving officials, artillery salutes or ceremonial military presence. Brussels has said earlier any glorification would be \"incompatible with the values on which the EU path is built\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL",
-        "SRB",
-        "BIH"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/05/bosnian-serb-war-criminal-mladic-commemorated-in-belgrade-but-no-state-honours"
+      "url": "http://www.euronews.com/2026/09/08/turkeys-kilicdaroglu-opens-door-to-imamoglu-presidential-bid-in-euronews-interview"
     }
   ]
 }
