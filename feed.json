@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "8 Sept 2026",
-  "syncedAt": "2026-09-08T12:37:51.234Z",
+  "feedUpdated": "9 Sept 2026",
+  "syncedAt": "2026-09-09T12:44:43.642Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -8,9 +8,9 @@
   },
   "feed": [
     {
-      "date": "7 Sept 2026",
-      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
-      "ai": "The far-right party is trying to form a government in the state after falling three seats short of a majority.",
+      "date": "9 Sept 2026",
+      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+      "ai": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
@@ -19,23 +19,38 @@
         "DEU"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "7 Sept 2026",
-      "headline": "Thousands turn out in Serbia for funeral of 'Butcher of Bosnia' Ratko Mladić",
-      "ai": "Mladić was jailed for genocide during the 1990s Bosnian war and the EU warned Serbia not to glorify the convicted war criminal.",
+      "date": "8 Sept 2026",
+      "headline": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
+      "ai": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB",
-        "BIH",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Sept 2026",
+      "headline": "Hungary expels 10 Russian diplomats as relations worsen",
+      "ai": "For years, Hungary was viewed as Russia's closest ally in the EU, but the new government has dropped the pro-Kremlin stance.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN",
+        "RUS",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn5dkk7yw74o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cddvzd1z53lo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "7 Sept 2026",
@@ -53,24 +68,38 @@
       "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "2 Sept 2026",
-      "headline": "Rosenberg: Putin's veiled threat to UK part of Russia's campaign against West",
-      "ai": "The Russian president wants to keep Britain guessing - and stressing - over Moscow's real intentions.",
+      "date": "9 Sept 2026",
+      "headline": "Thousands Gather for Funeral of Norway’s King Harald",
+      "ai": "Royal families and heads of state, including President Volodymyr Zelensky of Ukraine, attended the funeral of King Harald V in Oslo.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR",
-        "RUS"
+        "UKR",
+        "NOR"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/norway-king-harald-funeral.html"
     },
     {
-      "date": "19 Aug 2026",
-      "headline": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "ai": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war.",
+      "date": "9 Sept 2026",
+      "headline": "This Tiny Anti-Establishment Party May Put Germany’s Far Right in Power",
+      "ai": "Germany’s far right won a state election but fell short of a majority. Its path to power depends on a small populist group that defies traditional labels.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/afd-bsw-sahra-wagenknecht.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Ukraine’s Unexpected $27 Billion Budget Gap Rattles Europe",
+      "ai": "An unexpected request from President Volodymyr Zelensky offered a stark reminder that the cost of the war will rise, challenging Europe.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -78,22 +107,37 @@
       "countries": [
         "UKR"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/ukraine-says-it-needs-27-billion-more-europe-wants-to-know-why.html"
     },
     {
       "date": "8 Sept 2026",
-      "headline": "UK Set to Impose Sanctions on Israeli Settlements in West Bank",
-      "ai": "A longtime ally of Israel, the U.K. has condemned plans to expand the settlements, which are widely considered illegal under international law.",
+      "headline": "Israeli Allies Ban Trade With Settlements as U.K. Cites ‘Ethnic Cleansing’",
+      "ai": "Britain, Canada and France on Tuesday announced sanctions on Israeli settlements in the West Bank, with Britain saying Israel had “turned a blind eye” to violence against Palestinians.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "FRA",
         "GBR"
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/08/world/europe/uk-sanctions-israel-west-bank-settlements.html"
+    },
+    {
+      "date": "8 Sept 2026",
+      "headline": "AfD’s Far Right Win Puts New Pressure on Germany’s Leader Merz",
+      "ai": "Antipathy to Chancellor Friedrich Merz was a reason the far right surged in a state election. Though he does not face a national election until 2029, his leadership is under increasing scrutiny.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/08/world/europe/germany-merz-pressure-afd.html"
     },
     {
       "date": "7 Sept 2026",
@@ -110,74 +154,32 @@
       "url": "https://www.nytimes.com/2026/09/07/arts/design/jean-francois-leroy-dead.html"
     },
     {
-      "date": "7 Sept 2026",
-      "headline": "The Film Industry Is Worried About Survival. France Wants to Save the Day.",
-      "ai": "An A-list gathering in the French Riviera aimed to serve as a rallying cry for a sector threatened by YouTube, TikTok and artificial intelligence.",
+      "date": "9 Sept 2026",
+      "headline": "Thailand investigates after British influencer dies following penis enlargement operation",
+      "ai": "The case has reignited debate about medical tourism, with Thailand a leading destination for visitors from abroad seeking healthcare, including cosmetic procedures.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
+        "GBR"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/07/movies/france-south-korea-film-industry-hollywood.html"
-    },
-    {
-      "date": "7 Sept 2026",
-      "headline": "Germany’s ‘Firewall’ Against the Far Right Is Being Tested as Never Before",
-      "ai": "A blowout win by the far-right Alternative for Germany party in a state election has revealed a split among voters about whether to uphold a decades-old strategy for sidelining extremists.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/07/world/europe/germany-afd-election-saxony-anhalt-election.html"
-    },
-    {
-      "date": "7 Sept 2026",
-      "headline": "AfD Victory in Saxony-Anhalt Sends a Signal to Europe",
-      "ai": "A vote in eastern Germany has given fresh momentum to hard-right parties hoping to win elections elsewhere on the continent next year, analysts said.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/06/world/europe/afd-germany-europe-far-right-saxony-anhalt.html"
-    },
-    {
-      "date": "6 Sept 2026",
-      "headline": "Germany’s Far Right Just Misses Majority in Crucial State Election",
-      "ai": "The Alternative for Germany, or AfD, trounced its rivals but was left unsure if it will be able to govern in Saxony-Anhalt. The result shocked Germany.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/06/world/europe/germany-afd-election-saxony-anhalt.html"
+      "source": "Euronews",
+      "url": "http://www.euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation"
     },
     {
       "date": "8 Sept 2026",
-      "headline": "Turkey's Kılıçdaroğlu opens door to İmamoğlu presidential bid in Euronews interview",
-      "ai": "In an exclusive interview with Euronews, Kılıçdaroğlu defended his court-ordered return to the CHP leadership, said İmamoğlu is not a political prisoner but should not have been detained, and left the door open to backing İmamoğlu in a presidential bid.",
+      "headline": "'Turning blind eye' to AfD win further angers voters, political scientist warns",
+      "ai": "Chancellor Merz's government must recognise the far-right AfD's victory in Saxony-Anhalt and voter discontent that led to the win, or further cement its downfall, an expert on East German politics warned.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "TUR"
+        "DEU"
       ],
       "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/08/turkeys-kilicdaroglu-opens-door-to-imamoglu-presidential-bid-in-euronews-interview"
+      "url": "http://www.euronews.com/2026/09/08/turning-blind-eye-to-afd-win-further-angers-voters-political-scientist-warns"
     }
   ]
 }
