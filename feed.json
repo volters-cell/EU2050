@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "9 Sept 2026",
-  "syncedAt": "2026-09-09T12:44:43.642Z",
+  "feedUpdated": "10 Sept 2026",
+  "syncedAt": "2026-09-10T12:42:46.621Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -20,6 +20,136 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "10 Sept 2026",
+      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
+      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Two die at Moldovan border as Russia-Ukraine drone war rages",
+      "ai": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "MDA",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Passenger killed after train hits truck at Poland level crossing",
+      "ai": "It is the second such incident in Poland in days and the prime minister says tough new regulations are needed.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "POL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cp30el2dkdlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "7 Sept 2026",
+      "headline": "How significant are AfD's historic gains for Germany and the rest of Europe?",
+      "ai": "The BBC's Europe editor Katya Adler sees the far-right win in Saxony-Anhalt state ringing alarm bells for the EU and traditional parties.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "10 Sept 2026",
+      "headline": "How Fighting Fires Became an All-of-Europe Project",
+      "ai": "The European Union isn’t known for firefighting expertise. But with the continent ablaze, Brussels is playing a growing role.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/eu-fire-fighting.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Spain Declassifies Warning to Morocco About Migrant Crossing Plans",
+      "ai": "Spain’s intelligence service had alerted Morocco about social media calls for a border exodus into Ceuta, which led to more than 100 deaths and a political crisis in Spain.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/spain-ceuta-migrants-report.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "This Tiny Anti-Establishment Party May Put Germany’s Far Right in Power",
+      "ai": "Germany’s far right won a state election but fell short of a majority. Its path to power depends on a small populist group that defies traditional labels.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/afd-bsw-sahra-wagenknecht.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Ukraine’s Unexpected $27 Billion Budget Gap Rattles Europe",
+      "ai": "An unexpected request from President Volodymyr Zelensky offered a stark reminder that the cost of the war will rise, challenging Europe.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/09/world/europe/ukraine-war-cost.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Thailand investigates after British influencer dies following penis enlargement operation",
+      "ai": "The case has reignited debate about medical tourism, with Thailand a leading destination for visitors from abroad seeking healthcare, including cosmetic procedures.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation"
     },
     {
       "date": "8 Sept 2026",
@@ -51,135 +181,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cddvzd1z53lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "7 Sept 2026",
-      "headline": "How significant are AfD's historic gains for Germany and the rest of Europe?",
-      "ai": "The BBC's Europe editor Katya Adler sees the far-right win in Saxony-Anhalt state ringing alarm bells for the EU and traditional parties.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Thousands Gather for Funeral of Norway’s King Harald",
-      "ai": "Royal families and heads of state, including President Volodymyr Zelensky of Ukraine, attended the funeral of King Harald V in Oslo.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "NOR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/world/europe/norway-king-harald-funeral.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "This Tiny Anti-Establishment Party May Put Germany’s Far Right in Power",
-      "ai": "Germany’s far right won a state election but fell short of a majority. Its path to power depends on a small populist group that defies traditional labels.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/world/europe/afd-bsw-sahra-wagenknecht.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Ukraine’s Unexpected $27 Billion Budget Gap Rattles Europe",
-      "ai": "An unexpected request from President Volodymyr Zelensky offered a stark reminder that the cost of the war will rise, challenging Europe.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/world/europe/ukraine-says-it-needs-27-billion-more-europe-wants-to-know-why.html"
-    },
-    {
-      "date": "8 Sept 2026",
-      "headline": "Israeli Allies Ban Trade With Settlements as U.K. Cites ‘Ethnic Cleansing’",
-      "ai": "Britain, Canada and France on Tuesday announced sanctions on Israeli settlements in the West Bank, with Britain saying Israel had “turned a blind eye” to violence against Palestinians.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/08/world/europe/uk-sanctions-israel-west-bank-settlements.html"
-    },
-    {
-      "date": "8 Sept 2026",
-      "headline": "AfD’s Far Right Win Puts New Pressure on Germany’s Leader Merz",
-      "ai": "Antipathy to Chancellor Friedrich Merz was a reason the far right surged in a state election. Though he does not face a national election until 2029, his leadership is under increasing scrutiny.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/08/world/europe/germany-merz-pressure-afd.html"
-    },
-    {
-      "date": "7 Sept 2026",
-      "headline": "Jean-François Leroy, Champion of Photography at Its Rawest, Dies at 69",
-      "ai": "His photojournalism festival, Visa Pour l’Image, brought to wide attention images of war and suffering. The French president called him “a great defender of reality.”",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/07/arts/design/jean-francois-leroy-dead.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Thailand investigates after British influencer dies following penis enlargement operation",
-      "ai": "The case has reignited debate about medical tourism, with Thailand a leading destination for visitors from abroad seeking healthcare, including cosmetic procedures.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation"
-    },
-    {
-      "date": "8 Sept 2026",
-      "headline": "'Turning blind eye' to AfD win further angers voters, political scientist warns",
-      "ai": "Chancellor Merz's government must recognise the far-right AfD's victory in Saxony-Anhalt and voter discontent that led to the win, or further cement its downfall, an expert on East German politics warned.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "Euronews",
-      "url": "http://www.euronews.com/2026/09/08/turning-blind-eye-to-afd-win-further-angers-voters-political-scientist-warns"
     }
   ]
 }
