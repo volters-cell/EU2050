@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "10 Sept 2026",
-  "syncedAt": "2026-09-10T12:42:46.621Z",
+  "feedUpdated": "11 Sept 2026",
+  "syncedAt": "2026-09-11T12:36:56.218Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -8,9 +8,9 @@
   },
   "feed": [
     {
-      "date": "9 Sept 2026",
-      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
-      "ai": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers.",
+      "date": "6 Sept 2026",
+      "headline": "Germany's far-right AfD celebrate projected win in state election",
+      "ai": "AfD leaders celebrated tonight as exit polls projected a big lead in the Saxony-Anhalt vote.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
@@ -19,22 +19,21 @@
         "DEU"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "10 Sept 2026",
-      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
-      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
+      "headline": "From JFK to Biden, Trump joins well-trodden path to the Emerald Isle",
+      "ai": "In recent decades, Ireland has become a particularly frequent fixture for US presidential trips.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "IRL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c0re72nvy22o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "9 Sept 2026",
@@ -53,18 +52,19 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "9 Sept 2026",
-      "headline": "Passenger killed after train hits truck at Poland level crossing",
-      "ai": "It is the second such incident in Poland in days and the prime minister says tough new regulations are needed.",
+      "date": "10 Sept 2026",
+      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
+      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL"
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cp30el2dkdlo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "7 Sept 2026",
@@ -80,6 +80,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "10 Sept 2026",
+      "headline": "UK Sanctions Against Israeli Settlers Divide British Rabbis",
+      "ai": "Prominent rabbis reacted with a mix of support, condemnation and concern about the ramifications for Jews in Britain.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/10/world/europe/britain-israel-jews-sanctions-settlers.html"
     },
     {
       "date": "10 Sept 2026",
@@ -108,6 +122,20 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/09/world/europe/spain-ceuta-migrants-report.html"
+    },
+    {
+      "date": "9 Sept 2026",
+      "headline": "Passenger killed after train hits truck at Poland level crossing",
+      "ai": "It is the second such incident in Poland in days and the prime minister says tough new regulations are needed.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "POL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cp30el2dkdlo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "9 Sept 2026",
@@ -150,37 +178,6 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation"
-    },
-    {
-      "date": "8 Sept 2026",
-      "headline": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-      "ai": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "8 Sept 2026",
-      "headline": "Hungary expels 10 Russian diplomats as relations worsen",
-      "ai": "For years, Hungary was viewed as Russia's closest ally in the EU, but the new government has dropped the pro-Kremlin stance.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "HUN",
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddvzd1z53lo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
