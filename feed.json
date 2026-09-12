@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "11 Sept 2026",
-  "syncedAt": "2026-09-11T12:36:56.218Z",
+  "feedUpdated": "12 Sept 2026",
+  "syncedAt": "2026-09-12T11:58:41.238Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -22,6 +22,20 @@
       "url": "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "12 Sept 2026",
+      "headline": "Close race in Sweden as hard right eyes role in government",
+      "ai": "Prime Minister Ulf Kristersson has promised cabinet jobs for the Sweden Democrats, but the rival left-wing bloc has a narrow lead in the polls.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwyz8dn5nn3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "10 Sept 2026",
       "headline": "From JFK to Biden, Trump joins well-trodden path to the Emerald Isle",
       "ai": "In recent decades, Ireland has become a particularly frequent fixture for US presidential trips.",
@@ -34,6 +48,63 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c0re72nvy22o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "10 Sept 2026",
+      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
+      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "12 Sept 2026",
+      "headline": "In Doonbeg, Trump’s Irish Open Visit Prompts Protests and Praise",
+      "ai": "As the U.S. president heads to his Doonbeg hotel for the Irish Open, locals expressed both appreciation for the resort’s economic benefits and opposition to his politics.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/12/world/europe/trump-irish-open-ireland-doonbeg.html"
+    },
+    {
+      "date": "11 Sept 2026",
+      "headline": "UK Sanctions Against Israeli Settlers Divide British Rabbis",
+      "ai": "Prominent rabbis reacted with a mix of support, condemnation and concern about the ramifications for Jews in Britain.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/10/world/europe/britain-israel-jews-sanctions-settlers.html"
+    },
+    {
+      "date": "11 Sept 2026",
+      "headline": "Russia sends sanctioned ships to Mediterranean as NATO tracks 'Syrian Express' convoy",
+      "ai": "Four Russian ships, including sanctioned cargo and tanker vessels escorted by a destroyer, entered the Mediterranean via Gibraltar on 27 August, ending the first interruption of Russia's naval presence there since 2013.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/11/russia-sends-sanctioned-ships-to-mediterranean-as-nato-tracks-syrian-express-convoy"
     },
     {
       "date": "9 Sept 2026",
@@ -52,21 +123,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "10 Sept 2026",
-      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
-      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "7 Sept 2026",
       "headline": "How significant are AfD's historic gains for Germany and the rest of Europe?",
       "ai": "The BBC's Europe editor Katya Adler sees the far-right win in Saxony-Anhalt state ringing alarm bells for the EU and traditional parties.",
@@ -80,20 +136,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c986w38r4j5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "10 Sept 2026",
-      "headline": "UK Sanctions Against Israeli Settlers Divide British Rabbis",
-      "ai": "Prominent rabbis reacted with a mix of support, condemnation and concern about the ramifications for Jews in Britain.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/10/world/europe/britain-israel-jews-sanctions-settlers.html"
     },
     {
       "date": "10 Sept 2026",
@@ -136,48 +178,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cp30el2dkdlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "This Tiny Anti-Establishment Party May Put Germany’s Far Right in Power",
-      "ai": "Germany’s far right won a state election but fell short of a majority. Its path to power depends on a small populist group that defies traditional labels.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/world/europe/afd-bsw-sahra-wagenknecht.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Ukraine’s Unexpected $27 Billion Budget Gap Rattles Europe",
-      "ai": "An unexpected request from President Volodymyr Zelensky offered a stark reminder that the cost of the war will rise, challenging Europe.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/world/europe/ukraine-war-cost.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Thailand investigates after British influencer dies following penis enlargement operation",
-      "ai": "The case has reignited debate about medical tourism, with Thailand a leading destination for visitors from abroad seeking healthcare, including cosmetic procedures.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation"
     }
   ]
 }
