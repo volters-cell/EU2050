@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "12 Sept 2026",
-  "syncedAt": "2026-09-12T11:58:41.238Z",
+  "feedUpdated": "13 Sept 2026",
+  "syncedAt": "2026-09-13T13:06:43.574Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -37,20 +37,6 @@
     },
     {
       "date": "10 Sept 2026",
-      "headline": "From JFK to Biden, Trump joins well-trodden path to the Emerald Isle",
-      "ai": "In recent decades, Ireland has become a particularly frequent fixture for US presidential trips.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0re72nvy22o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "10 Sept 2026",
       "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
       "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
       "frag": "",
@@ -63,6 +49,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "13 Sept 2026",
+      "headline": "An Election in Sweden Shows Shifting Priorities",
+      "ai": "Sweden votes on Sunday. With various crises easing, center-left politics seem in vogue again, but the far right cannot be discounted.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/13/world/europe/sweden-election-sunday.html"
     },
     {
       "date": "12 Sept 2026",
@@ -105,6 +105,20 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/09/11/russia-sends-sanctioned-ships-to-mediterranean-as-nato-tracks-syrian-express-convoy"
+    },
+    {
+      "date": "10 Sept 2026",
+      "headline": "From JFK to Biden, Trump joins well-trodden path to the Emerald Isle",
+      "ai": "In recent decades, Ireland has become a particularly frequent fixture for US presidential trips.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c0re72nvy22o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "9 Sept 2026",
@@ -164,20 +178,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/09/world/europe/spain-ceuta-migrants-report.html"
-    },
-    {
-      "date": "9 Sept 2026",
-      "headline": "Passenger killed after train hits truck at Poland level crossing",
-      "ai": "It is the second such incident in Poland in days and the prime minister says tough new regulations are needed.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cp30el2dkdlo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
