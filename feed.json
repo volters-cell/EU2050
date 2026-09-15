@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "14 Sept 2026",
-  "syncedAt": "2026-09-14T14:44:06.362Z",
+  "feedUpdated": "15 Sept 2026",
+  "syncedAt": "2026-09-15T13:08:41.621Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -20,6 +20,37 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "15 Sept 2026",
+      "headline": "Denmark says Russian warship fired flares at military helicopter",
+      "ai": "The Danish prime minister has accused Russia of \"reckless\" behaviour, while the Kremlin is yet to comment.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DNK",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "15 Sept 2026",
+      "headline": "Nato jets down drone that entered Lithuanian airspace",
+      "ai": "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "LTU",
+        "RUS",
+        "BLR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "14 Sept 2026",
@@ -84,6 +115,21 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "14 Sept 2026",
+      "headline": "What Is Driving Diesel Prices Up? Energy Chaos Caused by Two Wars.",
+      "ai": "President Trump recently blamed Ukrainian attacks on Russian refineries for causing a spike in diesel prices, but analysts say the Iran war is probably a bigger factor.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/14/business/energy-environment/trump-diesel-russia-ukraine-iran.html"
+    },
+    {
       "date": "13 Sept 2026",
       "headline": "Russian Strikes on Ukraine Hits Near David Petraeus, ex-C.I.A. Chief",
       "ai": "David Petraeus was at a rail station when a drone hit. Another train, with former Prime Minister Boris Johnson of Britain and other dignitaries, had just left, Ukrainian officials said.",
@@ -100,18 +146,35 @@
       "url": "https://www.nytimes.com/2026/09/13/world/europe/ukraine-petraeus-russian-strike.html"
     },
     {
-      "date": "13 Sept 2026",
-      "headline": "In Doonbeg, Trump’s Irish Open Visit Prompts Protests and Praise",
-      "ai": "As the U.S. president heads to his Doonbeg hotel for the Irish Open, locals expressed both appreciation for the resort’s economic benefits and opposition to his politics.",
+      "date": "15 Sept 2026",
+      "headline": "University students launch ‘student list’ to shake up Serbia’s elections",
+      "ai": "Serbia’s university students formally entered the election race on Monday, 14 September, challenging President Aleksandar Vučić and his ruling party ahead of the 25 October early parliamentary vote.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "IRL"
+        "SRB",
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/12/world/europe/trump-irish-open-ireland-doonbeg.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/09/15/university-students-launch-student-list-to-shake-up-serbias-elections"
+    },
+    {
+      "date": "14 Sept 2026",
+      "headline": "Trump says Ukraine and Russia agree to halt strikes on energy targets",
+      "ai": "Trump's announcement comes after he called on Ukraine to halt its attacks on Russian diesel infrastructure during a trip to Ireland over the weekend.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL",
+        "UKR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/14/trump-says-ukraine-and-russia-agree-to-halt-strikes-on-energy-targets"
     },
     {
       "date": "14 Sept 2026",
@@ -124,65 +187,6 @@
       "countries": [],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/09/14/saudi-pipeline-shutdown-threatens-oil-exports-to-europe-and-asia-as-kingdom-relies-on-stor"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Drone strikes hit key Ukraine-Poland supply route, sparking border fires",
-      "ai": "Ukraine said a Russian drone strike ignited a fire at a petrol station near the Yahodyn–Dorohusk border crossing with Poland in the early hours of Sunday, 13 September. Video filmed close to the crossing showed flames and thick smoke as firefighters tackled the blaze.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/09/14/drone-strikes-hit-key-ukraine-poland-supply-route-sparking-border-fires"
-    },
-    {
-      "date": "12 Sept 2026",
-      "headline": "Close race in Sweden as hard right eyes role in government",
-      "ai": "Prime Minister Ulf Kristersson has promised cabinet jobs for the Sweden Democrats, but the rival left-wing bloc has a narrow lead in the polls.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SWE"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwyz8dn5nn3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "10 Sept 2026",
-      "headline": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
-      "ai": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "13 Sept 2026",
-      "headline": "An Election in Sweden Shows Shifting Priorities",
-      "ai": "Sweden votes on Sunday. With various crises easing, center-left politics seem in vogue again, but the far right cannot be discounted.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SWE"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/13/world/europe/sweden-election-sunday.html"
     }
   ]
 }
