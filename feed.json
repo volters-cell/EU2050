@@ -1,25 +1,68 @@
 {
-  "feedUpdated": "15 Sept 2026",
-  "syncedAt": "2026-09-15T13:08:41.621Z",
+  "feedUpdated": "16 Sept 2026",
+  "syncedAt": "2026-09-16T13:09:21.937Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": -1
+    "fragTotal": -1,
+    "fedTotal": 2
   },
   "feed": [
     {
-      "date": "6 Sept 2026",
-      "headline": "Germany's far-right AfD celebrate projected win in state election",
-      "ai": "AfD leaders celebrated tonight as exit polls projected a big lead in the Saxony-Anhalt vote.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "16 Sept 2026",
+      "headline": "EU chief backs plan for Canada to become 'associate member'",
+      "ai": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
       "countries": [
-        "DEU"
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Sept 2026",
+      "headline": "Carney's new love-in with EU has everything to do with Trump",
+      "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Sept 2026",
+      "headline": "Kosovo's former president sentenced to 25 years for war crimes",
+      "ai": "Hashim Thaci has been jailed for crimes including torture and murder during Kosovo's independence war with Serbia.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB",
+        "XKX"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmd79z0pdzgjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Sept 2026",
+      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
+      "ai": "With more than 90% of ballots processed early on Monday, the left-wing bloc was in front by approximately 20,000 votes.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "15 Sept 2026",
@@ -35,53 +78,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "15 Sept 2026",
-      "headline": "Nato jets down drone that entered Lithuanian airspace",
-      "ai": "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "LTU",
-        "RUS",
-        "BLR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
-      "ai": "The former UK PM said: \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
-      "ai": "With more than 90% of ballots processed early on Monday, the left-wing bloc was in front by approximately 20,000 votes.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SWE"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "13 Sept 2026",
@@ -115,6 +111,50 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "16 Sept 2026",
+      "headline": "E.U. Offers to Make Canada ‘Associate Member’ as U.S. Ties Weaken for Both",
+      "ai": "Canada and the European Union have been confronting an increasingly challenging relationship with the United States under President Trump.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/16/world/europe/eu-canada-associate-member.html"
+    },
+    {
+      "date": "16 Sept 2026",
+      "headline": "Russia’s Election Result Won’t Be a Shock. What Comes Next Could Be.",
+      "ai": "Russians are braced for what may follow for the military and economy after a parliamentary election that the Kremlin sees as a means of legitimizing its policies.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS",
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/16/world/europe/russia-duma-election.html"
+    },
+    {
+      "date": "15 Sept 2026",
+      "headline": "Ukraine and Russia Say There Is No Energy Truce, Despite Trump’s Claims",
+      "ai": "The Kremlin said that an agreement would be “a very good idea” but that any deal would not have much effect on fuel markets, as President Trump had suggested.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/15/world/europe/trump-energy-truce-ukraine-russia.html"
+    },
+    {
       "date": "14 Sept 2026",
       "headline": "What Is Driving Diesel Prices Up? Energy Chaos Caused by Two Wars.",
       "ai": "President Trump recently blamed Ukrainian attacks on Russian refineries for causing a spike in diesel prices, but analysts say the Iran war is probably a bigger factor.",
@@ -144,49 +184,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/13/world/europe/ukraine-petraeus-russian-strike.html"
-    },
-    {
-      "date": "15 Sept 2026",
-      "headline": "University students launch ‘student list’ to shake up Serbia’s elections",
-      "ai": "Serbia’s university students formally entered the election race on Monday, 14 September, challenging President Aleksandar Vučić and his ruling party ahead of the 25 October early parliamentary vote.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/09/15/university-students-launch-student-list-to-shake-up-serbias-elections"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Trump says Ukraine and Russia agree to halt strikes on energy targets",
-      "ai": "Trump's announcement comes after he called on Ukraine to halt its attacks on Russian diesel infrastructure during a trip to Ireland over the weekend.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/14/trump-says-ukraine-and-russia-agree-to-halt-strikes-on-energy-targets"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Saudi pipeline shutdown threatens oil exports to Europe and Asia as kingdom relies on stored supplies",
-      "ai": "The pipeline disruption comes as Gulf oil exports have already fallen sharply and shipping routes face further threats. With no restart date announced, the impact on deliveries to Europe and Asia depends on how long the shutdown lasts.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/14/saudi-pipeline-shutdown-threatens-oil-exports-to-europe-and-asia-as-kingdom-relies-on-stor"
     }
   ]
 }
