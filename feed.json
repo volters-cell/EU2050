@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "16 Sept 2026",
-  "syncedAt": "2026-09-16T13:09:21.937Z",
+  "feedUpdated": "17 Sept 2026",
+  "syncedAt": "2026-09-17T13:03:13.921Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -8,23 +8,49 @@
   },
   "feed": [
     {
-      "date": "16 Sept 2026",
-      "headline": "EU chief backs plan for Canada to become 'associate member'",
-      "ai": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump.",
+      "date": "17 Sept 2026",
+      "headline": "Carney Calls for E.U.-Canada Pact Amid ‘Ferocious Storm’",
+      "ai": "Prime Minister Mark Carney told European lawmakers that an alliance would help to secure sovereignty and independence for his country. The moves come amid a historic low for U.S. ties with Canada.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/17/world/europe/canada-carney-eu.html"
     },
     {
-      "date": "16 Sept 2026",
-      "headline": "Carney's new love-in with EU has everything to do with Trump",
-      "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
+      "date": "17 Sept 2026",
+      "headline": "Swedish PM Kristersson resigns after election loss",
+      "ai": "Left-wing opposition parties led by Magdalena Andersson look set to form the next government.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Sept 2026",
+      "headline": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
+      "ai": "There is no doubt over the outcome of this vote, but for the Kremlin they are still an important moment.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Sept 2026",
+      "headline": "EU announces plan to restrict social media access for under-15s",
+      "ai": "Under the plans, only children over 15 would be able to set up their own social media accounts.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -33,7 +59,21 @@
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Sept 2026",
+      "headline": "Eight German state premiers back Merz amid speculation over future",
+      "ai": "Christian Democratic Union leadership throws its weight behind the chancellor ahead of two state elections this weekend.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Sept 2026",
@@ -51,48 +91,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cmd79z0pdzgjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Sept 2026",
-      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
-      "ai": "With more than 90% of ballots processed early on Monday, the left-wing bloc was in front by approximately 20,000 votes.",
+      "date": "16 Sept 2026",
+      "headline": "Carney's new love-in with EU has everything to do with Trump",
+      "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SWE"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "15 Sept 2026",
-      "headline": "Denmark says Russian warship fired flares at military helicopter",
-      "ai": "The Danish prime minister has accused Russia of \"reckless\" behaviour, while the Kremlin is yet to comment.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DNK",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "13 Sept 2026",
-      "headline": "Trump says he will remove all Irish whiskey tariffs as he ends two-day visit",
-      "ai": "Whiskey distilled in the Republic of Ireland faces the standard 15% tariff which applies to EU goods entering the US.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "14 Sept 2026",
@@ -111,8 +121,37 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "17 Sept 2026",
+      "headline": "Sweden Swings Back Left, Bucking a Trend in Europe",
+      "ai": "The results of this week’s exceptionally close election dealt a blow to far-right nationalists, who have gained ground elsewhere.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SWE"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/17/world/europe/sweden-election-social-democrats.html"
+    },
+    {
       "date": "16 Sept 2026",
-      "headline": "E.U. Offers to Make Canada ‘Associate Member’ as U.S. Ties Weaken for Both",
+      "headline": "Belarus Frees 25 Political Prisoners in Exchange for U.S. Sanctions Relief",
+      "ai": "The deal is part of the Trump administration’s more transactional approach to a close Russian ally that Europe has tried to isolate.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS",
+        "BLR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/16/world/europe/belarus-political-prisoner-release-us-sanctions.html"
+    },
+    {
+      "date": "16 Sept 2026",
+      "headline": "E.U. Talks of Making Canada First ‘Associate Member’ as U.S. Ties Weaken",
       "ai": "Canada and the European Union have been confronting an increasingly challenging relationship with the United States under President Trump.",
       "frag": "",
       "fed": "",
@@ -138,52 +177,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/16/world/europe/russia-duma-election.html"
-    },
-    {
-      "date": "15 Sept 2026",
-      "headline": "Ukraine and Russia Say There Is No Energy Truce, Despite Trump’s Claims",
-      "ai": "The Kremlin said that an agreement would be “a very good idea” but that any deal would not have much effect on fuel markets, as President Trump had suggested.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/15/world/europe/trump-energy-truce-ukraine-russia.html"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "What Is Driving Diesel Prices Up? Energy Chaos Caused by Two Wars.",
-      "ai": "President Trump recently blamed Ukrainian attacks on Russian refineries for causing a spike in diesel prices, but analysts say the Iran war is probably a bigger factor.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/14/business/energy-environment/trump-diesel-russia-ukraine-iran.html"
-    },
-    {
-      "date": "13 Sept 2026",
-      "headline": "Russian Strikes on Ukraine Hits Near David Petraeus, ex-C.I.A. Chief",
-      "ai": "David Petraeus was at a rail station when a drone hit. Another train, with former Prime Minister Boris Johnson of Britain and other dignitaries, had just left, Ukrainian officials said.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/13/world/europe/ukraine-petraeus-russian-strike.html"
     }
   ]
 }
