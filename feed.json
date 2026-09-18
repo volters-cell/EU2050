@@ -1,23 +1,39 @@
 {
-  "feedUpdated": "17 Sept 2026",
-  "syncedAt": "2026-09-17T13:03:13.921Z",
+  "feedUpdated": "18 Sept 2026",
+  "syncedAt": "2026-09-18T12:43:31.040Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 2
+    "fragTotal": 0,
+    "fedTotal": 0
   },
   "feed": [
     {
       "date": "17 Sept 2026",
-      "headline": "Carney Calls for E.U.-Canada Pact Amid ‘Ferocious Storm’",
-      "ai": "Prime Minister Mark Carney told European lawmakers that an alliance would help to secure sovereignty and independence for his country. The moves come amid a historic low for U.S. ties with Canada.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/17/world/europe/canada-carney-eu.html"
+      "headline": "Canada welcomes EU proposal to become 'associate member'",
+      "ai": "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Sept 2026",
+      "headline": "Warm words on Canada's EU 'associate membership' but no guarantees",
+      "ai": "There is no certainty that the idea will ever get off the ground, let alone become a blueprint for other countries, writes the BBC's Katya Adler.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/crlyqg1ekj4po?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "17 Sept 2026",
@@ -76,6 +92,21 @@
       "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "18 Sept 2026",
+      "headline": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
+      "ai": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "16 Sept 2026",
       "headline": "Kosovo's former president sentenced to 25 years for war crimes",
       "ai": "Hashim Thaci has been jailed for crimes including torture and murder during Kosovo's independence war with Serbia.",
@@ -121,52 +152,23 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "17 Sept 2026",
-      "headline": "Sweden Swings Back Left, Bucking a Trend in Europe",
-      "ai": "The results of this week’s exceptionally close election dealt a blow to far-right nationalists, who have gained ground elsewhere.",
+      "date": "18 Sept 2026",
+      "headline": "Why Autocrats Care What People Think",
+      "ai": "Russia is staging an election that matters to almost no one — except President Vladimir V. Putin and his inner circle.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SWE"
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/17/world/europe/sweden-election-social-democrats.html"
+      "url": "https://www.nytimes.com/2026/09/18/world/europe/putin-russia-election-ideas.html"
     },
     {
-      "date": "16 Sept 2026",
-      "headline": "Belarus Frees 25 Political Prisoners in Exchange for U.S. Sanctions Relief",
-      "ai": "The deal is part of the Trump administration’s more transactional approach to a close Russian ally that Europe has tried to isolate.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS",
-        "BLR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/16/world/europe/belarus-political-prisoner-release-us-sanctions.html"
-    },
-    {
-      "date": "16 Sept 2026",
-      "headline": "E.U. Talks of Making Canada First ‘Associate Member’ as U.S. Ties Weaken",
-      "ai": "Canada and the European Union have been confronting an increasingly challenging relationship with the United States under President Trump.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/16/world/europe/eu-canada-associate-member.html"
-    },
-    {
-      "date": "16 Sept 2026",
-      "headline": "Russia’s Election Result Won’t Be a Shock. What Comes Next Could Be.",
-      "ai": "Russians are braced for what may follow for the military and economy after a parliamentary election that the Kremlin sees as a means of legitimizing its policies.",
+      "date": "18 Sept 2026",
+      "headline": "Why Russia Holds Elections, and How the Kremlin Gets the Results It Wants",
+      "ai": "Russian elections like the parliamentary vote that begins today are hardly free. But they are critical to the government as a source of legitimacy.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -176,7 +178,7 @@
         "BEL"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/16/world/europe/russia-duma-election.html"
+      "url": "https://www.nytimes.com/2026/09/18/world/europe/russia-duma-election.html"
     }
   ]
 }
