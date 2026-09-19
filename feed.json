@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "18 Sept 2026",
-  "syncedAt": "2026-09-18T12:43:31.040Z",
+  "feedUpdated": "19 Sept 2026",
+  "syncedAt": "2026-09-19T12:16:55.608Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 0,
@@ -8,18 +8,19 @@
   },
   "feed": [
     {
-      "date": "17 Sept 2026",
-      "headline": "Canada welcomes EU proposal to become 'associate member'",
-      "ai": "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\".",
+      "date": "18 Sept 2026",
+      "headline": "Russian hybrid attacks against Europe intensifying, says Macron",
+      "ai": "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "BEL"
+        "FRA",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "17 Sept 2026",
@@ -64,20 +65,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "17 Sept 2026",
-      "headline": "EU announces plan to restrict social media access for under-15s",
-      "ai": "Under the plans, only children over 15 would be able to set up their own social media accounts.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "16 Sept 2026",
       "headline": "Eight German state premiers back Merz amid speculation over future",
       "ai": "Christian Democratic Union leadership throws its weight behind the chancellor ahead of two state elections this weekend.",
@@ -90,21 +77,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Sept 2026",
-      "headline": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
-      "ai": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Sept 2026",
@@ -120,6 +92,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmd79z0pdzgjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Sept 2026",
+      "headline": "EU announces plan to restrict social media access for under-15s",
+      "ai": "Under the plans, only children over 15 would be able to set up their own social media accounts.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Sept 2026",
@@ -152,9 +138,37 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "18 Sept 2026",
-      "headline": "Why Autocrats Care What People Think",
-      "ai": "Russia is staging an election that matters to almost no one — except President Vladimir V. Putin and his inner circle.",
+      "date": "19 Sept 2026",
+      "headline": "What Does Trump Want With Greenland?",
+      "ai": "President Trump insisted for months that the Danish territory should be part of the United States. Now, a security deal — not a takeover — seems to be on the table.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DNK"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/19/world/europe/greenland-trump-security-deal-what-to-know.html"
+    },
+    {
+      "date": "19 Sept 2026",
+      "headline": "Millionaire Activist James Chambers Seeks Asylum in Spain",
+      "ai": "Jailed in Madrid on an extradition request from the United States that his lawyer says is tied to pro-Palestinian activism, James Chambers fears persecution if returned.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/19/world/europe/spain-chambers-asylum-us-extradition.html"
+    },
+    {
+      "date": "19 Sept 2026",
+      "headline": "The Kremlin Has Put Lots of Veterans on the Ballot. Could It Backfire?",
+      "ai": "President Vladimir V. Putin of Russia has said veterans are the “new elite,” but selecting them as candidates is a risk.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -163,22 +177,7 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/18/world/europe/putin-russia-election-ideas.html"
-    },
-    {
-      "date": "18 Sept 2026",
-      "headline": "Why Russia Holds Elections, and How the Kremlin Gets the Results It Wants",
-      "ai": "Russian elections like the parliamentary vote that begins today are hardly free. But they are critical to the government as a source of legitimacy.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/18/world/europe/russia-duma-election.html"
+      "url": "https://www.nytimes.com/2026/09/19/world/europe/russia-kremlin-election-veterans.html"
     }
   ]
 }
