@@ -1,12 +1,54 @@
 {
-  "feedUpdated": "19 Sept 2026",
-  "syncedAt": "2026-09-19T12:16:55.608Z",
+  "feedUpdated": "20 Sept 2026",
+  "syncedAt": "2026-09-20T12:51:52.109Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 0,
-    "fedTotal": 0
+    "fragTotal": 1,
+    "fedTotal": 1
   },
   "feed": [
+    {
+      "date": "19 Sept 2026",
+      "headline": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
+      "ai": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "DNK"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Sept 2026",
+      "headline": "Germans Are Voting Again, Amid a Far-Right Surge. Here’s What to Watch.",
+      "ai": "Elections in eastern Germany on Sunday could galvanize the Alternative for Germany, an ascendant far-right party, or spur a backlash.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/20/world/europe/germany-afd-elections-berlin-mecklenburg.html"
+    },
+    {
+      "date": "20 Sept 2026",
+      "headline": "German elections under way which could decide fate of Chancellor Merz",
+      "ai": "The chancellor is facing intense political pressure which will increase if his party struggles in Sunday's polls.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "18 Sept 2026",
       "headline": "Russian hybrid attacks against Europe intensifying, says Macron",
@@ -80,35 +122,6 @@
     },
     {
       "date": "16 Sept 2026",
-      "headline": "Kosovo's former president sentenced to 25 years for war crimes",
-      "ai": "Hashim Thaci has been jailed for crimes including torture and murder during Kosovo's independence war with Serbia.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB",
-        "XKX"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmd79z0pdzgjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "17 Sept 2026",
-      "headline": "EU announces plan to restrict social media access for under-15s",
-      "ai": "Under the plans, only children over 15 would be able to set up their own social media accounts.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Sept 2026",
       "headline": "Carney's new love-in with EU has everything to do with Trump",
       "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
       "frag": "",
@@ -138,37 +151,24 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Sept 2026",
-      "headline": "What Does Trump Want With Greenland?",
-      "ai": "President Trump insisted for months that the Danish territory should be part of the United States. Now, a security deal — not a takeover — seems to be on the table.",
+      "date": "20 Sept 2026",
+      "headline": "Hundreds of Drones Target Moscow on Final Day of Russian Elections",
+      "ai": "Ukraine says it used a newly developed ballistic missile in the attacks, which also targeted other parts of Russia.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DNK"
+        "UKR",
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/19/world/europe/greenland-trump-security-deal-what-to-know.html"
+      "url": "https://www.nytimes.com/2026/09/20/world/europe/moscow-russia-ukraine.html"
     },
     {
-      "date": "19 Sept 2026",
-      "headline": "Millionaire Activist James Chambers Seeks Asylum in Spain",
-      "ai": "Jailed in Madrid on an extradition request from the United States that his lawyer says is tied to pro-Palestinian activism, James Chambers fears persecution if returned.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/19/world/europe/spain-chambers-asylum-us-extradition.html"
-    },
-    {
-      "date": "19 Sept 2026",
-      "headline": "The Kremlin Has Put Lots of Veterans on the Ballot. Could It Backfire?",
-      "ai": "President Vladimir V. Putin of Russia has said veterans are the “new elite,” but selecting them as candidates is a risk.",
+      "date": "20 Sept 2026",
+      "headline": "Russia Barred Their Party, but These Antiwar Voices Are Still Standing",
+      "ai": "The liberal party Yabloko is fielding 98 candidates in this weekend’s elections, a small miracle for antiwar Russians who cannot openly express their views.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -177,7 +177,7 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/19/world/europe/russia-kremlin-election-veterans.html"
+      "url": "https://www.nytimes.com/2026/09/20/world/europe/russia-duma-election-yabloko.html"
     }
   ]
 }
