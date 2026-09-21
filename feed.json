@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "20 Sept 2026",
-  "syncedAt": "2026-09-20T12:51:52.109Z",
+  "feedUpdated": "21 Sept 2026",
+  "syncedAt": "2026-09-21T14:51:04.770Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 1
+    "fragTotal": -1,
+    "fedTotal": 2
   },
   "feed": [
     {
@@ -22,23 +22,9 @@
       "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Sept 2026",
-      "headline": "Germans Are Voting Again, Amid a Far-Right Surge. Here’s What to Watch.",
-      "ai": "Elections in eastern Germany on Sunday could galvanize the Alternative for Germany, an ascendant far-right party, or spur a backlash.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/20/world/europe/germany-afd-elections-berlin-mecklenburg.html"
-    },
-    {
-      "date": "20 Sept 2026",
-      "headline": "German elections under way which could decide fate of Chancellor Merz",
-      "ai": "The chancellor is facing intense political pressure which will increase if his party struggles in Sunday's polls.",
+      "date": "21 Sept 2026",
+      "headline": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
+      "ai": "Exit polls show damaging losses for Merz's centre-right CDU party in the state of Mecklenburg-Vorpommern and Berlin.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -47,7 +33,36 @@
         "DEU"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Sept 2026",
+      "headline": "Russia's elections had few surprises - but how the Kremlin uses the results will be crucial",
+      "ai": "Vladimir Putin will likely use the result to claim most Russians back the so-called special military operation in Ukraine, writes the BBC's Steve Rosenberg.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx4gqv239043o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Sept 2026",
+      "headline": "UK should 'team up' with Canada in new Europe alliance, Canadian minister tells BBC",
+      "ai": "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Sept 2026",
@@ -93,34 +108,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "17 Sept 2026",
-      "headline": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
-      "ai": "There is no doubt over the outcome of this vote, but for the Kremlin they are still an important moment.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Sept 2026",
-      "headline": "Eight German state premiers back Merz amid speculation over future",
-      "ai": "Christian Democratic Union leadership throws its weight behind the chancellor ahead of two state elections this weekend.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "16 Sept 2026",
       "headline": "Carney's new love-in with EU has everything to do with Trump",
       "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
@@ -151,7 +138,7 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Sept 2026",
+      "date": "21 Sept 2026",
       "headline": "Hundreds of Drones Target Moscow on Final Day of Russian Elections",
       "ai": "Ukraine says it used a newly developed ballistic missile in the attacks, which also targeted other parts of Russia.",
       "frag": "",
@@ -167,7 +154,7 @@
     },
     {
       "date": "20 Sept 2026",
-      "headline": "Russia Barred Their Party, but These Antiwar Voices Are Still Standing",
+      "headline": "They Have Almost No Chance in Russia’s Elections. Why Are They Running?",
       "ai": "The liberal party Yabloko is fielding 98 candidates in this weekend’s elections, a small miracle for antiwar Russians who cannot openly express their views.",
       "frag": "",
       "fed": "",
@@ -178,6 +165,20 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/20/world/europe/russia-duma-election-yabloko.html"
+    },
+    {
+      "date": "19 Sept 2026",
+      "headline": "Millionaire Activist James Chambers Seeks Asylum in Spain",
+      "ai": "Jailed in Madrid on an extradition request from the United States that his lawyer says is tied to pro-Palestinian activism, James Chambers fears persecution if returned.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/19/world/europe/spain-chambers-asylum-us-extradition.html"
     }
   ]
 }
