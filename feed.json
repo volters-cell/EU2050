@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "22 Sept 2026",
-  "syncedAt": "2026-09-22T13:06:49.426Z",
+  "feedUpdated": "23 Sept 2026",
+  "syncedAt": "2026-09-23T13:21:39.157Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -8,9 +8,9 @@
   },
   "feed": [
     {
-      "date": "19 Sept 2026",
-      "headline": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
-      "ai": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory.",
+      "date": "22 Sept 2026",
+      "headline": "US to build two military bases in Greenland under new deal with Denmark",
+      "ai": "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
@@ -19,7 +19,37 @@
         "DNK"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Sept 2026",
+      "headline": "Netanyahu calls Macron's remarks on West Bank in UN speech 'grotesque'",
+      "ai": "Israel's PM denounces the French president after he appeared to downplay Hamas's activities in the occupied territory.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck1l6yyg52qvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "22 Sept 2026",
+      "headline": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+      "ai": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "22 Sept 2026",
@@ -79,20 +109,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "16 Sept 2026",
-      "headline": "Carney's new love-in with EU has everything to do with Trump",
-      "ai": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "14 Sept 2026",
       "headline": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
       "ai": "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area.",
@@ -109,38 +125,53 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "22 Sept 2026",
-      "headline": "UK Leader Burnham to Hold First Meeting With Trump at UN General Assembly",
-      "ai": "Prime Minister Andy Burnham of Britain faces his most high-stakes meeting since taking office, looking to build a rapport with President Trump.",
+      "date": "23 Sept 2026",
+      "headline": "Why Germany’s Leader Merz Is Struggling to Sway Voters",
+      "ai": "As the far right surges, Chancellor Friedrich Merz’s unpopular economic policies and gruff manner have failed to sway voters turned by rivals’ promises of easy fixes.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/23/world/europe/germany-merz-afd-economy.html"
+    },
+    {
+      "date": "22 Sept 2026",
+      "headline": "Andy Burnham, U.K.’s New Prime Minister, Prepares for U.N. Spotlight",
+      "ai": "Andy Burnham appears likely to promote support for Ukraine and hold to tough lines on Israel and the war on Iran.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
         "GBR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/22/world/europe/trump-burnham-meeting-un-us-uk.html"
+      "url": "https://www.nytimes.com/2026/09/22/world/europe/andy-burnham-unga-ukraine-iran-war.html"
     },
     {
       "date": "22 Sept 2026",
-      "headline": "Russia’s Election Was Engineered to Send a Message: Putin Remains in Control",
-      "ai": "A parliamentary vote demonstrated that President Vladimir V. Putin’s autocratic system was still able to deliver the results he wanted, analysts said.",
+      "headline": "Macron Criticizes Israel and Russia in Final U.N. Speech as France’s President",
+      "ai": "In his farewell address to the General Assembly, the French president criticized Russia, Israel and, in more veiled terms, the United States.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "RUS",
-        "BEL"
+        "FRA",
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/21/world/europe/russia-duma-election.html"
+      "url": "https://www.nytimes.com/2026/09/22/world/europe/macron-farewell-united-nations-speech.html"
     },
     {
-      "date": "21 Sept 2026",
-      "headline": "Hundreds of Drones Target Moscow on Final Day of Russian Elections",
-      "ai": "Ukraine says it used a newly developed ballistic missile in the attacks, which also targeted other parts of Russia.",
+      "date": "22 Sept 2026",
+      "headline": "Zelensky Says He Hopes Trump Will Help to End Russia-Ukraine War ‘Before Winter’",
+      "ai": "The remarks by President Volodymyr Zelensky of Ukraine came during a meeting with President Trump as an effort to restart talks with Russia has gone nowhere.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -150,35 +181,7 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/20/world/europe/moscow-russia-ukraine.html"
-    },
-    {
-      "date": "20 Sept 2026",
-      "headline": "They Have Almost No Chance in Russia’s Elections. Why Are They Running?",
-      "ai": "The liberal party Yabloko is fielding 98 candidates in this weekend’s elections, a small miracle for antiwar Russians who cannot openly express their views.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/20/world/europe/russia-duma-election-yabloko.html"
-    },
-    {
-      "date": "20 Sept 2026",
-      "headline": "Germany’s Merz Vows to Stay After Another State Election ‘Disaster’",
-      "ai": "Chancellor Friedrich Merz faced growing pressure on Sunday after his center-right party finished behind far-right and far-left parties in state elections in the east.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/20/world/europe/germany-afd-elections-berlin-mecklenburg.html"
+      "url": "https://www.nytimes.com/2026/09/22/world/europe/zelensky-trump-war-russia.html"
     }
   ]
 }
