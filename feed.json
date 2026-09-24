@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "23 Sept 2026",
-  "syncedAt": "2026-09-23T13:21:39.157Z",
+  "feedUpdated": "24 Sept 2026",
+  "syncedAt": "2026-09-24T13:13:43.720Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -20,6 +20,23 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Sept 2026",
+      "headline": "Azerbaijan pardons Frenchman after EU lifts sanctions on Russian billionaire",
+      "ai": "Martin Ryan is pardoned months after he was jailed on charges of spying, but a second Frenchman remains in prison.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA",
+        "AZE",
+        "RUS",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwp84rrrymd0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Sept 2026",
@@ -52,61 +69,19 @@
       "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "22 Sept 2026",
-      "headline": "Eleven injured in shooting outside Turkish school",
-      "ai": "Footage appears to show a male in the area carrying a firearm, while officials say the attacker has been captured.",
+      "date": "23 Sept 2026",
+      "headline": "Poland accuses Russian military helicopter of violating its airspace",
+      "ai": "Poland says the aircraft stayed in its skies for 42 seconds, forcing the Nato member to scramble its fighter jets.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "TUR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Sept 2026",
-      "headline": "Merz vows to keep coalition together for Germany's 'democratic future'",
-      "ai": "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\"",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Sept 2026",
-      "headline": "Russia's elections had few surprises - but how the Kremlin uses the results will be crucial",
-      "ai": "Vladimir Putin will likely use the result to claim most Russians back the so-called special military operation in Ukraine, writes the BBC's Steve Rosenberg.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
+        "POL",
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx4gqv239043o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Sept 2026",
-      "headline": "UK should 'team up' with Canada in new Europe alliance, Canadian minister tells BBC",
-      "ai": "It comes after European Commission President proposed \"opening the door\" for Canada to become an associate member of the EU.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmed7p06epxjo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c699d2dn9z0mo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "14 Sept 2026",
@@ -123,6 +98,64 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "24 Sept 2026",
+      "headline": "In a Race With China, German Robots Are Outnumbered 14 to 1",
+      "ai": "A decade after the sale of Germany’s Kuka, Europe is seeking to shift into a higher gear to unlock the potential in robotics and artificial intelligence.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/24/business/robots-china-germany-factories.html"
+    },
+    {
+      "date": "24 Sept 2026",
+      "headline": "Europe Warns of Russia’s Hybrid Attacks but Struggles to Counter Them",
+      "ai": "If President Vladimir V. Putin was hoping to get Europeans’ attention, he’s succeeded with a series of close-call incursions. The question now is what they will do about it.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/24/world/europe/russia-europe-warning-ukraine-war.html"
+    },
+    {
+      "date": "24 Sept 2026",
+      "headline": "How Russia Evades Sanctions",
+      "ai": "Our business data correspondent Aaron Krolik describes Russia’s vast effort to evade global sanctions and get drone parts for its war in Ukraine — and explains how we traced those efforts.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/video/world/europe/100000011077984/how-russia-evades-sanctions.html"
+    },
+    {
+      "date": "23 Sept 2026",
+      "headline": "Zelensky Warns Russia’s War Will Expand if It Is Not Ended Soon",
+      "ai": "The Ukrainian president called for measures to disrupt “Russia’s finances and Russia’s production” before another deadly winter of war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/23/world/europe/zelensky-speech-russia-war.html"
     },
     {
       "date": "23 Sept 2026",
@@ -152,36 +185,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/22/world/europe/andy-burnham-unga-ukraine-iran-war.html"
-    },
-    {
-      "date": "22 Sept 2026",
-      "headline": "Macron Criticizes Israel and Russia in Final U.N. Speech as France’s President",
-      "ai": "In his farewell address to the General Assembly, the French president criticized Russia, Israel and, in more veiled terms, the United States.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/22/world/europe/macron-farewell-united-nations-speech.html"
-    },
-    {
-      "date": "22 Sept 2026",
-      "headline": "Zelensky Says He Hopes Trump Will Help to End Russia-Ukraine War ‘Before Winter’",
-      "ai": "The remarks by President Volodymyr Zelensky of Ukraine came during a meeting with President Trump as an effort to restart talks with Russia has gone nowhere.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/22/world/europe/zelensky-trump-war-russia.html"
     }
   ]
 }
