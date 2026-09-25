@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "24 Sept 2026",
-  "syncedAt": "2026-09-24T13:13:43.720Z",
+  "feedUpdated": "25 Sept 2026",
+  "syncedAt": "2026-09-25T13:15:31.410Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -20,6 +20,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "24 Sept 2026",
+      "headline": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
+      "ai": "Prime Minister Giorgia Meloni described the measures as \"common-sense tools that do not divide but really help to integrate\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Sept 2026",
@@ -53,37 +67,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ck1l6yyg52qvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "22 Sept 2026",
-      "headline": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
-      "ai": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Sept 2026",
-      "headline": "Poland accuses Russian military helicopter of violating its airspace",
-      "ai": "Poland says the aircraft stayed in its skies for 42 seconds, forcing the Nato member to scramble its fighter jets.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c699d2dn9z0mo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "14 Sept 2026",
       "headline": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
       "ai": "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area.",
@@ -98,6 +81,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "24 Sept 2026",
+      "headline": "Italy Moves to Cap Number of Foreign Students in Its Classrooms",
+      "ai": "Prime Minister Giorgia Meloni said the goal was to better integrate non-Italian speaking children, but critics accused her of trying to appease anti-immigrant sentiment.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/24/world/europe/italy-schools-migrants.html"
     },
     {
       "date": "24 Sept 2026",
@@ -128,63 +125,64 @@
       "url": "https://www.nytimes.com/2026/09/24/world/europe/russia-europe-warning-ukraine-war.html"
     },
     {
-      "date": "24 Sept 2026",
-      "headline": "How Russia Evades Sanctions",
-      "ai": "Our business data correspondent Aaron Krolik describes Russia’s vast effort to evade global sanctions and get drone parts for its war in Ukraine — and explains how we traced those efforts.",
+      "date": "25 Sept 2026",
+      "headline": "Europe Today: Trump's state dinner for Xi Jinping, Pope Leo's first visit to France",
+      "ai": "Trump and Xi Jinping's high-stakes Washington summit was closely watched in Europe, as Pope Leo XIV arrives in France for the first time. Also on the show: an interview with Danish minister Martin Lidegaard on the US-Denmark deal on Greenland and an update on the Ceuta migration crisis.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "FRA",
+        "DNK"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/video/world/europe/100000011077984/how-russia-evades-sanctions.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/25/europe-today-trumps-state-dinner-for-xi-jinping-pope-leos-first-visit-to-france"
     },
     {
-      "date": "23 Sept 2026",
-      "headline": "Zelensky Warns Russia’s War Will Expand if It Is Not Ended Soon",
-      "ai": "The Ukrainian president called for measures to disrupt “Russia’s finances and Russia’s production” before another deadly winter of war.",
+      "date": "25 Sept 2026",
+      "headline": "Saudi Arabia reports fresh Houthi attacks as France offers military support to protect Yanbu",
+      "ai": "Yanbu serves as the kingdom's primary crude export terminal on the Red Sea and is connected to its oil-producing regions near the Gulf coast by the East-West pipeline, also known as Petroline.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "FRA"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/23/world/europe/zelensky-speech-russia-war.html"
-    },
-    {
-      "date": "23 Sept 2026",
-      "headline": "Why Germany’s Leader Merz Is Struggling to Sway Voters",
-      "ai": "As the far right surges, Chancellor Friedrich Merz’s unpopular economic policies and gruff manner have failed to sway voters turned by rivals’ promises of easy fixes.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/23/world/europe/germany-merz-afd-economy.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/25/saudi-arabia-reports-fresh-houthi-attacks-as-france-offers-military-support-to-protect-yan"
     },
     {
       "date": "22 Sept 2026",
-      "headline": "Andy Burnham, U.K.’s New Prime Minister, Prepares for U.N. Spotlight",
-      "ai": "Andy Burnham appears likely to promote support for Ukraine and hold to tough lines on Israel and the war on Iran.",
+      "headline": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+      "ai": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "UKR",
-        "GBR"
+        "RUS",
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/22/world/europe/andy-burnham-unga-ukraine-iran-war.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Sept 2026",
+      "headline": "Poland accuses Russian military helicopter of violating its airspace",
+      "ai": "Poland says the aircraft stayed in its skies for 42 seconds, forcing the Nato member to scramble its fighter jets.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "POL",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c699d2dn9z0mo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
