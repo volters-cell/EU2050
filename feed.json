@@ -1,12 +1,40 @@
 {
-  "feedUpdated": "27 Sept 2026",
-  "syncedAt": "2026-09-27T13:32:04.277Z",
+  "feedUpdated": "28 Sept 2026",
+  "syncedAt": "2026-09-28T16:28:04.614Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -2,
-    "fedTotal": 4
+    "fragTotal": 2,
+    "fedTotal": 2
   },
   "feed": [
+    {
+      "date": "27 Sept 2026",
+      "headline": "Switzerland rejects stricter interpretation of its neutrality",
+      "ai": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "CHE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "25 Sept 2026",
+      "headline": "As Merz scrambles for support, Germany's identity crisis is laid bare",
+      "ai": "Voters are turning away from the centre in Germany as fears grow about the economy and migration.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "DEU"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "27 Sept 2026",
       "headline": "Azerbaijan agrees multi-billion-dollar deals with investment giants",
@@ -34,6 +62,34 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "27 Sept 2026",
+      "headline": "Embattled Serbian president resigns, paving way for early elections",
+      "ai": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "26 Sept 2026",
+      "headline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
+      "ai": "Around 700,000 people gathered in central Paris to hear the Catholic leader speak and offer prayer.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "25 Sept 2026",
@@ -65,26 +121,9 @@
       "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Sept 2026",
-      "headline": "Azerbaijan pardons Frenchman after EU lifts sanctions on Russian billionaire",
-      "ai": "Martin Ryan is pardoned months after he was jailed on charges of spying, but a second Frenchman remains in prison.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "AZE",
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwp84rrrymd0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Sept 2026",
-      "headline": "Netanyahu calls Macron's remarks on West Bank in UN speech 'grotesque'",
-      "ai": "Israel's PM denounces the French president after he appeared to downplay Hamas's activities in the occupied territory.",
+      "date": "28 Sept 2026",
+      "headline": "Pope Leo Praises Europe’s Democracy, Diverging Once Again From Trump",
+      "ai": "Speaking in France, the pontiff lauded postwar efforts to unify the continent. Experts saw it as a critique of President Trump’s repeated berating of European leaders.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -92,95 +131,51 @@
       "countries": [
         "FRA"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l6yyg52qvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Sept 2026",
-      "headline": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
-      "ai": "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "24 Sept 2026",
-      "headline": "Italy Moves to Cap Number of Foreign Students in Its Classrooms",
-      "ai": "Prime Minister Giorgia Meloni said the goal was to better integrate non-Italian speaking children, but critics accused her of trying to appease anti-immigrant sentiment.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA"
-      ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/24/world/europe/italy-schools-migrants.html"
+      "url": "https://www.nytimes.com/2026/09/28/world/europe/pope-leo-trump-democracy-europe.html"
     },
     {
       "date": "27 Sept 2026",
-      "headline": "EU tells countries to curb energy demand as gas prices face winter squeeze",
-      "ai": "Although the EU is not facing immediate gas shortages, Energy Commissioner Jørgensen warned capitals that soaring prices driven by rising global demand could lead to shortages as winter approaches, according to a letter seen by Euronews.",
+      "headline": "Serbia’s Longtime President Aleksandar Vucic Resigns Post",
+      "ai": "Aleksandar Vucic, one of Europe’s longest-serving leaders, resigned as president, paving the way for him to become prime minister after elections next month.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "SRB"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/27/world/europe/serbia-president-aleksandar-vucicto-resigns.html"
+    },
+    {
+      "date": "28 Sept 2026",
+      "headline": "Turkish comedian Deniz Göktaş on trial for insulting President Erdoğan in standup show",
+      "ai": "Göktaş's arrest was the latest in a widening crackdown on anyone seen as critical of Turkey's conservative government or its values, which has netted hundreds of politicians, artists, musicians, journalists and LGBTQ+ activists.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/28/turkish-comedian-deniz-goktas-on-trial-for-insulting-president-erdogan-in-standup-show"
+    },
+    {
+      "date": "27 Sept 2026",
+      "headline": "Serbia's politicians return to TV debates ahead of parliamentary election",
+      "ai": "A month before the early parliamentary elections, Serbia's high ranking politicians from the ruling and opposition parties engaged in a debate on the N1 channel after a prolonged boycott between the anti-government station and officials. The ownership change provided a new opportunity for dialogue.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB",
         "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/27/eu-tells-countries-to-curb-energy-demand-as-gas-prices-face-winter-squeeze"
-    },
-    {
-      "date": "24 Sept 2026",
-      "headline": "In a Race With China, German Robots Are Outnumbered 14 to 1",
-      "ai": "A decade after the sale of Germany’s Kuka, Europe is seeking to shift into a higher gear to unlock the potential in robotics and artificial intelligence.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/24/business/robots-china-germany-factories.html"
-    },
-    {
-      "date": "24 Sept 2026",
-      "headline": "Europe Warns of Russia’s Hybrid Attacks but Struggles to Counter Them",
-      "ai": "If President Vladimir V. Putin was hoping to get Europeans’ attention, he’s succeeded with a series of close-call incursions. The question now is what they will do about it.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/24/world/europe/russia-europe-warning-ukraine-war.html"
-    },
-    {
-      "date": "25 Sept 2026",
-      "headline": "Europe Today: Trump's state dinner for Xi Jinping, Pope Leo's first visit to France",
-      "ai": "Trump and Xi Jinping's high-stakes Washington summit was closely watched in Europe, as Pope Leo XIV arrives in France for the first time. Also on the show: an interview with Danish minister Martin Lidegaard on the US-Denmark deal on Greenland and an update on the Ceuta migration crisis.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "DNK"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/25/europe-today-trumps-state-dinner-for-xi-jinping-pope-leos-first-visit-to-france"
+      "url": "https://www.euronews.com/2026/09/27/serbias-politicians-return-to-tv-debates-ahead-of-parliamentary-election"
     }
   ]
 }
