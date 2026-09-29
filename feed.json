@@ -1,26 +1,12 @@
 {
-  "feedUpdated": "28 Sept 2026",
-  "syncedAt": "2026-09-28T16:28:04.614Z",
+  "feedUpdated": "29 Sept 2026",
+  "syncedAt": "2026-09-29T14:37:37.944Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
     "fedTotal": 2
   },
   "feed": [
-    {
-      "date": "27 Sept 2026",
-      "headline": "Switzerland rejects stricter interpretation of its neutrality",
-      "ai": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "CHE"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"
-    },
     {
       "date": "25 Sept 2026",
       "headline": "As Merz scrambles for support, Germany's identity crisis is laid bare",
@@ -34,6 +20,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "27 Sept 2026",
+      "headline": "Switzerland rejects stricter interpretation of its neutrality",
+      "ai": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "CHE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "27 Sept 2026",
@@ -64,23 +64,9 @@
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Sept 2026",
-      "headline": "Embattled Serbian president resigns, paving way for early elections",
-      "ai": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "26 Sept 2026",
-      "headline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
-      "ai": "Around 700,000 people gathered in central Paris to hear the Catholic leader speak and offer prayer.",
+      "date": "29 Sept 2026",
+      "headline": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
+      "ai": "National Rally President Jordan Bardella says he will sue for libel over comments he is accused of making as a young activist.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -89,36 +75,51 @@
         "FRA"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "25 Sept 2026",
-      "headline": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
-      "ai": "Such strikes aim to disrupt \"people's ability to stay connected, study, work\", says Ukraine's president.",
+      "date": "29 Sept 2026",
+      "headline": "Estonia blames Russia for arson at defence company supplying Ukraine",
+      "ai": "Russia has been accused of launching sabotage attacks across a number of European Nato countries which have been helping Ukraine.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "EST",
         "UKR",
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "24 Sept 2026",
-      "headline": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
-      "ai": "Prime Minister Giorgia Meloni described the measures as \"common-sense tools that do not divide but really help to integrate\".",
+      "date": "28 Sept 2026",
+      "headline": "French PM warns against escalation of school protests after 164 arrested",
+      "ai": "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ITA"
+        "FRA"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "29 Sept 2026",
+      "headline": "Prime Minister Andy Burnham’s Labour Conference Speech Aims to Reset UK Mood",
+      "ai": "According to a preview of his remarks, Prime Minister Andy Burnham will outline a “serious prospectus for Britain” on Tuesday and will admit: “I accept people will not agree with every part of it.”",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/09/29/world/europe/andy-burnham-labour-conference-uk.html"
     },
     {
       "date": "28 Sept 2026",
@@ -149,33 +150,34 @@
       "url": "https://www.nytimes.com/2026/09/27/world/europe/serbia-president-aleksandar-vucicto-resigns.html"
     },
     {
-      "date": "28 Sept 2026",
-      "headline": "Turkish comedian Deniz Göktaş on trial for insulting President Erdoğan in standup show",
-      "ai": "Göktaş's arrest was the latest in a widening crackdown on anyone seen as critical of Turkey's conservative government or its values, which has netted hundreds of politicians, artists, musicians, journalists and LGBTQ+ activists.",
+      "date": "29 Sept 2026",
+      "headline": "Euronews Travel & Tourism Summit 2026: PM Edi Rama on Albania's tourism transformation",
+      "ai": "The Euronews Travel & Tourism Summit 2026 is taking place in Brussels, bringing together political leaders, policymakers and industry experts to debate the biggest issues shaping the future of travel.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "TUR"
+        "BEL",
+        "ALB"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/28/turkish-comedian-deniz-goktas-on-trial-for-insulting-president-erdogan-in-standup-show"
+      "url": "https://www.euronews.com/2026/09/29/euronews-travel-tourism-summit-2026-watch-live-today-from-brussels"
     },
     {
-      "date": "27 Sept 2026",
-      "headline": "Serbia's politicians return to TV debates ahead of parliamentary election",
-      "ai": "A month before the early parliamentary elections, Serbia's high ranking politicians from the ruling and opposition parties engaged in a debate on the N1 channel after a prolonged boycott between the anti-government station and officials. The ownership change provided a new opportunity for dialogue.",
+      "date": "28 Sept 2026",
+      "headline": "Pope Leo ends France trip in Metz, spotlighting Schuman and EU unity",
+      "ai": "Pope Leo XIV ended his four-day visit to France in Metz on Monday by urging Europe to build on its Christian heritage and culture of dialogue rather than succumb to what he called the “desire for domination” behind many of today’s wars.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB",
+        "FRA",
         "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/27/serbias-politicians-return-to-tv-debates-ahead-of-parliamentary-election"
+      "url": "https://www.euronews.com/video/2026/09/28/pope-leo-ends-france-trip-in-metz-spotlighting-schuman-and-eu-unity"
     }
   ]
 }
