@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "29 Sept 2026",
-  "syncedAt": "2026-09-29T14:37:37.944Z",
+  "feedUpdated": "30 Sept 2026",
+  "syncedAt": "2026-09-30T14:37:37.879Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -64,6 +64,21 @@
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "30 Sept 2026",
+      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
+      "ai": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "29 Sept 2026",
       "headline": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
       "ai": "National Rally President Jordan Bardella says he will sue for libel over comments he is accused of making as a young activist.",
@@ -76,6 +91,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "30 Sept 2026",
+      "headline": "Move to rejoin EU among options for UK, says Burnham",
+      "ai": "The prime minister tells the BBC the current Brexit settlement has caused \"more harm than good\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyewr0lnj3o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "29 Sept 2026",
@@ -94,23 +123,9 @@
       "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "28 Sept 2026",
-      "headline": "French PM warns against escalation of school protests after 164 arrested",
-      "ai": "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "29 Sept 2026",
-      "headline": "Prime Minister Andy Burnham’s Labour Conference Speech Aims to Reset UK Mood",
-      "ai": "According to a preview of his remarks, Prime Minister Andy Burnham will outline a “serious prospectus for Britain” on Tuesday and will admit: “I accept people will not agree with every part of it.”",
+      "headline": "Prime Minister Andy Burnham Lays Out Plan to Change UK in Emotional Speech at Labour Conference",
+      "ai": "Andy Burnham set out a range of policies on Tuesday in his biggest speech since becoming prime minister of Britain. “I accept people will not agree with every part of it,” he said.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -136,6 +151,20 @@
       "url": "https://www.nytimes.com/2026/09/28/world/europe/pope-leo-trump-democracy-europe.html"
     },
     {
+      "date": "28 Sept 2026",
+      "headline": "French PM warns against escalation of school protests after 164 arrested",
+      "ai": "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "27 Sept 2026",
       "headline": "Serbia’s Longtime President Aleksandar Vucic Resigns Post",
       "ai": "Aleksandar Vucic, one of Europe’s longest-serving leaders, resigned as president, paving the way for him to become prime minister after elections next month.",
@@ -148,36 +177,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/09/27/world/europe/serbia-president-aleksandar-vucicto-resigns.html"
-    },
-    {
-      "date": "29 Sept 2026",
-      "headline": "Euronews Travel & Tourism Summit 2026: PM Edi Rama on Albania's tourism transformation",
-      "ai": "The Euronews Travel & Tourism Summit 2026 is taking place in Brussels, bringing together political leaders, policymakers and industry experts to debate the biggest issues shaping the future of travel.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL",
-        "ALB"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/29/euronews-travel-tourism-summit-2026-watch-live-today-from-brussels"
-    },
-    {
-      "date": "28 Sept 2026",
-      "headline": "Pope Leo ends France trip in Metz, spotlighting Schuman and EU unity",
-      "ai": "Pope Leo XIV ended his four-day visit to France in Metz on Monday by urging Europe to build on its Christian heritage and culture of dialogue rather than succumb to what he called the “desire for domination” behind many of today’s wars.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/09/28/pope-leo-ends-france-trip-in-metz-spotlighting-schuman-and-eu-unity"
     }
   ]
 }
