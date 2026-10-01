@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "30 Sept 2026",
-  "syncedAt": "2026-09-30T14:37:37.879Z",
+  "feedUpdated": "1 Oct 2026",
+  "syncedAt": "2026-10-01T15:06:17.970Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -65,8 +65,8 @@
     },
     {
       "date": "30 Sept 2026",
-      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
-      "ai": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
+      "headline": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
+      "ai": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -76,7 +76,21 @@
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "1 Oct 2026",
+      "headline": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
+      "ai": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SVN"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "29 Sept 2026",
@@ -94,14 +108,14 @@
     },
     {
       "date": "30 Sept 2026",
-      "headline": "Move to rejoin EU among options for UK, says Burnham",
-      "ai": "The prime minister tells the BBC the current Brexit settlement has caused \"more harm than good\".",
+      "headline": "Brexit referendum 'possible' in Labour election manifesto, says Burnham",
+      "ai": "The PM says a referendum wouldn't be the right thing now but the UK needs to consider its options for the future.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "BEL"
+        "GBR"
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmlyewr0lnj3o?at_medium=RSS&at_campaign=rss"
@@ -123,9 +137,9 @@
       "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "29 Sept 2026",
-      "headline": "Prime Minister Andy Burnham Lays Out Plan to Change UK in Emotional Speech at Labour Conference",
-      "ai": "Andy Burnham set out a range of policies on Tuesday in his biggest speech since becoming prime minister of Britain. “I accept people will not agree with every part of it,” he said.",
+      "date": "30 Sept 2026",
+      "headline": "UK Believes Iran Played a Part in RAF Fairford Air Base Incident, Burnham Says",
+      "ai": "The British prime minister, Andy Burnham, said there were “strong indications” Iran played a part in the events at R.A.F. Fairford on Sunday, without providing details why.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -134,49 +148,36 @@
         "GBR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/29/world/europe/andy-burnham-labour-conference-uk.html"
+      "url": "https://www.nytimes.com/2026/09/30/world/europe/uk-iran-raf-fairford-burnham.html"
     },
     {
-      "date": "28 Sept 2026",
-      "headline": "Pope Leo Praises Europe’s Democracy, Diverging Once Again From Trump",
-      "ai": "Speaking in France, the pontiff lauded postwar efforts to unify the continent. Experts saw it as a critique of President Trump’s repeated berating of European leaders.",
+      "date": "30 Sept 2026",
+      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
+      "ai": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/28/world/europe/pope-leo-trump-democracy-europe.html"
-    },
-    {
-      "date": "28 Sept 2026",
-      "headline": "French PM warns against escalation of school protests after 164 arrested",
-      "ai": "Students are protesting over issues such as overcrowded classes, but the prime minister has condemned reports of violence.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Sept 2026",
-      "headline": "Serbia’s Longtime President Aleksandar Vucic Resigns Post",
-      "ai": "Aleksandar Vucic, one of Europe’s longest-serving leaders, resigned as president, paving the way for him to become prime minister after elections next month.",
+      "date": "30 Sept 2026",
+      "headline": "Move to rejoin EU among options for UK, says Burnham",
+      "ai": "The prime minister tells the BBC the current Brexit settlement has caused \"more harm than good\".",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB"
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/27/world/europe/serbia-president-aleksandar-vucicto-resigns.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyewr0lnj3o?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
