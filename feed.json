@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "1 Oct 2026",
-  "syncedAt": "2026-10-01T15:06:17.970Z",
+  "feedUpdated": "2 Oct 2026",
+  "syncedAt": "2026-10-02T14:27:34.512Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -64,19 +64,33 @@
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "30 Sept 2026",
-      "headline": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
-      "ai": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
+      "date": "1 Oct 2026",
+      "headline": "Spain and China are cosying up - to the anger of many in the EU",
+      "ai": "Amid global tumult, the two countries' alliance is not the only unlikely pairing.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "ESP",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "2 Oct 2026",
+      "headline": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
+      "ai": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "1 Oct 2026",
@@ -93,67 +107,66 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "29 Sept 2026",
-      "headline": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
-      "ai": "National Rally President Jordan Bardella says he will sue for libel over comments he is accused of making as a young activist.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "30 Sept 2026",
-      "headline": "Brexit referendum 'possible' in Labour election manifesto, says Burnham",
-      "ai": "The PM says a referendum wouldn't be the right thing now but the UK needs to consider its options for the future.",
+      "headline": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
+      "ai": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyewr0lnj3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "29 Sept 2026",
-      "headline": "Estonia blames Russia for arson at defence company supplying Ukraine",
-      "ai": "Russia has been accused of launching sabotage attacks across a number of European Nato countries which have been helping Ukraine.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "EST",
         "UKR",
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "30 Sept 2026",
-      "headline": "UK Believes Iran Played a Part in RAF Fairford Air Base Incident, Burnham Says",
-      "ai": "The British prime minister, Andy Burnham, said there were “strong indications” Iran played a part in the events at R.A.F. Fairford on Sunday, without providing details why.",
+      "date": "2 Oct 2026",
+      "headline": "Spanish Lawmakers Reject Eviction Freeze, Spurring Calls for Early Elections",
+      "ai": "The government had proposed more protections for tenants after outrage at the eviction of an 87-year-old woman in Madrid.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR"
+        "ESP"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/09/30/world/europe/uk-iran-raf-fairford-burnham.html"
+      "url": "https://www.nytimes.com/2026/10/02/world/europe/spain-housing-vote-elections.html"
     },
     {
-      "date": "30 Sept 2026",
-      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
-      "ai": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
+      "date": "2 Oct 2026",
+      "headline": "A Front Line at the Border: How Russia Uses Migrants as Weapons Against Europe",
+      "ai": "The scheme is part of Russia’s larger strategy for sowing discord in the West, if more subtle than other recent operations blamed on the Kremlin.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/02/world/europe/latvia-immigration-russia.html"
+    },
+    {
+      "date": "2 Oct 2026",
+      "headline": "US Sanctions A7, a Russia Firm That Helps Sidestep Economic Restrictions",
+      "ai": "The move followed reports detailing how A7, a Moscow firm, uses shell companies around the world to move funds for clients who are themselves subject to sanctions.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/01/business/a7-russia-us-sanctions.html"
+    },
+    {
+      "date": "1 Oct 2026",
+      "headline": "Russia to Sharply Increase War Spending and Cut Social Programs",
+      "ai": "Both sides are finding it increasingly difficult to finance the conflict in Ukraine. Russia’s 2027 budget envisions more debt, higher taxes and lower social benefits.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -162,22 +175,8 @@
         "UKR",
         "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "30 Sept 2026",
-      "headline": "Move to rejoin EU among options for UK, says Burnham",
-      "ai": "The prime minister tells the BBC the current Brexit settlement has caused \"more harm than good\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyewr0lnj3o?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/01/world/europe/russia-war-budget.html"
     }
   ]
 }
