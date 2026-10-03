@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "2 Oct 2026",
-  "syncedAt": "2026-10-02T14:27:34.512Z",
+  "feedUpdated": "3 Oct 2026",
+  "syncedAt": "2026-10-03T13:02:29.764Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": 2
+    "fragTotal": 5,
+    "fedTotal": -1
   },
   "feed": [
+    {
+      "date": "2 Oct 2026",
+      "headline": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
+      "ai": "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "25 Sept 2026",
       "headline": "As Merz scrambles for support, Germany's identity crisis is laid bare",
@@ -22,46 +36,33 @@
       "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Sept 2026",
-      "headline": "Switzerland rejects stricter interpretation of its neutrality",
-      "ai": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN.",
+      "date": "3 Oct 2026",
+      "headline": "Will Spain's housing crisis lead to a snap election?",
+      "ai": "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
       "fedWeight": -1,
       "countries": [
-        "CHE"
+        "ESP"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/cmgj9vz2zxelo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Sept 2026",
-      "headline": "Azerbaijan agrees multi-billion-dollar deals with investment giants",
-      "ai": "Nearly $11 billion (€9.7 billion) worth in contracts have emerged from the Azerbaijan International Investment Forum, where some of the world’s biggest investment managers gathered for talks ranging from infrastructure and technology to energy and transport.",
+      "date": "3 Oct 2026",
+      "headline": "Trump, Putin, Ukraine and an Oil Deal: 5 Takeaways",
+      "ai": "A proposal to bolster relations with the Kremlin through the purchase of Russian energy assets is striking even for an administration that regularly mixes personal business interests with foreign policy.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "AZE"
+        "UKR",
+        "RUS"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/09/27/azerbaijan-agrees-multi-billion-dollar-deals-with-investment-giants"
-    },
-    {
-      "date": "22 Sept 2026",
-      "headline": "US to build two military bases in Greenland under new deal with Denmark",
-      "ai": "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "DNK"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/03/us/politics/trump-putin-ukraine-oil-deal-5-takeaways.html"
     },
     {
       "date": "1 Oct 2026",
@@ -150,7 +151,7 @@
       "url": "https://www.nytimes.com/2026/10/02/world/europe/latvia-immigration-russia.html"
     },
     {
-      "date": "2 Oct 2026",
+      "date": "3 Oct 2026",
       "headline": "US Sanctions A7, a Russia Firm That Helps Sidestep Economic Restrictions",
       "ai": "The move followed reports detailing how A7, a Moscow firm, uses shell companies around the world to move funds for clients who are themselves subject to sanctions.",
       "frag": "",
