@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "3 Oct 2026",
-  "syncedAt": "2026-10-03T13:02:29.764Z",
+  "feedUpdated": "4 Oct 2026",
+  "syncedAt": "2026-10-04T13:41:56.222Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 5,
-    "fedTotal": -1
+    "fragTotal": 9,
+    "fedTotal": -3
   },
   "feed": [
     {
@@ -63,6 +63,52 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/03/us/politics/trump-putin-ukraine-oil-deal-5-takeaways.html"
+    },
+    {
+      "date": "4 Oct 2026",
+      "headline": "Latvia's pro-European ruling party wins election as populists gain ground",
+      "ai": "With more than 99.9 per cent of votes counted, Prime Minister Andris Kulbergs' United List party was in the lead with 35.4 percent, according to state TV.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "LVA"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/04/latvias-pro-european-ruling-party-wins-election-as-populists-gain-ground"
+    },
+    {
+      "date": "4 Oct 2026",
+      "headline": "Bosnia votes as pro-Russian politician looms large over race and stalled EU bid dominate election",
+      "ai": "Around 3.4 million voters in Bosnia are choosing the three members of the country’s multi-ethnic presidency, lawmakers for the national Parliament, and heads of institutions for the country’s two entities.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "BIH",
+        "RUS",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/04/bosnia-votes-as-pro-russian-politician-looms-large-over-race-and-a-stalled-eu-bid-dominate"
+    },
+    {
+      "date": "4 Oct 2026",
+      "headline": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+      "ai": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "1 Oct 2026",
@@ -135,49 +181,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/02/world/europe/spain-housing-vote-elections.html"
-    },
-    {
-      "date": "2 Oct 2026",
-      "headline": "A Front Line at the Border: How Russia Uses Migrants as Weapons Against Europe",
-      "ai": "The scheme is part of Russia’s larger strategy for sowing discord in the West, if more subtle than other recent operations blamed on the Kremlin.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/02/world/europe/latvia-immigration-russia.html"
-    },
-    {
-      "date": "3 Oct 2026",
-      "headline": "US Sanctions A7, a Russia Firm That Helps Sidestep Economic Restrictions",
-      "ai": "The move followed reports detailing how A7, a Moscow firm, uses shell companies around the world to move funds for clients who are themselves subject to sanctions.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/01/business/a7-russia-us-sanctions.html"
-    },
-    {
-      "date": "1 Oct 2026",
-      "headline": "Russia to Sharply Increase War Spending and Cut Social Programs",
-      "ai": "Both sides are finding it increasingly difficult to finance the conflict in Ukraine. Russia’s 2027 budget envisions more debt, higher taxes and lower social benefits.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/01/world/europe/russia-war-budget.html"
     }
   ]
 }
