@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "4 Oct 2026",
-  "syncedAt": "2026-10-04T13:41:56.222Z",
+  "feedUpdated": "5 Oct 2026",
+  "syncedAt": "2026-10-05T16:48:33.642Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 9,
-    "fedTotal": -3
+    "fragTotal": 5,
+    "fedTotal": -1
   },
   "feed": [
     {
@@ -36,21 +36,22 @@
       "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "3 Oct 2026",
-      "headline": "Will Spain's housing crisis lead to a snap election?",
-      "ai": "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis.",
+      "date": "5 Oct 2026",
+      "headline": "Watch: How Spain's housing crisis has resulted in an early general election",
+      "ai": "A series of measures to tackle the housing crisis were defeated in parliament on Friday",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
       "fedWeight": -1,
       "countries": [
-        "ESP"
+        "ESP",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cmgj9vz2zxelo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c83vqk2k2k20o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "3 Oct 2026",
+      "date": "5 Oct 2026",
       "headline": "Trump, Putin, Ukraine and an Oil Deal: 5 Takeaways",
       "ai": "A proposal to bolster relations with the Kremlin through the purchase of Russian energy assets is striking even for an administration that regularly mixes personal business interests with foreign policy.",
       "frag": "Highlights the limits of national coordination",
@@ -65,34 +66,18 @@
       "url": "https://www.nytimes.com/2026/10/03/us/politics/trump-putin-ukraine-oil-deal-5-takeaways.html"
     },
     {
-      "date": "4 Oct 2026",
-      "headline": "Latvia's pro-European ruling party wins election as populists gain ground",
-      "ai": "With more than 99.9 per cent of votes counted, Prime Minister Andris Kulbergs' United List party was in the lead with 35.4 percent, according to state TV.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "5 Oct 2026",
+      "headline": "Spanish PM Sánchez calls early election after housing protests",
+      "ai": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "LVA"
+        "ESP"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/04/latvias-pro-european-ruling-party-wins-election-as-populists-gain-ground"
-    },
-    {
-      "date": "4 Oct 2026",
-      "headline": "Bosnia votes as pro-Russian politician looms large over race and stalled EU bid dominate election",
-      "ai": "Around 3.4 million voters in Bosnia are choosing the three members of the country’s multi-ethnic presidency, lawmakers for the national Parliament, and heads of institutions for the country’s two entities.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "BIH",
-        "RUS",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/04/bosnia-votes-as-pro-russian-politician-looms-large-over-race-and-a-stalled-eu-bid-dominate"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "4 Oct 2026",
@@ -169,18 +154,35 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "2 Oct 2026",
-      "headline": "Spanish Lawmakers Reject Eviction Freeze, Spurring Calls for Early Elections",
-      "ai": "The government had proposed more protections for tenants after outrage at the eviction of an 87-year-old woman in Madrid.",
+      "date": "5 Oct 2026",
+      "headline": "US meeting in Poland excluding France, UK, Baltics risks dividing NATO",
+      "ai": "US Undersecretary of Defense Elbridge Colby is hosting representatives from five key NATO members in Poland to discuss defence capabilities and the future of the alliance. Critics warn the exclusion of some Allies risks creating a “toxic” divide.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP"
+        "FRA",
+        "POL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/02/world/europe/spain-housing-vote-elections.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/05/us-meeting-in-poland-excluding-france-uk-baltic-risks-dividing-nato"
+    },
+    {
+      "date": "5 Oct 2026",
+      "headline": "Europe Today: Russia hits Kyiv as Merz visits; Bolsonaro wins Brazil's first round election",
+      "ai": "German Chancellor Friedrich Merz's visit to Ukraine was met with Russian missiles as he pledged €1.3 billion to Kyiv. In Iran, the country's deputy foreign minister says Washington is reviewing Tehran’s proposal to end the war. And in Brazil, Bolsonaro wins Brazil's first round election.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "UKR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/05/europe-today-russia-hits-kyiv-as-merz-visits-bolsonaro-wins-brazils-first-round-election"
     }
   ]
 }
