@@ -1,16 +1,16 @@
 {
-  "feedUpdated": "5 Oct 2026",
-  "syncedAt": "2026-10-05T16:48:33.642Z",
+  "feedUpdated": "6 Oct 2026",
+  "syncedAt": "2026-10-06T14:45:02.650Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 5,
+    "fragTotal": 2,
     "fedTotal": -1
   },
   "feed": [
     {
-      "date": "2 Oct 2026",
-      "headline": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
-      "ai": "The defeat raises pressure on Sánchez to call a snap election, after a series of scandals affecting his party and allies.",
+      "date": "5 Oct 2026",
+      "headline": "Spain PM pins hopes on housing crisis to help win snap election",
+      "ai": "Calling of a snap election was not a knee-jerk reaction from Pedro Sánchez but a carefully thought-out manoeuvre, Guy Hedgecoe reports from Madrid.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
@@ -19,51 +19,7 @@
         "ESP"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "25 Sept 2026",
-      "headline": "As Merz scrambles for support, Germany's identity crisis is laid bare",
-      "ai": "Voters are turning away from the centre in Germany as fears grow about the economy and migration.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "DEU"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "5 Oct 2026",
-      "headline": "Watch: How Spain's housing crisis has resulted in an early general election",
-      "ai": "A series of measures to tackle the housing crisis were defeated in parliament on Friday",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "ESP",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c83vqk2k2k20o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "5 Oct 2026",
-      "headline": "Trump, Putin, Ukraine and an Oil Deal: 5 Takeaways",
-      "ai": "A proposal to bolster relations with the Kremlin through the purchase of Russian energy assets is striking even for an administration that regularly mixes personal business interests with foreign policy.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/03/us/politics/trump-putin-ukraine-oil-deal-5-takeaways.html"
+      "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "5 Oct 2026",
@@ -80,20 +36,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "4 Oct 2026",
-      "headline": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
-      "ai": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball.",
+      "date": "6 Oct 2026",
+      "headline": "Irish budget to tackle childcare and energy costs",
+      "ai": "The threshold at which people start paying the higher income tax rate is also expected to increase.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU",
-        "UKR",
-        "RUS"
+        "IRL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "1 Oct 2026",
@@ -111,34 +65,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "2 Oct 2026",
-      "headline": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
-      "ai": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "1 Oct 2026",
-      "headline": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
-      "ai": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SVN"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "30 Sept 2026",
       "headline": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
       "ai": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
@@ -154,35 +80,103 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "5 Oct 2026",
-      "headline": "US meeting in Poland excluding France, UK, Baltics risks dividing NATO",
-      "ai": "US Undersecretary of Defense Elbridge Colby is hosting representatives from five key NATO members in Poland to discuss defence capabilities and the future of the alliance. Critics warn the exclusion of some Allies risks creating a “toxic” divide.",
+      "date": "4 Oct 2026",
+      "headline": "Two people killed as floods hit Spain's Catalonia region",
+      "ai": "Spain's Prime Minister Pedro Sánchez says the situation in Catalonia remains \"very complicated\".",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA",
-        "POL"
+        "ESP"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/05/us-meeting-in-poland-excluding-france-uk-baltic-risks-dividing-nato"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cw8rzdkmj5n1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Drones Hit Ships Off Bulgaria’s Black Sea Coast, Prime Minister Says",
+      "ai": "A rescue effort was underway, Prime Minister Rumen Radev said, after one of the two ships sank. It was not immediately clear where the drones originated.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BGR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/bulgaria-drones-black-sea.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "An 87-Year-Old’s Eviction Dragged Down Spain’s Leader. Will It Also Save Him?",
+      "ai": "The eviction of the woman in Madrid last month helped unravel Pedro Sánchez’s government. It also gave him an election platform.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/pedro-sanchez-spain-housing-election.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Germany’s Far Right Claims Its First Statehouse Speaker Since 1945",
+      "ai": "After winning a state election last month, the Alternative for Germany is the first far-right party to oversee a state legislature since the Nazi era.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/germany-afd-saxony-anhalt.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Strikes, Barricades and Fiscal Turmoil: An Autumn of Discontent Grips France",
+      "ai": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/france-crisis-autumn-discontent.html"
     },
     {
       "date": "5 Oct 2026",
-      "headline": "Europe Today: Russia hits Kyiv as Merz visits; Bolsonaro wins Brazil's first round election",
-      "ai": "German Chancellor Friedrich Merz's visit to Ukraine was met with Russian missiles as he pledged €1.3 billion to Kyiv. In Iran, the country's deputy foreign minister says Washington is reviewing Tehran’s proposal to end the war. And in Brazil, Bolsonaro wins Brazil's first round election.",
+      "headline": "Housing, Corruption and a Migrant Surge: Why Spain Is Holding an Early Election",
+      "ai": "Spain’s prime minister, Pedro Sánchez, dissolved Parliament on Monday, after months of spiraling crises.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU",
-        "UKR",
-        "RUS"
+        "ESP",
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/05/world/europe/spain-elections-housing-migrants-corruption.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Yemen government forces advance on Bab el-Mandeb in offensive against Houthis",
+      "ai": "Operation Yemen Dawn, backed by 100 Saudi coalition aircraft, retook the town of Dhubab just north of the strait, as the Houthis claimed they struck Riyadh's international airport, an oil refinery and military bases across Saudi Arabia, and Pakistan and Turkey agreed to deploy troops to the kingdom.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/05/europe-today-russia-hits-kyiv-as-merz-visits-bolsonaro-wins-brazils-first-round-election"
+      "url": "https://www.euronews.com/2026/10/06/yemen-government-forces-advance-on-bab-el-mandeb-in-offensive-against-houthis"
     }
   ]
 }
