@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "6 Oct 2026",
-  "syncedAt": "2026-10-06T14:45:02.650Z",
+  "feedUpdated": "7 Oct 2026",
+  "syncedAt": "2026-10-07T15:05:24.183Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -36,20 +36,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "6 Oct 2026",
-      "headline": "Irish budget to tackle childcare and energy costs",
-      "ai": "The threshold at which people start paying the higher income tax rate is also expected to increase.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "1 Oct 2026",
       "headline": "Spain and China are cosying up - to the anger of many in the EU",
       "ai": "Amid global tumult, the two countries' alliance is not the only unlikely pairing.",
@@ -63,6 +49,90 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "7 Oct 2026",
+      "headline": "Rubio Stresses Need for U.S. Security Work With Greece on Migration and Terrorism",
+      "ai": "Secretary of State Marco Rubio praised Greece for spending more on defense, while saying it needs to address “mass migration.”",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GRC"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/07/us/politics/rubio-greece-defense-immigration.html"
+    },
+    {
+      "date": "7 Oct 2026",
+      "headline": "Amid Midterm Crunch, Trump Advisers Took Time to Help Russia-Aligned Government",
+      "ai": "James Blair and Chris LaCivita, who are leading the president’s congressional campaign operation, traveled to Republika Srpska to provide election advice.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/us/politics/trump-advisers-republika-srpska.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Drones Hit Ships Off Bulgaria’s Black Sea Coast, Prime Minister Says",
+      "ai": "A rescue effort was underway, Prime Minister Rumen Radev said, after one of the two ships sank. It was not immediately clear where the drones originated.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BGR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/bulgaria-drones-black-sea.html"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "As Spain Heads Into a Snap Election, Sánchez Turns an Eviction Into a Campaign Cause",
+      "ai": "The eviction of the woman in Madrid last month helped unravel Pedro Sánchez’s government. It also gave him an election platform.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/06/world/europe/pedro-sanchez-spain-housing-election.html"
+    },
+    {
+      "date": "7 Oct 2026",
+      "headline": "Russia asks Vietnam for planes as illegally re-registered Western fleet falls apart",
+      "ai": "Moscow proposed wet-leasing Vietnamese aircraft, crews and maintenance, but any transfer would involve Airbus or Boeing jets, exposing Vietnamese carriers to secondary sanctions. Nearly a fifth of Russia's largest airlines' planes are already grounded, double the normal downtime rate.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/07/russia-asks-vietnam-for-planes-as-illegally-re-registered-western-fleet-falls-apart"
+    },
+    {
+      "date": "6 Oct 2026",
+      "headline": "Irish budget to tackle childcare and energy costs",
+      "ai": "The threshold at which people start paying the higher income tax rate is also expected to increase.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "30 Sept 2026",
@@ -95,20 +165,6 @@
     },
     {
       "date": "6 Oct 2026",
-      "headline": "Drones Hit Ships Off Bulgaria’s Black Sea Coast, Prime Minister Says",
-      "ai": "A rescue effort was underway, Prime Minister Rumen Radev said, after one of the two ships sank. It was not immediately clear where the drones originated.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BGR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/bulgaria-drones-black-sea.html"
-    },
-    {
-      "date": "6 Oct 2026",
       "headline": "An 87-Year-Old’s Eviction Dragged Down Spain’s Leader. Will It Also Save Him?",
       "ai": "The eviction of the woman in Madrid last month helped unravel Pedro Sánchez’s government. It also gave him an election platform.",
       "frag": "",
@@ -120,63 +176,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/06/world/europe/pedro-sanchez-spain-housing-election.html"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "Germany’s Far Right Claims Its First Statehouse Speaker Since 1945",
-      "ai": "After winning a state election last month, the Alternative for Germany is the first far-right party to oversee a state legislature since the Nazi era.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/germany-afd-saxony-anhalt.html"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "Strikes, Barricades and Fiscal Turmoil: An Autumn of Discontent Grips France",
-      "ai": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/france-crisis-autumn-discontent.html"
-    },
-    {
-      "date": "5 Oct 2026",
-      "headline": "Housing, Corruption and a Migrant Surge: Why Spain Is Holding an Early Election",
-      "ai": "Spain’s prime minister, Pedro Sánchez, dissolved Parliament on Monday, after months of spiraling crises.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/05/world/europe/spain-elections-housing-migrants-corruption.html"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "Yemen government forces advance on Bab el-Mandeb in offensive against Houthis",
-      "ai": "Operation Yemen Dawn, backed by 100 Saudi coalition aircraft, retook the town of Dhubab just north of the strait, as the Houthis claimed they struck Riyadh's international airport, an oil refinery and military bases across Saudi Arabia, and Pakistan and Turkey agreed to deploy troops to the kingdom.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/06/yemen-government-forces-advance-on-bab-el-mandeb-in-offensive-against-houthis"
     }
   ]
 }
