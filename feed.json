@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "7 Oct 2026",
-  "syncedAt": "2026-10-07T15:05:24.183Z",
+  "feedUpdated": "8 Oct 2026",
+  "syncedAt": "2026-10-08T15:13:30.005Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": -1
+    "fragTotal": 3,
+    "fedTotal": 0
   },
   "feed": [
+    {
+      "date": "8 Oct 2026",
+      "headline": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
+      "ai": "Prime Minister Giorgia Meloni says the move will deliver more stable government, but opposition parties say her aim is to stay in power.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "ITA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjdw8rdl5o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "5 Oct 2026",
       "headline": "Spain PM pins hopes on housing crisis to help win snap election",
@@ -20,6 +34,96 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "France Is Veering Toward a Potential Debt Crisis, a Warning to the World",
+      "ai": "French bond investors are demanding sharply higher interest rates, a cautionary development for other high-debt countries.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/08/business/france-bond-yields.html"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "UK and Germany will face threats together, says Burnham in Berlin",
+      "ai": "Ahead of a UK-EU summit next month, Burnham said he was committed to \"see if we can bring the UK closer to Europe\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "GBR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq34qexdzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "'Come all the way' back to EU, French finance minister tells UK",
+      "ai": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA",
+        "GBR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "Italy Weighs Controversial Law Giving Bonus Seats to Election Winners",
+      "ai": "Supporters of the legislation say it will bring stability to a country with a long history of short-lived governments, but critics see the measure as a threat to democracy.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/08/world/europe/italy-election-law-bonus.html"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "Protests in Turkey’s Izmir after mayor switches to Erdogan’s AK Party",
+      "ai": "Protesters gathered in Izmir after Mayor Cemil Tugay joined President Recep Tayyip Erdogan’s AK Party, with demonstrators calling for his resignation.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/08/protests-in-turkeys-izmir-after-mayor-switches-to-erdogans-ak-party"
+    },
+    {
+      "date": "8 Oct 2026",
+      "headline": "Europe Today: Rubio urges Europe to wake up as EU trade chief begins key China trip",
+      "ai": "Europe's ties with China, the US and the UK are all being tested at once. EU trade chief Maroš Šefčovič is in Beijing with a deadline to rebalance trade relations, Marco Rubio tells Europe to wake up, and London weighs rejoining the EU. In France, students are back on the streets today.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA",
+        "GBR",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/08/europe-today-rubio-urges-europe-to-wake-up-as-eu-trade-chief-begins-key-china-trip"
     },
     {
       "date": "5 Oct 2026",
@@ -77,105 +181,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/06/us/politics/trump-advisers-republika-srpska.html"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "Drones Hit Ships Off Bulgaria’s Black Sea Coast, Prime Minister Says",
-      "ai": "A rescue effort was underway, Prime Minister Rumen Radev said, after one of the two ships sank. It was not immediately clear where the drones originated.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BGR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/bulgaria-drones-black-sea.html"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "As Spain Heads Into a Snap Election, Sánchez Turns an Eviction Into a Campaign Cause",
-      "ai": "The eviction of the woman in Madrid last month helped unravel Pedro Sánchez’s government. It also gave him an election platform.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/pedro-sanchez-spain-housing-election.html"
-    },
-    {
-      "date": "7 Oct 2026",
-      "headline": "Russia asks Vietnam for planes as illegally re-registered Western fleet falls apart",
-      "ai": "Moscow proposed wet-leasing Vietnamese aircraft, crews and maintenance, but any transfer would involve Airbus or Boeing jets, exposing Vietnamese carriers to secondary sanctions. Nearly a fifth of Russia's largest airlines' planes are already grounded, double the normal downtime rate.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/07/russia-asks-vietnam-for-planes-as-illegally-re-registered-western-fleet-falls-apart"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "Irish budget to tackle childcare and energy costs",
-      "ai": "The threshold at which people start paying the higher income tax rate is also expected to increase.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "30 Sept 2026",
-      "headline": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
-      "ai": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "4 Oct 2026",
-      "headline": "Two people killed as floods hit Spain's Catalonia region",
-      "ai": "Spain's Prime Minister Pedro Sánchez says the situation in Catalonia remains \"very complicated\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cw8rzdkmj5n1o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "6 Oct 2026",
-      "headline": "An 87-Year-Old’s Eviction Dragged Down Spain’s Leader. Will It Also Save Him?",
-      "ai": "The eviction of the woman in Madrid last month helped unravel Pedro Sánchez’s government. It also gave him an election platform.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/world/europe/pedro-sanchez-spain-housing-election.html"
     }
   ]
 }
