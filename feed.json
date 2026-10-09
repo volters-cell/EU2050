@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "8 Oct 2026",
-  "syncedAt": "2026-10-08T15:13:30.005Z",
+  "feedUpdated": "9 Oct 2026",
+  "syncedAt": "2026-10-09T14:58:49.036Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 3,
-    "fedTotal": 0
+    "fragTotal": 2,
+    "fedTotal": 2
   },
   "feed": [
+    {
+      "date": "8 Oct 2026",
+      "headline": "Protesters blame 'vulture funds' for Spain's housing crisis",
+      "ai": "Hundreds have pitched their tents in central Madrid, while the Spanish prime minister has called a snap election.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "8 Oct 2026",
       "headline": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
@@ -36,18 +50,33 @@
       "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "8 Oct 2026",
-      "headline": "France Is Veering Toward a Potential Debt Crisis, a Warning to the World",
-      "ai": "French bond investors are demanding sharply higher interest rates, a cautionary development for other high-debt countries.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
+      "date": "9 Oct 2026",
+      "headline": "China and Europe Agree to Deal to Limit Chinese Exports of Hybrid Cars",
+      "ai": "The European Union said that the deal could roughly halve Chinese shipments over four years. But it also could lead to an even stronger Chinese auto industry.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
       "countries": [
-        "FRA"
+        "BEL"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/08/business/france-bond-yields.html"
+      "url": "https://www.nytimes.com/2026/10/09/business/china-european-union-trade.html"
+    },
+    {
+      "date": "9 Oct 2026",
+      "headline": "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
+      "ai": "A renewed Russian campaign of strikes on power and energy infrastructure has made some contemplate leaving Ukraine's capital.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6zjx7jexz1do?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "8 Oct 2026",
@@ -82,82 +111,52 @@
       "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "8 Oct 2026",
-      "headline": "Italy Weighs Controversial Law Giving Bonus Seats to Election Winners",
-      "ai": "Supporters of the legislation say it will bring stability to a country with a long history of short-lived governments, but critics see the measure as a threat to democracy.",
+      "date": "9 Oct 2026",
+      "headline": "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
+      "ai": "Moscow has used tactics of fear and ambiguity to try to divide NATO and limit support for Ukraine. But how should Europe retaliate? And how hard?",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ITA"
+        "UKR",
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/08/world/europe/italy-election-law-bonus.html"
+      "url": "https://www.nytimes.com/2026/10/09/world/europe/putin-russia-ukraine-war-europe-nato.html"
+    },
+    {
+      "date": "9 Oct 2026",
+      "headline": "Labour Holds Off Green Party in Election for Starmer’s Former London Seat",
+      "ai": "Sagal Abdi-Wali won a special election in central London that was seen as an early test for Prime Minister Andy Burnham.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/09/world/europe/holborn-st-pancras-byelection-uk-result.html"
+    },
+    {
+      "date": "9 Oct 2026",
+      "headline": "A Rural Village Voted to Leave the U.K., Stirring Britain’s Migration Debate",
+      "ai": "A plan to house 1,250 asylum seekers on the outskirts of Piddington prompted a symbolic independence vote, highlighting a growing dilemma for the government.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/09/world/europe/piddington-village-uk-independence.html"
     },
     {
       "date": "8 Oct 2026",
-      "headline": "Protests in Turkey’s Izmir after mayor switches to Erdogan’s AK Party",
-      "ai": "Protesters gathered in Izmir after Mayor Cemil Tugay joined President Recep Tayyip Erdogan’s AK Party, with demonstrators calling for his resignation.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/08/protests-in-turkeys-izmir-after-mayor-switches-to-erdogans-ak-party"
-    },
-    {
-      "date": "8 Oct 2026",
-      "headline": "Europe Today: Rubio urges Europe to wake up as EU trade chief begins key China trip",
-      "ai": "Europe's ties with China, the US and the UK are all being tested at once. EU trade chief Maroš Šefčovič is in Beijing with a deadline to rebalance trade relations, Marco Rubio tells Europe to wake up, and London weighs rejoining the EU. In France, students are back on the streets today.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "GBR",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/08/europe-today-rubio-urges-europe-to-wake-up-as-eu-trade-chief-begins-key-china-trip"
-    },
-    {
-      "date": "5 Oct 2026",
-      "headline": "Spanish PM Sánchez calls early election after housing protests",
-      "ai": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "1 Oct 2026",
-      "headline": "Spain and China are cosying up - to the anger of many in the EU",
-      "ai": "Amid global tumult, the two countries' alliance is not the only unlikely pairing.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "7 Oct 2026",
-      "headline": "Rubio Stresses Need for U.S. Security Work With Greece on Migration and Terrorism",
-      "ai": "Secretary of State Marco Rubio praised Greece for spending more on defense, while saying it needs to address “mass migration.”",
+      "headline": "Margaret Papandreou, American-Born First Lady of Greece, Dies at 102",
+      "ai": "The wife of Prime Minister Andreas Papandreou, she led reforms in the 1980s that helped legalize abortion and end other legal and social restrictions on women.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -166,21 +165,22 @@
         "GRC"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/07/us/politics/rubio-greece-defense-immigration.html"
+      "url": "https://www.nytimes.com/2026/10/08/world/europe/margaret-papandreou-dead.html"
     },
     {
-      "date": "7 Oct 2026",
-      "headline": "Amid Midterm Crunch, Trump Advisers Took Time to Help Russia-Aligned Government",
-      "ai": "James Blair and Chris LaCivita, who are leading the president’s congressional campaign operation, traveled to Republika Srpska to provide election advice.",
+      "date": "9 Oct 2026",
+      "headline": "Putin offers help to end Iran war while Russia continues its own in Ukraine",
+      "ai": "The Russian president met Pezeshkian in Turkmenistan and pledged to do “everything in our power” to end the ongoing war between the US and Iran, despite Russia not being among the official mediators.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/06/us/politics/trump-advisers-republika-srpska.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/09/putin-offers-help-to-end-iran-war-while-russia-continues-its-own-in-ukraine"
     }
   ]
 }
