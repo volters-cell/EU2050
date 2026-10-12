@@ -1,27 +1,12 @@
 {
-  "feedUpdated": "11 Oct 2026",
-  "syncedAt": "2026-10-11T14:39:11.653Z",
+  "feedUpdated": "12 Oct 2026",
+  "syncedAt": "2026-10-12T17:23:34.933Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 4
+    "fragTotal": 2,
+    "fedTotal": 2
   },
   "feed": [
-    {
-      "date": "10 Oct 2026",
-      "headline": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
-      "ai": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss"
-    },
     {
       "date": "8 Oct 2026",
       "headline": "Protesters blame 'vulture funds' for Spain's housing crisis",
@@ -35,20 +20,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "8 Oct 2026",
-      "headline": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
-      "ai": "Prime Minister Giorgia Meloni says the move will deliver more stable government, but opposition parties say her aim is to stay in power.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "ITA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjdw8rdl5o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "9 Oct 2026",
@@ -79,34 +50,32 @@
       "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "10 Oct 2026",
-      "headline": "Nord Stream trial: How German police followed the evidence - to Ukraine",
-      "ai": "After four years, a Ukrainian man is set to stand trial in Hamburg accused of sabotaging the Nord Stream pipelines.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
+      "date": "12 Oct 2026",
+      "headline": "Amsterdam’s Van Gogh Museum Says It Reached Funding Deal and Won’t Have to Close",
+      "ai": "In a yearslong dispute, the Amsterdam institution pressed the Dutch government for an increased annual subsidy to pay for what the museum said were vital renovations.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
       "countries": [
-        "DEU",
-        "UKR"
+        "NLD"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/12/arts/van-gogh-museum-amsterdam-funding.html"
     },
     {
-      "date": "9 Oct 2026",
-      "headline": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
-      "ai": "Often dubbed \"Russia's Google\", the tech firm admits customers may experience disruption to digital services due to the attacks.",
+      "date": "11 Oct 2026",
+      "headline": "Poland detains man suspected of planning assassination of PM Tusk",
+      "ai": "Police received credible information about possible attacks against Donald Tusk and his defence minister.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "POL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "10 Oct 2026",
@@ -138,6 +107,65 @@
       "url": "https://www.bbc.co.uk/news/articles/c6zjx7jexz1do?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "10 Oct 2026",
+      "headline": "Nord Stream trial: How German police followed the evidence - to Ukraine",
+      "ai": "After four years, a Ukrainian man is set to stand trial in Hamburg accused of sabotaging the Nord Stream pipelines.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "12 Oct 2026",
+      "headline": "Watch: What could Trump's energy ceasefire mean for Ukraine?",
+      "ai": "The BBC's Dan Johnson reports from Kyiv, where Ukrainians face another winter with electricity outages.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "12 Oct 2026",
+      "headline": "NATO Details Plan to Shield Ukraine’s European Allies from Russia",
+      "ai": "With the Russians intensifying sabotage, arson and cyberattacks against European nations supporting Ukraine, NATO divulged a blueprint, in case of war, to deter the Kremlin.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/12/world/europe/nato-strategy-russia-europe.html"
+    },
+    {
+      "date": "12 Oct 2026",
+      "headline": "Trump Gives Putin a Hand in Russia’s Economic War With Ukraine",
+      "ai": "President Trump is moving to buy Russian diesel while also pressuring Ukraine to halt attacks on refineries, a lifeblood of Moscow’s war machine.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/12/world/europe/russia-diesel-trump.html"
+    },
+    {
       "date": "11 Oct 2026",
       "headline": "Ukraine Shrugs Off Trump Call to Ditch Zelensky for Energy Strikes",
       "ai": "President Trump lashed out at President Volodymyr Zelensky for striking Russian oil refineries. Mr. Zelensky said he’ll stop — if Russia does too.",
@@ -151,35 +179,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/11/world/europe/trump-zelensky-diesel-energy-russia-.html"
-    },
-    {
-      "date": "10 Oct 2026",
-      "headline": "Trump Says He Should Have Won ‘8 Nobel Peace Prizes’ After Being Snubbed",
-      "ai": "The president took to social media on Friday and Saturday to criticize the choice of Navi Pillay and disparage the Norwegian Nobel Committee.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "NOR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/10/us/politics/trump-nobel-peace-prize-norway-navi-pillay.html"
-    },
-    {
-      "date": "10 Oct 2026",
-      "headline": "Rebuking Ukraine Over Oil Strikes, Trump Says It Should ‘Get a New President’",
-      "ai": "Hours after President Trump said the United States would buy Russian diesel, the Kremlin said there would be no immediate resumption of discussions to end the war.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/10/world/europe/ukraine-russia-trump-diesel-talks.html"
     }
   ]
 }
