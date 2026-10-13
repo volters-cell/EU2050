@@ -1,26 +1,12 @@
 {
-  "feedUpdated": "12 Oct 2026",
-  "syncedAt": "2026-10-12T17:23:34.933Z",
+  "feedUpdated": "13 Oct 2026",
+  "syncedAt": "2026-10-13T15:35:27.741Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": 2
+    "fragTotal": -1,
+    "fedTotal": 5
   },
   "feed": [
-    {
-      "date": "8 Oct 2026",
-      "headline": "Protesters blame 'vulture funds' for Spain's housing crisis",
-      "ai": "Hundreds have pitched their tents in central Madrid, while the Spanish prime minister has called a snap election.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss"
-    },
     {
       "date": "9 Oct 2026",
       "headline": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
@@ -36,18 +22,33 @@
       "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "5 Oct 2026",
-      "headline": "Spain PM pins hopes on housing crisis to help win snap election",
-      "ai": "Calling of a snap election was not a knee-jerk reaction from Pedro Sánchez but a carefully thought-out manoeuvre, Guy Hedgecoe reports from Madrid.",
+      "date": "13 Oct 2026",
+      "headline": "U.K. and Europe Recoil From Trump’s Diesel Deal With Putin",
+      "ai": "Shocked by the U.S. agreement with Russia, which Ukraine has called “a gift” to President Putin, officials in Europe have coalesced around a cautious diplomatic message.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/13/world/europe/trump-putin-diesel-uk-europe-gift.html"
+    },
+    {
+      "date": "13 Oct 2026",
+      "headline": "Macron Dreamed of Reviving France, but His Term Is Ending in Crisis",
+      "ai": "Nearly a decade after his first election as president, Emmanuel Macron is presiding over a tense country sliding toward the fiscal brink.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
       "fedWeight": -1,
       "countries": [
-        "ESP"
+        "FRA"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/13/world/europe/macron-france-protests.html"
     },
     {
       "date": "12 Oct 2026",
@@ -64,37 +65,23 @@
       "url": "https://www.nytimes.com/2026/10/12/arts/van-gogh-museum-amsterdam-funding.html"
     },
     {
-      "date": "11 Oct 2026",
-      "headline": "Poland detains man suspected of planning assassination of PM Tusk",
-      "ai": "Police received credible information about possible attacks against Donald Tusk and his defence minister.",
+      "date": "13 Oct 2026",
+      "headline": "Trump says Kimberly Guilfoyle could be fired as Greece envoy after alleged misconduct",
+      "ai": "\"We're not happy,\" says the president about his son's ex-fiancée following reports of improper behaviour.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL"
+        "GRC"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cjkgedexp6zgo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "10 Oct 2026",
-      "headline": "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
-      "ai": "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "NOR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckgj921e14jdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "9 Oct 2026",
-      "headline": "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
-      "ai": "A renewed Russian campaign of strikes on power and energy infrastructure has made some contemplate leaving Ukraine's capital.",
+      "date": "12 Oct 2026",
+      "headline": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+      "ai": "Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -104,7 +91,22 @@
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6zjx7jexz1do?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "13 Oct 2026",
+      "headline": "Why the prime minister wants to talk about Brexit again",
+      "ai": "For the first time since the UK left the EU, we have a prime minister who will \"unflinchingly\" debate Brexit, says the BBC's political editor Chris Mason.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxvgdql2y7zqo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "10 Oct 2026",
@@ -136,8 +138,23 @@
       "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "13 Oct 2026",
+      "headline": "Trump Hands Victories to Putin, Who Offers More War in Return",
+      "ai": "Russia has reaped a diesel deal and an increase in U.S. pressure on Ukraine as President Trump’s political needs align with his longstanding inclinations toward Russia.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/13/world/europe/russia-putin-trump-diesel-ukraine.html"
+    },
+    {
       "date": "12 Oct 2026",
-      "headline": "NATO Details Plan to Shield Ukraine’s European Allies from Russia",
+      "headline": "NATO Details Plan to Shield Ukraine’s European Allies From Russia",
       "ai": "With the Russians intensifying sabotage, arson and cyberattacks against European nations supporting Ukraine, NATO divulged a blueprint, in case of war, to deter the Kremlin.",
       "frag": "",
       "fed": "",
@@ -151,34 +168,18 @@
       "url": "https://www.nytimes.com/2026/10/12/world/europe/nato-strategy-russia-europe.html"
     },
     {
-      "date": "12 Oct 2026",
-      "headline": "Trump Gives Putin a Hand in Russia’s Economic War With Ukraine",
-      "ai": "President Trump is moving to buy Russian diesel while also pressuring Ukraine to halt attacks on refineries, a lifeblood of Moscow’s war machine.",
+      "date": "13 Oct 2026",
+      "headline": "Russia funnels nearly half its budget into defence, cutting social spending",
+      "ai": "Russia’s 2027 draft budget allocates a record share to defence and security, as regions quietly divert funds for foster children and orphans to war payments and “coffin money” for soldiers’ families is cut by up to 95% in some areas.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/12/world/europe/russia-diesel-trump.html"
-    },
-    {
-      "date": "11 Oct 2026",
-      "headline": "Ukraine Shrugs Off Trump Call to Ditch Zelensky for Energy Strikes",
-      "ai": "President Trump lashed out at President Volodymyr Zelensky for striking Russian oil refineries. Mr. Zelensky said he’ll stop — if Russia does too.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/11/world/europe/trump-zelensky-diesel-energy-russia-.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/13/russia-funnels-nearly-half-its-budget-into-defence-cutting-social-spending"
     }
   ]
 }
