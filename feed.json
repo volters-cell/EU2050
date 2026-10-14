@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "13 Oct 2026",
-  "syncedAt": "2026-10-13T15:35:27.741Z",
+  "feedUpdated": "14 Oct 2026",
+  "syncedAt": "2026-10-14T13:18:40.797Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 5
+    "fragTotal": -2,
+    "fedTotal": 4
   },
   "feed": [
     {
@@ -22,9 +22,9 @@
       "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "13 Oct 2026",
-      "headline": "U.K. and Europe Recoil From Trump’s Diesel Deal With Putin",
-      "ai": "Shocked by the U.S. agreement with Russia, which Ukraine has called “a gift” to President Putin, officials in Europe have coalesced around a cautious diplomatic message.",
+      "date": "14 Oct 2026",
+      "headline": "Senators Urge Trump to Reverse Diesel Deal With Putin",
+      "ai": "A bipartisan group of 12 senators called on the president to drop his decision to ease sanctions on Russia’s exports of diesel fuel, saying the deal would help Moscow continue the war in Ukraine.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
@@ -34,49 +34,51 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/13/world/europe/trump-putin-diesel-uk-europe-gift.html"
+      "url": "https://www.nytimes.com/2026/10/13/us/politics/trump-putin-russia-diesel-senate.html"
     },
     {
-      "date": "13 Oct 2026",
-      "headline": "Macron Dreamed of Reviving France, but His Term Is Ending in Crisis",
-      "ai": "Nearly a decade after his first election as president, Emmanuel Macron is presiding over a tense country sliding toward the fiscal brink.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/13/world/europe/macron-france-protests.html"
-    },
-    {
-      "date": "12 Oct 2026",
-      "headline": "Amsterdam’s Van Gogh Museum Says It Reached Funding Deal and Won’t Have to Close",
-      "ai": "In a yearslong dispute, the Amsterdam institution pressed the Dutch government for an increased annual subsidy to pay for what the museum said were vital renovations.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "NLD"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/12/arts/van-gogh-museum-amsterdam-funding.html"
-    },
-    {
-      "date": "13 Oct 2026",
-      "headline": "Trump says Kimberly Guilfoyle could be fired as Greece envoy after alleged misconduct",
-      "ai": "\"We're not happy,\" says the president about his son's ex-fiancée following reports of improper behaviour.",
+      "date": "14 Oct 2026",
+      "headline": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
+      "ai": "Four years after the attacks, Serhii Kuznetsov appears in court accused of a plot to destroy Russia's gas pipelines to Germany.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GRC"
+        "DEU",
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjkgedexp6zgo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Oct 2026",
+      "headline": "Turkish police raid opposition TV station, halting live broadcasts",
+      "ai": "It is the latest in a series of crackdowns on media critical of the Turkish president and his government.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Oct 2026",
+      "headline": "Russia arrests Japanese journalist on spying charges",
+      "ai": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9g1el7x9zo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "12 Oct 2026",
@@ -138,7 +140,37 @@
       "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "13 Oct 2026",
+      "date": "14 Oct 2026",
+      "headline": "Zelensky to Visit U.K. as Ukraine Presses Allies on Intelligence Sharing",
+      "ai": "President Volodymyr Zelensky said Ukraine received “no early warning from our partners” about a Russian attack. President Trump has said Washington is still “sharing intel.”",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/14/world/europe/ukraine-intelligence-sharing-zelensky-uk.html"
+    },
+    {
+      "date": "14 Oct 2026",
+      "headline": "‘Honey Please’: The Steep Rise and Sudden Fall of Kimberly Guilfoyle.",
+      "ai": "President Trump cut her loose after damaging news reports about her tenure as ambassador to Greece. Once a prominent Trump insider, she suggested she will now fight to defend her reputation.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GRC"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/13/us/politics/kimberly-guilfoyle-resigns-trump-ambassador-greece.html"
+    },
+    {
+      "date": "14 Oct 2026",
       "headline": "Trump Hands Victories to Putin, Who Offers More War in Return",
       "ai": "Russia has reaped a diesel deal and an increase in U.S. pressure on Ukraine as President Trump’s political needs align with his longstanding inclinations toward Russia.",
       "frag": "",
@@ -151,35 +183,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/13/world/europe/russia-putin-trump-diesel-ukraine.html"
-    },
-    {
-      "date": "12 Oct 2026",
-      "headline": "NATO Details Plan to Shield Ukraine’s European Allies From Russia",
-      "ai": "With the Russians intensifying sabotage, arson and cyberattacks against European nations supporting Ukraine, NATO divulged a blueprint, in case of war, to deter the Kremlin.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/12/world/europe/nato-strategy-russia-europe.html"
-    },
-    {
-      "date": "13 Oct 2026",
-      "headline": "Russia funnels nearly half its budget into defence, cutting social spending",
-      "ai": "Russia’s 2027 draft budget allocates a record share to defence and security, as regions quietly divert funds for foster children and orphans to war payments and “coffin money” for soldiers’ families is cut by up to 95% in some areas.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/13/russia-funnels-nearly-half-its-budget-into-defence-cutting-social-spending"
     }
   ]
 }
