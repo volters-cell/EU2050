@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "14 Oct 2026",
-  "syncedAt": "2026-10-14T13:18:40.797Z",
+  "feedUpdated": "15 Oct 2026",
+  "syncedAt": "2026-10-15T13:04:26.604Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -23,18 +23,17 @@
     },
     {
       "date": "14 Oct 2026",
-      "headline": "Senators Urge Trump to Reverse Diesel Deal With Putin",
-      "ai": "A bipartisan group of 12 senators called on the president to drop his decision to ease sanctions on Russia’s exports of diesel fuel, saying the deal would help Moscow continue the war in Ukraine.",
+      "headline": "Why Trump Made a Diesel Deal With Putin",
+      "ai": "Our national security and White House correspondent David E. Sanger breaks down why President Donald Trump struck a deal with President Vladimir V. Putin to import Russian diesel fuel in the coming months, despite having signed recent congressional legislation tightening energy sanctions on Russia.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "UKR",
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/13/us/politics/trump-putin-russia-diesel-senate.html"
+      "url": "https://www.nytimes.com/video/world/europe/100000011205967/00vid-rv-trump-putin-deal.html"
     },
     {
       "date": "14 Oct 2026",
@@ -68,6 +67,20 @@
     },
     {
       "date": "14 Oct 2026",
+      "headline": "Burnham treads carefully with Zelensky visit, balancing Trump and Ukraine",
+      "ai": "The UK's prime minister meets with Volodymyr Zelensky after a rocky week for the Ukraine president.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmx23q4dwvneo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Oct 2026",
       "headline": "Russia arrests Japanese journalist on spying charges",
       "ai": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
       "frag": "",
@@ -82,8 +95,8 @@
     },
     {
       "date": "12 Oct 2026",
-      "headline": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
-      "ai": "Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says.",
+      "headline": "Why Moscow is staying tight-lipped on Trump's energy ceasefire",
+      "ai": "While Ukraine's Volodymyr Zelensky suggests he would sign up to a ceasefire on energy infrastructure, Russia has said little.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -93,7 +106,7 @@
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cjx2359qekrdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "13 Oct 2026",
@@ -126,53 +139,24 @@
       "url": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "12 Oct 2026",
-      "headline": "Watch: What could Trump's energy ceasefire mean for Ukraine?",
-      "ai": "The BBC's Dan Johnson reports from Kyiv, where Ukrainians face another winter with electricity outages.",
+      "date": "15 Oct 2026",
+      "headline": "Chinese Carmakers, Once a Sideshow, Take Center Stage at Paris Motor Show",
+      "ai": "At this week’s Paris Motor Show, there are no signs the influx of low-cost Chinese vehicles will slow despite European Union efforts.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Oct 2026",
-      "headline": "Zelensky to Visit U.K. as Ukraine Presses Allies on Intelligence Sharing",
-      "ai": "President Volodymyr Zelensky said Ukraine received “no early warning from our partners” about a Russian attack. President Trump has said Washington is still “sharing intel.”",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
+        "FRA",
+        "BEL"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/14/world/europe/ukraine-intelligence-sharing-zelensky-uk.html"
+      "url": "https://www.nytimes.com/2026/10/15/business/chinese-evs-europe-paris-motor-show.html"
     },
     {
-      "date": "14 Oct 2026",
-      "headline": "‘Honey Please’: The Steep Rise and Sudden Fall of Kimberly Guilfoyle.",
-      "ai": "President Trump cut her loose after damaging news reports about her tenure as ambassador to Greece. Once a prominent Trump insider, she suggested she will now fight to defend her reputation.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GRC"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/13/us/politics/kimberly-guilfoyle-resigns-trump-ambassador-greece.html"
-    },
-    {
-      "date": "14 Oct 2026",
-      "headline": "Trump Hands Victories to Putin, Who Offers More War in Return",
-      "ai": "Russia has reaped a diesel deal and an increase in U.S. pressure on Ukraine as President Trump’s political needs align with his longstanding inclinations toward Russia.",
+      "date": "15 Oct 2026",
+      "headline": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
+      "ai": "President Volodymyr Zelensky made the announcement in an interview with The Financial Times. He had paused the strikes to comply with a demand from the United States.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -182,7 +166,21 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/13/world/europe/russia-putin-trump-diesel-ukraine.html"
+      "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html"
+    },
+    {
+      "date": "15 Oct 2026",
+      "headline": "Azerbaijan engineers rare summit with in-conflict Middle East and Asian leaders",
+      "ai": "Israel and Iran have met for a rare “confidence-building measures” summit in Baku, with Azerbaijan saying it serves as “a connecting hub in the Eurasian space.”",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "AZE"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/15/azerbaijan-engineers-rare-summit-with-in-conflict-middle-east-and-asian-leaders"
     }
   ]
 }
