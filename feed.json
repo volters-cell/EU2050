@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "15 Oct 2026",
-  "syncedAt": "2026-10-15T13:04:26.604Z",
+  "feedUpdated": "16 Oct 2026",
+  "syncedAt": "2026-10-16T13:01:04.446Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -8,90 +8,79 @@
   },
   "feed": [
     {
-      "date": "9 Oct 2026",
-      "headline": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
-      "ai": "The US president hopes to ease his party's pain before next month's midterm elections, writes the BBC's North America correspondent.",
+      "date": "16 Oct 2026",
+      "headline": "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
+      "ai": "The US president launches a new wave of blistering criticism at Volodymyr Zelensky ahead of a meeting of EU leaders in Brussels.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Oct 2026",
-      "headline": "Why Trump Made a Diesel Deal With Putin",
-      "ai": "Our national security and White House correspondent David E. Sanger breaks down why President Donald Trump struck a deal with President Vladimir V. Putin to import Russian diesel fuel in the coming months, despite having signed recent congressional legislation tightening energy sanctions on Russia.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/video/world/europe/100000011205967/00vid-rv-trump-putin-deal.html"
-    },
-    {
-      "date": "14 Oct 2026",
-      "headline": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
-      "ai": "Four years after the attacks, Serhii Kuznetsov appears in court accused of a plot to destroy Russia's gas pipelines to Germany.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU",
+        "BEL",
         "UKR",
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Oct 2026",
-      "headline": "Turkish police raid opposition TV station, halting live broadcasts",
-      "ai": "It is the latest in a series of crackdowns on media critical of the Turkish president and his government.",
+      "date": "16 Oct 2026",
+      "headline": "Trump’s Deal With Russia Inflames Ukraine War He Vowed to End",
+      "ai": "The Ukrainian president’s defiant decision to continue attacking Russian refineries underscores President Trump’s inability to end a war he had promised to resolve.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-russia-ukraine.html"
+    },
+    {
+      "date": "15 Oct 2026",
+      "headline": "Are student protests being manipulated ahead of France's presidential election?",
+      "ai": "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "TUR"
+        "FRA"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Oct 2026",
-      "headline": "Burnham treads carefully with Zelensky visit, balancing Trump and Ukraine",
-      "ai": "The UK's prime minister meets with Volodymyr Zelensky after a rocky week for the Ukraine president.",
+      "date": "16 Oct 2026",
+      "headline": "They fled Russia, but the West sent them back",
+      "ai": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "RUS",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmx23q4dwvneo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Oct 2026",
-      "headline": "Russia arrests Japanese journalist on spying charges",
-      "ai": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
+      "date": "15 Oct 2026",
+      "headline": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+      "ai": "Ukraine's president says a pause on striking energy sites is over following fresh Russian attacks.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
+        "UKR",
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g1el7x9zo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "12 Oct 2026",
@@ -140,6 +129,21 @@
     },
     {
       "date": "15 Oct 2026",
+      "headline": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
+      "ai": "Ukraine's president has told Elon Musk that any restriction on the Starlink's system cost lives.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "15 Oct 2026",
       "headline": "Chinese Carmakers, Once a Sideshow, Take Center Stage at Paris Motor Show",
       "ai": "At this week’s Paris Motor Show, there are no signs the influx of low-cost Chinese vehicles will slow despite European Union efforts.",
       "frag": "",
@@ -154,9 +158,9 @@
       "url": "https://www.nytimes.com/2026/10/15/business/chinese-evs-europe-paris-motor-show.html"
     },
     {
-      "date": "15 Oct 2026",
-      "headline": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
-      "ai": "President Volodymyr Zelensky made the announcement in an interview with The Financial Times. He had paused the strikes to comply with a demand from the United States.",
+      "date": "16 Oct 2026",
+      "headline": "Russian missiles spark huge factory fires in Ukraine’s Odesa and Zaporizhzhia",
+      "ai": "Russian strikes ignited massive fires at businesses in Odesa and Zaporizhzhia as President Zelensky met European leaders for talks.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -165,22 +169,23 @@
         "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/16/russian-missiles-spark-huge-factory-fires-in-ukraines-odesa-and-zaporizhzhia"
     },
     {
       "date": "15 Oct 2026",
-      "headline": "Azerbaijan engineers rare summit with in-conflict Middle East and Asian leaders",
-      "ai": "Israel and Iran have met for a rare “confidence-building measures” summit in Baku, with Azerbaijan saying it serves as “a connecting hub in the Eurasian space.”",
+      "headline": "US extends sanctions waiver for Russian oil giant Lukoil until 2027",
+      "ai": "A separate Treasury license on Thursday also authorized certain transactions involving Lukoil's Bulgaria entities through April 24, 2027.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "AZE"
+        "BGR",
+        "RUS"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/15/azerbaijan-engineers-rare-summit-with-in-conflict-middle-east-and-asian-leaders"
+      "url": "https://www.euronews.com/2026/10/15/us-extends-sanctions-waiver-for-russian-oil-giant-lukoil-until-2027"
     }
   ]
 }
