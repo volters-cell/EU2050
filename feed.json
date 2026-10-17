@@ -1,42 +1,103 @@
 {
-  "feedUpdated": "16 Oct 2026",
-  "syncedAt": "2026-10-16T13:01:04.446Z",
+  "feedUpdated": "17 Oct 2026",
+  "syncedAt": "2026-10-17T11:58:31.866Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -2,
-    "fedTotal": 4
+    "fragTotal": 2,
+    "fedTotal": -1
   },
   "feed": [
     {
       "date": "16 Oct 2026",
-      "headline": "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
-      "ai": "The US president launches a new wave of blistering criticism at Volodymyr Zelensky ahead of a meeting of EU leaders in Brussels.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "headline": "Watch: Will Ukraine get the support needed as tensions with US rise?",
+      "ai": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
       "countries": [
         "BEL",
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Oct 2026",
+      "headline": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "ai": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
         "UKR",
         "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Oct 2026",
+      "headline": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+      "ai": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Oct 2026",
+      "headline": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
+      "ai": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "16 Oct 2026",
+      "headline": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
+      "ai": "EU leaders rally around Ukraine's president after new criticism from Donald Trump, who says Zelensky is \"more difficult to work with than Putin\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS",
+        "BEL"
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Oct 2026",
-      "headline": "Trump’s Deal With Russia Inflames Ukraine War He Vowed to End",
-      "ai": "The Ukrainian president’s defiant decision to continue attacking Russian refineries underscores President Trump’s inability to end a war he had promised to resolve.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "headline": "Trump denies limiting Ukraine access to Starlink network",
+      "ai": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
         "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-russia-ukraine.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "15 Oct 2026",
@@ -66,21 +127,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "15 Oct 2026",
-      "headline": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
-      "ai": "Ukraine's president says a pause on striking energy sites is over following fresh Russian attacks.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "12 Oct 2026",
@@ -141,51 +187,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "15 Oct 2026",
-      "headline": "Chinese Carmakers, Once a Sideshow, Take Center Stage at Paris Motor Show",
-      "ai": "At this week’s Paris Motor Show, there are no signs the influx of low-cost Chinese vehicles will slow despite European Union efforts.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/15/business/chinese-evs-europe-paris-motor-show.html"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Russian missiles spark huge factory fires in Ukraine’s Odesa and Zaporizhzhia",
-      "ai": "Russian strikes ignited massive fires at businesses in Odesa and Zaporizhzhia as President Zelensky met European leaders for talks.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/16/russian-missiles-spark-huge-factory-fires-in-ukraines-odesa-and-zaporizhzhia"
-    },
-    {
-      "date": "15 Oct 2026",
-      "headline": "US extends sanctions waiver for Russian oil giant Lukoil until 2027",
-      "ai": "A separate Treasury license on Thursday also authorized certain transactions involving Lukoil's Bulgaria entities through April 24, 2027.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BGR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/15/us-extends-sanctions-waiver-for-russian-oil-giant-lukoil-until-2027"
     }
   ]
 }
