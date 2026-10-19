@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "18 Oct 2026",
-  "syncedAt": "2026-10-18T12:26:47.156Z",
+  "feedUpdated": "19 Oct 2026",
+  "syncedAt": "2026-10-19T15:17:01.677Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -8,9 +8,9 @@
   },
   "feed": [
     {
-      "date": "16 Oct 2026",
-      "headline": "Trump’s Deal With Russia Inflames Ukraine War He Vowed to End",
-      "ai": "The Ukrainian president’s defiant decision to continue attacking Russian refineries underscores President Trump’s inability to end a war he had promised to resolve.",
+      "date": "18 Oct 2026",
+      "headline": "Zelensky Says Trump Risks ‘Historic Mistake’ If He Backs Russia",
+      "ai": "President Volodymyr Zelensky of Ukraine pressed Sunday for more information on possible restrictions to Starshield, a U.S.-provided satellite internet service used by the Ukrainian military.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
@@ -20,22 +20,50 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-russia-ukraine.html"
+      "url": "https://www.nytimes.com/2026/10/18/world/europe/ukraine-starshield-russia-war.html"
     },
     {
       "date": "18 Oct 2026",
-      "headline": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "ai": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "headline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "ai": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Oct 2026",
+      "headline": "Catalonia's former rebel president can return to Spain, court rules",
+      "ai": "The court upholds a decision to lift an arrest warrant for Carles Puigdemont linked to the independence bid he led in 2017.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "18 Oct 2026",
+      "headline": "EU tariffs aimed at China hitting Ukraine, steel boss says",
+      "ai": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "UKR",
-        "RUS"
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Oct 2026",
@@ -129,62 +157,32 @@
       "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "13 Oct 2026",
-      "headline": "Why the prime minister wants to talk about Brexit again",
-      "ai": "For the first time since the UK left the EU, we have a prime minister who will \"unflinchingly\" debate Brexit, says the BBC's political editor Chris Mason.",
+      "date": "18 Oct 2026",
+      "headline": "Albania’s Leader, Edi Rama, Denounces Violent Protests",
+      "ai": "Students upset by living and educational costs have revived protests. Prime Minister Edi Rama said they were being used by “outside forces.”",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxvgdql2y7zqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "The Rupturing Trump-Zelensky Relationship Stands to Hurt Ukraine and Its European Allies",
-      "ai": "Where the two presidents’ war of words will end is anybody’s guess. But if it continues, it could threaten the crucial operational help that Ukraine still gets from the United States.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
+        "ALB"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/16/world/europe/trump-zelensky-ukraine-war.html"
+      "url": "https://www.nytimes.com/2026/10/18/world/europe/albania-protrests.html"
     },
     {
-      "date": "16 Oct 2026",
-      "headline": "Belgium: Pumpkimania festival takes over Groot-Bijgaarden Castle",
-      "ai": "Foxes, owls and deer made from pumpkins have taken over Groot-Bijgaarden Castle near Brussels. The Pumpkimania festival features a 772kg giant, pumpkin boat rides and Halloween activities until 1 November.",
+      "date": "18 Oct 2026",
+      "headline": "France in Shock After Protests Turn Into Riots, Damaging Buildings and Shops",
+      "ai": "After anti-government protests devolved into chaos, leaders from across the political spectrum blamed one another for the unrest, even as it largely subsided on Sunday.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "BEL"
+        "FRA"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/16/belgium-pumpkimania-festival-takes-over-groot-bijgaarden-castle"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Russian missiles spark huge factory fires in Ukraine’s Odesa and Zaporizhzhia",
-      "ai": "Russian strikes ignited massive fires at businesses in Odesa and Zaporizhzhia as President Zelensky met European leaders for talks.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/16/russian-missiles-spark-huge-factory-fires-in-ukraines-odesa-and-zaporizhzhia"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/18/world/europe/france-protests-shock-arson.html"
     }
   ]
 }
