@@ -1,12 +1,42 @@
 {
-  "feedUpdated": "19 Oct 2026",
-  "syncedAt": "2026-10-19T15:17:01.677Z",
+  "feedUpdated": "20 Oct 2026",
+  "syncedAt": "2026-10-20T13:20:42.002Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 2
+    "fragTotal": 0,
+    "fedTotal": 3
   },
   "feed": [
+    {
+      "date": "16 Oct 2026",
+      "headline": "Watch: Will Ukraine get the support needed as tensions with US rise?",
+      "ai": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "BEL",
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Oct 2026",
+      "headline": "Trump’s Push for Deals With Russia Powers His Frustration With Ukraine",
+      "ai": "The series of recent steps by the president that seem to favor Vladimir Putin reflect his intensifying desire to normalize the relationship with Moscow even if it means further undercutting Ukraine.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/19/us/politics/trump-russia-deals.html"
+    },
     {
       "date": "18 Oct 2026",
       "headline": "Zelensky Says Trump Risks ‘Historic Mistake’ If He Backs Russia",
@@ -21,20 +51,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/18/world/europe/ukraine-starshield-russia-war.html"
-    },
-    {
-      "date": "18 Oct 2026",
-      "headline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
-      "ai": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Oct 2026",
@@ -67,82 +83,6 @@
     },
     {
       "date": "16 Oct 2026",
-      "headline": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
-      "ai": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA",
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
-      "ai": "EU leaders rally around Ukraine's president after new criticism from Donald Trump, who says Zelensky is \"more difficult to work with than Putin\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Trump denies limiting Ukraine access to Starlink network",
-      "ai": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "15 Oct 2026",
-      "headline": "Are student protests being manipulated ahead of France's presidential election?",
-      "ai": "France's prime minister has suggested that student anger is being weaponised, as the unions and other protesters prepare to take to the streets too.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "They fled Russia, but the West sent them back",
-      "ai": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
       "headline": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
       "ai": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
       "frag": "",
@@ -155,6 +95,51 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Oct 2026",
+      "headline": "Are the French riots a warning of an intense election to come?",
+      "ai": "Rioting, looting and vandalism has gripped France over the weekend after protests spiralled out of control across the country.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Oct 2026",
+      "headline": "Fire at Starlink Center in Lithuania Was Sabotage, Officials Say",
+      "ai": "The fire, which did not seriously damage the network, came after similar incidents in Bulgaria and Poland involving the satellite internet provider, a key defense tool for Ukraine’s armed forces.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "POL",
+        "BGR",
+        "LTU",
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/19/world/europe/lithuania-starlink-sabotage-ukraine-russia.html"
+    },
+    {
+      "date": "19 Oct 2026",
+      "headline": "France Imposes Curfews in Parts of Paris and Other Cities After Nationwide Rioting",
+      "ai": "The interior minister acknowledged that the police were underprepared for the scale of the riots. But Prime Minister Sébastien Lecornu defended their efforts and pledged to restore order.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/19/world/europe/france-protests-riots.html"
     },
     {
       "date": "18 Oct 2026",
@@ -183,6 +168,20 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/18/world/europe/france-protests-shock-arson.html"
+    },
+    {
+      "date": "20 Oct 2026",
+      "headline": "Trump says Paris will soon be 'a Muslim city' under Macron's immigration policies",
+      "ai": "US President Donald Trump says he warned French President Emmanuel Macron that he was making \"a big mistake\" by allowing immigrants into France",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/20/trump-says-paris-will-soon-be-a-muslim-city-under-macrons-immigration-policies"
     }
   ]
 }
