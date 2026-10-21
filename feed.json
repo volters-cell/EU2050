@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "20 Oct 2026",
-  "syncedAt": "2026-10-20T13:20:42.002Z",
+  "feedUpdated": "21 Oct 2026",
+  "syncedAt": "2026-10-21T13:26:50.617Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 0,
@@ -67,36 +67,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "18 Oct 2026",
-      "headline": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-      "ai": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
-      "ai": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "19 Oct 2026",
       "headline": "Are the French riots a warning of an intense election to come?",
       "ai": "Rioting, looting and vandalism has gripped France over the weekend after protests spiralled out of control across the country.",
@@ -111,68 +81,86 @@
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Oct 2026",
-      "headline": "Fire at Starlink Center in Lithuania Was Sabotage, Officials Say",
-      "ai": "The fire, which did not seriously damage the network, came after similar incidents in Bulgaria and Poland involving the satellite internet provider, a key defense tool for Ukraine’s armed forces.",
+      "date": "21 Oct 2026",
+      "headline": "UK to Headphone Dodgers on Trains: Shush",
+      "ai": "Prime Minister Andy Burnham announced a campaign against listening to music or videos without headphones on public transportation. We asked London commuters to weigh in.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL",
-        "BGR",
-        "LTU",
-        "UKR"
+        "GBR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/19/world/europe/lithuania-starlink-sabotage-ukraine-russia.html"
+      "url": "https://www.nytimes.com/2026/10/21/world/europe/uk-underground-headphones-commuters.html"
     },
     {
-      "date": "19 Oct 2026",
-      "headline": "France Imposes Curfews in Parts of Paris and Other Cities After Nationwide Rioting",
-      "ai": "The interior minister acknowledged that the police were underprepared for the scale of the riots. But Prime Minister Sébastien Lecornu defended their efforts and pledged to restore order.",
+      "date": "21 Oct 2026",
+      "headline": "Trump Says He Asked Putin to Release an American Jailed in Russia",
+      "ai": "The president called for the return of Stephen James Hubbard, a Michigan teacher seized from his home in Ukraine months after Russia invaded that country.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
+        "UKR",
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/19/world/europe/france-protests-riots.html"
-    },
-    {
-      "date": "18 Oct 2026",
-      "headline": "Albania’s Leader, Edi Rama, Denounces Violent Protests",
-      "ai": "Students upset by living and educational costs have revived protests. Prime Minister Edi Rama said they were being used by “outside forces.”",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ALB"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/18/world/europe/albania-protrests.html"
-    },
-    {
-      "date": "18 Oct 2026",
-      "headline": "France in Shock After Protests Turn Into Riots, Damaging Buildings and Shops",
-      "ai": "After anti-government protests devolved into chaos, leaders from across the political spectrum blamed one another for the unrest, even as it largely subsided on Sunday.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/18/world/europe/france-protests-shock-arson.html"
+      "url": "https://www.nytimes.com/2026/10/20/us/politics/trump-russia-prisoner-stephen-hubbard.html"
     },
     {
       "date": "20 Oct 2026",
-      "headline": "Trump says Paris will soon be 'a Muslim city' under Macron's immigration policies",
-      "ai": "US President Donald Trump says he warned French President Emmanuel Macron that he was making \"a big mistake\" by allowing immigrants into France",
+      "headline": "Why Zelensky Took the Gloves Off This Time With Trump",
+      "ai": "Staying quiet is riskier than speaking up, Ukrainian officials say, as President Trump goes further than ever in prioritizing Russia’s interests.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/20/world/europe/ukraine-war-zelensky-trump.html"
+    },
+    {
+      "date": "21 Oct 2026",
+      "headline": "More Russians are settling in the EU with each year of war in Ukraine",
+      "ai": "Eurostat data show 876,600 Russian nationals held valid EU residence permits at the end of 2025, with Germany, Spain and Estonia hosting the largest communities.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "ESP",
+        "EST",
+        "UKR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/21/more-russians-are-settling-in-the-eu-with-each-year-of-war-in-ukraine"
+    },
+    {
+      "date": "21 Oct 2026",
+      "headline": "New Romanian prime minister Luca Niculescu and cabinet members sworn in",
+      "ai": "Independent diplomat Luca Niculescu wins parliamentary backing for a minority government, but analysts warn the calm may not last.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ROU",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/21/new-romanian-prime-minister-luca-niculescu-and-cabinet-members-sworn-in"
+    },
+    {
+      "date": "20 Oct 2026",
+      "headline": "France's Macron begins state visit to Qatar as part of wider Gulf tour",
+      "ai": "Qatar welcomed the French president with full state honours on his arrival in Doha as the two countries are strengthening their strategic ties. Facing protests at home, Macron is seeking energy deals with Gulf partners to help ease fuel prices in France, but also contributing to regional stability.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -181,7 +169,21 @@
         "FRA"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/20/trump-says-paris-will-soon-be-a-muslim-city-under-macrons-immigration-policies"
+      "url": "https://www.euronews.com/2026/10/20/frances-macron-begins-state-visit-to-qatar-as-part-of-wider-gulf-tour"
+    },
+    {
+      "date": "20 Oct 2026",
+      "headline": "Qatar revamped its entire defence system in six hours, intelligence chief reveals",
+      "ai": "At Doha’s Global Security Forum, Qatar’s head of intelligence revealed how the war with Iran forced the Gulf country to urgently redeploy its defensive assets, while the US ambassador to Turkey offered new insights into a fundamental shift in Washington's presence in the Middle East.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/20/qatar-revamped-its-entire-defence-system-in-six-hours-intelligence-chief-reveals"
     }
   ]
 }
