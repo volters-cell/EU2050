@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "21 Oct 2026",
-  "syncedAt": "2026-10-21T13:26:50.617Z",
+  "feedUpdated": "22 Oct 2026",
+  "syncedAt": "2026-10-22T13:28:05.063Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 0,
-    "fedTotal": 3
+    "fragTotal": 1,
+    "fedTotal": 1
   },
   "feed": [
+    {
+      "date": "22 Oct 2026",
+      "headline": "French weekend protests to be limited to union demos only, says Macron",
+      "ai": "Some cities including Lyon and Nice have banned all protests, and the French president said only authorised demos would be allowed.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvde8g40xx42o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "16 Oct 2026",
       "headline": "Watch: Will Ukraine get the support needed as tensions with US rise?",
@@ -23,48 +37,33 @@
       "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Oct 2026",
-      "headline": "Trump’s Push for Deals With Russia Powers His Frustration With Ukraine",
-      "ai": "The series of recent steps by the president that seem to favor Vladimir Putin reflect his intensifying desire to normalize the relationship with Moscow even if it means further undercutting Ukraine.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/19/us/politics/trump-russia-deals.html"
-    },
-    {
-      "date": "18 Oct 2026",
-      "headline": "Zelensky Says Trump Risks ‘Historic Mistake’ If He Backs Russia",
-      "ai": "President Volodymyr Zelensky of Ukraine pressed Sunday for more information on possible restrictions to Starshield, a U.S.-provided satellite internet service used by the Ukrainian military.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/18/world/europe/ukraine-starshield-russia-war.html"
-    },
-    {
-      "date": "19 Oct 2026",
-      "headline": "Catalonia's former rebel president can return to Spain, court rules",
-      "ai": "The court upholds a decision to lift an arrest warrant for Carles Puigdemont linked to the independence bid he led in 2017.",
+      "date": "21 Oct 2026",
+      "headline": "Missiles hit Kyiv after Russia agrees to US call to resume Ukraine peace talks",
+      "ai": "Moscow says it is \"ready in principle\" to resume peace talks and US President Donald Trump says the world is \"the closest we've been\" to ending the war.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP"
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Oct 2026",
+      "headline": "Macron accuses foreign leaders of exploiting French riots",
+      "ai": "The comment is an apparent swipe at Benjamin Netanyahu and Donald Trump, who both face elections in coming weeks.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckjrw044ggxgo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Oct 2026",
@@ -79,6 +78,38 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "22 Oct 2026",
+      "headline": "Serbian Election Underscores the Region’s Long Political Limbo",
+      "ai": "Aleksandar Vucic, Serbia’s dominant political figure since 2012, may extend his grip, using the Balkans’ unresolved nationalist resentments.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB",
+        "ALB",
+        "MNE",
+        "MKD",
+        "BIH"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/22/world/europe/serbia-elections-nationalist-politics.html"
+    },
+    {
+      "date": "21 Oct 2026",
+      "headline": "Macron Says Trump Does Not Like France and Distorts Its Troubles",
+      "ai": "Speaking in Qatar, President Emmanuel Macron railed against foreign leaders who he said had made false claims about unrest in France for their own political ends.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/21/world/europe/macron-trump-france-protests.html"
     },
     {
       "date": "21 Oct 2026",
@@ -125,65 +156,31 @@
       "url": "https://www.nytimes.com/2026/10/20/world/europe/ukraine-war-zelensky-trump.html"
     },
     {
-      "date": "21 Oct 2026",
-      "headline": "More Russians are settling in the EU with each year of war in Ukraine",
-      "ai": "Eurostat data show 876,600 Russian nationals held valid EU residence permits at the end of 2025, with Germany, Spain and Estonia hosting the largest communities.",
+      "date": "22 Oct 2026",
+      "headline": "Moment Colombian authorities seize 7.6 tonnes of cocaine bound for Europe",
+      "ai": "Colombia has seized 7.6 tonnes of cocaine at the port of Cartagena in what President Abelardo de la Espriella described as the country's largest drug seizure in a decade.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
-      "countries": [
-        "DEU",
-        "ESP",
-        "EST",
-        "UKR",
-        "RUS"
-      ],
+      "countries": [],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/21/more-russians-are-settling-in-the-eu-with-each-year-of-war-in-ukraine"
+      "url": "https://www.euronews.com/2026/10/22/moment-colombian-authorities-seize-76-tonnes-of-cocaine-bound-for-europe"
     },
     {
-      "date": "21 Oct 2026",
-      "headline": "New Romanian prime minister Luca Niculescu and cabinet members sworn in",
-      "ai": "Independent diplomat Luca Niculescu wins parliamentary backing for a minority government, but analysts warn the calm may not last.",
+      "date": "22 Oct 2026",
+      "headline": "Serbia: Student protesters flood Belgrade ahead of snap elections",
+      "ai": "Cheers, music and waving flags greeted students arriving in Belgrade from across Serbia on Wednesday, as thousands gathered ahead of a final rally before this weekend's snap parliamentary elections.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ROU",
+        "SRB",
         "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/21/new-romanian-prime-minister-luca-niculescu-and-cabinet-members-sworn-in"
-    },
-    {
-      "date": "20 Oct 2026",
-      "headline": "France's Macron begins state visit to Qatar as part of wider Gulf tour",
-      "ai": "Qatar welcomed the French president with full state honours on his arrival in Doha as the two countries are strengthening their strategic ties. Facing protests at home, Macron is seeking energy deals with Gulf partners to help ease fuel prices in France, but also contributing to regional stability.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/20/frances-macron-begins-state-visit-to-qatar-as-part-of-wider-gulf-tour"
-    },
-    {
-      "date": "20 Oct 2026",
-      "headline": "Qatar revamped its entire defence system in six hours, intelligence chief reveals",
-      "ai": "At Doha’s Global Security Forum, Qatar’s head of intelligence revealed how the war with Iran forced the Gulf country to urgently redeploy its defensive assets, while the US ambassador to Turkey offered new insights into a fundamental shift in Washington's presence in the Middle East.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/20/qatar-revamped-its-entire-defence-system-in-six-hours-intelligence-chief-reveals"
+      "url": "https://www.euronews.com/video/2026/10/22/serbia-student-protesters-flood-belgrade-ahead-of-snap-elections"
     }
   ]
 }
