@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "23 Oct 2026",
-  "syncedAt": "2026-10-23T13:04:46.305Z",
+  "feedUpdated": "24 Oct 2026",
+  "syncedAt": "2026-10-24T12:27:09.422Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
@@ -38,20 +38,6 @@
     },
     {
       "date": "23 Oct 2026",
-      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
-      "ai": "French Prime Minister Sébastien Lecornu describes the gun attack in Trappes as \"very serious\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Oct 2026",
       "headline": "Why a student protest movement is challenging 12 years of Vučić rule in Serbia",
       "ai": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party.",
       "frag": "",
@@ -80,6 +66,20 @@
       "url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "23 Oct 2026",
+      "headline": "Who actually controls Ukraine's access to Starlink?",
+      "ai": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "19 Oct 2026",
       "headline": "Are the French riots a warning of an intense election to come?",
       "ai": "Rioting, looting and vandalism has gripped France over the weekend after protests spiralled out of control across the country.",
@@ -92,6 +92,48 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "Hungary: 70 years after Soviet crackdown, leaders honour uprising victims",
+      "ai": "Seventy years after Hungary's 1956 uprising against Soviet rule, Prime Minister Péter Magyar paid tribute to its victims as Ursula von der Leyen highlighted the importance of freedom and democracy.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/24/hungary-70-years-after-soviet-crackdown-leaders-honour-uprising-victims"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "EU-Canada 'love story' needs more than warm words, senior MEP warns",
+      "ai": "European Parliament’s point man on Canada, Tobias Cremer, told Euronews that the planned “associate membership” should include an institutional framework formalising closer ties between the EU and Canada.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/23/eu-canada-love-story-needs-more-than-warm-words-senior-mep-warns"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
+      "ai": "French Prime Minister Sébastien Lecornu describes the gun attack in Trappes as \"very serious\".",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "22 Oct 2026",
@@ -138,50 +180,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/21/world/europe/macron-trump-france-protests.html"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "EU-Canada 'love story' needs more than warm words, senior MEP warns",
-      "ai": "European Parliament’s point man on Canada, Tobias Cremer, told Euronews that the planned “associate membership” should include an institutional framework formalising closer ties between the EU and Canada.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/23/eu-canada-love-story-needs-more-than-warm-words-senior-mep-warns"
-    },
-    {
-      "date": "22 Oct 2026",
-      "headline": "How migration is reshaping the political debate in Spain's Ceuta",
-      "ai": "The arrival of tens of thousands of migrants in Spain's North African enclave of Ceuta has fuelled political tensions ahead of next month's election.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/22/how-migration-is-reshaping-the-political-debate-in-spains-ceuta"
-    },
-    {
-      "date": "22 Oct 2026",
-      "headline": "Families of missing Azerbaijanis call for support from European institutions",
-      "ai": "Families of more than 4,000 Azerbaijanis still missing since the first Karabakh war brought their demand for answers to the EU institutions, hoping that the peace process between Armenia and Azerbaijan, after decades of suffering on both sides, could finally clarify the fate of their relatives.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ARM",
-        "AZE",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/22/families-of-missing-azerbaijanis-call-for-support-from-european-institutions"
     }
   ]
 }
