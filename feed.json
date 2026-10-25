@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "24 Oct 2026",
-  "syncedAt": "2026-10-24T12:27:09.422Z",
+  "feedUpdated": "25 Oct 2026",
+  "syncedAt": "2026-10-25T12:57:43.772Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
@@ -35,6 +35,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
+      "ai": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Oct 2026",
@@ -166,20 +180,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/22/world/europe/serbia-elections-nationalist-politics.html"
-    },
-    {
-      "date": "21 Oct 2026",
-      "headline": "Macron Says Trump Does Not Like France and Distorts Its Troubles",
-      "ai": "Speaking in Qatar, President Emmanuel Macron railed against foreign leaders who he said had made false claims about unrest in France for their own political ends.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/21/world/europe/macron-trump-france-protests.html"
     }
   ]
 }
