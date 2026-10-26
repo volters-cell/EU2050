@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "25 Oct 2026",
-  "syncedAt": "2026-10-25T12:57:43.772Z",
+  "feedUpdated": "26 Oct 2026",
+  "syncedAt": "2026-10-26T14:51:18.864Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
@@ -37,9 +37,9 @@
       "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Oct 2026",
-      "headline": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
-      "ai": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
+      "date": "26 Oct 2026",
+      "headline": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
+      "ai": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -48,12 +48,12 @@
         "SRB"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Oct 2026",
-      "headline": "Why a student protest movement is challenging 12 years of Vučić rule in Serbia",
-      "ai": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party.",
+      "date": "25 Oct 2026",
+      "headline": "Joy and disbelief on Serbian streets as Vučić concedes election defeat",
+      "ai": "BBC correspondent Nick Thorpe reports from Belgrade, where there were rapturous celebrations following the victory of the student-led movement.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -62,7 +62,7 @@
         "SRB"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c8x23x1yn6w6o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "21 Oct 2026",
@@ -108,78 +108,76 @@
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Oct 2026",
-      "headline": "Hungary: 70 years after Soviet crackdown, leaders honour uprising victims",
-      "ai": "Seventy years after Hungary's 1956 uprising against Soviet rule, Prime Minister Péter Magyar paid tribute to its victims as Ursula von der Leyen highlighted the importance of freedom and democracy.",
+      "date": "26 Oct 2026",
+      "headline": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
+      "ai": "Norwegian officials emphasized that their country does not have any influence over who receives the Peace Prize, after President Trump used crude language to express his frustration.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "HUN"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/24/hungary-70-years-after-soviet-crackdown-leaders-honour-uprising-victims"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "EU-Canada 'love story' needs more than warm words, senior MEP warns",
-      "ai": "European Parliament’s point man on Canada, Tobias Cremer, told Euronews that the planned “associate membership” should include an institutional framework formalising closer ties between the EU and Canada.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/23/eu-canada-love-story-needs-more-than-warm-words-senior-mep-warns"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
-      "ai": "French Prime Minister Sébastien Lecornu describes the gun attack in Trappes as \"very serious\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "22 Oct 2026",
-      "headline": "In the Wake of Riots, the French Authorities Ban Some Protests",
-      "ai": "President Emmanuel Macron said the move was necessary “so that calm prevails.”",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
+        "NOR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/22/world/europe/france-protests-macron.html"
+      "url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
     },
     {
-      "date": "22 Oct 2026",
-      "headline": "Serbian Election Underscores the Region’s Long Political Limbo",
-      "ai": "Aleksandar Vucic, Serbia’s dominant political figure since 2012, may extend his grip, using the Balkans’ unresolved nationalist resentments.",
+      "date": "26 Oct 2026",
+      "headline": "Trump officials back Orbán bid for UN secretary-general, WSJ reports",
+      "ai": "The WSJ reports that Trump administration officials are floating former Hungarian prime minister Viktor Orbán for UN secretary-general, potentially backed by the US, Russia and China, though nothing is confirmed and his selection remains uncertain.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/26/trump-officials-back-orban-bid-for-un-secretary-general-wsj-reports"
+    },
+    {
+      "date": "25 Oct 2026",
+      "headline": "Serbia: crowds celebrate in Belgrade after Vučić admits defeat",
+      "ai": "Crowds celebrated in Belgrade after President Aleksandar Vučić conceded defeat for his ruling party in Serbia's snap parliamentary election, following nearly two years of student-led demonstrations.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "SRB",
-        "ALB",
-        "MNE",
-        "MKD",
-        "BIH"
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/22/world/europe/serbia-elections-nationalist-politics.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/25/serbia-crowds-celebrate-in-belgrade-after-vucic-admits-defeat"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
+      "ai": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Oct 2026",
+      "headline": "Why a student protest movement is challenging 12 years of Vučić rule in Serbia",
+      "ai": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
