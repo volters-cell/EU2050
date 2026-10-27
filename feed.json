@@ -1,40 +1,41 @@
 {
-  "feedUpdated": "26 Oct 2026",
-  "syncedAt": "2026-10-26T14:51:18.864Z",
+  "feedUpdated": "27 Oct 2026",
+  "syncedAt": "2026-10-27T13:58:46.163Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 1
+    "fragTotal": 2,
+    "fedTotal": -1
   },
   "feed": [
     {
-      "date": "22 Oct 2026",
-      "headline": "French weekend protests to be limited to union demos only, says Macron",
-      "ai": "Some cities including Lyon and Nice have banned all protests, and the French president said only authorised demos would be allowed.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvde8g40xx42o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Oct 2026",
-      "headline": "Watch: Will Ukraine get the support needed as tensions with US rise?",
-      "ai": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels.",
+      "date": "27 Oct 2026",
+      "headline": "Serbia’s Election Shows New Vulnerability for Nationalist Populists",
+      "ai": "In much of Europe, the advance of the right has been seen as unstoppable. But in the east, nationalists are being cast aside in places where they long governed.",
       "frag": "Reinforces fragmentation",
       "fed": "Delays federal progress",
       "fragWeight": 2,
       "fedWeight": -1,
       "countries": [
-        "BEL",
-        "UKR"
+        "SRB"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/26/world/europe/serbia-election-vucic-nationalist-populists.html"
+    },
+    {
+      "date": "27 Oct 2026",
+      "headline": "Norway and Finland leaders hold rare call with Putin",
+      "ai": "This is the first time European leaders have had direct communication with Russia's president in more than a year.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FIN",
+        "NOR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "26 Oct 2026",
@@ -108,9 +109,23 @@
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "27 Oct 2026",
+      "headline": "In the A.I. ‘Robogym,’ Machines Train to Be More Like Humans",
+      "ai": "Germany’s Neura is one of the companies at the forefront of efforts to use artificial intelligence in robotics, and crucial to whether Europe can close the gap with China.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/27/business/neura-robotics-germany-china-ai.html"
+    },
+    {
       "date": "26 Oct 2026",
       "headline": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
-      "ai": "Norwegian officials emphasized that their country does not have any influence over who receives the Peace Prize, after President Trump used crude language to express his frustration.",
+      "ai": "Norwegian officials emphasized that their government does not have any influence over who receives the Peace Prize, after President Trump used crude language to express his frustration.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -122,62 +137,44 @@
       "url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
     },
     {
-      "date": "26 Oct 2026",
-      "headline": "Trump officials back Orbán bid for UN secretary-general, WSJ reports",
-      "ai": "The WSJ reports that Trump administration officials are floating former Hungarian prime minister Viktor Orbán for UN secretary-general, potentially backed by the US, Russia and China, though nothing is confirmed and his selection remains uncertain.",
+      "date": "27 Oct 2026",
+      "headline": "Israelis head to polls in first general election since 7 October attacks with no clear favourite",
+      "ai": "With no party expected to win an outright majority, weeks of coalition talks could follow a vote being closely watched in European capitals.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
-      "countries": [
-        "HUN",
-        "RUS"
-      ],
+      "countries": [],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/26/trump-officials-back-orban-bid-for-un-secretary-general-wsj-reports"
+      "url": "https://www.euronews.com/2026/10/27/israelis-head-to-polls-in-first-general-election-since-7-october-attacks-with-no-clear-fav"
     },
     {
-      "date": "25 Oct 2026",
-      "headline": "Serbia: crowds celebrate in Belgrade after Vučić admits defeat",
-      "ai": "Crowds celebrated in Belgrade after President Aleksandar Vučić conceded defeat for his ruling party in Serbia's snap parliamentary election, following nearly two years of student-led demonstrations.",
+      "date": "27 Oct 2026",
+      "headline": "Merz courts Asian investors as he insists Europe remains a safe bet",
+      "ai": "The German chancellor's upbeat pitch comes at a time of mounting pressure in Berlin, where a ministerial resignation and rising far-right support have left the chancellor’s coalition on shaky ground.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB",
+        "DEU"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/27/merz-courts-asian-investors-as-he-insists-europe-remains-a-safe-bet"
+    },
+    {
+      "date": "26 Oct 2026",
+      "headline": "María Corina Machado seeks talks with Delcy Rodríguez after return from exile",
+      "ai": "After a year in exile, Venezuela's opposition leader returns, ready to negotiate with the government. The EU welcomes her and calls for free and fair elections.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
         "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/25/serbia-crowds-celebrate-in-belgrade-after-vucic-admits-defeat"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
-      "ai": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "Why a student protest movement is challenging 12 years of Vučić rule in Serbia",
-      "ai": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.euronews.com/2026/10/26/maria-corina-machado-seeks-talks-with-delcy-rodriguez-after-return-from-exile"
     }
   ]
 }
