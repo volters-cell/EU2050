@@ -1,36 +1,23 @@
 {
-  "feedUpdated": "27 Oct 2026",
-  "syncedAt": "2026-10-27T13:58:46.163Z",
+  "feedUpdated": "28 Oct 2026",
+  "syncedAt": "2026-10-28T14:51:37.761Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": -1
+    "fragTotal": 0,
+    "fedTotal": 0
   },
   "feed": [
     {
       "date": "27 Oct 2026",
-      "headline": "Serbia’s Election Shows New Vulnerability for Nationalist Populists",
-      "ai": "In much of Europe, the advance of the right has been seen as unstoppable. But in the east, nationalists are being cast aside in places where they long governed.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "SRB"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/26/world/europe/serbia-election-vucic-nationalist-populists.html"
-    },
-    {
-      "date": "27 Oct 2026",
       "headline": "Norway and Finland leaders hold rare call with Putin",
-      "ai": "This is the first time European leaders have had direct communication with Russia's president in more than a year.",
+      "ai": "An end to the conflict in Ukraine \"will not be achieved through silence,\" Finland's President Alexander Stubb said.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "FIN",
+        "UKR",
         "NOR",
         "RUS"
       ],
@@ -109,6 +96,78 @@
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "28 Oct 2026",
+      "headline": "Behind Italy’s Protests: Rising Prices and Sinking Hopes",
+      "ai": "Inspired in part by French demonstrations, protests in Italy by students in the north and truckers in the south could affect national elections next year.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA",
+        "ITA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/28/world/europe/italy-protests-students-truckers-meloni.html"
+    },
+    {
+      "date": "28 Oct 2026",
+      "headline": "How to Tax and Spend in a ‘Turbulent Time’? U.K. Tries a Balancing Act.",
+      "ai": "The new government, led by Andy Burnham, will deliver its first budget on Wednesday, a plan expected to tread between wide ambition and narrow financial limits.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/28/business/uk-budget-chancellor-healey.html"
+    },
+    {
+      "date": "28 Oct 2026",
+      "headline": "Judge Limits Candace Owens’s Liability in Macron Defamation Case",
+      "ai": "The French president, Emmanuel Macron, and his wife, Brigitte, sued Candace Owens in 2025 over claims she made about Ms. Macron’s gender. A judge said the court had jurisdiction over her companies but not her.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/27/business/media/candace-owens-macron-defamation-case.html"
+    },
+    {
+      "date": "27 Oct 2026",
+      "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
+      "ai": "The move would be the latest U.S. concession to Moscow as President Trump pursues economic incentives he hopes will secure an end to war in Ukraine.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html"
+    },
+    {
+      "date": "27 Oct 2026",
+      "headline": "Serbian Students, Victorious and Leaderless, Go After the Media",
+      "ai": "Supporters of the opposition movement that won Sunday’s election stormed the offices of a pro-government tabloid. Another news outlet apologized for years of “one-sided” coverage.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/27/world/europe/serbia-student-list-news-media-vucic.html"
+    },
+    {
       "date": "27 Oct 2026",
       "headline": "In the A.I. ‘Robogym,’ Machines Train to Be More Like Humans",
       "ai": "Germany’s Neura is one of the companies at the forefront of efforts to use artificial intelligence in robotics, and crucial to whether Europe can close the gap with China.",
@@ -121,60 +180,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/27/business/neura-robotics-germany-china-ai.html"
-    },
-    {
-      "date": "26 Oct 2026",
-      "headline": "Norway Pushes Back After Trump Disparages It Over Nobel Prize Decision",
-      "ai": "Norwegian officials emphasized that their government does not have any influence over who receives the Peace Prize, after President Trump used crude language to express his frustration.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "NOR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/26/world/europe/trump-norway-nobel-prize.html"
-    },
-    {
-      "date": "27 Oct 2026",
-      "headline": "Israelis head to polls in first general election since 7 October attacks with no clear favourite",
-      "ai": "With no party expected to win an outright majority, weeks of coalition talks could follow a vote being closely watched in European capitals.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/27/israelis-head-to-polls-in-first-general-election-since-7-october-attacks-with-no-clear-fav"
-    },
-    {
-      "date": "27 Oct 2026",
-      "headline": "Merz courts Asian investors as he insists Europe remains a safe bet",
-      "ai": "The German chancellor's upbeat pitch comes at a time of mounting pressure in Berlin, where a ministerial resignation and rising far-right support have left the chancellor’s coalition on shaky ground.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/27/merz-courts-asian-investors-as-he-insists-europe-remains-a-safe-bet"
-    },
-    {
-      "date": "26 Oct 2026",
-      "headline": "María Corina Machado seeks talks with Delcy Rodríguez after return from exile",
-      "ai": "After a year in exile, Venezuela's opposition leader returns, ready to negotiate with the government. The EU welcomes her and calls for free and fair elections.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/26/maria-corina-machado-seeks-talks-with-delcy-rodriguez-after-return-from-exile"
     }
   ]
 }
