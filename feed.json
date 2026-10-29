@@ -1,12 +1,40 @@
 {
-  "feedUpdated": "28 Oct 2026",
-  "syncedAt": "2026-10-28T14:51:37.761Z",
+  "feedUpdated": "29 Oct 2026",
+  "syncedAt": "2026-10-29T14:56:57.188Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 0,
-    "fedTotal": 0
+    "fragTotal": 2,
+    "fedTotal": -1
   },
   "feed": [
+    {
+      "date": "29 Oct 2026",
+      "headline": "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain",
+      "ai": "The latest train crash will pile pressure on the government of Pedro Sánchez, one month before the general election.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "29 Oct 2026",
+      "headline": "Carney to push for closer ties at Canada-EU summit in Montreal",
+      "ai": "The term \"associate member\" is reportedly off the table as officials discuss deeper economic and defence ties.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "27 Oct 2026",
       "headline": "Norway and Finland leaders hold rare call with Putin",
@@ -25,20 +53,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "26 Oct 2026",
-      "headline": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
-      "ai": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "25 Oct 2026",
       "headline": "Joy and disbelief on Serbian streets as Vučić concedes election defeat",
       "ai": "BBC correspondent Nick Thorpe reports from Belgrade, where there were rapturous celebrations following the victory of the student-led movement.",
@@ -51,21 +65,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c8x23x1yn6w6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Oct 2026",
-      "headline": "Rosenberg: Russia agrees to Ukraine talks but sees little to talk about in new peace push",
-      "ai": "President Vladimir Putin does not feel under pressure right now to end the war, the BBC's Russia Editor writes.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Oct 2026",
@@ -96,38 +95,9 @@
       "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "28 Oct 2026",
-      "headline": "Behind Italy’s Protests: Rising Prices and Sinking Hopes",
-      "ai": "Inspired in part by French demonstrations, protests in Italy by students in the north and truckers in the south could affect national elections next year.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA",
-        "ITA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/28/world/europe/italy-protests-students-truckers-meloni.html"
-    },
-    {
-      "date": "28 Oct 2026",
-      "headline": "How to Tax and Spend in a ‘Turbulent Time’? U.K. Tries a Balancing Act.",
-      "ai": "The new government, led by Andy Burnham, will deliver its first budget on Wednesday, a plan expected to tread between wide ambition and narrow financial limits.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/28/business/uk-budget-chancellor-healey.html"
-    },
-    {
-      "date": "28 Oct 2026",
-      "headline": "Judge Limits Candace Owens’s Liability in Macron Defamation Case",
-      "ai": "The French president, Emmanuel Macron, and his wife, Brigitte, sued Candace Owens in 2025 over claims she made about Ms. Macron’s gender. A judge said the court had jurisdiction over her companies but not her.",
+      "date": "29 Oct 2026",
+      "headline": "In Marseille, Macron Confronts a Potent Mix of France’s Problems",
+      "ai": "France’s second city, five years into a presidential development plan, is grappling with the social strains that have fueled protests across the country.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -136,12 +106,12 @@
         "FRA"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/27/business/media/candace-owens-macron-defamation-case.html"
+      "url": "https://www.nytimes.com/2026/10/29/world/europe/france-marseille-macron-protests.html"
     },
     {
-      "date": "27 Oct 2026",
-      "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
-      "ai": "The move would be the latest U.S. concession to Moscow as President Trump pursues economic incentives he hopes will secure an end to war in Ukraine.",
+      "date": "28 Oct 2026",
+      "headline": "Trump Officials Discussing Sanctions Relief for Russian Fund, Russia Acknowledges",
+      "ai": "A Russian official said potential relief for a state investment fund was part of talks. Russia has sought to wring economic benefits from the negotiations on ending the war with Ukraine.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -151,12 +121,57 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html"
+      "url": "https://www.nytimes.com/2026/10/28/us/politics/russia-sanctions-relief-fund-trump.html"
     },
     {
-      "date": "27 Oct 2026",
-      "headline": "Serbian Students, Victorious and Leaderless, Go After the Media",
-      "ai": "Supporters of the opposition movement that won Sunday’s election stormed the offices of a pro-government tabloid. Another news outlet apologized for years of “one-sided” coverage.",
+      "date": "29 Oct 2026",
+      "headline": "Albania: opposition MPs disrupt parliament with smoke flares",
+      "ai": "Opposition MPs disrupted a parliamentary session in Albania by brandishing smoke flares and displaying photographs of injured protesters. They accused police of using violence against demonstrators demanding Prime Minister Edi Rama's resignation.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ALB",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/29/albania-opposition-mps-disrupt-parliament-with-smoke-flares"
+    },
+    {
+      "date": "29 Oct 2026",
+      "headline": "Putin calls Elon Musk a 'genius' as Russia builds its own Starlink rival",
+      "ai": "Russian President Vladimir Putin has praised Elon Musk as a “genius” for deploying thousands of satellites into orbit. Speaking in Moscow, Putin highlighted Russia’s efforts to develop its own satellite internet network to rival Musk’s Starlink.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/29/putin-calls-elon-musk-a-genius-as-russia-builds-its-own-starlink-rival"
+    },
+    {
+      "date": "29 Oct 2026",
+      "headline": "Europe Today: Second high-speed rail disaster in nine months leaves Spain in grief",
+      "ai": "At least 68 people died when two high-speed trains collided south of Madrid, Spain's second deadly rail crash this year. In Montreal, EU leaders meet Mark Carney to launch an 'Alliance for the Future'. We also look at next week's US midterms, Ukraine's defence capabilities, and rising oil prices.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP",
+        "UKR",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/29/europe-today-second-high-speed-rail-disaster-in-nine-months-leaves-spain-in-grief"
+    },
+    {
+      "date": "26 Oct 2026",
+      "headline": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
+      "ai": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -164,22 +179,8 @@
       "countries": [
         "SRB"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/27/world/europe/serbia-student-list-news-media-vucic.html"
-    },
-    {
-      "date": "27 Oct 2026",
-      "headline": "In the A.I. ‘Robogym,’ Machines Train to Be More Like Humans",
-      "ai": "Germany’s Neura is one of the companies at the forefront of efforts to use artificial intelligence in robotics, and crucial to whether Europe can close the gap with China.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/27/business/neura-robotics-germany-china-ai.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
