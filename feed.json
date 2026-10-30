@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "29 Oct 2026",
-  "syncedAt": "2026-10-29T14:56:57.188Z",
+  "feedUpdated": "30 Oct 2026",
+  "syncedAt": "2026-10-30T14:50:06.850Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -22,9 +22,23 @@
       "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "29 Oct 2026",
-      "headline": "Carney to push for closer ties at Canada-EU summit in Montreal",
-      "ai": "The term \"associate member\" is reportedly off the table as officials discuss deeper economic and defence ties.",
+      "date": "30 Oct 2026",
+      "headline": "Student-backed election winners demand sweeping resignations in Serbia",
+      "ai": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "SRB"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "30 Oct 2026",
+      "headline": "Post Office suspends sending goods to the EU",
+      "ai": "It follows a delay in updates to processing systems to allow for changes to EU customs rules.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -33,24 +47,22 @@
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cvze4xkknyj4o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "27 Oct 2026",
-      "headline": "Norway and Finland leaders hold rare call with Putin",
-      "ai": "An end to the conflict in Ukraine \"will not be achieved through silence,\" Finland's President Alexander Stubb said.",
+      "date": "29 Oct 2026",
+      "headline": "EU chief lays out vision for new Canada partnership at Montreal summit",
+      "ai": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FIN",
-        "UKR",
-        "NOR",
-        "RUS"
+        "DEU",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "25 Oct 2026",
@@ -109,39 +121,9 @@
       "url": "https://www.nytimes.com/2026/10/29/world/europe/france-marseille-macron-protests.html"
     },
     {
-      "date": "28 Oct 2026",
-      "headline": "Trump Officials Discussing Sanctions Relief for Russian Fund, Russia Acknowledges",
-      "ai": "A Russian official said potential relief for a state investment fund was part of talks. Russia has sought to wring economic benefits from the negotiations on ending the war with Ukraine.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/28/us/politics/russia-sanctions-relief-fund-trump.html"
-    },
-    {
-      "date": "29 Oct 2026",
-      "headline": "Albania: opposition MPs disrupt parliament with smoke flares",
-      "ai": "Opposition MPs disrupted a parliamentary session in Albania by brandishing smoke flares and displaying photographs of injured protesters. They accused police of using violence against demonstrators demanding Prime Minister Edi Rama's resignation.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ALB",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/29/albania-opposition-mps-disrupt-parliament-with-smoke-flares"
-    },
-    {
-      "date": "29 Oct 2026",
-      "headline": "Putin calls Elon Musk a 'genius' as Russia builds its own Starlink rival",
-      "ai": "Russian President Vladimir Putin has praised Elon Musk as a “genius” for deploying thousands of satellites into orbit. Speaking in Moscow, Putin highlighted Russia’s efforts to develop its own satellite internet network to rival Musk’s Starlink.",
+      "date": "30 Oct 2026",
+      "headline": "Nvidia CEO sees Kazakhstan as potential AI hub for Europe",
+      "ai": "During his first visit to Kazakhstan, Nvidia CEO Jensen Huang said the country's growing computing capacity could make it a major AI hub for Europe, as Kazakhstan expands its energy and digital infrastructure.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -150,37 +132,49 @@
         "RUS"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/29/putin-calls-elon-musk-a-genius-as-russia-builds-its-own-starlink-rival"
+      "url": "https://www.euronews.com/2026/10/30/nvidia-ceo-sees-kazakhstan-as-potential-ai-hub-for-europe"
+    },
+    {
+      "date": "30 Oct 2026",
+      "headline": "Islamic states prosecutors call for global enforcement coalition",
+      "ai": "Law enforcement heads from 46 Islamic states gather in Baku to tackle cross-border financial crime, artificial intelligence and international asset recovery.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "AZE"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/10/30/islamic-states-prosecutors-call-for-global-enforcement-coalition"
+    },
+    {
+      "date": "30 Oct 2026",
+      "headline": "Italy: Thousands protest rising living costs and defence spending in general strike",
+      "ai": "Thousands of protesters marched through Rome, Italy, on Friday, 30 October, during a general strike called by the left-wing Unione Sindacale di Base (USB) trade union.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/10/30/italy-thousands-protest-rising-living-costs-and-defence-spending-in-general-strike"
     },
     {
       "date": "29 Oct 2026",
-      "headline": "Europe Today: Second high-speed rail disaster in nine months leaves Spain in grief",
-      "ai": "At least 68 people died when two high-speed trains collided south of Madrid, Spain's second deadly rail crash this year. In Montreal, EU leaders meet Mark Carney to launch an 'Alliance for the Future'. We also look at next week's US midterms, Ukraine's defence capabilities, and rising oil prices.",
+      "headline": "Carney to push for closer ties at Canada-EU summit in Montreal",
+      "ai": "The term \"associate member\" is reportedly off the table as officials discuss deeper economic and defence ties.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP",
-        "UKR",
         "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/29/europe-today-second-high-speed-rail-disaster-in-nine-months-leaves-spain-in-grief"
-    },
-    {
-      "date": "26 Oct 2026",
-      "headline": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
-      "ai": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "SRB"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
