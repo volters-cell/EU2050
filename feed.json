@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "30 Oct 2026",
-  "syncedAt": "2026-10-30T14:50:06.850Z",
+  "feedUpdated": "31 Oct 2026",
+  "syncedAt": "2026-10-31T14:17:52.172Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 2,
@@ -20,6 +20,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "31 Oct 2026",
+      "headline": "Spain train disaster clouds Sánchez chances of re-election",
+      "ai": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "30 Oct 2026",
@@ -93,23 +107,9 @@
       "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Oct 2026",
-      "headline": "Are the French riots a warning of an intense election to come?",
-      "ai": "Rioting, looting and vandalism has gripped France over the weekend after protests spiralled out of control across the country.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "29 Oct 2026",
-      "headline": "In Marseille, Macron Confronts a Potent Mix of France’s Problems",
-      "ai": "France’s second city, five years into a presidential development plan, is grappling with the social strains that have fueled protests across the country.",
+      "date": "31 Oct 2026",
+      "headline": "French officials eye social media’s role in promoting unrest.",
+      "ai": "President Emmanuel Macron denied that the government had considered suspending online platforms, but he said they would have to be “vigilant” about preventing misuse.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -118,63 +118,61 @@
         "FRA"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/29/world/europe/france-marseille-macron-protests.html"
+      "url": "https://www.nytimes.com/live/2026/10/31/world/france-student-protests-halloween/french-officials-eye-social-medias-role-in-promoting-unrest"
     },
     {
-      "date": "30 Oct 2026",
-      "headline": "Nvidia CEO sees Kazakhstan as potential AI hub for Europe",
-      "ai": "During his first visit to Kazakhstan, Nvidia CEO Jensen Huang said the country's growing computing capacity could make it a major AI hub for Europe, as Kazakhstan expands its energy and digital infrastructure.",
+      "date": "31 Oct 2026",
+      "headline": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
+      "ai": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "RUS"
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html"
+    },
+    {
+      "date": "31 Oct 2026",
+      "headline": "Wanted: New Central Bank Chief. Expertise and Political Acumen Required.",
+      "ai": "The looming departure of the European Central Bank’s president, Christine Lagarde, has set in motion a high-stakes search for her successor.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/31/business/european-central-bank-lagarde-succession.html"
+    },
+    {
+      "date": "31 Oct 2026",
+      "headline": "Britain’s Prime Minister Says He’s Open to a Formal Apology for Slavery",
+      "ai": "The premier’s comments represent a major change in British policy, but they are unlikely to satisfy those who hoped that reparations would follow.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html"
+    },
+    {
+      "date": "31 Oct 2026",
+      "headline": "Kärcher boss: Less regulation, more action to get Europe and Germany fit again",
+      "ai": "Kärcher, best known for its pressure washers, recorded €3.5 billion in sales in 2025 and employs 17,000 people worldwide. Its CEO warns of a 'perfect storm' and calls for a fitness plan for Germany and Europe.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/30/nvidia-ceo-sees-kazakhstan-as-potential-ai-hub-for-europe"
-    },
-    {
-      "date": "30 Oct 2026",
-      "headline": "Islamic states prosecutors call for global enforcement coalition",
-      "ai": "Law enforcement heads from 46 Islamic states gather in Baku to tackle cross-border financial crime, artificial intelligence and international asset recovery.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "AZE"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/30/islamic-states-prosecutors-call-for-global-enforcement-coalition"
-    },
-    {
-      "date": "30 Oct 2026",
-      "headline": "Italy: Thousands protest rising living costs and defence spending in general strike",
-      "ai": "Thousands of protesters marched through Rome, Italy, on Friday, 30 October, during a general strike called by the left-wing Unione Sindacale di Base (USB) trade union.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/10/30/italy-thousands-protest-rising-living-costs-and-defence-spending-in-general-strike"
-    },
-    {
-      "date": "29 Oct 2026",
-      "headline": "Carney to push for closer ties at Canada-EU summit in Montreal",
-      "ai": "The term \"associate member\" is reportedly off the table as officials discuss deeper economic and defence ties.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.euronews.com/2026/10/31/karcher-boss-less-regulation-more-action-to-get-europe-and-germany-fit-again"
     }
   ]
 }
