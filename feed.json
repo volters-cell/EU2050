@@ -1,12 +1,27 @@
 {
-  "feedUpdated": "31 Oct 2026",
-  "syncedAt": "2026-10-31T14:17:52.172Z",
+  "feedUpdated": "1 Nov 2026",
+  "syncedAt": "2026-11-01T14:44:52.313Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 2,
-    "fedTotal": -1
+    "fragTotal": 1,
+    "fedTotal": 1
   },
   "feed": [
+    {
+      "date": "31 Oct 2026",
+      "headline": "Emotional reunions with loved ones for Oleshky evacuees",
+      "ai": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "BLR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "29 Oct 2026",
       "headline": "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain",
@@ -79,32 +94,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "25 Oct 2026",
-      "headline": "Joy and disbelief on Serbian streets as Vučić concedes election defeat",
-      "ai": "BBC correspondent Nick Thorpe reports from Belgrade, where there were rapturous celebrations following the victory of the student-led movement.",
+      "date": "1 Nov 2026",
+      "headline": "Putin Breaks Down His Isolation, With a Big Assist From Trump",
+      "ai": "Notching wins from Washington, the Russian leader is talking with foreign leaders and could return to diplomatic center stage with possible summit meetings.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB"
+        "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c8x23x1yn6w6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Oct 2026",
-      "headline": "Who actually controls Ukraine's access to Starlink?",
-      "ai": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/01/world/europe/putin-isolation-breakdown-trump.html"
     },
     {
       "date": "31 Oct 2026",
@@ -122,7 +123,7 @@
     },
     {
       "date": "31 Oct 2026",
-      "headline": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
+      "headline": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
       "ai": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
       "frag": "",
       "fed": "",
@@ -161,18 +162,19 @@
       "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html"
     },
     {
-      "date": "31 Oct 2026",
-      "headline": "Kärcher boss: Less regulation, more action to get Europe and Germany fit again",
-      "ai": "Kärcher, best known for its pressure washers, recorded €3.5 billion in sales in 2025 and employs 17,000 people worldwide. Its CEO warns of a 'perfect storm' and calls for a fitness plan for Germany and Europe.",
+      "date": "1 Nov 2026",
+      "headline": "EU Commission: Polish Parliament has right to appoint judges to the Constitutional Court",
+      "ai": "The statement comes after a confrontation outside the Constitutional Tribunal building on Friday night, broadcast live on television, that has pushed a decade-old dispute into the wider European political debate.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU"
+        "POL",
+        "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/10/31/karcher-boss-less-regulation-more-action-to-get-europe-and-germany-fit-again"
+      "url": "https://www.euronews.com/2026/11/01/eu-commission-polish-parliament-has-right-to-appoint-judges-to-the-constitutional-court"
     }
   ]
 }
