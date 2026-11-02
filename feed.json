@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "1 Nov 2026",
-  "syncedAt": "2026-11-01T14:44:52.313Z",
+  "feedUpdated": "2 Nov 2026",
+  "syncedAt": "2026-11-02T17:49:45.236Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
@@ -94,6 +94,21 @@
       "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "2 Nov 2026",
+      "headline": "Why Orban and Vucic Broke With Trump on Election Denial",
+      "ai": "Rejecting President Trump’s election denial playbook, nationalist leaders in Serbia and Hungary opted for an orderly retreat.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN",
+        "SRB"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/02/world/europe/serbia-hungary-elections-trump.html"
+    },
+    {
       "date": "1 Nov 2026",
       "headline": "Putin Breaks Down His Isolation, With a Big Assist From Trump",
       "ai": "Notching wins from Washington, the Russian leader is talking with foreign leaders and could return to diplomatic center stage with possible summit meetings.",
@@ -160,21 +175,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html"
-    },
-    {
-      "date": "1 Nov 2026",
-      "headline": "EU Commission: Polish Parliament has right to appoint judges to the Constitutional Court",
-      "ai": "The statement comes after a confrontation outside the Constitutional Tribunal building on Friday night, broadcast live on television, that has pushed a decade-old dispute into the wider European political debate.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/01/eu-commission-polish-parliament-has-right-to-appoint-judges-to-the-constitutional-court"
     }
   ]
 }
