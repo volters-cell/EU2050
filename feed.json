@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "2 Nov 2026",
-  "syncedAt": "2026-11-02T17:49:45.236Z",
+  "feedUpdated": "3 Nov 2026",
+  "syncedAt": "2026-11-03T15:49:29.430Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 1
+    "fragTotal": -1,
+    "fedTotal": 5
   },
   "feed": [
+    {
+      "date": "3 Nov 2026",
+      "headline": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
+      "ai": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "31 Oct 2026",
       "headline": "Emotional reunions with loved ones for Oleshky evacuees",
@@ -37,61 +51,65 @@
       "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "31 Oct 2026",
-      "headline": "Spain train disaster clouds Sánchez chances of re-election",
-      "ai": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
+      "date": "3 Nov 2026",
+      "headline": "South Korea and Turkey sign financing pact as Seoul seeks role in planned nuclear power plant",
+      "ai": "Turkey and South Korea are expanding nuclear, defence and trade ties. Their latest agreement explores funding for nuclear projects, while Ankara weighs potential partners for its planned Sinop plant.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
       "countries": [
-        "ESP"
+        "TUR"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/03/south-korea-and-turkey-sign-financing-pact-as-seoul-seeks-role-in-planned-nuclear-power-pl"
     },
     {
-      "date": "30 Oct 2026",
-      "headline": "Student-backed election winners demand sweeping resignations in Serbia",
-      "ai": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
+      "date": "3 Nov 2026",
+      "headline": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+      "ai": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "SRB"
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "30 Oct 2026",
-      "headline": "Post Office suspends sending goods to the EU",
-      "ai": "It follows a delay in updates to processing systems to allow for changes to EU customs rules.",
+      "date": "23 Oct 2026",
+      "headline": "Who actually controls Ukraine's access to Starlink?",
+      "ai": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "BEL"
+        "UKR"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvze4xkknyj4o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "29 Oct 2026",
-      "headline": "EU chief lays out vision for new Canada partnership at Montreal summit",
-      "ai": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany.",
+      "date": "2 Nov 2026",
+      "headline": "Russia Senses Opportunity in Polish Political Turmoil",
+      "ai": "After its sometime allies were ousted in elections in Hungary and Serbia, Moscow has seized on Poland’s constitutional standoff in its effort to weaken Europe’s support for Ukraine.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU",
-        "BEL"
+        "POL",
+        "HUN",
+        "SRB",
+        "UKR",
+        "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/02/world/europe/russia-polish-political-turmoil.html"
     },
     {
       "date": "2 Nov 2026",
@@ -152,29 +170,17 @@
     },
     {
       "date": "31 Oct 2026",
-      "headline": "Wanted: New Central Bank Chief. Expertise and Political Acumen Required.",
-      "ai": "The looming departure of the European Central Bank’s president, Christine Lagarde, has set in motion a high-stakes search for her successor.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/31/business/european-central-bank-lagarde-succession.html"
-    },
-    {
-      "date": "31 Oct 2026",
-      "headline": "Britain’s Prime Minister Says He’s Open to a Formal Apology for Slavery",
-      "ai": "The premier’s comments represent a major change in British policy, but they are unlikely to satisfy those who hoped that reparations would follow.",
+      "headline": "Spain train disaster clouds Sánchez chances of re-election",
+      "ai": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR"
+        "ESP"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
