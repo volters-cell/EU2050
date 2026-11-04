@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "3 Nov 2026",
-  "syncedAt": "2026-11-03T15:49:29.430Z",
+  "feedUpdated": "4 Nov 2026",
+  "syncedAt": "2026-11-04T15:58:00.241Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 5
+    "fragTotal": 1,
+    "fedTotal": 4
   },
   "feed": [
     {
@@ -51,6 +51,22 @@
       "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "4 Nov 2026",
+      "headline": "Europe Today: Democrats win Senate in rebuke of Trump as Poland’s constitutional crisis drags on",
+      "ai": "A blue wave has swept the US in the midterm elections, with Democrats winning the Senate and heading for a big House majority as votes are still being counted on the West Coast. We bring live analysis from Philadelphia and Brussels, plus Poland’s crisis, Ukraine talks and the EU enlargement race.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "POL",
+        "BEL",
+        "UKR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/04/europe-today-democrats-win-senate-in-rebuke-of-trump-as-polands-crisis-drags-on"
+    },
+    {
       "date": "3 Nov 2026",
       "headline": "South Korea and Turkey sign financing pact as Seoul seeks role in planned nuclear power plant",
       "ai": "Turkey and South Korea are expanding nuclear, defence and trade ties. Their latest agreement explores funding for nuclear projects, while Ankara weighs potential partners for its planned Sinop plant.",
@@ -65,33 +81,35 @@
       "url": "https://www.euronews.com/2026/11/03/south-korea-and-turkey-sign-financing-pact-as-seoul-seeks-role-in-planned-nuclear-power-pl"
     },
     {
-      "date": "3 Nov 2026",
-      "headline": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-      "ai": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
+      "date": "4 Nov 2026",
+      "headline": "EU rules on Artificial Intelligence devices will apply in NI",
+      "ai": "Some EU rules on Artificial Intelligence will apply in Northern Ireland, the UK government says.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "IRL",
+        "GBR",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Oct 2026",
-      "headline": "Who actually controls Ukraine's access to Starlink?",
-      "ai": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
+      "date": "3 Nov 2026",
+      "headline": "Poland Beefs Up Security at Border With Russia",
+      "ai": "Prime Minister Donald Tusk said there had been “disturbing movement” in Kaliningrad, a Russian region just north of Poland.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "POL",
+        "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
     },
     {
       "date": "2 Nov 2026",
@@ -141,46 +159,34 @@
       "url": "https://www.nytimes.com/2026/11/01/world/europe/putin-isolation-breakdown-trump.html"
     },
     {
-      "date": "31 Oct 2026",
-      "headline": "French officials eye social media’s role in promoting unrest.",
-      "ai": "President Emmanuel Macron denied that the government had considered suspending online platforms, but he said they would have to be “vigilant” about preventing misuse.",
+      "date": "4 Nov 2026",
+      "headline": "Armenia sees 'totally new global role' for South Caucasus 'as a whole'",
+      "ai": "Armenia’s Prime Minister Nikol Pashinyan told Euronews that peace and convergence in the South Caucasus, based on a carefully balanced pro-EU political vector, create a major opportunity for the region, with \"democracy as a strategy\" for Armenia.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
+        "ARM",
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/live/2026/10/31/world/france-student-protests-halloween/french-officials-eye-social-medias-role-in-promoting-unrest"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/04/armenia-sees-totally-new-global-role-for-south-caucasus-as-a-whole"
     },
     {
-      "date": "31 Oct 2026",
-      "headline": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
-      "ai": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
+      "date": "3 Nov 2026",
+      "headline": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+      "ai": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html"
-    },
-    {
-      "date": "31 Oct 2026",
-      "headline": "Spain train disaster clouds Sánchez chances of re-election",
-      "ai": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
+        "UKR",
+        "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
