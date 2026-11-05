@@ -1,26 +1,12 @@
 {
-  "feedUpdated": "4 Nov 2026",
-  "syncedAt": "2026-11-04T15:58:00.241Z",
+  "feedUpdated": "5 Nov 2026",
+  "syncedAt": "2026-11-05T16:09:54.718Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
     "fedTotal": 4
   },
   "feed": [
-    {
-      "date": "3 Nov 2026",
-      "headline": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
-      "ai": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss"
-    },
     {
       "date": "31 Oct 2026",
       "headline": "Emotional reunions with loved ones for Oleshky evacuees",
@@ -35,6 +21,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "3 Nov 2026",
+      "headline": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
+      "ai": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "29 Oct 2026",
@@ -81,22 +81,6 @@
       "url": "https://www.euronews.com/2026/11/03/south-korea-and-turkey-sign-financing-pact-as-seoul-seeks-role-in-planned-nuclear-power-pl"
     },
     {
-      "date": "4 Nov 2026",
-      "headline": "EU rules on Artificial Intelligence devices will apply in NI",
-      "ai": "Some EU rules on Artificial Intelligence will apply in Northern Ireland, the UK government says.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
-        "GBR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "3 Nov 2026",
       "headline": "Poland Beefs Up Security at Border With Russia",
       "ai": "Prime Minister Donald Tusk said there had been “disturbing movement” in Kaliningrad, a Russian region just north of Poland.",
@@ -112,81 +96,92 @@
       "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
     },
     {
-      "date": "2 Nov 2026",
-      "headline": "Russia Senses Opportunity in Polish Political Turmoil",
-      "ai": "After its sometime allies were ousted in elections in Hungary and Serbia, Moscow has seized on Poland’s constitutional standoff in its effort to weaken Europe’s support for Ukraine.",
+      "date": "5 Nov 2026",
+      "headline": "Milei and Sánchez exchange a cold greeting at Ibero-American Summit",
+      "ai": "Argentine President Javier Milei and Spanish Prime Minister Pedro Sánchez exchanged a brief and frosty greeting at the Ibero-American Summit in Madrid on Wednesday. Their encounter comes two weeks after Milei called Sánchez an “unpresentable dictator”.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL",
-        "HUN",
-        "SRB",
-        "UKR",
-        "RUS"
+        "ESP"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/02/world/europe/russia-polish-political-turmoil.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/05/milei-and-sanchez-exchange-a-cold-greeting-at-ibero-american-summit"
     },
     {
-      "date": "2 Nov 2026",
-      "headline": "Why Orban and Vucic Broke With Trump on Election Denial",
-      "ai": "Rejecting President Trump’s election denial playbook, nationalist leaders in Serbia and Hungary opted for an orderly retreat.",
+      "date": "5 Nov 2026",
+      "headline": "North Korea tells EU to 'mind its own business' after draft UN resolution on human rights",
+      "ai": "The United Nations High Commissioner for Human Rights said last year that human rights in North Korea have shown no improvement over the past decade and had in fact worsened in many cases.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "HUN",
-        "SRB"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/02/world/europe/serbia-hungary-elections-trump.html"
-    },
-    {
-      "date": "1 Nov 2026",
-      "headline": "Putin Breaks Down His Isolation, With a Big Assist From Trump",
-      "ai": "Notching wins from Washington, the Russian leader is talking with foreign leaders and could return to diplomatic center stage with possible summit meetings.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/01/world/europe/putin-isolation-breakdown-trump.html"
-    },
-    {
-      "date": "4 Nov 2026",
-      "headline": "Armenia sees 'totally new global role' for South Caucasus 'as a whole'",
-      "ai": "Armenia’s Prime Minister Nikol Pashinyan told Euronews that peace and convergence in the South Caucasus, based on a carefully balanced pro-EU political vector, create a major opportunity for the region, with \"democracy as a strategy\" for Armenia.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ARM",
         "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/04/armenia-sees-totally-new-global-role-for-south-caucasus-as-a-whole"
+      "url": "https://www.euronews.com/2026/11/05/north-korea-tells-eu-to-mind-its-own-business-after-draft-un-resolution-on-human-rights"
     },
     {
-      "date": "3 Nov 2026",
-      "headline": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-      "ai": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
+      "date": "5 Nov 2026",
+      "headline": "Arab airlines set to record a collective net loss of €3.82 billion in 2026, AACO report reveals",
+      "ai": "At its AGM held this week in Doha, the Arab Air Carriers’ Organization raised concerns over EU carbon regulations, as airlines look to boost European connectivity amid ongoing regional uncertainty.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/05/arab-airlines-set-to-record-a-collective-net-loss-of-382-billion-in-2026-aaco-report-revea"
+    },
+    {
+      "date": "4 Nov 2026",
+      "headline": "Spain: Madrid hosts 30th Ibero-American Summit with 22-nation bloc",
+      "ai": "Spain is hosting the 30th Ibero-American Summit in Madrid, bringing together leaders from Spanish- and Portuguese-speaking nations. The gathering aims to strengthen cooperation across Europe and Latin America.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP",
+        "PRT"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/04/spain-madrid-hosts-30th-ibero-american-summit-with-22-nation-bloc"
+    },
+    {
+      "date": "4 Nov 2026",
+      "headline": "Zelenskyy makes surprise visit to Madrid for talks with Sánchez and Latin American leaders",
+      "ai": "Zelenskyy visits Madrid to meet Sánchez, Felipe VI and Latin American leaders at the Ibero-American Summit, aiming to boost support for Ukraine and closer ties with Latin America.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP",
+        "UKR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/04/zelenski-makes-surprise-visit-to-madrid-for-talks-with-sanchez-and-latin-american-leaders"
+    },
+    {
+      "date": "4 Nov 2026",
+      "headline": "EU rules on Artificial Intelligence devices will apply in NI",
+      "ai": "Some EU rules on Artificial Intelligence will apply in Northern Ireland, the UK government says.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL",
+        "GBR",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
