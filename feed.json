@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "5 Nov 2026",
-  "syncedAt": "2026-11-05T16:09:54.718Z",
+  "feedUpdated": "6 Nov 2026",
+  "syncedAt": "2026-11-06T15:39:50.944Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 4
+    "fragTotal": 0,
+    "fedTotal": 6
   },
   "feed": [
     {
@@ -21,6 +21,21 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "6 Nov 2026",
+      "headline": "Azerbaijan and Ukraine forge new energy defence and trade agreements",
+      "ai": "An Azerbaijani delegation led by its energy minister travelled to Ukraine to sign a 2026-2027 Action Plan. Bilateral talks focused on emergency winter grid equipment, joint manufacturing, and expanding European transit via the Trans-Balkan route.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "AZE"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/06/azerbaijan-and-ukraine-forge-new-energy-defence-and-trade-agreements"
     },
     {
       "date": "3 Nov 2026",
@@ -81,19 +96,33 @@
       "url": "https://www.euronews.com/2026/11/03/south-korea-and-turkey-sign-financing-pact-as-seoul-seeks-role-in-planned-nuclear-power-pl"
     },
     {
-      "date": "3 Nov 2026",
-      "headline": "Poland Beefs Up Security at Border With Russia",
-      "ai": "Prime Minister Donald Tusk said there had been “disturbing movement” in Kaliningrad, a Russian region just north of Poland.",
+      "date": "6 Nov 2026",
+      "headline": "Netherlands: Protesters storm Amsterdam data centre construction site",
+      "ai": "Protesters broke into a data centre construction site intended for Microsoft in Amsterdam, on 6 November, climbing cranes and unfurling banners denouncing artificial intelligence and the company's alleged involvement in the war in Gaza.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL",
-        "RUS"
+        "NLD"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/06/netherlands-protesters-storm-amsterdam-data-centre-construction-site"
+    },
+    {
+      "date": "5 Nov 2026",
+      "headline": "Spain: Zelensky urges Latin America to help repair Ukraine's power grid",
+      "ai": "Ukrainian President Volodymyr Zelensky has appealed to Spain and Latin American countries for urgent help repairing Ukraine's damaged energy infrastructure. He also met King Felipe VI during the Ibero-American Summit in Madrid.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP",
+        "UKR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/05/spain-zelensky-urges-latin-america-to-help-repair-ukraines-power-grid"
     },
     {
       "date": "5 Nov 2026",
@@ -108,6 +137,21 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/05/milei-and-sanchez-exchange-a-cold-greeting-at-ibero-american-summit"
+    },
+    {
+      "date": "3 Nov 2026",
+      "headline": "Poland Beefs Up Security at Border With Russia",
+      "ai": "Prime Minister Donald Tusk said there had been “disturbing movement” in Kaliningrad, a Russian region just north of Poland.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "POL",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
     },
     {
       "date": "5 Nov 2026",
@@ -136,52 +180,6 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/05/arab-airlines-set-to-record-a-collective-net-loss-of-382-billion-in-2026-aaco-report-revea"
-    },
-    {
-      "date": "4 Nov 2026",
-      "headline": "Spain: Madrid hosts 30th Ibero-American Summit with 22-nation bloc",
-      "ai": "Spain is hosting the 30th Ibero-American Summit in Madrid, bringing together leaders from Spanish- and Portuguese-speaking nations. The gathering aims to strengthen cooperation across Europe and Latin America.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP",
-        "PRT"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/04/spain-madrid-hosts-30th-ibero-american-summit-with-22-nation-bloc"
-    },
-    {
-      "date": "4 Nov 2026",
-      "headline": "Zelenskyy makes surprise visit to Madrid for talks with Sánchez and Latin American leaders",
-      "ai": "Zelenskyy visits Madrid to meet Sánchez, Felipe VI and Latin American leaders at the Ibero-American Summit, aiming to boost support for Ukraine and closer ties with Latin America.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP",
-        "UKR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/04/zelenski-makes-surprise-visit-to-madrid-for-talks-with-sanchez-and-latin-american-leaders"
-    },
-    {
-      "date": "4 Nov 2026",
-      "headline": "EU rules on Artificial Intelligence devices will apply in NI",
-      "ai": "Some EU rules on Artificial Intelligence will apply in Northern Ireland, the UK government says.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
-        "GBR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
