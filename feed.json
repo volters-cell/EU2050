@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "6 Nov 2026",
-  "syncedAt": "2026-11-06T15:39:50.944Z",
+  "feedUpdated": "7 Nov 2026",
+  "syncedAt": "2026-11-07T14:40:44.230Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 0,
-    "fedTotal": 6
+    "fragTotal": -1,
+    "fedTotal": 8
   },
   "feed": [
     {
@@ -21,6 +21,21 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "6 Nov 2026",
+      "headline": "Iran delivers secret Khamenei message to Putin as Moscow pushes gas pipeline deal",
+      "ai": "Iran’s Security Council chief, Mohsen Rezaei, went to Moscow to deliver a personal message from Ayatollah Khamenei and discuss building a pipeline to import Russian gas.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "RUS",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/06/iran-delivers-secret-khamenei-message-to-putin-as-moscow-pushes-gas-pipeline-deal"
     },
     {
       "date": "6 Nov 2026",
@@ -97,6 +112,33 @@
     },
     {
       "date": "6 Nov 2026",
+      "headline": "Spain's rail authorities face European fraud probe after Urda rail disaster",
+      "ai": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "7 Nov 2026",
+      "headline": "'We have proven ourselves': UAE vows to remain reliable energy supplier to Europe",
+      "ai": "One of the UAE's most senior energy officials told Euronews diversification has carried the country's energy sector through months of regional crisis, as Europe looks to the Gulf for secure supply.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/07/we-have-proven-ourselves-uae-vows-to-remain-reliable-energy-supplier-to-europe"
+    },
+    {
+      "date": "6 Nov 2026",
       "headline": "Netherlands: Protesters storm Amsterdam data centre construction site",
       "ai": "Protesters broke into a data centre construction site intended for Microsoft in Amsterdam, on 6 November, climbing cranes and unfurling banners denouncing artificial intelligence and the company's alleged involvement in the war in Gaza.",
       "frag": "",
@@ -137,49 +179,6 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/05/milei-and-sanchez-exchange-a-cold-greeting-at-ibero-american-summit"
-    },
-    {
-      "date": "3 Nov 2026",
-      "headline": "Poland Beefs Up Security at Border With Russia",
-      "ai": "Prime Minister Donald Tusk said there had been “disturbing movement” in Kaliningrad, a Russian region just north of Poland.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "POL",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
-    },
-    {
-      "date": "5 Nov 2026",
-      "headline": "North Korea tells EU to 'mind its own business' after draft UN resolution on human rights",
-      "ai": "The United Nations High Commissioner for Human Rights said last year that human rights in North Korea have shown no improvement over the past decade and had in fact worsened in many cases.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/05/north-korea-tells-eu-to-mind-its-own-business-after-draft-un-resolution-on-human-rights"
-    },
-    {
-      "date": "5 Nov 2026",
-      "headline": "Arab airlines set to record a collective net loss of €3.82 billion in 2026, AACO report reveals",
-      "ai": "At its AGM held this week in Doha, the Arab Air Carriers’ Organization raised concerns over EU carbon regulations, as airlines look to boost European connectivity amid ongoing regional uncertainty.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/05/arab-airlines-set-to-record-a-collective-net-loss-of-382-billion-in-2026-aaco-report-revea"
     }
   ]
 }
