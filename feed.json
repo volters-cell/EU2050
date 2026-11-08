@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "7 Nov 2026",
-  "syncedAt": "2026-11-07T14:40:44.230Z",
+  "feedUpdated": "8 Nov 2026",
+  "syncedAt": "2026-11-08T14:46:07.218Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 8
+    "fragTotal": -3,
+    "fedTotal": 9
   },
   "feed": [
     {
@@ -21,6 +21,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "8 Nov 2026",
+      "headline": "Egypt reopens Tripoli embassy after 12 years and raises concerns over Turkey-Libya maritime deal",
+      "ai": "Egypt is seeking closer ties with Libya’s western government after years of backing its eastern rival. Talks in Tripoli covered energy projects and Egypt’s objections to Libya’s maritime deal with Turkey.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "TUR"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/08/egypt-reopens-tripoli-embassy-after-12-years-and-raises-concerns-over-turkey-libya-maritim"
     },
     {
       "date": "6 Nov 2026",
@@ -81,36 +95,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "4 Nov 2026",
-      "headline": "Europe Today: Democrats win Senate in rebuke of Trump as Poland’s constitutional crisis drags on",
-      "ai": "A blue wave has swept the US in the midterm elections, with Democrats winning the Senate and heading for a big House majority as votes are still being counted on the West Coast. We bring live analysis from Philadelphia and Brussels, plus Poland’s crisis, Ukraine talks and the EU enlargement race.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "POL",
-        "BEL",
-        "UKR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/04/europe-today-democrats-win-senate-in-rebuke-of-trump-as-polands-crisis-drags-on"
-    },
-    {
-      "date": "3 Nov 2026",
-      "headline": "South Korea and Turkey sign financing pact as Seoul seeks role in planned nuclear power plant",
-      "ai": "Turkey and South Korea are expanding nuclear, defence and trade ties. Their latest agreement explores funding for nuclear projects, while Ankara weighs potential partners for its planned Sinop plant.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/03/south-korea-and-turkey-sign-financing-pact-as-seoul-seeks-role-in-planned-nuclear-power-pl"
-    },
-    {
       "date": "6 Nov 2026",
       "headline": "Spain's rail authorities face European fraud probe after Urda rail disaster",
       "ai": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people.",
@@ -127,6 +111,62 @@
     },
     {
       "date": "7 Nov 2026",
+      "headline": "Andy Burnham wants to get closer to the EU - but he shouldn't expect a smooth ride",
+      "ai": "Laura Kuenssberg talks to government insiders about the prime minister opening the conversation about the UK rejoining the EU.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwjdmm0z74plo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "6 Nov 2026",
+      "headline": "Europe Still Sees Trump As Powerful, Especially in Foreign Policy",
+      "ai": "The commanding victory of the Democrats has brought private relief to some Europeans but no official glee, with Ukraine, Iran and NATO all hanging in the balance.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html"
+    },
+    {
+      "date": "8 Nov 2026",
+      "headline": "At least 21 dead after migrant boat capsizes off Senegal, authorities say",
+      "ai": "The United Nations' International Organization for Migration (IOM) says the dangerous Atlantic Route is a key pathway for West African migrants travelling to Europe.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/08/at-least-21-dead-after-migrant-boat-capsizes-off-senegal-authorities-say"
+    },
+    {
+      "date": "7 Nov 2026",
+      "headline": "Ukraine: Russian strikes hit Kyiv region, damaging infrastructure",
+      "ai": "Russian strikes have damaged infrastructure in the Kyiv region and left a kindergarten in ruins in the Ukrainian capital. Firefighters battled a major blaze as Ukraine faced renewed attacks on its energy network.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/07/ukraine-russian-strikes-hit-kyiv-region-damaging-infrastructure"
+    },
+    {
+      "date": "7 Nov 2026",
       "headline": "'We have proven ourselves': UAE vows to remain reliable energy supplier to Europe",
       "ai": "One of the UAE's most senior energy officials told Euronews diversification has carried the country's energy sector through months of regional crisis, as Europe looks to the Gulf for secure supply.",
       "frag": "",
@@ -136,49 +176,6 @@
       "countries": [],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/07/we-have-proven-ourselves-uae-vows-to-remain-reliable-energy-supplier-to-europe"
-    },
-    {
-      "date": "6 Nov 2026",
-      "headline": "Netherlands: Protesters storm Amsterdam data centre construction site",
-      "ai": "Protesters broke into a data centre construction site intended for Microsoft in Amsterdam, on 6 November, climbing cranes and unfurling banners denouncing artificial intelligence and the company's alleged involvement in the war in Gaza.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "NLD"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/06/netherlands-protesters-storm-amsterdam-data-centre-construction-site"
-    },
-    {
-      "date": "5 Nov 2026",
-      "headline": "Spain: Zelensky urges Latin America to help repair Ukraine's power grid",
-      "ai": "Ukrainian President Volodymyr Zelensky has appealed to Spain and Latin American countries for urgent help repairing Ukraine's damaged energy infrastructure. He also met King Felipe VI during the Ibero-American Summit in Madrid.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP",
-        "UKR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/05/spain-zelensky-urges-latin-america-to-help-repair-ukraines-power-grid"
-    },
-    {
-      "date": "5 Nov 2026",
-      "headline": "Milei and Sánchez exchange a cold greeting at Ibero-American Summit",
-      "ai": "Argentine President Javier Milei and Spanish Prime Minister Pedro Sánchez exchanged a brief and frosty greeting at the Ibero-American Summit in Madrid on Wednesday. Their encounter comes two weeks after Milei called Sánchez an “unpresentable dictator”.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/05/milei-and-sanchez-exchange-a-cold-greeting-at-ibero-american-summit"
     }
   ]
 }
