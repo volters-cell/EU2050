@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "8 Nov 2026",
-  "syncedAt": "2026-11-08T14:46:07.218Z",
+  "feedUpdated": "9 Nov 2026",
+  "syncedAt": "2026-11-09T18:20:19.237Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -3,
@@ -125,6 +125,34 @@
       "url": "https://www.bbc.co.uk/news/articles/cwjdmm0z74plo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "9 Nov 2026",
+      "headline": "Germans Miss Merkel, Their Old Chancellor, Though They Dislike Her Policies",
+      "ai": "Crowds have flocked to the stern, but reassuring, face of Angela Merkel in her official portrait, even as a backlash to her legacy roils German politics.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/09/world/europe/germans-angela-merkel-portrait.html"
+    },
+    {
+      "date": "9 Nov 2026",
+      "headline": "US President Donald Trump plans to meet Putin and Xi in China next week",
+      "ai": "US President Donald Trump said he would possibly meet with Vladimir Putin and Xi Jinping in China to discuss \"denuclearisation\" and how to end the Iran war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/09/donald-trump-plans-to-meet-vladimir-putin-and-xi-jinping-in-china-to-discuss-ending-iran-w"
+    },
+    {
       "date": "6 Nov 2026",
       "headline": "Europe Still Sees Trump As Powerful, Especially in Foreign Policy",
       "ai": "The commanding victory of the Democrats has brought private relief to some Europeans but no official glee, with Ukraine, Iran and NATO all hanging in the balance.",
@@ -149,33 +177,6 @@
       "countries": [],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/08/at-least-21-dead-after-migrant-boat-capsizes-off-senegal-authorities-say"
-    },
-    {
-      "date": "7 Nov 2026",
-      "headline": "Ukraine: Russian strikes hit Kyiv region, damaging infrastructure",
-      "ai": "Russian strikes have damaged infrastructure in the Kyiv region and left a kindergarten in ruins in the Ukrainian capital. Firefighters battled a major blaze as Ukraine faced renewed attacks on its energy network.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/07/ukraine-russian-strikes-hit-kyiv-region-damaging-infrastructure"
-    },
-    {
-      "date": "7 Nov 2026",
-      "headline": "'We have proven ourselves': UAE vows to remain reliable energy supplier to Europe",
-      "ai": "One of the UAE's most senior energy officials told Euronews diversification has carried the country's energy sector through months of regional crisis, as Europe looks to the Gulf for secure supply.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/07/we-have-proven-ourselves-uae-vows-to-remain-reliable-energy-supplier-to-europe"
     }
   ]
 }
