@@ -1,12 +1,27 @@
 {
-  "feedUpdated": "9 Nov 2026",
-  "syncedAt": "2026-11-09T18:20:19.237Z",
+  "feedUpdated": "10 Nov 2026",
+  "syncedAt": "2026-11-10T16:05:55.250Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -3,
-    "fedTotal": 9
+    "fragTotal": -4,
+    "fedTotal": 8
   },
   "feed": [
+    {
+      "date": "10 Nov 2026",
+      "headline": "Why U.S. Business Deals Are Unlikely to Get Putin to Give Any Ground",
+      "ai": "President Vladimir V. Putin of Russia has shown a willingness to endure a high price to get what he wants in Ukraine, and he sees little reason to stop fighting now, analysts say.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/10/world/europe/putin-trump-abu-dhabi-talks.html"
+    },
     {
       "date": "31 Oct 2026",
       "headline": "Emotional reunions with loved ones for Oleshky evacuees",
@@ -52,62 +67,19 @@
       "url": "https://www.euronews.com/2026/11/06/iran-delivers-secret-khamenei-message-to-putin-as-moscow-pushes-gas-pipeline-deal"
     },
     {
-      "date": "6 Nov 2026",
-      "headline": "Azerbaijan and Ukraine forge new energy defence and trade agreements",
-      "ai": "An Azerbaijani delegation led by its energy minister travelled to Ukraine to sign a 2026-2027 Action Plan. Bilateral talks focused on emergency winter grid equipment, joint manufacturing, and expanding European transit via the Trans-Balkan route.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "UKR",
-        "AZE"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/06/azerbaijan-and-ukraine-forge-new-energy-defence-and-trade-agreements"
-    },
-    {
-      "date": "3 Nov 2026",
-      "headline": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
-      "ai": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "29 Oct 2026",
-      "headline": "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain",
-      "ai": "The latest train crash will pile pressure on the government of Pedro Sánchez, one month before the general election.",
-      "frag": "Reinforces fragmentation",
-      "fed": "Delays federal progress",
-      "fragWeight": 2,
-      "fedWeight": -1,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "6 Nov 2026",
-      "headline": "Spain's rail authorities face European fraud probe after Urda rail disaster",
-      "ai": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people.",
+      "date": "10 Nov 2026",
+      "headline": "PSNI to support gardaí amid huge security operation for EU meetings",
+      "ai": "Irish police say it is going to be the largest security operation in the history of the state.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP",
+        "IRL",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cxdd8vvll870o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "7 Nov 2026",
@@ -125,6 +97,34 @@
       "url": "https://www.bbc.co.uk/news/articles/cwjdmm0z74plo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "10 Nov 2026",
+      "headline": "Meghan Markle Makes First Public Appearance Since Her Father’s Arrest",
+      "ai": "The Duchess of Sussex accompanied her husband, Prince Harry, in Brussels at an event about online safety for children.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/10/world/europe/meghan-markle-brussels-speech-canceled-prince-harry.html"
+    },
+    {
+      "date": "10 Nov 2026",
+      "headline": "Turkey Promotes Itself as a Climate Champion. Not Everyone Agrees.",
+      "ai": "Critics say some of the country’s environmental policies run counter to the image it is offering as host of a United Nations climate summit.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "TUR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html"
+    },
+    {
       "date": "9 Nov 2026",
       "headline": "Germans Miss Merkel, Their Old Chancellor, Though They Dislike Her Policies",
       "ai": "Crowds have flocked to the stern, but reassuring, face of Angela Merkel in her official portrait, even as a backlash to her legacy roils German politics.",
@@ -139,44 +139,46 @@
       "url": "https://www.nytimes.com/2026/11/09/world/europe/germans-angela-merkel-portrait.html"
     },
     {
+      "date": "10 Nov 2026",
+      "headline": "Belgium: Prince Harry and Meghan visit EU Parliament for child safety event",
+      "ai": "Prince Harry and his wife Meghan visited the European Parliament in Brussels, on Tuesday 10 November, to discuss the dangers children face online. The couple met families affected by online abuse before Harry addressed the gathering.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/10/belgium-prince-harry-and-meghan-visit-eu-parliament-for-child-safety-event"
+    },
+    {
       "date": "9 Nov 2026",
-      "headline": "US President Donald Trump plans to meet Putin and Xi in China next week",
-      "ai": "US President Donald Trump said he would possibly meet with Vladimir Putin and Xi Jinping in China to discuss \"denuclearisation\" and how to end the Iran war.",
+      "headline": "Poland: Tusk and Nawrocki honour six victims of Kraków shooting",
+      "ai": "Poland's President and Prime Minister set aside their political differences to honour the six victims of a deadly shooting in Kraków. The two leaders laid candles and knelt together at a vigil in the historic city centre.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "RUS"
+        "POL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/09/donald-trump-plans-to-meet-vladimir-putin-and-xi-jinping-in-china-to-discuss-ending-iran-w"
+      "url": "https://www.euronews.com/video/2026/11/09/poland-tusk-and-nawrocki-honour-six-victims-of-krakow-shooting"
     },
     {
-      "date": "6 Nov 2026",
-      "headline": "Europe Still Sees Trump As Powerful, Especially in Foreign Policy",
-      "ai": "The commanding victory of the Democrats has brought private relief to some Europeans but no official glee, with Ukraine, Iran and NATO all hanging in the balance.",
+      "date": "9 Nov 2026",
+      "headline": "Turkey: Delegates arrive in Antalya as COP31 climate talks begin",
+      "ai": "The United Nations COP31 climate summit has opened in Antalya after a year marked by deadly heatwaves and devastating floods. Delegates face fresh challenges as the war in Iran disrupts global energy supplies.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "TUR"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html"
-    },
-    {
-      "date": "8 Nov 2026",
-      "headline": "At least 21 dead after migrant boat capsizes off Senegal, authorities say",
-      "ai": "The United Nations' International Organization for Migration (IOM) says the dangerous Atlantic Route is a key pathway for West African migrants travelling to Europe.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/08/at-least-21-dead-after-migrant-boat-capsizes-off-senegal-authorities-say"
+      "url": "https://www.euronews.com/video/2026/11/09/turkey-delegates-arrive-in-antalya-as-cop31-climate-talks-begin"
     }
   ]
 }
