@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "10 Nov 2026",
-  "syncedAt": "2026-11-10T16:05:55.250Z",
+  "feedUpdated": "11 Nov 2026",
+  "syncedAt": "2026-11-11T15:52:07.762Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -4,
@@ -67,19 +67,19 @@
       "url": "https://www.euronews.com/2026/11/06/iran-delivers-secret-khamenei-message-to-putin-as-moscow-pushes-gas-pipeline-deal"
     },
     {
-      "date": "10 Nov 2026",
-      "headline": "PSNI to support gardaí amid huge security operation for EU meetings",
-      "ai": "Irish police say it is going to be the largest security operation in the history of the state.",
+      "date": "11 Nov 2026",
+      "headline": "Spain sees widespread disruption in first general strike for 14 years",
+      "ai": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "IRL",
+        "ESP",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxdd8vvll870o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "7 Nov 2026",
@@ -125,18 +125,18 @@
       "url": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html"
     },
     {
-      "date": "9 Nov 2026",
-      "headline": "Germans Miss Merkel, Their Old Chancellor, Though They Dislike Her Policies",
-      "ai": "Crowds have flocked to the stern, but reassuring, face of Angela Merkel in her official portrait, even as a backlash to her legacy roils German politics.",
+      "date": "11 Nov 2026",
+      "headline": "EU plans Doha defence talks to strengthen security ties with Gulf countries",
+      "ai": "EU Ambassador to Qatar Antonino Maggiore tells Euronews that Europe plans to strengthen defence cooperation with Qatar and the Gulf countries, as \"every crisis brings opportunities,\" while also deepening political and economic cooperation with the region.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DEU"
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/09/world/europe/germans-angela-merkel-portrait.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/11/eu-plans-doha-defence-talks-to-strengthen-security-ties-with-gulf-countries"
     },
     {
       "date": "10 Nov 2026",
@@ -153,32 +153,33 @@
       "url": "https://www.euronews.com/video/2026/11/10/belgium-prince-harry-and-meghan-visit-eu-parliament-for-child-safety-event"
     },
     {
-      "date": "9 Nov 2026",
-      "headline": "Poland: Tusk and Nawrocki honour six victims of Kraków shooting",
-      "ai": "Poland's President and Prime Minister set aside their political differences to honour the six victims of a deadly shooting in Kraków. The two leaders laid candles and knelt together at a vigil in the historic city centre.",
+      "date": "10 Nov 2026",
+      "headline": "PSNI to support gardaí amid huge security operation for EU meetings",
+      "ai": "Irish police say it is going to be the largest security operation in the history of the state.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "POL"
+        "IRL",
+        "BEL"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/09/poland-tusk-and-nawrocki-honour-six-victims-of-krakow-shooting"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxdd8vvll870o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "9 Nov 2026",
-      "headline": "Turkey: Delegates arrive in Antalya as COP31 climate talks begin",
-      "ai": "The United Nations COP31 climate summit has opened in Antalya after a year marked by deadly heatwaves and devastating floods. Delegates face fresh challenges as the war in Iran disrupts global energy supplies.",
+      "headline": "Germans Miss Merkel, Their Old Chancellor, Though They Dislike Her Policies",
+      "ai": "Crowds have flocked to the stern, but reassuring, face of Angela Merkel in her official portrait, even as a backlash to her legacy roils German politics.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "TUR"
+        "DEU"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/09/turkey-delegates-arrive-in-antalya-as-cop31-climate-talks-begin"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/09/world/europe/germans-angela-merkel-portrait.html"
     }
   ]
 }
