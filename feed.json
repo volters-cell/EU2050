@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "11 Nov 2026",
-  "syncedAt": "2026-11-11T15:52:07.762Z",
+  "feedUpdated": "12 Nov 2026",
+  "syncedAt": "2026-11-12T16:34:51.522Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -4,
@@ -67,6 +67,92 @@
       "url": "https://www.euronews.com/2026/11/06/iran-delivers-secret-khamenei-message-to-putin-as-moscow-pushes-gas-pipeline-deal"
     },
     {
+      "date": "12 Nov 2026",
+      "headline": "A.I. Weapons Need Data for Their Training. Ukraine Has a Lot to Offer.",
+      "ai": "The Ukrainian government has opened up a trove of five million battlefield videos to defense companies at home and abroad.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/12/world/europe/ukraine-ai-weapons.html"
+    },
+    {
+      "date": "11 Nov 2026",
+      "headline": "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
+      "ai": "As a round of negotiations ended in Abu Dhabi, President Trump’s envoys said they would go to Moscow as the Kremlin demands discussions on European security structures.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/11/world/europe/russia-ukraine-talks-abu-dhabi.html"
+    },
+    {
+      "date": "11 Nov 2026",
+      "headline": "Protesters Throw Projectiles at Biden During Dublin Trip",
+      "ai": "Video showed demonstrators from a pro-Palestinian protest throwing projectiles at former President Joseph R. Biden Jr. after he attended an event at Trinity College Dublin on Tuesday.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/11/world/europe/joe-biden-dublin-ireland-protesters-attack.html"
+    },
+    {
+      "date": "11 Nov 2026",
+      "headline": "Judge Allows Trump’s Defamation Lawsuit Against the BBC to Proceed",
+      "ai": "President Trump is seeking damages from the British broadcaster over a documentary it conceded was misleadingly edited.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/11/world/europe/trump-bbc-lawsuit.html"
+    },
+    {
+      "date": "12 Nov 2026",
+      "headline": "This Defense Makes Drones (and GPS) Think They’re in Peru",
+      "ai": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html"
+    },
+    {
+      "date": "11 Nov 2026",
+      "headline": "Spain: 120,000 brave rain to demand affordable housing and better wages",
+      "ai": "Around 120,000 demonstrators marched through central Madrid on Wednesday 11 November, according to authorities, as Spain's first nationwide general strike since 2012 brought crowds onto the streets to protest against soaring housing costs and mounting pressure on household budgets.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/11/spain-120000-brave-rain-to-demand-affordable-housing-and-better-wages"
+    },
+    {
       "date": "11 Nov 2026",
       "headline": "Spain sees widespread disruption in first general strike for 14 years",
       "ai": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
@@ -95,91 +181,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwjdmm0z74plo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "10 Nov 2026",
-      "headline": "Meghan Markle Makes First Public Appearance Since Her Father’s Arrest",
-      "ai": "The Duchess of Sussex accompanied her husband, Prince Harry, in Brussels at an event about online safety for children.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/10/world/europe/meghan-markle-brussels-speech-canceled-prince-harry.html"
-    },
-    {
-      "date": "10 Nov 2026",
-      "headline": "Turkey Promotes Itself as a Climate Champion. Not Everyone Agrees.",
-      "ai": "Critics say some of the country’s environmental policies run counter to the image it is offering as host of a United Nations climate summit.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "TUR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html"
-    },
-    {
-      "date": "11 Nov 2026",
-      "headline": "EU plans Doha defence talks to strengthen security ties with Gulf countries",
-      "ai": "EU Ambassador to Qatar Antonino Maggiore tells Euronews that Europe plans to strengthen defence cooperation with Qatar and the Gulf countries, as \"every crisis brings opportunities,\" while also deepening political and economic cooperation with the region.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/11/eu-plans-doha-defence-talks-to-strengthen-security-ties-with-gulf-countries"
-    },
-    {
-      "date": "10 Nov 2026",
-      "headline": "Belgium: Prince Harry and Meghan visit EU Parliament for child safety event",
-      "ai": "Prince Harry and his wife Meghan visited the European Parliament in Brussels, on Tuesday 10 November, to discuss the dangers children face online. The couple met families affected by online abuse before Harry addressed the gathering.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/10/belgium-prince-harry-and-meghan-visit-eu-parliament-for-child-safety-event"
-    },
-    {
-      "date": "10 Nov 2026",
-      "headline": "PSNI to support gardaí amid huge security operation for EU meetings",
-      "ai": "Irish police say it is going to be the largest security operation in the history of the state.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxdd8vvll870o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "9 Nov 2026",
-      "headline": "Germans Miss Merkel, Their Old Chancellor, Though They Dislike Her Policies",
-      "ai": "Crowds have flocked to the stern, but reassuring, face of Angela Merkel in her official portrait, even as a backlash to her legacy roils German politics.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/09/world/europe/germans-angela-merkel-portrait.html"
     }
   ]
 }
