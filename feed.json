@@ -1,70 +1,101 @@
 {
-  "feedUpdated": "12 Nov 2026",
-  "syncedAt": "2026-11-12T16:34:51.522Z",
+  "feedUpdated": "13 Nov 2026",
+  "syncedAt": "2026-11-13T15:55:14.943Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -4,
-    "fedTotal": 8
+    "fragTotal": -1,
+    "fedTotal": 2
   },
   "feed": [
     {
-      "date": "10 Nov 2026",
-      "headline": "Why U.S. Business Deals Are Unlikely to Get Putin to Give Any Ground",
-      "ai": "President Vladimir V. Putin of Russia has shown a willingness to endure a high price to get what he wants in Ukraine, and he sees little reason to stop fighting now, analysts say.",
+      "date": "12 Nov 2026",
+      "headline": "Russia and Iran criticise US Caspian task force as study outlines joint sanction evasion",
+      "ai": "After CENTCOM affirmed it would maintain the naval blockade of the Strait of Hormuz and block the IRGC’s land and Caspian routes, Russia called this special taskforce a 'clear violation of international law'. At the same time, the Institute for the Study of War devoted its latest assessment to Tehran-Moscow cooperation in circumventing US arms restrictions.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/12/russia-and-iran-criticise-us-caspian-task-force-as-study-outlines-joint-sanction-evasion"
+    },
+    {
+      "date": "13 Nov 2026",
+      "headline": "Russia hit by second car bomb in as many days as peace talks continue",
+      "ai": "A former adviser to Ukraine's pro-Putin ex-prime minister Mykola Azarov was seriously hurt, Russia says.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
         "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/10/world/europe/putin-trump-abu-dhabi-talks.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c5gm3gnwl42eo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "31 Oct 2026",
-      "headline": "Emotional reunions with loved ones for Oleshky evacuees",
-      "ai": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "date": "13 Nov 2026",
+      "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+      "ai": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
         "UKR",
-        "BLR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "8 Nov 2026",
-      "headline": "Egypt reopens Tripoli embassy after 12 years and raises concerns over Turkey-Libya maritime deal",
-      "ai": "Egypt is seeking closer ties with Libya’s western government after years of backing its eastern rival. Talks in Tripoli covered energy projects and Egypt’s objections to Libya’s maritime deal with Turkey.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/08/egypt-reopens-tripoli-embassy-after-12-years-and-raises-concerns-over-turkey-libya-maritim"
-    },
-    {
-      "date": "6 Nov 2026",
-      "headline": "Iran delivers secret Khamenei message to Putin as Moscow pushes gas pipeline deal",
-      "ai": "Iran’s Security Council chief, Mohsen Rezaei, went to Moscow to deliver a personal message from Ayatollah Khamenei and discuss building a pipeline to import Russian gas.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
-      "countries": [
         "RUS",
         "BEL"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/06/iran-delivers-secret-khamenei-message-to-putin-as-moscow-pushes-gas-pipeline-deal"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "13 Nov 2026",
+      "headline": "One of France’s Most Popular Athletes Is Running for President",
+      "ai": "Centrists want alternatives to a matchup between the far right and far left in the 2027 presidential race. Enter Christine Lagarde, a former central banker — and Teddy Riner, a judo star.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html"
+    },
+    {
+      "date": "12 Nov 2026",
+      "headline": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
+      "ai": "The officer, who served at a NATO base in Britain, is expected to be charged in the coming days, two officials said.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "GBR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html"
+    },
+    {
+      "date": "13 Nov 2026",
+      "headline": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
+      "ai": "In Dublin, President Volodymyr Zelensky of Ukraine said Europeans would join the next round of talks. Russia has not confirmed that.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "IRL",
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html"
     },
     {
       "date": "12 Nov 2026",
@@ -82,21 +113,6 @@
     },
     {
       "date": "11 Nov 2026",
-      "headline": "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
-      "ai": "As a round of negotiations ended in Abu Dhabi, President Trump’s envoys said they would go to Moscow as the Kremlin demands discussions on European security structures.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/11/world/europe/russia-ukraine-talks-abu-dhabi.html"
-    },
-    {
-      "date": "11 Nov 2026",
       "headline": "Protesters Throw Projectiles at Biden During Dublin Trip",
       "ai": "Video showed demonstrators from a pro-Palestinian protest throwing projectiles at former President Joseph R. Biden Jr. after he attended an event at Trinity College Dublin on Tuesday.",
       "frag": "",
@@ -110,77 +126,64 @@
       "url": "https://www.nytimes.com/2026/11/11/world/europe/joe-biden-dublin-ireland-protesters-attack.html"
     },
     {
-      "date": "11 Nov 2026",
-      "headline": "Judge Allows Trump’s Defamation Lawsuit Against the BBC to Proceed",
-      "ai": "President Trump is seeking damages from the British broadcaster over a documentary it conceded was misleadingly edited.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/11/world/europe/trump-bbc-lawsuit.html"
-    },
-    {
-      "date": "12 Nov 2026",
-      "headline": "This Defense Makes Drones (and GPS) Think They’re in Peru",
-      "ai": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
+      "date": "13 Nov 2026",
+      "headline": "Azerbaijan intensifies its European engagement at the EPC Summit",
+      "ai": "Azerbaijan added additional thrust to its engagement with Europe announcing more energy to the EU, a strategic partnership with the UK, additional agreements with Ukraine, a dozen bilateral meetings with European leaders and a new meeting with Armenia to advance the historic peace process.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html"
-    },
-    {
-      "date": "11 Nov 2026",
-      "headline": "Spain: 120,000 brave rain to demand affordable housing and better wages",
-      "ai": "Around 120,000 demonstrators marched through central Madrid on Wednesday 11 November, according to authorities, as Spain's first nationwide general strike since 2012 brought crowds onto the streets to protest against soaring housing costs and mounting pressure on household budgets.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
+        "ARM",
+        "AZE",
+        "BEL"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/11/spain-120000-brave-rain-to-demand-affordable-housing-and-better-wages"
+      "url": "https://www.euronews.com/2026/11/13/azerbaijan-intensifies-its-european-engagement-at-the-epc-summit"
     },
     {
-      "date": "11 Nov 2026",
-      "headline": "Spain sees widespread disruption in first general strike for 14 years",
-      "ai": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
+      "date": "13 Nov 2026",
+      "headline": "Turkey: Six-metre Trojan Horse spills plastic waste at COP31",
+      "ai": "A giant Trojan Horse overflowing with plastic waste has appeared in Antalya as Greenpeace International staged a striking environmental protest during the COP31 climate summit. Created with Danish artist Thomas Dambo, the Greenpeace installation warns of the environmental impact of plastics.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP",
-        "BEL"
+        "DNK",
+        "TUR"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/13/turkey-six-metre-trojan-horse-spills-plastic-waste-at-cop31"
     },
     {
-      "date": "7 Nov 2026",
-      "headline": "Andy Burnham wants to get closer to the EU - but he shouldn't expect a smooth ride",
-      "ai": "Laura Kuenssberg talks to government insiders about the prime minister opening the conversation about the UK rejoining the EU.",
+      "date": "13 Nov 2026",
+      "headline": "How a new ‘green energy corridor’ from the Caspian Sea could help Eastern Europe kick fossil fuels",
+      "ai": "The partnership signed at the COP31 climate summit aims to transform Azerbaijan into an interregional electricity hub.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "GBR",
-        "BEL"
+        "AZE"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwjdmm0z74plo?at_medium=RSS&at_campaign=rss"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/13/how-a-new-green-energy-corridor-from-the-caspian-sea-could-help-eastern-europe-kick-fossil"
+    },
+    {
+      "date": "13 Nov 2026",
+      "headline": "Portugal: Humanoid robots take centre stage at Web Summit 2026",
+      "ai": "Dancing humanoid robots and robotic dogs stole the show at Web Summit 2026 in Lisbon. The technology conference has generated nearly €2.5 billion for Portugal's economy over the past decade, according to a study.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "PRT"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/13/portugal-humanoid-robots-take-centre-stage-at-web-summit-2026"
     }
   ]
 }
