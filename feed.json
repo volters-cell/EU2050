@@ -1,30 +1,74 @@
 {
-  "feedUpdated": "13 Nov 2026",
-  "syncedAt": "2026-11-13T15:55:14.943Z",
+  "feedUpdated": "14 Nov 2026",
+  "syncedAt": "2026-11-14T14:45:57.407Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 2
+    "fragTotal": -2,
+    "fedTotal": 4
   },
   "feed": [
     {
-      "date": "12 Nov 2026",
-      "headline": "Russia and Iran criticise US Caspian task force as study outlines joint sanction evasion",
-      "ai": "After CENTCOM affirmed it would maintain the naval blockade of the Strait of Hormuz and block the IRGC’s land and Caspian routes, Russia called this special taskforce a 'clear violation of international law'. At the same time, the Institute for the Study of War devoted its latest assessment to Tehran-Moscow cooperation in circumventing US arms restrictions.",
+      "date": "13 Nov 2026",
+      "headline": "Russia Revives Demand That NATO Retrench to Secure Ukraine Deal",
+      "ai": "The hard-line position of Russian officials in closed-door negotiations about ending the war thrusts European security into the heart of the talks.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
+        "UKR",
         "RUS"
       ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/13/us/politics/russia-demand-nato-ukraine.html"
+    },
+    {
+      "date": "14 Nov 2026",
+      "headline": "Qatar and Turkey sign defence agreement for “unified position” facing external attacks",
+      "ai": "A fast-moving reshape of the Gulf and Middle East multilateral security landscape is underway, triggered by the Iran war and the US signals that it is adapting its long-standing security presence in the region.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "TUR"
+      ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/12/russia-and-iran-criticise-us-caspian-task-force-as-study-outlines-joint-sanction-evasion"
+      "url": "https://www.euronews.com/2026/11/14/qatar-and-turkey-sign-defence-agreement-for-unified-position-facing-external-attacks"
+    },
+    {
+      "date": "14 Nov 2026",
+      "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "ai": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Nov 2026",
+      "headline": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+      "ai": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "13 Nov 2026",
-      "headline": "Russia hit by second car bomb in as many days as peace talks continue",
-      "ai": "A former adviser to Ukraine's pro-Putin ex-prime minister Mykola Azarov was seriously hurt, Russia says.",
+      "headline": "Aide to fugitive Ukrainian ex-PM wounded in latest Moscow car bombing",
+      "ai": "Sergei Zavorotny, now a journalist and commentator, was previously an adviser to Ukrainian ex-prime minister Mykola Azarov.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -51,6 +95,21 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "14 Nov 2026",
+      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
+      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
     },
     {
       "date": "13 Nov 2026",
@@ -112,78 +171,18 @@
       "url": "https://www.nytimes.com/2026/11/12/world/europe/ukraine-ai-weapons.html"
     },
     {
-      "date": "11 Nov 2026",
-      "headline": "Protesters Throw Projectiles at Biden During Dublin Trip",
-      "ai": "Video showed demonstrators from a pro-Palestinian protest throwing projectiles at former President Joseph R. Biden Jr. after he attended an event at Trinity College Dublin on Tuesday.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/11/world/europe/joe-biden-dublin-ireland-protesters-attack.html"
-    },
-    {
       "date": "13 Nov 2026",
-      "headline": "Azerbaijan intensifies its European engagement at the EPC Summit",
-      "ai": "Azerbaijan added additional thrust to its engagement with Europe announcing more energy to the EU, a strategic partnership with the UK, additional agreements with Ukraine, a dozen bilateral meetings with European leaders and a new meeting with Armenia to advance the historic peace process.",
+      "headline": "Russia sends major business delegation to Kabul for business talks with the Taliban",
+      "ai": "A Russian deputy prime minister led a 70-strong Russian delegation to Afghanistan, pursuing deals on transport, logistics, agriculture, and health products with the Taliban.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "ARM",
-        "AZE",
-        "BEL"
+        "RUS"
       ],
       "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/13/azerbaijan-intensifies-its-european-engagement-at-the-epc-summit"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Turkey: Six-metre Trojan Horse spills plastic waste at COP31",
-      "ai": "A giant Trojan Horse overflowing with plastic waste has appeared in Antalya as Greenpeace International staged a striking environmental protest during the COP31 climate summit. Created with Danish artist Thomas Dambo, the Greenpeace installation warns of the environmental impact of plastics.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DNK",
-        "TUR"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/13/turkey-six-metre-trojan-horse-spills-plastic-waste-at-cop31"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "How a new ‘green energy corridor’ from the Caspian Sea could help Eastern Europe kick fossil fuels",
-      "ai": "The partnership signed at the COP31 climate summit aims to transform Azerbaijan into an interregional electricity hub.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "AZE"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/13/how-a-new-green-energy-corridor-from-the-caspian-sea-could-help-eastern-europe-kick-fossil"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Portugal: Humanoid robots take centre stage at Web Summit 2026",
-      "ai": "Dancing humanoid robots and robotic dogs stole the show at Web Summit 2026 in Lisbon. The technology conference has generated nearly €2.5 billion for Portugal's economy over the past decade, according to a study.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "PRT"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/13/portugal-humanoid-robots-take-centre-stage-at-web-summit-2026"
+      "url": "https://www.euronews.com/2026/11/13/russia-sends-major-business-delegation-to-kabul-for-business-talks-with-the-taliban"
     }
   ]
 }
