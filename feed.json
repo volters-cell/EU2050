@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "14 Nov 2026",
-  "syncedAt": "2026-11-14T14:45:57.407Z",
+  "feedUpdated": "15 Nov 2026",
+  "syncedAt": "2026-11-15T15:21:58.501Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -39,14 +39,13 @@
     {
       "date": "14 Nov 2026",
       "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "ai": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+      "ai": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "UKR"
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss"
@@ -64,21 +63,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Aide to fugitive Ukrainian ex-PM wounded in latest Moscow car bombing",
-      "ai": "Sergei Zavorotny, now a journalist and commentator, was previously an adviser to Ukrainian ex-prime minister Mykola Azarov.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5gm3gnwl42eo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "13 Nov 2026",
@@ -157,18 +141,20 @@
       "url": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html"
     },
     {
-      "date": "12 Nov 2026",
-      "headline": "A.I. Weapons Need Data for Their Training. Ukraine Has a Lot to Offer.",
-      "ai": "The Ukrainian government has opened up a trove of five million battlefield videos to defense companies at home and abroad.",
+      "date": "14 Nov 2026",
+      "headline": "Moscow says it will not dictate EU delegation's participation in Ukraine talks",
+      "ai": "Moscow, which had previously insisted that European representatives had no place at the negotiating table, has now softened its stance.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR"
+        "UKR",
+        "RUS",
+        "BEL"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/12/world/europe/ukraine-ai-weapons.html"
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/14/moscow-says-it-will-not-dictate-eu-delegations-participation-in-ukraine-talks"
     },
     {
       "date": "13 Nov 2026",
@@ -183,6 +169,23 @@
       ],
       "source": "Euronews",
       "url": "https://www.euronews.com/2026/11/13/russia-sends-major-business-delegation-to-kabul-for-business-talks-with-the-taliban"
+    },
+    {
+      "date": "13 Nov 2026",
+      "headline": "Azerbaijan intensifies its European engagement at the EPC Summit",
+      "ai": "Azerbaijan added additional thrust to its engagement with Europe announcing more energy to the EU, a strategic partnership with the UK, additional agreements with Ukraine, a dozen bilateral meetings with European leaders and a new meeting with Armenia to advance the historic peace process.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "ARM",
+        "AZE",
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/13/azerbaijan-intensifies-its-european-engagement-at-the-epc-summit"
     }
   ]
 }
