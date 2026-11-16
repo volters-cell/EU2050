@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "15 Nov 2026",
-  "syncedAt": "2026-11-15T15:21:58.501Z",
+  "feedUpdated": "16 Nov 2026",
+  "syncedAt": "2026-11-16T17:57:30.576Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -37,6 +37,39 @@
       "url": "https://www.euronews.com/2026/11/14/qatar-and-turkey-sign-defence-agreement-for-unified-position-facing-external-attacks"
     },
     {
+      "date": "16 Nov 2026",
+      "headline": "Five EU countries announce migrant deportation centre in Rwanda",
+      "ai": "Germany, Denmark, Austria, Greece and the Netherlands have announced a \"return hub\" for failed asylum seekers.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "NLD",
+        "AUT",
+        "DNK",
+        "GRC"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "15 Nov 2026",
+      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "ai": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "14 Nov 2026",
       "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
       "ai": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
@@ -65,6 +98,35 @@
       "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "14 Nov 2026",
+      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
+      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
+    },
+    {
+      "date": "16 Nov 2026",
+      "headline": "Trump says he could meet with North Korean leader Kim Jong-un in China",
+      "ai": "Trump is planning to discuss nuclear disarmament when he meets with Russian President Vladimir Putin and Chinese President Xi Jinping in Shenzhen, China this week.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/16/trump-says-he-could-meet-with-north-korean-leader-kim-jong-un-in-china"
+    },
+    {
       "date": "13 Nov 2026",
       "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
       "ai": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU.",
@@ -79,21 +141,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Nov 2026",
-      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
-      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
     },
     {
       "date": "13 Nov 2026",
@@ -139,53 +186,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html"
-    },
-    {
-      "date": "14 Nov 2026",
-      "headline": "Moscow says it will not dictate EU delegation's participation in Ukraine talks",
-      "ai": "Moscow, which had previously insisted that European representatives had no place at the negotiating table, has now softened its stance.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/14/moscow-says-it-will-not-dictate-eu-delegations-participation-in-ukraine-talks"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Russia sends major business delegation to Kabul for business talks with the Taliban",
-      "ai": "A Russian deputy prime minister led a 70-strong Russian delegation to Afghanistan, pursuing deals on transport, logistics, agriculture, and health products with the Taliban.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/13/russia-sends-major-business-delegation-to-kabul-for-business-talks-with-the-taliban"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Azerbaijan intensifies its European engagement at the EPC Summit",
-      "ai": "Azerbaijan added additional thrust to its engagement with Europe announcing more energy to the EU, a strategic partnership with the UK, additional agreements with Ukraine, a dozen bilateral meetings with European leaders and a new meeting with Armenia to advance the historic peace process.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "ARM",
-        "AZE",
-        "BEL"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/13/azerbaijan-intensifies-its-european-engagement-at-the-epc-summit"
     }
   ]
 }
