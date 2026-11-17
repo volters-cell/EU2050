@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "16 Nov 2026",
-  "syncedAt": "2026-11-16T17:57:30.576Z",
+  "feedUpdated": "17 Nov 2026",
+  "syncedAt": "2026-11-17T17:23:08.435Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -55,7 +55,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "15 Nov 2026",
+      "date": "16 Nov 2026",
       "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
       "ai": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
       "frag": "",
@@ -68,6 +68,63 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Nov 2026",
+      "headline": "Cash Hidden in Forests? Hungary Goes After Corruption Under Orban",
+      "ai": "The new government says $20 million worth of bank notes uncovered in farmhouses and woods are the “tip of the iceberg.” Allies of Viktor Orban, the former prime minister, call it a witch hunt.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "HUN"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/17/world/europe/hungary-magyar-orban-corruption-cash.html"
+    },
+    {
+      "date": "17 Nov 2026",
+      "headline": "Putin Is Open to Meeting With North Korea’s Leader in China, Kremlin Says",
+      "ai": "President Vladimir V. Putin of Russia could meet with Kim Jong-un if he travels to Shenzhen for the APEC summit this week. North Korea has not confirmed whether Mr. Kim will attend.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/17/world/asia/putin-kim-jong-un-north-korea-china-meeting.html"
+    },
+    {
+      "date": "17 Nov 2026",
+      "headline": "Leaked Records Show Deutsche Bank Courting Russian Oligarchs",
+      "ai": "“As you know we have a large Russian Oligarchs client population,” an analyst wrote as the bank braced for sanctions against wealthy clients.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/17/world/europe/deutsche-bank-russia-oligarchs-leaked-documents.html"
+    },
+    {
+      "date": "14 Nov 2026",
+      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
+      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
     },
     {
       "date": "14 Nov 2026",
@@ -98,35 +155,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Nov 2026",
-      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
-      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
-    },
-    {
-      "date": "16 Nov 2026",
-      "headline": "Trump says he could meet with North Korean leader Kim Jong-un in China",
-      "ai": "Trump is planning to discuss nuclear disarmament when he meets with Russian President Vladimir Putin and Chinese President Xi Jinping in Shenzhen, China this week.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/16/trump-says-he-could-meet-with-north-korean-leader-kim-jong-un-in-china"
-    },
-    {
       "date": "13 Nov 2026",
       "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
       "ai": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU.",
@@ -155,37 +183,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html"
-    },
-    {
-      "date": "12 Nov 2026",
-      "headline": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
-      "ai": "The officer, who served at a NATO base in Britain, is expected to be charged in the coming days, two officials said.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
-      "ai": "In Dublin, President Volodymyr Zelensky of Ukraine said Europeans would join the next round of talks. Russia has not confirmed that.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "IRL",
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html"
     }
   ]
 }
