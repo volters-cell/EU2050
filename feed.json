@@ -1,40 +1,68 @@
 {
-  "feedUpdated": "17 Nov 2026",
-  "syncedAt": "2026-11-17T17:23:08.435Z",
+  "feedUpdated": "18 Nov 2026",
+  "syncedAt": "2026-11-18T16:56:51.163Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -2,
-    "fedTotal": 4
+    "fragTotal": 0,
+    "fedTotal": 0
   },
   "feed": [
     {
-      "date": "13 Nov 2026",
-      "headline": "Russia Revives Demand That NATO Retrench to Secure Ukraine Deal",
-      "ai": "The hard-line position of Russian officials in closed-door negotiations about ending the war thrusts European security into the heart of the talks.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "date": "18 Nov 2026",
+      "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+      "ai": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "UKR",
         "RUS"
       ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/13/us/politics/russia-demand-nato-ukraine.html"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "14 Nov 2026",
-      "headline": "Qatar and Turkey sign defence agreement for “unified position” facing external attacks",
-      "ai": "A fast-moving reshape of the Gulf and Middle East multilateral security landscape is underway, triggered by the Iran war and the US signals that it is adapting its long-standing security presence in the region.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "date": "18 Nov 2026",
+      "headline": "The EU that Burnham is eyeing up is very different to the one Britain left",
+      "ai": "Andy Burnham wants \"steps\" towards a closer EU alignment. But the bloc has changed considerably since the UK left it",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "TUR"
+        "GBR",
+        "BEL"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/14/qatar-and-turkey-sign-defence-agreement-for-unified-position-facing-external-attacks"
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "Who to watch in Spain's election race",
+      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Nov 2026",
+      "headline": "Russian military plane crashes, killing all 19 on board",
+      "ai": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "16 Nov 2026",
@@ -70,6 +98,59 @@
       "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "18 Nov 2026",
+      "headline": "ECB President Christine Lagarde on Why She’s Stepping Down Early",
+      "ai": "The president of the European Central Bank said she wanted to use her voice and decades of experience against what she said was “fake news” and “misrepresentations” in European elections.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/18/business/dealbook/christine-lagarde-european-central-bank.html"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
+      "ai": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "Europe Is Racing to Make Air Defenses ‘Cheaper Than What We Are Shooting Down’",
+      "ai": "Defense companies are facing calls to increase production, cut costs and keep pace with rapidly evolving technology as the Russian threat intensifies.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/18/business/russia-europe-defense-tytan-leonardo.html"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says",
+      "ai": "President Trump plans to discuss Ukraine with the leaders of Russia and China. He has halted some sanctions on Russia and announced that the United States will buy Russian diesel.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-putin-ukraine-war.html"
+    },
+    {
       "date": "17 Nov 2026",
       "headline": "Cash Hidden in Forests? Hungary Goes After Corruption Under Orban",
       "ai": "The new government says $20 million worth of bank notes uncovered in farmhouses and woods are the “tip of the iceberg.” Allies of Viktor Orban, the former prime minister, call it a witch hunt.",
@@ -96,93 +177,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/17/world/asia/putin-kim-jong-un-north-korea-china-meeting.html"
-    },
-    {
-      "date": "17 Nov 2026",
-      "headline": "Leaked Records Show Deutsche Bank Courting Russian Oligarchs",
-      "ai": "“As you know we have a large Russian Oligarchs client population,” an analyst wrote as the bank braced for sanctions against wealthy clients.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/17/world/europe/deutsche-bank-russia-oligarchs-leaked-documents.html"
-    },
-    {
-      "date": "14 Nov 2026",
-      "headline": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
-      "ai": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html"
-    },
-    {
-      "date": "14 Nov 2026",
-      "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "ai": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "14 Nov 2026",
-      "headline": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
-      "ai": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "HUN"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-      "ai": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "13 Nov 2026",
-      "headline": "One of France’s Most Popular Athletes Is Running for President",
-      "ai": "Centrists want alternatives to a matchup between the far right and far left in the 2027 presidential race. Enter Christine Lagarde, a former central banker — and Teddy Riner, a judo star.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html"
     }
   ]
 }
