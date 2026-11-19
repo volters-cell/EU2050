@@ -1,12 +1,27 @@
 {
-  "feedUpdated": "18 Nov 2026",
-  "syncedAt": "2026-11-18T16:56:51.163Z",
+  "feedUpdated": "19 Nov 2026",
+  "syncedAt": "2026-11-19T17:03:31.934Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 0,
     "fedTotal": 0
   },
   "feed": [
+    {
+      "date": "18 Nov 2026",
+      "headline": "Russian arrested for spying on US defence company Palantir over Ukraine support",
+      "ai": "The suspect followed employees and was found with fake US IDs and two Russian passports, prosecutors say.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "18 Nov 2026",
       "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
@@ -20,6 +35,48 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "Budget Fiat 500s complete 4,000km Rome challenge",
+      "ai": "Stuart Bailey and a group of men took £500 Fiats from Heathrow to Rome in three days, raising £13,000.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ITA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d93zpnyxeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "17 Nov 2026",
+      "headline": "Russian military plane crashes, killing all 19 on board",
+      "ai": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "18 Nov 2026",
+      "headline": "Who to watch in Spain's election race",
+      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Nov 2026",
@@ -37,23 +94,9 @@
       "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "18 Nov 2026",
-      "headline": "Who to watch in Spain's election race",
-      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "17 Nov 2026",
-      "headline": "Russian military plane crashes, killing all 19 on board",
-      "ai": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
+      "date": "19 Nov 2026",
+      "headline": "Trump says he and Putin have a 'great relationship' at meeting",
+      "ai": "US President Donald Trump has met Russian President Vladimir Putin on the sidelines of the Asia-Pacific Economic Co-operation (Apec) summit in the southern Chinese city of Shenzhen.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -62,30 +105,12 @@
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/cm4gn31yn0x9o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "16 Nov 2026",
-      "headline": "Five EU countries announce migrant deportation centre in Rwanda",
-      "ai": "Germany, Denmark, Austria, Greece and the Netherlands have announced a \"return hub\" for failed asylum seekers.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU",
-        "NLD",
-        "AUT",
-        "DNK",
-        "GRC"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "16 Nov 2026",
-      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-      "ai": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
+      "date": "18 Nov 2026",
+      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+      "ai": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -95,7 +120,35 @@
         "RUS"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "19 Nov 2026",
+      "headline": "Putin, Trump and Xi Condemn Nuclear War as Europe Watches Closely",
+      "ai": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "RUS"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html"
+    },
+    {
+      "date": "19 Nov 2026",
+      "headline": "After Deadly Train Crash, Spain Asks: Did It Grow Too Much, Too Quickly?",
+      "ai": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html"
     },
     {
       "date": "18 Nov 2026",
@@ -110,7 +163,7 @@
       "url": "https://www.nytimes.com/2026/11/18/business/dealbook/christine-lagarde-european-central-bank.html"
     },
     {
-      "date": "18 Nov 2026",
+      "date": "19 Nov 2026",
       "headline": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
       "ai": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
       "frag": "",
@@ -120,63 +173,6 @@
       "countries": [],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "Europe Is Racing to Make Air Defenses ‘Cheaper Than What We Are Shooting Down’",
-      "ai": "Defense companies are facing calls to increase production, cut costs and keep pace with rapidly evolving technology as the Russian threat intensifies.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/18/business/russia-europe-defense-tytan-leonardo.html"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says",
-      "ai": "President Trump plans to discuss Ukraine with the leaders of Russia and China. He has halted some sanctions on Russia and announced that the United States will buy Russian diesel.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-putin-ukraine-war.html"
-    },
-    {
-      "date": "17 Nov 2026",
-      "headline": "Cash Hidden in Forests? Hungary Goes After Corruption Under Orban",
-      "ai": "The new government says $20 million worth of bank notes uncovered in farmhouses and woods are the “tip of the iceberg.” Allies of Viktor Orban, the former prime minister, call it a witch hunt.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "HUN"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/17/world/europe/hungary-magyar-orban-corruption-cash.html"
-    },
-    {
-      "date": "17 Nov 2026",
-      "headline": "Putin Is Open to Meeting With North Korea’s Leader in China, Kremlin Says",
-      "ai": "President Vladimir V. Putin of Russia could meet with Kim Jong-un if he travels to Shenzhen for the APEC summit this week. North Korea has not confirmed whether Mr. Kim will attend.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/17/world/asia/putin-kim-jong-un-north-korea-china-meeting.html"
     }
   ]
 }
