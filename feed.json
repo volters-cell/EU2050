@@ -1,12 +1,71 @@
 {
-  "feedUpdated": "19 Nov 2026",
-  "syncedAt": "2026-11-19T17:03:31.934Z",
+  "feedUpdated": "20 Nov 2026",
+  "syncedAt": "2026-11-20T16:42:21.155Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 0,
-    "fedTotal": 0
+    "fragTotal": -2,
+    "fedTotal": 4
   },
   "feed": [
+    {
+      "date": "20 Nov 2026",
+      "headline": "New Brexit deal 'won't solve' all issues, but is a 'step in the right direction'",
+      "ai": "The agreement is expected to be confirmed when Andy Burnham and Ursula von der Leyen meet in Brussels.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gn9xw1v99o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Nov 2026",
+      "headline": "What the Brussels summit could mean for the UK-EU Brexit deal",
+      "ai": "BBC political editor Chris Mason looks at the potential agreements between the UK and EU that could be reached on food, energy and youth mobility.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "BEL",
+        "GBR"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c6lymr5x4ye5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Nov 2026",
+      "headline": "Who to watch in Spain's election race",
+      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Nov 2026",
+      "headline": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
+      "ai": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "18 Nov 2026",
       "headline": "Russian arrested for spying on US defence company Palantir over Ukraine support",
@@ -21,20 +80,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-      "ai": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Nov 2026",
@@ -63,20 +108,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "Who to watch in Spain's election race",
-      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Nov 2026",
@@ -123,9 +154,9 @@
       "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Nov 2026",
-      "headline": "Putin, Trump and Xi Condemn Nuclear War as Europe Watches Closely",
-      "ai": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
+      "date": "20 Nov 2026",
+      "headline": "What Trump, Putin and Xi Left on the Table",
+      "ai": "A summit among the leaders of the United States, China and Russia produced no treaties on war or nuclear weapons — and the A.I. race wasn’t even on the agenda.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -134,45 +165,21 @@
         "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html"
+      "url": "https://www.nytimes.com/2026/11/20/podcasts/the-daily/trump-putin-xi-summit-ai.html"
     },
     {
-      "date": "19 Nov 2026",
-      "headline": "After Deadly Train Crash, Spain Asks: Did It Grow Too Much, Too Quickly?",
-      "ai": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
+      "date": "20 Nov 2026",
+      "headline": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’",
+      "ai": "Standing alongside the U.S. and Chinese leaders, President Vladimir V. Putin secured a symbolic triumph in his long quest to restore Russia’s place as a global power.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP"
+        "RUS"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "ECB President Christine Lagarde on Why She’s Stepping Down Early",
-      "ai": "The president of the European Central Bank said she wanted to use her voice and decades of experience against what she said was “fake news” and “misrepresentations” in European elections.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/18/business/dealbook/christine-lagarde-european-central-bank.html"
-    },
-    {
-      "date": "19 Nov 2026",
-      "headline": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
-      "ai": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html"
+      "url": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html"
     }
   ]
 }
