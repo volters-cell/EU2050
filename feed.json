@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "20 Nov 2026",
-  "syncedAt": "2026-11-20T16:42:21.155Z",
+  "feedUpdated": "21 Nov 2026",
+  "syncedAt": "2026-11-21T15:54:33.999Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -9,32 +9,64 @@
   "feed": [
     {
       "date": "20 Nov 2026",
-      "headline": "New Brexit deal 'won't solve' all issues, but is a 'step in the right direction'",
+      "headline": "What does the new Brexit deal mean for Northern Ireland?",
       "ai": "The agreement is expected to be confirmed when Andy Burnham and Ursula von der Leyen meet in Brussels.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "BEL"
+        "BEL",
+        "IRL"
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm4gn9xw1v99o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "20 Nov 2026",
-      "headline": "What the Brussels summit could mean for the UK-EU Brexit deal",
-      "ai": "BBC political editor Chris Mason looks at the potential agreements between the UK and EU that could be reached on food, energy and youth mobility.",
+      "headline": "What the new UK-EU deal could mean for future post-Brexit relations",
+      "ai": "The BBC's political and Europe editors analyse the new agreements between the UK and EU.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "BEL",
-        "GBR"
+        "GBR",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c6lymr5x4ye5o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Nov 2026",
+      "headline": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "ai": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Nov 2026",
+      "headline": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+      "ai": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DNK",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "20 Nov 2026",
@@ -83,34 +115,6 @@
     },
     {
       "date": "18 Nov 2026",
-      "headline": "Budget Fiat 500s complete 4,000km Rome challenge",
-      "ai": "Stuart Bailey and a group of men took £500 Fiats from Heathrow to Rome in three days, raising £13,000.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ITA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d93zpnyxeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "17 Nov 2026",
-      "headline": "Russian military plane crashes, killing all 19 on board",
-      "ai": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Nov 2026",
       "headline": "The EU that Burnham is eyeing up is very different to the one Britain left",
       "ai": "Andy Burnham wants \"steps\" towards a closer EU alignment. But the bloc has changed considerably since the UK left it",
       "frag": "",
@@ -123,6 +127,20 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Nov 2026",
+      "headline": "We are working together for greater prosperity'",
+      "ai": "EU says it wants 'closest possible relationship' with UK",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c60mdwj9jyywo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "19 Nov 2026",
@@ -139,47 +157,33 @@
       "url": "https://www.bbc.co.uk/news/videos/cm4gn31yn0x9o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "18 Nov 2026",
-      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
-      "ai": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones.",
+      "date": "21 Nov 2026",
+      "headline": "On the Trail With Spain’s Prime Minister, as He Tries to Pull Out a Win",
+      "ai": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "ESP"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html"
     },
     {
       "date": "20 Nov 2026",
-      "headline": "What Trump, Putin and Xi Left on the Table",
-      "ai": "A summit among the leaders of the United States, China and Russia produced no treaties on war or nuclear weapons — and the A.I. race wasn’t even on the agenda.",
+      "headline": "Britain and Brussels Have Begun a Brexit Rollback. How Far Will It Go?",
+      "ai": "The United Kingdom is removing barriers with the European Union a decade after it voted to leave. Global turmoil, and the disruptive policies of President Trump, helped push them back together.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "RUS"
+        "BEL",
+        "GBR"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/20/podcasts/the-daily/trump-putin-xi-summit-ai.html"
-    },
-    {
-      "date": "20 Nov 2026",
-      "headline": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’",
-      "ai": "Standing alongside the U.S. and Chinese leaders, President Vladimir V. Putin secured a symbolic triumph in his long quest to restore Russia’s place as a global power.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html"
+      "url": "https://www.nytimes.com/2026/11/20/world/europe/britain-and-brussels-have-begun-a-brexit-rollback-how-far-will-it-go.html"
     }
   ]
 }
