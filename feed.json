@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "21 Nov 2026",
-  "syncedAt": "2026-11-21T15:54:33.999Z",
+  "feedUpdated": "22 Nov 2026",
+  "syncedAt": "2026-11-22T15:55:44.158Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -2,
@@ -36,6 +36,22 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "22 Nov 2026",
+      "headline": "Russia-bound ship still on fire after attack in Gulf of Finland",
+      "ai": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FIN",
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "21 Nov 2026",
@@ -129,6 +145,22 @@
       "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "21 Nov 2026",
+      "headline": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+      "ai": "The BBC's Sarah Rainsford reports from Kyiv after Ukrainian President Zelensky met the UK defence secretary.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "20 Nov 2026",
       "headline": "We are working together for greater prosperity'",
       "ai": "EU says it wants 'closest possible relationship' with UK",
@@ -143,20 +175,6 @@
       "url": "https://www.bbc.co.uk/news/videos/c60mdwj9jyywo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "19 Nov 2026",
-      "headline": "Trump says he and Putin have a 'great relationship' at meeting",
-      "ai": "US President Donald Trump has met Russian President Vladimir Putin on the sidelines of the Asia-Pacific Economic Co-operation (Apec) summit in the southern Chinese city of Shenzhen.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cm4gn31yn0x9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "date": "21 Nov 2026",
       "headline": "On the Trail With Spain’s Prime Minister, as He Tries to Pull Out a Win",
       "ai": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
@@ -169,21 +187,6 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html"
-    },
-    {
-      "date": "20 Nov 2026",
-      "headline": "Britain and Brussels Have Begun a Brexit Rollback. How Far Will It Go?",
-      "ai": "The United Kingdom is removing barriers with the European Union a decade after it voted to leave. Global turmoil, and the disruptive policies of President Trump, helped push them back together.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL",
-        "GBR"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/20/world/europe/britain-and-brussels-have-begun-a-brexit-rollback-how-far-will-it-go.html"
     }
   ]
 }
