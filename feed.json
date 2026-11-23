@@ -1,10 +1,10 @@
 {
-  "feedUpdated": "22 Nov 2026",
-  "syncedAt": "2026-11-22T15:55:44.158Z",
+  "feedUpdated": "23 Nov 2026",
+  "syncedAt": "2026-11-23T19:51:19.015Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -2,
-    "fedTotal": 4
+    "fragTotal": -1,
+    "fedTotal": 2
   },
   "feed": [
     {
@@ -23,24 +23,37 @@
       "url": "https://www.bbc.co.uk/news/articles/cm4gn9xw1v99o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Nov 2026",
-      "headline": "What the new UK-EU deal could mean for future post-Brexit relations",
-      "ai": "The BBC's political and Europe editors analyse the new agreements between the UK and EU.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "date": "23 Nov 2026",
+      "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "ai": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
       "countries": [
-        "GBR",
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Nov 2026",
+      "headline": "Flights cancelled in Belgium due to cost-of-living strike",
+      "ai": "A series of strikes have hit Belgium in recent months as the prime minister struggles to agree a budget to cut costs.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "22 Nov 2026",
-      "headline": "Russia-bound ship still on fire after attack in Gulf of Finland",
-      "ai": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+      "headline": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+      "ai": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -145,48 +158,33 @@
       "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "21 Nov 2026",
-      "headline": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
-      "ai": "The BBC's Sarah Rainsford reports from Kyiv after Ukrainian President Zelensky met the UK defence secretary.",
+      "date": "23 Nov 2026",
+      "headline": "Who is taking part in France's recent street protests?",
+      "ai": "President Macron has blamed the unrest on the radical left, but who are the protesters and what are they fighting for?",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "23 Nov 2026",
+      "headline": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
+      "ai": "Hacked government data underscores the immense human cost of President Vladimir V. Putin’s war of attrition.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
         "UKR",
-        "GBR",
         "RUS"
       ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Nov 2026",
-      "headline": "We are working together for greater prosperity'",
-      "ai": "EU says it wants 'closest possible relationship' with UK",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c60mdwj9jyywo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Nov 2026",
-      "headline": "On the Trail With Spain’s Prime Minister, as He Tries to Pull Out a Win",
-      "ai": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html"
+      "url": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html"
     }
   ]
 }
