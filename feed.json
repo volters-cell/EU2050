@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "23 Nov 2026",
-  "syncedAt": "2026-11-23T19:51:19.015Z",
+  "feedUpdated": "24 Nov 2026",
+  "syncedAt": "2026-11-24T19:20:19.398Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": -1,
@@ -9,23 +9,23 @@
   "feed": [
     {
       "date": "20 Nov 2026",
-      "headline": "What does the new Brexit deal mean for Northern Ireland?",
-      "ai": "The agreement is expected to be confirmed when Andy Burnham and Ursula von der Leyen meet in Brussels.",
+      "headline": "What the new UK-EU deal could mean for future post-Brexit relations",
+      "ai": "The BBC's political and Europe editors analyse the new agreements between the UK and EU.",
       "frag": "Highlights the limits of national coordination",
       "fed": "Positive — supports federal integration",
       "fragWeight": -1,
       "fedWeight": 2,
       "countries": [
-        "BEL",
-        "IRL"
+        "GBR",
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gn9xw1v99o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "23 Nov 2026",
-      "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
-      "ai": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
+      "date": "24 Nov 2026",
+      "headline": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+      "ai": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -34,7 +34,22 @@
         "FRA"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "24 Nov 2026",
+      "headline": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+      "ai": "German media said Russia planned to launch a satellite with a nuclear warhead into space in coming weeks.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "DEU",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Nov 2026",
@@ -82,65 +97,32 @@
       "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "21 Nov 2026",
-      "headline": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
-      "ai": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled.",
+      "date": "23 Nov 2026",
+      "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "ai": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "DNK",
-        "UKR",
-        "RUS"
+        "FRA"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Nov 2026",
-      "headline": "Who to watch in Spain's election race",
-      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "date": "24 Nov 2026",
+      "headline": "Can Burnham turn volume down on EU debate?",
+      "ai": "The BBC's Chris Mason analyses what the EU conversation means for Labour and the PM.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "ESP"
+        "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Nov 2026",
-      "headline": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-      "ai": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU",
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "Russian arrested for spying on US defence company Palantir over Ukraine support",
-      "ai": "The suspect followed employees and was found with fake US IDs and two Russian passports, prosecutors say.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6pw47jyyz5no?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "18 Nov 2026",
@@ -170,6 +152,22 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "21 Nov 2026",
+      "headline": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+      "ai": "The BBC's Sarah Rainsford reports from Kyiv after Ukrainian President Zelensky met the UK defence secretary.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "GBR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Nov 2026",
