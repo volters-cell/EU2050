@@ -1,12 +1,26 @@
 {
-  "feedUpdated": "24 Nov 2026",
-  "syncedAt": "2026-11-24T19:20:19.398Z",
+  "feedUpdated": "25 Nov 2026",
+  "syncedAt": "2026-11-25T18:25:48.307Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": -1,
-    "fedTotal": 2
+    "fragTotal": 1,
+    "fedTotal": 1
   },
   "feed": [
+    {
+      "date": "25 Nov 2026",
+      "headline": "Clashing political visions reflect a divided Spain ahead of election",
+      "ai": "Sunday’s election could see a far-right party enter the Spanish government for first time.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "20 Nov 2026",
       "headline": "What the new UK-EU deal could mean for future post-Brexit relations",
@@ -53,51 +67,6 @@
     },
     {
       "date": "23 Nov 2026",
-      "headline": "Flights cancelled in Belgium due to cost-of-living strike",
-      "ai": "A series of strikes have hit Belgium in recent months as the prime minister struggles to agree a budget to cut costs.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "22 Nov 2026",
-      "headline": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-      "ai": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FIN",
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "21 Nov 2026",
-      "headline": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "ai": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Nov 2026",
       "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
       "ai": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
       "frag": "",
@@ -123,21 +92,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6pw47jyyz5no?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "18 Nov 2026",
-      "headline": "The EU that Burnham is eyeing up is very different to the one Britain left",
-      "ai": "Andy Burnham wants \"steps\" towards a closer EU alignment. But the bloc has changed considerably since the UK left it",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR",
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq4gn3109pzgo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Nov 2026",
@@ -183,6 +137,54 @@
       ],
       "source": "The New York Times",
       "url": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html"
+    },
+    {
+      "date": "25 Nov 2026",
+      "headline": "Haftar visits Ankara as Erdoğan prepares first Libya trip in 15 years",
+      "ai": "Eastern Libya's commander, accompanied by his son Saddam, met Turkey's defence and foreign ministers and its intelligence chief, days after Ukrainian naval drones sank the Russian warship Merkury at Benghazi's naval base.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "TUR",
+        "RUS"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/25/haftar-visits-ankara-as-erdogan-prepares-first-libya-trip-in-15-years"
+    },
+    {
+      "date": "25 Nov 2026",
+      "headline": "Protesters rally outside European Parliament against pesticide bill",
+      "ai": "Several hundred people gathered outside the European Parliament in Strasbourg to protest against a controversial bill that could allow unlimited authorisations for certain pesticides.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/video/2026/11/25/protesters-rally-outside-european-parliament-against-pesticide-bill"
+    },
+    {
+      "date": "25 Nov 2026",
+      "headline": "Balkan to the future: The long and winding road to Brussels",
+      "ai": "Good morning. Leo Cendrowicz here with your Wednesday newsletter. Today, we’re looking at the Western Balkans’ long road to EU membership, a Danish dilemma for Europe’s Socialists – and, courtesy of the late Pope Francis, a few encounters with the devil himself.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL",
+        "DNK",
+        "SRB",
+        "ALB",
+        "MNE"
+      ],
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/25/balkan-to-the-future-the-long-and-winding-road-to-brussels"
     }
   ]
 }
