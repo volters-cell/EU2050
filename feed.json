@@ -1,6 +1,6 @@
 {
-  "feedUpdated": "25 Nov 2026",
-  "syncedAt": "2026-11-25T18:25:48.307Z",
+  "feedUpdated": "26 Nov 2026",
+  "syncedAt": "2026-11-26T18:07:37.954Z",
   "momentum": {
     "storyCount": 12,
     "fragTotal": 1,
@@ -37,6 +37,76 @@
       "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "date": "26 Nov 2026",
+      "headline": "France's political mainstream risks presidential vote debacle with no clear candidate",
+      "ai": "Hard-right and hard-left candidates dominate the polls ahead of next year's presidential election.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq772vedgepro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "26 Nov 2026",
+      "headline": "Spanish elections: What you need to know and what's at stake",
+      "ai": "After eight years of Socialist-led rule, snap elections are taking place on Sunday with conservative Alberto Núñez Feijóo vying to win office.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "26 Nov 2026",
+      "headline": "New UK-EU treaty has 10-year termination clause",
+      "ai": "Text of the treaties was published this afternoon, alongside legislation designed to enact the bulk of the deal.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "25 Nov 2026",
+      "headline": "North Korea expels Swiss diplomat in sanctions row",
+      "ai": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "CHE"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "20 Nov 2026",
+      "headline": "Who to watch in Spain's election race",
+      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "date": "24 Nov 2026",
       "headline": "French ex-President Sarkozy and wife Carla Bruni to face trial",
       "ai": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year.",
@@ -49,49 +119,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "24 Nov 2026",
-      "headline": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
-      "ai": "German media said Russia planned to launch a satellite with a nuclear warhead into space in coming weeks.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "DEU",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "23 Nov 2026",
-      "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
-      "ai": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "FRA"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "24 Nov 2026",
-      "headline": "Can Burnham turn volume down on EU debate?",
-      "ai": "The BBC's Chris Mason analyses what the EU conversation means for Labour and the PM.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6pw47jyyz5no?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Nov 2026",
@@ -108,56 +135,36 @@
       "url": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "21 Nov 2026",
-      "headline": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
-      "ai": "The BBC's Sarah Rainsford reports from Kyiv after Ukrainian President Zelensky met the UK defence secretary.",
+      "date": "26 Nov 2026",
+      "headline": "European Central Bank Chooses Pablo Hernández de Cos as Next President",
+      "ai": "The early exit of Christine Lagarde as president of the European Central Bank, and two looming vacancies on the board, will make way for new leadership at the institution.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "GBR",
-        "RUS"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss"
+      "countries": [],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/26/business/ecb-pablo-hernandez-de-cos.html"
     },
     {
-      "date": "23 Nov 2026",
-      "headline": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
-      "ai": "Hacked government data underscores the immense human cost of President Vladimir V. Putin’s war of attrition.",
+      "date": "26 Nov 2026",
+      "headline": "Net Migration to U.K. Falls to Lowest Level Since 1997, Excluding Pandemic",
+      "ai": "The drop was largely driven by fewer people arriving from outside the European Union. It reflects government action to restrict immigration after a public backlash.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "UKR",
-        "RUS"
+        "GBR",
+        "BEL"
       ],
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html"
+      "url": "https://www.nytimes.com/2026/11/26/world/europe/uk-net-migration-data.html"
     },
     {
-      "date": "25 Nov 2026",
-      "headline": "Haftar visits Ankara as Erdoğan prepares first Libya trip in 15 years",
-      "ai": "Eastern Libya's commander, accompanied by his son Saddam, met Turkey's defence and foreign ministers and its intelligence chief, days after Ukrainian naval drones sank the Russian warship Merkury at Benghazi's naval base.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "UKR",
-        "TUR",
-        "RUS"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/25/haftar-visits-ankara-as-erdogan-prepares-first-libya-trip-in-15-years"
-    },
-    {
-      "date": "25 Nov 2026",
-      "headline": "Protesters rally outside European Parliament against pesticide bill",
-      "ai": "Several hundred people gathered outside the European Parliament in Strasbourg to protest against a controversial bill that could allow unlimited authorisations for certain pesticides.",
+      "date": "26 Nov 2026",
+      "headline": "Will Kanal, Brussels’ $252 Million New Museum, Transform the City?",
+      "ai": "Built inside a former Brussels car showroom with help from the Centre Pompidou, the Kanal arts center is finally opening after years of controversy.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -165,26 +172,8 @@
       "countries": [
         "BEL"
       ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/25/protesters-rally-outside-european-parliament-against-pesticide-bill"
-    },
-    {
-      "date": "25 Nov 2026",
-      "headline": "Balkan to the future: The long and winding road to Brussels",
-      "ai": "Good morning. Leo Cendrowicz here with your Wednesday newsletter. Today, we’re looking at the Western Balkans’ long road to EU membership, a Danish dilemma for Europe’s Socialists – and, courtesy of the late Pope Francis, a few encounters with the devil himself.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL",
-        "DNK",
-        "SRB",
-        "ALB",
-        "MNE"
-      ],
-      "source": "Euronews",
-      "url": "https://www.euronews.com/2026/11/25/balkan-to-the-future-the-long-and-winding-road-to-brussels"
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/26/arts/design/kanal-centre-pompidou-brussels.html"
     }
   ]
 }
