@@ -1,12 +1,41 @@
 {
-  "feedUpdated": "26 Nov 2026",
-  "syncedAt": "2026-11-26T18:07:37.954Z",
+  "feedUpdated": "27 Nov 2026",
+  "syncedAt": "2026-11-27T17:51:00.046Z",
   "momentum": {
     "storyCount": 12,
-    "fragTotal": 1,
-    "fedTotal": 1
+    "fragTotal": 5,
+    "fedTotal": -1
   },
   "feed": [
+    {
+      "date": "27 Nov 2026",
+      "headline": "EU leaders fail to bridge budget splits as talks stall",
+      "ai": "Aid for Ukraine was among the disputes as EU members hope to conclude talks by the end of the year.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
+      "countries": [
+        "UKR",
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gnm3m9deno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "26 Nov 2026",
+      "headline": "UK to pay 'participation' fee to deliver EU deals",
+      "ai": "Details of the contribution towards EU running costs have been revealed in new legal documents.",
+      "frag": "Highlights the limits of national coordination",
+      "fed": "Positive — supports federal integration",
+      "fragWeight": -1,
+      "fedWeight": 2,
+      "countries": [
+        "BEL"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck2057x387ego?at_medium=RSS&at_campaign=rss"
+    },
     {
       "date": "25 Nov 2026",
       "headline": "Clashing political visions reflect a divided Spain ahead of election",
@@ -22,19 +51,76 @@
       "url": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "20 Nov 2026",
-      "headline": "What the new UK-EU deal could mean for future post-Brexit relations",
-      "ai": "The BBC's political and Europe editors analyse the new agreements between the UK and EU.",
-      "frag": "Highlights the limits of national coordination",
-      "fed": "Positive — supports federal integration",
-      "fragWeight": -1,
-      "fedWeight": 2,
+      "date": "27 Nov 2026",
+      "headline": "France’s Bookstores, Beloved Curators of Literature, Are in a Deep Crisis",
+      "ai": "Caught between by rising costs and price regulations, French booksellers are closing at a record pace, depriving new authors of vital shelf space.",
+      "frag": "Reinforces fragmentation",
+      "fed": "Delays federal progress",
+      "fragWeight": 2,
+      "fedWeight": -1,
       "countries": [
-        "GBR",
+        "FRA"
+      ],
+      "source": "The New York Times",
+      "url": "https://www.nytimes.com/2026/11/27/world/europe/france-bookstore-crisis-closures.html"
+    },
+    {
+      "date": "27 Nov 2026",
+      "headline": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+      "ai": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "UKR",
+        "RUS"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "27 Nov 2026",
+      "headline": "Brazil pushes back on Macron calling its meat 'doped'",
+      "ai": "France's president made the comment while speaking to French farming representatives, months after the EU banned Brazil beef and poultry products.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "FRA",
         "BEL"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg28npvzeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "27 Nov 2026",
+      "headline": "Leaders clash in final Spain election debate as housing dominates run-in",
+      "ai": "The struggle many face in buying a home has been the biggest issue of a bitter campaign.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5gr4g8gn5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "date": "27 Nov 2026",
+      "headline": "'It's impossible': Spain's young people on housing ahead of Sunday's election",
+      "ai": "Europe correspondent Nick Beake speaks to one couple kept apart by high rents in Valencia.",
+      "frag": "",
+      "fed": "",
+      "fragWeight": 0,
+      "fedWeight": 0,
+      "countries": [
+        "ESP"
+      ],
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cm9w9y8947xqo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "26 Nov 2026",
@@ -51,51 +137,9 @@
       "url": "https://www.bbc.co.uk/news/articles/cq772vedgepro?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "26 Nov 2026",
-      "headline": "Spanish elections: What you need to know and what's at stake",
-      "ai": "After eight years of Socialist-led rule, snap elections are taking place on Sunday with conservative Alberto Núñez Feijóo vying to win office.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "ESP"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "26 Nov 2026",
-      "headline": "New UK-EU treaty has 10-year termination clause",
-      "ai": "Text of the treaties was published this afternoon, alongside legislation designed to enact the bulk of the deal.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "25 Nov 2026",
-      "headline": "North Korea expels Swiss diplomat in sanctions row",
-      "ai": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "CHE"
-      ],
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "20 Nov 2026",
+      "date": "27 Nov 2026",
       "headline": "Who to watch in Spain's election race",
-      "ai": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
+      "ai": "As Spaniards go to the polls on Sunday, these are the key political figures aiming to take power in Spain's next government.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
@@ -107,18 +151,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss"
     },
     {
-      "date": "24 Nov 2026",
-      "headline": "French ex-President Sarkozy and wife Carla Bruni to face trial",
-      "ai": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year.",
+      "date": "27 Nov 2026",
+      "headline": "Spanish election: What you need to know and what's at stake",
+      "ai": "After eight years of Socialist-led rule, snap elections are taking place on Sunday with conservative Alberto Núñez Feijóo vying to win office.",
       "frag": "",
       "fed": "",
       "fragWeight": 0,
       "fedWeight": 0,
       "countries": [
-        "FRA"
+        "ESP"
       ],
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss"
     },
     {
       "date": "23 Nov 2026",
@@ -133,47 +177,6 @@
       ],
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "date": "26 Nov 2026",
-      "headline": "European Central Bank Chooses Pablo Hernández de Cos as Next President",
-      "ai": "The early exit of Christine Lagarde as president of the European Central Bank, and two looming vacancies on the board, will make way for new leadership at the institution.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/26/business/ecb-pablo-hernandez-de-cos.html"
-    },
-    {
-      "date": "26 Nov 2026",
-      "headline": "Net Migration to U.K. Falls to Lowest Level Since 1997, Excluding Pandemic",
-      "ai": "The drop was largely driven by fewer people arriving from outside the European Union. It reflects government action to restrict immigration after a public backlash.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "GBR",
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/26/world/europe/uk-net-migration-data.html"
-    },
-    {
-      "date": "26 Nov 2026",
-      "headline": "Will Kanal, Brussels’ $252 Million New Museum, Transform the City?",
-      "ai": "Built inside a former Brussels car showroom with help from the Centre Pompidou, the Kanal arts center is finally opening after years of controversy.",
-      "frag": "",
-      "fed": "",
-      "fragWeight": 0,
-      "fedWeight": 0,
-      "countries": [
-        "BEL"
-      ],
-      "source": "The New York Times",
-      "url": "https://www.nytimes.com/2026/11/26/arts/design/kanal-centre-pompidou-brussels.html"
     }
   ]
 }
